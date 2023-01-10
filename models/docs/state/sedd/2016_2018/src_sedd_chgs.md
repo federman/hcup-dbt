@@ -1,4 +1,4 @@
-{% docs sedd_chgs_description %}
+{% docs sedd_chgs_2016_2018_description %}
 The Charges file contains detailed charge information. There are three kinds of Charges files:
 
 1. Line item detail in which a submitted charge pertains to a specified revenue center and there may be multiple charges reported for the same revenue center. This type of Charges file includes multiple records per discharge abstract. Each record includes the following information for one service:
@@ -21,4 +21,5 @@ For example, if a patient had five laboratory tests, REVCD1 would include the re
 Consider the example of a patient that had five laboratory tests from different revenue centers in the range of 300 to 319. CHG1, which was predefined as Laboratory Charges for revenue centers 300-319, would include the total charge for the five tests, but there is no detail on which specific revenue centers were used. To combine data elements between this type of Charges file and the Core file, merge the files by the unique record identifier (KEY). There will be a one-to-one correspondence of records.
 
 Refer to the Description of Data Elements online at the HCUP User Support website (www.hcup-us.ahrq.gov) for more information on the charge information from the different States.
+
 {% enddocs %}

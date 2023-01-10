@@ -1,4 +1,4 @@
-{% docs sedd_core_description %}
+{% docs sedd_core_2019_2021_description %}
 The Core file is an encounter-level file that contains:
 
 - Core data elements that form the nucleus of the SEDD
