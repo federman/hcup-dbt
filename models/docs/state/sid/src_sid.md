@@ -1,9 +1,13 @@
+This information aws scraped on 01/10/2023 from:
+
+- https://www.hcup-us.ahrq.gov/db/state/siddbdocumentation.jsp
+- https://www.hcup-us.ahrq.gov/db/state/siddist/SID_Introduction.jsp 
+
 {% docs sedd_description %}
 
-The State Emergency Department Databases (SEDD) are a set of longitudinal State-specific emergency department (ED) databases included in the HCUP family. The SEDD capture discharge information on all emergency department visits that do not result in an admission. Information on patients seen in the emergency room and then admitted to the hospital is included in the State Inpatient Databases (SID).
+The State Inpatient Databases (SID) are State-specific files that contain all inpatient care records in participating states. Together, the SID encompass more than 95 percent of all U.S. hospital discharges. The uniform format of the SID helps facilitate cross-state comparisons. In addition, the SID are well suited for research that requires complete enumeration of hospitals and discharges within geographic areas or states.
 
-The HCUP website has great data base documentation for SEDD, from a high-level Overview to all the detailed specifications, restrictions, and resources necessary for researchers working and publishing with the SEDD. This can be found here: [https://www.hcup-us.ahrq.gov/db/state/sedddbdocumentation.jsp](https://www.hcup-us.ahrq.gov/db/state/sedddbdocumentation.jsp)
-
+The following links provide database documentation for the SID, from a high-level Overview to all the detailed specifications, restrictions, and resources necessary for researchers working and publishing with the SID.
 
 
 {% enddocs %}
