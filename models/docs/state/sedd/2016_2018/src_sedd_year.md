@@ -1,6 +1,7 @@
 {% docs sedd_2016_2018_description %}
 
-What is the File Structure of the SEDD in the 2016-2018 Files?
+
+**What is the File Structure of the SEDD in the 2016-2018 Files?**
 
 Based on the availability of data elements across States, data elements included in the 2016 SEDD are structured as follows:
 
