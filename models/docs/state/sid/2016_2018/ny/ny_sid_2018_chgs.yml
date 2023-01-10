@@ -12,3 +12,16 @@ sources:
   tables:
   - name: NY_SID_2018_CHGS
     description: NY SID 2018 CHGS file. {{ doc("sid_chgs_2016_2018_description") }}
+    columns:
+    - name: CHARGE
+      type: double
+      description: Line item charges (as received from source)
+    - name: KEY
+      type: double
+      description: HCUP record identifier
+    - name: REVCODE
+      type: string
+      description: Line item revenue code (as received from source)
+    - name: UNITS
+      type: double
+      description: Line item units (as received from source)

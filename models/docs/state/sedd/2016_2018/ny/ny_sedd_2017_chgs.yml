@@ -13,3 +13,28 @@ sources:
   - name: NY_SEDD_2017_CHGS
     description: NY SEDD 2017 CHGS file. {{ doc("sedd_chgs_2016_2018_description")
       }}
+    columns:
+    - name: CHARGE
+      type: double
+      description: Line item charges (as received from source)
+    - name: CPTHCPCS
+      type: string
+      description: Line item CPT-4/HCPCS procedure code (as received from source)
+    - name: CPTMod1
+      type: string
+      description: Line item CPT-4/HCPCS first modifier (as received from source)
+    - name: CPTMod2
+      type: string
+      description: Line item CPT-4/HCPCS second modifier (as received from source)
+    - name: KEY
+      type: double
+      description: HCUP record identifier
+    - name: REVCODE
+      type: string
+      description: Line item revenue code (as received from source)
+    - name: SERVDAY
+      type: int32
+      description: Line item days from admission date
+    - name: UNITS
+      type: double
+      description: Line item units (as received from source)

@@ -13,3 +13,3323 @@ sources:
   - name: NY_SEDD_2018_CORE
     description: NY SEDD 2018 CORE file. {{ doc("sedd_core_2016_2018_description")
       }}
+    columns:
+    - name: AGE
+      type: int32
+      description: Age in years at admission
+    - name: AGEDAY
+      type: int32
+      description: Age in days (when age < 1 year)
+    - name: AGEMONTH
+      type: int32
+      description: Age in months (when age < 11 years)
+    - name: AHOUR
+      type: int32
+      description: Admission Hour
+    - name: AMONTH
+      type: int32
+      description: Admission month
+    - name: ATYPE
+      type: int32
+      description: Admission type
+    - name: AWEEKEND
+      type: int32
+      description: Admission day is a weekend
+    - name: BLOOD
+      type: int32
+      description: Pints of blood furnished to the patient
+    - name: BP_DIASTOLIC_X
+      type: int32
+      description: Diastolic blood pressure of the patient, as received from data
+        source
+    - name: BP_SYSTOLIC_X
+      type: int32
+      description: Systolic blood pressure of the patient, as received from data source
+    - name: CPT1
+      type: string
+      description: CPT/HCPCS procedure code 1
+    - name: CPT2
+      type: string
+      description: CPT/HCPCS procedure code 2
+    - name: CPT3
+      type: string
+      description: CPT/HCPCS procedure code 3
+    - name: CPT4
+      type: string
+      description: CPT/HCPCS procedure code 4
+    - name: CPT5
+      type: string
+      description: CPT/HCPCS procedure code 5
+    - name: CPT6
+      type: string
+      description: CPT/HCPCS procedure code 6
+    - name: CPT7
+      type: string
+      description: CPT/HCPCS procedure code 7
+    - name: CPT8
+      type: string
+      description: CPT/HCPCS procedure code 8
+    - name: CPT9
+      type: string
+      description: CPT/HCPCS procedure code 9
+    - name: CPT10
+      type: string
+      description: CPT/HCPCS procedure code 10
+    - name: CPT11
+      type: string
+      description: CPT/HCPCS procedure code 11
+    - name: CPT12
+      type: string
+      description: CPT/HCPCS procedure code 12
+    - name: CPT13
+      type: string
+      description: CPT/HCPCS procedure code 13
+    - name: CPT14
+      type: string
+      description: CPT/HCPCS procedure code 14
+    - name: CPT15
+      type: string
+      description: CPT/HCPCS procedure code 15
+    - name: CPT16
+      type: string
+      description: CPT/HCPCS procedure code 16
+    - name: CPT17
+      type: string
+      description: CPT/HCPCS procedure code 17
+    - name: CPT18
+      type: string
+      description: CPT/HCPCS procedure code 18
+    - name: CPT19
+      type: string
+      description: CPT/HCPCS procedure code 19
+    - name: CPT20
+      type: string
+      description: CPT/HCPCS procedure code 20
+    - name: CPT21
+      type: string
+      description: CPT/HCPCS procedure code 21
+    - name: CPT22
+      type: string
+      description: CPT/HCPCS procedure code 22
+    - name: CPT23
+      type: string
+      description: CPT/HCPCS procedure code 23
+    - name: CPT24
+      type: string
+      description: CPT/HCPCS procedure code 24
+    - name: CPT25
+      type: string
+      description: CPT/HCPCS procedure code 25
+    - name: CPT26
+      type: string
+      description: CPT/HCPCS procedure code 26
+    - name: CPT27
+      type: string
+      description: CPT/HCPCS procedure code 27
+    - name: CPT28
+      type: string
+      description: CPT/HCPCS procedure code 28
+    - name: CPT29
+      type: string
+      description: CPT/HCPCS procedure code 29
+    - name: CPT30
+      type: string
+      description: CPT/HCPCS procedure code 30
+    - name: CPT31
+      type: string
+      description: CPT/HCPCS procedure code 31
+    - name: CPT32
+      type: string
+      description: CPT/HCPCS procedure code 32
+    - name: CPT33
+      type: string
+      description: CPT/HCPCS procedure code 33
+    - name: CPT34
+      type: string
+      description: CPT/HCPCS procedure code 34
+    - name: CPT35
+      type: string
+      description: CPT/HCPCS procedure code 35
+    - name: CPT36
+      type: string
+      description: CPT/HCPCS procedure code 36
+    - name: CPT37
+      type: string
+      description: CPT/HCPCS procedure code 37
+    - name: CPT38
+      type: string
+      description: CPT/HCPCS procedure code 38
+    - name: CPT39
+      type: string
+      description: CPT/HCPCS procedure code 39
+    - name: CPT40
+      type: string
+      description: CPT/HCPCS procedure code 40
+    - name: CPT41
+      type: string
+      description: CPT/HCPCS procedure code 41
+    - name: CPT42
+      type: string
+      description: CPT/HCPCS procedure code 42
+    - name: CPT43
+      type: string
+      description: CPT/HCPCS procedure code 43
+    - name: CPT44
+      type: string
+      description: CPT/HCPCS procedure code 44
+    - name: CPT45
+      type: string
+      description: CPT/HCPCS procedure code 45
+    - name: CPT46
+      type: string
+      description: CPT/HCPCS procedure code 46
+    - name: CPT47
+      type: string
+      description: CPT/HCPCS procedure code 47
+    - name: CPT48
+      type: string
+      description: CPT/HCPCS procedure code 48
+    - name: CPT49
+      type: string
+      description: CPT/HCPCS procedure code 49
+    - name: CPT50
+      type: string
+      description: CPT/HCPCS procedure code 50
+    - name: CPT51
+      type: string
+      description: CPT/HCPCS procedure code 51
+    - name: CPT52
+      type: string
+      description: CPT/HCPCS procedure code 52
+    - name: CPT53
+      type: string
+      description: CPT/HCPCS procedure code 53
+    - name: CPT54
+      type: string
+      description: CPT/HCPCS procedure code 54
+    - name: CPT55
+      type: string
+      description: CPT/HCPCS procedure code 55
+    - name: CPT56
+      type: string
+      description: CPT/HCPCS procedure code 56
+    - name: CPT57
+      type: string
+      description: CPT/HCPCS procedure code 57
+    - name: CPT58
+      type: string
+      description: CPT/HCPCS procedure code 58
+    - name: CPT59
+      type: string
+      description: CPT/HCPCS procedure code 59
+    - name: CPT60
+      type: string
+      description: CPT/HCPCS procedure code 60
+    - name: CPT61
+      type: string
+      description: CPT/HCPCS procedure code 61
+    - name: CPT62
+      type: string
+      description: CPT/HCPCS procedure code 62
+    - name: CPT63
+      type: string
+      description: CPT/HCPCS procedure code 63
+    - name: CPT64
+      type: string
+      description: CPT/HCPCS procedure code 64
+    - name: CPT65
+      type: string
+      description: CPT/HCPCS procedure code 65
+    - name: CPT66
+      type: string
+      description: CPT/HCPCS procedure code 66
+    - name: CPT67
+      type: string
+      description: CPT/HCPCS procedure code 67
+    - name: CPT68
+      type: string
+      description: CPT/HCPCS procedure code 68
+    - name: CPT69
+      type: string
+      description: CPT/HCPCS procedure code 69
+    - name: CPT70
+      type: string
+      description: CPT/HCPCS procedure code 70
+    - name: CPT71
+      type: string
+      description: CPT/HCPCS procedure code 71
+    - name: CPT72
+      type: string
+      description: CPT/HCPCS procedure code 72
+    - name: CPT73
+      type: string
+      description: CPT/HCPCS procedure code 73
+    - name: CPT74
+      type: string
+      description: CPT/HCPCS procedure code 74
+    - name: CPT75
+      type: string
+      description: CPT/HCPCS procedure code 75
+    - name: CPT76
+      type: string
+      description: CPT/HCPCS procedure code 76
+    - name: CPT77
+      type: string
+      description: CPT/HCPCS procedure code 77
+    - name: CPT78
+      type: string
+      description: CPT/HCPCS procedure code 78
+    - name: CPT79
+      type: string
+      description: CPT/HCPCS procedure code 79
+    - name: CPT80
+      type: string
+      description: CPT/HCPCS procedure code 80
+    - name: CPT81
+      type: string
+      description: CPT/HCPCS procedure code 81
+    - name: CPT82
+      type: string
+      description: CPT/HCPCS procedure code 82
+    - name: CPT83
+      type: string
+      description: CPT/HCPCS procedure code 83
+    - name: CPT84
+      type: string
+      description: CPT/HCPCS procedure code 84
+    - name: CPT85
+      type: string
+      description: CPT/HCPCS procedure code 85
+    - name: CPT86
+      type: string
+      description: CPT/HCPCS procedure code 86
+    - name: CPT87
+      type: string
+      description: CPT/HCPCS procedure code 87
+    - name: CPT88
+      type: string
+      description: CPT/HCPCS procedure code 88
+    - name: CPT89
+      type: string
+      description: CPT/HCPCS procedure code 89
+    - name: CPT90
+      type: string
+      description: CPT/HCPCS procedure code 90
+    - name: CPT91
+      type: string
+      description: CPT/HCPCS procedure code 91
+    - name: CPT92
+      type: string
+      description: CPT/HCPCS procedure code 92
+    - name: CPT93
+      type: string
+      description: CPT/HCPCS procedure code 93
+    - name: CPT94
+      type: string
+      description: CPT/HCPCS procedure code 94
+    - name: CPT95
+      type: string
+      description: CPT/HCPCS procedure code 95
+    - name: CPT96
+      type: string
+      description: CPT/HCPCS procedure code 96
+    - name: CPT97
+      type: string
+      description: CPT/HCPCS procedure code 97
+    - name: CPT98
+      type: string
+      description: CPT/HCPCS procedure code 98
+    - name: CPT99
+      type: string
+      description: CPT/HCPCS procedure code 99
+    - name: CPT100
+      type: string
+      description: CPT/HCPCS procedure code 100
+    - name: CPT101
+      type: string
+      description: CPT/HCPCS procedure code 101
+    - name: CPT102
+      type: string
+      description: CPT/HCPCS procedure code 102
+    - name: CPT103
+      type: string
+      description: CPT/HCPCS procedure code 103
+    - name: CPT104
+      type: string
+      description: CPT/HCPCS procedure code 104
+    - name: CPT105
+      type: string
+      description: CPT/HCPCS procedure code 105
+    - name: CPT106
+      type: string
+      description: CPT/HCPCS procedure code 106
+    - name: CPT107
+      type: string
+      description: CPT/HCPCS procedure code 107
+    - name: CPT108
+      type: string
+      description: CPT/HCPCS procedure code 108
+    - name: CPT109
+      type: string
+      description: CPT/HCPCS procedure code 109
+    - name: CPT110
+      type: string
+      description: CPT/HCPCS procedure code 110
+    - name: CPT111
+      type: string
+      description: CPT/HCPCS procedure code 111
+    - name: CPT112
+      type: string
+      description: CPT/HCPCS procedure code 112
+    - name: CPT113
+      type: string
+      description: CPT/HCPCS procedure code 113
+    - name: CPT114
+      type: string
+      description: CPT/HCPCS procedure code 114
+    - name: CPT115
+      type: string
+      description: CPT/HCPCS procedure code 115
+    - name: CPT116
+      type: string
+      description: CPT/HCPCS procedure code 116
+    - name: CPT117
+      type: string
+      description: CPT/HCPCS procedure code 117
+    - name: CPT118
+      type: string
+      description: CPT/HCPCS procedure code 118
+    - name: CPT119
+      type: string
+      description: CPT/HCPCS procedure code 119
+    - name: CPT120
+      type: string
+      description: CPT/HCPCS procedure code 120
+    - name: CPT121
+      type: string
+      description: CPT/HCPCS procedure code 121
+    - name: CPT122
+      type: string
+      description: CPT/HCPCS procedure code 122
+    - name: CPT123
+      type: string
+      description: CPT/HCPCS procedure code 123
+    - name: CPT124
+      type: string
+      description: CPT/HCPCS procedure code 124
+    - name: CPT125
+      type: string
+      description: CPT/HCPCS procedure code 125
+    - name: CPT126
+      type: string
+      description: CPT/HCPCS procedure code 126
+    - name: CPT127
+      type: string
+      description: CPT/HCPCS procedure code 127
+    - name: CPT128
+      type: string
+      description: CPT/HCPCS procedure code 128
+    - name: CPT129
+      type: string
+      description: CPT/HCPCS procedure code 129
+    - name: CPT130
+      type: string
+      description: CPT/HCPCS procedure code 130
+    - name: CPT131
+      type: string
+      description: CPT/HCPCS procedure code 131
+    - name: CPT132
+      type: string
+      description: CPT/HCPCS procedure code 132
+    - name: CPT133
+      type: string
+      description: CPT/HCPCS procedure code 133
+    - name: CPT134
+      type: string
+      description: CPT/HCPCS procedure code 134
+    - name: CPT135
+      type: string
+      description: CPT/HCPCS procedure code 135
+    - name: CPT136
+      type: string
+      description: CPT/HCPCS procedure code 136
+    - name: CPT137
+      type: string
+      description: CPT/HCPCS procedure code 137
+    - name: CPT138
+      type: string
+      description: CPT/HCPCS procedure code 138
+    - name: CPT139
+      type: string
+      description: CPT/HCPCS procedure code 139
+    - name: CPT140
+      type: string
+      description: CPT/HCPCS procedure code 140
+    - name: CPT141
+      type: string
+      description: CPT/HCPCS procedure code 141
+    - name: CPT142
+      type: string
+      description: CPT/HCPCS procedure code 142
+    - name: CPT143
+      type: string
+      description: CPT/HCPCS procedure code 143
+    - name: CPT144
+      type: string
+      description: CPT/HCPCS procedure code 144
+    - name: CPT145
+      type: string
+      description: CPT/HCPCS procedure code 145
+    - name: CPT146
+      type: string
+      description: CPT/HCPCS procedure code 146
+    - name: CPT147
+      type: string
+      description: CPT/HCPCS procedure code 147
+    - name: CPT148
+      type: string
+      description: CPT/HCPCS procedure code 148
+    - name: CPT149
+      type: string
+      description: CPT/HCPCS procedure code 149
+    - name: CPT150
+      type: string
+      description: CPT/HCPCS procedure code 150
+    - name: CPT151
+      type: string
+      description: CPT/HCPCS procedure code 151
+    - name: CPT152
+      type: string
+      description: CPT/HCPCS procedure code 152
+    - name: CPT153
+      type: string
+      description: CPT/HCPCS procedure code 153
+    - name: CPT154
+      type: string
+      description: CPT/HCPCS procedure code 154
+    - name: CPT155
+      type: string
+      description: CPT/HCPCS procedure code 155
+    - name: CPT156
+      type: string
+      description: CPT/HCPCS procedure code 156
+    - name: CPT157
+      type: string
+      description: CPT/HCPCS procedure code 157
+    - name: CPT158
+      type: string
+      description: CPT/HCPCS procedure code 158
+    - name: CPT159
+      type: string
+      description: CPT/HCPCS procedure code 159
+    - name: CPT160
+      type: string
+      description: CPT/HCPCS procedure code 160
+    - name: CPT161
+      type: string
+      description: CPT/HCPCS procedure code 161
+    - name: CPT162
+      type: string
+      description: CPT/HCPCS procedure code 162
+    - name: CPT163
+      type: string
+      description: CPT/HCPCS procedure code 163
+    - name: CPT164
+      type: string
+      description: CPT/HCPCS procedure code 164
+    - name: CPT165
+      type: string
+      description: CPT/HCPCS procedure code 165
+    - name: CPT166
+      type: string
+      description: CPT/HCPCS procedure code 166
+    - name: CPT167
+      type: string
+      description: CPT/HCPCS procedure code 167
+    - name: CPT168
+      type: string
+      description: CPT/HCPCS procedure code 168
+    - name: CPT169
+      type: string
+      description: CPT/HCPCS procedure code 169
+    - name: CPT170
+      type: string
+      description: CPT/HCPCS procedure code 170
+    - name: CPT171
+      type: string
+      description: CPT/HCPCS procedure code 171
+    - name: CPT172
+      type: string
+      description: CPT/HCPCS procedure code 172
+    - name: CPT173
+      type: string
+      description: CPT/HCPCS procedure code 173
+    - name: CPT174
+      type: string
+      description: CPT/HCPCS procedure code 174
+    - name: CPT175
+      type: string
+      description: CPT/HCPCS procedure code 175
+    - name: CPT176
+      type: string
+      description: CPT/HCPCS procedure code 176
+    - name: CPT177
+      type: string
+      description: CPT/HCPCS procedure code 177
+    - name: CPT178
+      type: string
+      description: CPT/HCPCS procedure code 178
+    - name: CPT179
+      type: string
+      description: CPT/HCPCS procedure code 179
+    - name: CPT180
+      type: string
+      description: CPT/HCPCS procedure code 180
+    - name: CPT181
+      type: string
+      description: CPT/HCPCS procedure code 181
+    - name: CPT182
+      type: string
+      description: CPT/HCPCS procedure code 182
+    - name: CPT183
+      type: string
+      description: CPT/HCPCS procedure code 183
+    - name: CPT184
+      type: string
+      description: CPT/HCPCS procedure code 184
+    - name: CPT185
+      type: string
+      description: CPT/HCPCS procedure code 185
+    - name: CPT186
+      type: string
+      description: CPT/HCPCS procedure code 186
+    - name: CPT187
+      type: string
+      description: CPT/HCPCS procedure code 187
+    - name: CPT188
+      type: string
+      description: CPT/HCPCS procedure code 188
+    - name: CPT189
+      type: string
+      description: CPT/HCPCS procedure code 189
+    - name: CPT190
+      type: string
+      description: CPT/HCPCS procedure code 190
+    - name: CPT191
+      type: string
+      description: CPT/HCPCS procedure code 191
+    - name: CPT192
+      type: string
+      description: CPT/HCPCS procedure code 192
+    - name: CPT193
+      type: string
+      description: CPT/HCPCS procedure code 193
+    - name: CPT194
+      type: string
+      description: CPT/HCPCS procedure code 194
+    - name: CPT195
+      type: string
+      description: CPT/HCPCS procedure code 195
+    - name: CPT196
+      type: string
+      description: CPT/HCPCS procedure code 196
+    - name: CPT197
+      type: string
+      description: CPT/HCPCS procedure code 197
+    - name: CPT198
+      type: string
+      description: CPT/HCPCS procedure code 198
+    - name: CPT199
+      type: string
+      description: CPT/HCPCS procedure code 199
+    - name: CPT200
+      type: string
+      description: CPT/HCPCS procedure code 200
+    - name: CPTCCS1
+      type: int32
+      description: 'CCS: CPT 1'
+    - name: CPTCCS2
+      type: int32
+      description: 'CCS: CPT 2'
+    - name: CPTCCS3
+      type: int32
+      description: 'CCS: CPT 3'
+    - name: CPTCCS4
+      type: int32
+      description: 'CCS: CPT 4'
+    - name: CPTCCS5
+      type: int32
+      description: 'CCS: CPT 5'
+    - name: CPTCCS6
+      type: int32
+      description: 'CCS: CPT 6'
+    - name: CPTCCS7
+      type: int32
+      description: 'CCS: CPT 7'
+    - name: CPTCCS8
+      type: int32
+      description: 'CCS: CPT 8'
+    - name: CPTCCS9
+      type: int32
+      description: 'CCS: CPT 9'
+    - name: CPTCCS10
+      type: int32
+      description: 'CCS: CPT 10'
+    - name: CPTCCS11
+      type: int32
+      description: 'CCS: CPT 11'
+    - name: CPTCCS12
+      type: int32
+      description: 'CCS: CPT 12'
+    - name: CPTCCS13
+      type: int32
+      description: 'CCS: CPT 13'
+    - name: CPTCCS14
+      type: int32
+      description: 'CCS: CPT 14'
+    - name: CPTCCS15
+      type: int32
+      description: 'CCS: CPT 15'
+    - name: CPTCCS16
+      type: int32
+      description: 'CCS: CPT 16'
+    - name: CPTCCS17
+      type: int32
+      description: 'CCS: CPT 17'
+    - name: CPTCCS18
+      type: int32
+      description: 'CCS: CPT 18'
+    - name: CPTCCS19
+      type: int32
+      description: 'CCS: CPT 19'
+    - name: CPTCCS20
+      type: int32
+      description: 'CCS: CPT 20'
+    - name: CPTCCS21
+      type: int32
+      description: 'CCS: CPT 21'
+    - name: CPTCCS22
+      type: int32
+      description: 'CCS: CPT 22'
+    - name: CPTCCS23
+      type: int32
+      description: 'CCS: CPT 23'
+    - name: CPTCCS24
+      type: int32
+      description: 'CCS: CPT 24'
+    - name: CPTCCS25
+      type: int32
+      description: 'CCS: CPT 25'
+    - name: CPTCCS26
+      type: int32
+      description: 'CCS: CPT 26'
+    - name: CPTCCS27
+      type: int32
+      description: 'CCS: CPT 27'
+    - name: CPTCCS28
+      type: int32
+      description: 'CCS: CPT 28'
+    - name: CPTCCS29
+      type: int32
+      description: 'CCS: CPT 29'
+    - name: CPTCCS30
+      type: int32
+      description: 'CCS: CPT 30'
+    - name: CPTCCS31
+      type: int32
+      description: 'CCS: CPT 31'
+    - name: CPTCCS32
+      type: int32
+      description: 'CCS: CPT 32'
+    - name: CPTCCS33
+      type: int32
+      description: 'CCS: CPT 33'
+    - name: CPTCCS34
+      type: int32
+      description: 'CCS: CPT 34'
+    - name: CPTCCS35
+      type: int32
+      description: 'CCS: CPT 35'
+    - name: CPTCCS36
+      type: int32
+      description: 'CCS: CPT 36'
+    - name: CPTCCS37
+      type: int32
+      description: 'CCS: CPT 37'
+    - name: CPTCCS38
+      type: int32
+      description: 'CCS: CPT 38'
+    - name: CPTCCS39
+      type: int32
+      description: 'CCS: CPT 39'
+    - name: CPTCCS40
+      type: int32
+      description: 'CCS: CPT 40'
+    - name: CPTCCS41
+      type: int32
+      description: 'CCS: CPT 41'
+    - name: CPTCCS42
+      type: int32
+      description: 'CCS: CPT 42'
+    - name: CPTCCS43
+      type: int32
+      description: 'CCS: CPT 43'
+    - name: CPTCCS44
+      type: int32
+      description: 'CCS: CPT 44'
+    - name: CPTCCS45
+      type: int32
+      description: 'CCS: CPT 45'
+    - name: CPTCCS46
+      type: int32
+      description: 'CCS: CPT 46'
+    - name: CPTCCS47
+      type: int32
+      description: 'CCS: CPT 47'
+    - name: CPTCCS48
+      type: int32
+      description: 'CCS: CPT 48'
+    - name: CPTCCS49
+      type: int32
+      description: 'CCS: CPT 49'
+    - name: CPTCCS50
+      type: int32
+      description: 'CCS: CPT 50'
+    - name: CPTCCS51
+      type: int32
+      description: 'CCS: CPT 51'
+    - name: CPTCCS52
+      type: int32
+      description: 'CCS: CPT 52'
+    - name: CPTCCS53
+      type: int32
+      description: 'CCS: CPT 53'
+    - name: CPTCCS54
+      type: int32
+      description: 'CCS: CPT 54'
+    - name: CPTCCS55
+      type: int32
+      description: 'CCS: CPT 55'
+    - name: CPTCCS56
+      type: int32
+      description: 'CCS: CPT 56'
+    - name: CPTCCS57
+      type: int32
+      description: 'CCS: CPT 57'
+    - name: CPTCCS58
+      type: int32
+      description: 'CCS: CPT 58'
+    - name: CPTCCS59
+      type: int32
+      description: 'CCS: CPT 59'
+    - name: CPTCCS60
+      type: int32
+      description: 'CCS: CPT 60'
+    - name: CPTCCS61
+      type: int32
+      description: 'CCS: CPT 61'
+    - name: CPTCCS62
+      type: int32
+      description: 'CCS: CPT 62'
+    - name: CPTCCS63
+      type: int32
+      description: 'CCS: CPT 63'
+    - name: CPTCCS64
+      type: int32
+      description: 'CCS: CPT 64'
+    - name: CPTCCS65
+      type: int32
+      description: 'CCS: CPT 65'
+    - name: CPTCCS66
+      type: int32
+      description: 'CCS: CPT 66'
+    - name: CPTCCS67
+      type: int32
+      description: 'CCS: CPT 67'
+    - name: CPTCCS68
+      type: int32
+      description: 'CCS: CPT 68'
+    - name: CPTCCS69
+      type: int32
+      description: 'CCS: CPT 69'
+    - name: CPTCCS70
+      type: int32
+      description: 'CCS: CPT 70'
+    - name: CPTCCS71
+      type: int32
+      description: 'CCS: CPT 71'
+    - name: CPTCCS72
+      type: int32
+      description: 'CCS: CPT 72'
+    - name: CPTCCS73
+      type: int32
+      description: 'CCS: CPT 73'
+    - name: CPTCCS74
+      type: int32
+      description: 'CCS: CPT 74'
+    - name: CPTCCS75
+      type: int32
+      description: 'CCS: CPT 75'
+    - name: CPTCCS76
+      type: int32
+      description: 'CCS: CPT 76'
+    - name: CPTCCS77
+      type: int32
+      description: 'CCS: CPT 77'
+    - name: CPTCCS78
+      type: int32
+      description: 'CCS: CPT 78'
+    - name: CPTCCS79
+      type: int32
+      description: 'CCS: CPT 79'
+    - name: CPTCCS80
+      type: int32
+      description: 'CCS: CPT 80'
+    - name: CPTCCS81
+      type: int32
+      description: 'CCS: CPT 81'
+    - name: CPTCCS82
+      type: int32
+      description: 'CCS: CPT 82'
+    - name: CPTCCS83
+      type: int32
+      description: 'CCS: CPT 83'
+    - name: CPTCCS84
+      type: int32
+      description: 'CCS: CPT 84'
+    - name: CPTCCS85
+      type: int32
+      description: 'CCS: CPT 85'
+    - name: CPTCCS86
+      type: int32
+      description: 'CCS: CPT 86'
+    - name: CPTCCS87
+      type: int32
+      description: 'CCS: CPT 87'
+    - name: CPTCCS88
+      type: int32
+      description: 'CCS: CPT 88'
+    - name: CPTCCS89
+      type: int32
+      description: 'CCS: CPT 89'
+    - name: CPTCCS90
+      type: int32
+      description: 'CCS: CPT 90'
+    - name: CPTCCS91
+      type: int32
+      description: 'CCS: CPT 91'
+    - name: CPTCCS92
+      type: int32
+      description: 'CCS: CPT 92'
+    - name: CPTCCS93
+      type: int32
+      description: 'CCS: CPT 93'
+    - name: CPTCCS94
+      type: int32
+      description: 'CCS: CPT 94'
+    - name: CPTCCS95
+      type: int32
+      description: 'CCS: CPT 95'
+    - name: CPTCCS96
+      type: int32
+      description: 'CCS: CPT 96'
+    - name: CPTCCS97
+      type: int32
+      description: 'CCS: CPT 97'
+    - name: CPTCCS98
+      type: int32
+      description: 'CCS: CPT 98'
+    - name: CPTCCS99
+      type: int32
+      description: 'CCS: CPT 99'
+    - name: CPTCCS100
+      type: int32
+      description: 'CCS: CPT 100'
+    - name: CPTCCS101
+      type: int32
+      description: 'CCS: CPT 101'
+    - name: CPTCCS102
+      type: int32
+      description: 'CCS: CPT 102'
+    - name: CPTCCS103
+      type: int32
+      description: 'CCS: CPT 103'
+    - name: CPTCCS104
+      type: int32
+      description: 'CCS: CPT 104'
+    - name: CPTCCS105
+      type: int32
+      description: 'CCS: CPT 105'
+    - name: CPTCCS106
+      type: int32
+      description: 'CCS: CPT 106'
+    - name: CPTCCS107
+      type: int32
+      description: 'CCS: CPT 107'
+    - name: CPTCCS108
+      type: int32
+      description: 'CCS: CPT 108'
+    - name: CPTCCS109
+      type: int32
+      description: 'CCS: CPT 109'
+    - name: CPTCCS110
+      type: int32
+      description: 'CCS: CPT 110'
+    - name: CPTCCS111
+      type: int32
+      description: 'CCS: CPT 111'
+    - name: CPTCCS112
+      type: int32
+      description: 'CCS: CPT 112'
+    - name: CPTCCS113
+      type: int32
+      description: 'CCS: CPT 113'
+    - name: CPTCCS114
+      type: int32
+      description: 'CCS: CPT 114'
+    - name: CPTCCS115
+      type: int32
+      description: 'CCS: CPT 115'
+    - name: CPTCCS116
+      type: int32
+      description: 'CCS: CPT 116'
+    - name: CPTCCS117
+      type: int32
+      description: 'CCS: CPT 117'
+    - name: CPTCCS118
+      type: int32
+      description: 'CCS: CPT 118'
+    - name: CPTCCS119
+      type: int32
+      description: 'CCS: CPT 119'
+    - name: CPTCCS120
+      type: int32
+      description: 'CCS: CPT 120'
+    - name: CPTCCS121
+      type: int32
+      description: 'CCS: CPT 121'
+    - name: CPTCCS122
+      type: int32
+      description: 'CCS: CPT 122'
+    - name: CPTCCS123
+      type: int32
+      description: 'CCS: CPT 123'
+    - name: CPTCCS124
+      type: int32
+      description: 'CCS: CPT 124'
+    - name: CPTCCS125
+      type: int32
+      description: 'CCS: CPT 125'
+    - name: CPTCCS126
+      type: int32
+      description: 'CCS: CPT 126'
+    - name: CPTCCS127
+      type: int32
+      description: 'CCS: CPT 127'
+    - name: CPTCCS128
+      type: int32
+      description: 'CCS: CPT 128'
+    - name: CPTCCS129
+      type: int32
+      description: 'CCS: CPT 129'
+    - name: CPTCCS130
+      type: int32
+      description: 'CCS: CPT 130'
+    - name: CPTCCS131
+      type: int32
+      description: 'CCS: CPT 131'
+    - name: CPTCCS132
+      type: int32
+      description: 'CCS: CPT 132'
+    - name: CPTCCS133
+      type: int32
+      description: 'CCS: CPT 133'
+    - name: CPTCCS134
+      type: int32
+      description: 'CCS: CPT 134'
+    - name: CPTCCS135
+      type: int32
+      description: 'CCS: CPT 135'
+    - name: CPTCCS136
+      type: int32
+      description: 'CCS: CPT 136'
+    - name: CPTCCS137
+      type: int32
+      description: 'CCS: CPT 137'
+    - name: CPTCCS138
+      type: int32
+      description: 'CCS: CPT 138'
+    - name: CPTCCS139
+      type: int32
+      description: 'CCS: CPT 139'
+    - name: CPTCCS140
+      type: int32
+      description: 'CCS: CPT 140'
+    - name: CPTCCS141
+      type: int32
+      description: 'CCS: CPT 141'
+    - name: CPTCCS142
+      type: int32
+      description: 'CCS: CPT 142'
+    - name: CPTCCS143
+      type: int32
+      description: 'CCS: CPT 143'
+    - name: CPTCCS144
+      type: int32
+      description: 'CCS: CPT 144'
+    - name: CPTCCS145
+      type: int32
+      description: 'CCS: CPT 145'
+    - name: CPTCCS146
+      type: int32
+      description: 'CCS: CPT 146'
+    - name: CPTCCS147
+      type: int32
+      description: 'CCS: CPT 147'
+    - name: CPTCCS148
+      type: int32
+      description: 'CCS: CPT 148'
+    - name: CPTCCS149
+      type: int32
+      description: 'CCS: CPT 149'
+    - name: CPTCCS150
+      type: int32
+      description: 'CCS: CPT 150'
+    - name: CPTCCS151
+      type: int32
+      description: 'CCS: CPT 151'
+    - name: CPTCCS152
+      type: int32
+      description: 'CCS: CPT 152'
+    - name: CPTCCS153
+      type: int32
+      description: 'CCS: CPT 153'
+    - name: CPTCCS154
+      type: int32
+      description: 'CCS: CPT 154'
+    - name: CPTCCS155
+      type: int32
+      description: 'CCS: CPT 155'
+    - name: CPTCCS156
+      type: int32
+      description: 'CCS: CPT 156'
+    - name: CPTCCS157
+      type: int32
+      description: 'CCS: CPT 157'
+    - name: CPTCCS158
+      type: int32
+      description: 'CCS: CPT 158'
+    - name: CPTCCS159
+      type: int32
+      description: 'CCS: CPT 159'
+    - name: CPTCCS160
+      type: int32
+      description: 'CCS: CPT 160'
+    - name: CPTCCS161
+      type: int32
+      description: 'CCS: CPT 161'
+    - name: CPTCCS162
+      type: int32
+      description: 'CCS: CPT 162'
+    - name: CPTCCS163
+      type: int32
+      description: 'CCS: CPT 163'
+    - name: CPTCCS164
+      type: int32
+      description: 'CCS: CPT 164'
+    - name: CPTCCS165
+      type: int32
+      description: 'CCS: CPT 165'
+    - name: CPTCCS166
+      type: int32
+      description: 'CCS: CPT 166'
+    - name: CPTCCS167
+      type: int32
+      description: 'CCS: CPT 167'
+    - name: CPTCCS168
+      type: int32
+      description: 'CCS: CPT 168'
+    - name: CPTCCS169
+      type: int32
+      description: 'CCS: CPT 169'
+    - name: CPTCCS170
+      type: int32
+      description: 'CCS: CPT 170'
+    - name: CPTCCS171
+      type: int32
+      description: 'CCS: CPT 171'
+    - name: CPTCCS172
+      type: int32
+      description: 'CCS: CPT 172'
+    - name: CPTCCS173
+      type: int32
+      description: 'CCS: CPT 173'
+    - name: CPTCCS174
+      type: int32
+      description: 'CCS: CPT 174'
+    - name: CPTCCS175
+      type: int32
+      description: 'CCS: CPT 175'
+    - name: CPTCCS176
+      type: int32
+      description: 'CCS: CPT 176'
+    - name: CPTCCS177
+      type: int32
+      description: 'CCS: CPT 177'
+    - name: CPTCCS178
+      type: int32
+      description: 'CCS: CPT 178'
+    - name: CPTCCS179
+      type: int32
+      description: 'CCS: CPT 179'
+    - name: CPTCCS180
+      type: int32
+      description: 'CCS: CPT 180'
+    - name: CPTCCS181
+      type: int32
+      description: 'CCS: CPT 181'
+    - name: CPTCCS182
+      type: int32
+      description: 'CCS: CPT 182'
+    - name: CPTCCS183
+      type: int32
+      description: 'CCS: CPT 183'
+    - name: CPTCCS184
+      type: int32
+      description: 'CCS: CPT 184'
+    - name: CPTCCS185
+      type: int32
+      description: 'CCS: CPT 185'
+    - name: CPTCCS186
+      type: int32
+      description: 'CCS: CPT 186'
+    - name: CPTCCS187
+      type: int32
+      description: 'CCS: CPT 187'
+    - name: CPTCCS188
+      type: int32
+      description: 'CCS: CPT 188'
+    - name: CPTCCS189
+      type: int32
+      description: 'CCS: CPT 189'
+    - name: CPTCCS190
+      type: int32
+      description: 'CCS: CPT 190'
+    - name: CPTCCS191
+      type: int32
+      description: 'CCS: CPT 191'
+    - name: CPTCCS192
+      type: int32
+      description: 'CCS: CPT 192'
+    - name: CPTCCS193
+      type: int32
+      description: 'CCS: CPT 193'
+    - name: CPTCCS194
+      type: int32
+      description: 'CCS: CPT 194'
+    - name: CPTCCS195
+      type: int32
+      description: 'CCS: CPT 195'
+    - name: CPTCCS196
+      type: int32
+      description: 'CCS: CPT 196'
+    - name: CPTCCS197
+      type: int32
+      description: 'CCS: CPT 197'
+    - name: CPTCCS198
+      type: int32
+      description: 'CCS: CPT 198'
+    - name: CPTCCS199
+      type: int32
+      description: 'CCS: CPT 199'
+    - name: CPTCCS200
+      type: int32
+      description: 'CCS: CPT 200'
+    - name: CPTDAY1
+      type: int32
+      description: Number of days from admission to CPT1
+    - name: CPTDAY2
+      type: int32
+      description: Number of days from admission to CPT2
+    - name: CPTDAY3
+      type: int32
+      description: Number of days from admission to CPT3
+    - name: CPTDAY4
+      type: int32
+      description: Number of days from admission to CPT4
+    - name: CPTDAY5
+      type: int32
+      description: Number of days from admission to CPT5
+    - name: CPTDAY6
+      type: int32
+      description: Number of days from admission to CPT6
+    - name: CPTDAY7
+      type: int32
+      description: Number of days from admission to CPT7
+    - name: CPTDAY8
+      type: int32
+      description: Number of days from admission to CPT8
+    - name: CPTDAY9
+      type: int32
+      description: Number of days from admission to CPT9
+    - name: CPTDAY10
+      type: int32
+      description: Number of days from admission to CPT10
+    - name: CPTDAY11
+      type: int32
+      description: Number of days from admission to CPT11
+    - name: CPTDAY12
+      type: int32
+      description: Number of days from admission to CPT12
+    - name: CPTDAY13
+      type: int32
+      description: Number of days from admission to CPT13
+    - name: CPTDAY14
+      type: int32
+      description: Number of days from admission to CPT14
+    - name: CPTDAY15
+      type: int32
+      description: Number of days from admission to CPT15
+    - name: CPTDAY16
+      type: int32
+      description: Number of days from admission to CPT16
+    - name: CPTDAY17
+      type: int32
+      description: Number of days from admission to CPT17
+    - name: CPTDAY18
+      type: int32
+      description: Number of days from admission to CPT18
+    - name: CPTDAY19
+      type: int32
+      description: Number of days from admission to CPT19
+    - name: CPTDAY20
+      type: int32
+      description: Number of days from admission to CPT20
+    - name: CPTDAY21
+      type: int32
+      description: Number of days from admission to CPT21
+    - name: CPTDAY22
+      type: int32
+      description: Number of days from admission to CPT22
+    - name: CPTDAY23
+      type: int32
+      description: Number of days from admission to CPT23
+    - name: CPTDAY24
+      type: int32
+      description: Number of days from admission to CPT24
+    - name: CPTDAY25
+      type: int32
+      description: Number of days from admission to CPT25
+    - name: CPTDAY26
+      type: int32
+      description: Number of days from admission to CPT26
+    - name: CPTDAY27
+      type: int32
+      description: Number of days from admission to CPT27
+    - name: CPTDAY28
+      type: int32
+      description: Number of days from admission to CPT28
+    - name: CPTDAY29
+      type: int32
+      description: Number of days from admission to CPT29
+    - name: CPTDAY30
+      type: int32
+      description: Number of days from admission to CPT30
+    - name: CPTDAY31
+      type: int32
+      description: Number of days from admission to CPT31
+    - name: CPTDAY32
+      type: int32
+      description: Number of days from admission to CPT32
+    - name: CPTDAY33
+      type: int32
+      description: Number of days from admission to CPT33
+    - name: CPTDAY34
+      type: int32
+      description: Number of days from admission to CPT34
+    - name: CPTDAY35
+      type: int32
+      description: Number of days from admission to CPT35
+    - name: CPTDAY36
+      type: int32
+      description: Number of days from admission to CPT36
+    - name: CPTDAY37
+      type: int32
+      description: Number of days from admission to CPT37
+    - name: CPTDAY38
+      type: int32
+      description: Number of days from admission to CPT38
+    - name: CPTDAY39
+      type: int32
+      description: Number of days from admission to CPT39
+    - name: CPTDAY40
+      type: int32
+      description: Number of days from admission to CPT40
+    - name: CPTDAY41
+      type: int32
+      description: Number of days from admission to CPT41
+    - name: CPTDAY42
+      type: int32
+      description: Number of days from admission to CPT42
+    - name: CPTDAY43
+      type: int32
+      description: Number of days from admission to CPT43
+    - name: CPTDAY44
+      type: int32
+      description: Number of days from admission to CPT44
+    - name: CPTDAY45
+      type: int32
+      description: Number of days from admission to CPT45
+    - name: CPTDAY46
+      type: int32
+      description: Number of days from admission to CPT46
+    - name: CPTDAY47
+      type: int32
+      description: Number of days from admission to CPT47
+    - name: CPTDAY48
+      type: int32
+      description: Number of days from admission to CPT48
+    - name: CPTDAY49
+      type: int32
+      description: Number of days from admission to CPT49
+    - name: CPTDAY50
+      type: int32
+      description: Number of days from admission to CPT50
+    - name: CPTDAY51
+      type: int32
+      description: Number of days from admission to CPT51
+    - name: CPTDAY52
+      type: int32
+      description: Number of days from admission to CPT52
+    - name: CPTDAY53
+      type: int32
+      description: Number of days from admission to CPT53
+    - name: CPTDAY54
+      type: int32
+      description: Number of days from admission to CPT54
+    - name: CPTDAY55
+      type: int32
+      description: Number of days from admission to CPT55
+    - name: CPTDAY56
+      type: int32
+      description: Number of days from admission to CPT56
+    - name: CPTDAY57
+      type: int32
+      description: Number of days from admission to CPT57
+    - name: CPTDAY58
+      type: int32
+      description: Number of days from admission to CPT58
+    - name: CPTDAY59
+      type: int32
+      description: Number of days from admission to CPT59
+    - name: CPTDAY60
+      type: int32
+      description: Number of days from admission to CPT60
+    - name: CPTDAY61
+      type: int32
+      description: Number of days from admission to CPT61
+    - name: CPTDAY62
+      type: int32
+      description: Number of days from admission to CPT62
+    - name: CPTDAY63
+      type: int32
+      description: Number of days from admission to CPT63
+    - name: CPTDAY64
+      type: int32
+      description: Number of days from admission to CPT64
+    - name: CPTDAY65
+      type: int32
+      description: Number of days from admission to CPT65
+    - name: CPTDAY66
+      type: int32
+      description: Number of days from admission to CPT66
+    - name: CPTDAY67
+      type: int32
+      description: Number of days from admission to CPT67
+    - name: CPTDAY68
+      type: int32
+      description: Number of days from admission to CPT68
+    - name: CPTDAY69
+      type: int32
+      description: Number of days from admission to CPT69
+    - name: CPTDAY70
+      type: int32
+      description: Number of days from admission to CPT70
+    - name: CPTDAY71
+      type: int32
+      description: Number of days from admission to CPT71
+    - name: CPTDAY72
+      type: int32
+      description: Number of days from admission to CPT72
+    - name: CPTDAY73
+      type: int32
+      description: Number of days from admission to CPT73
+    - name: CPTDAY74
+      type: int32
+      description: Number of days from admission to CPT74
+    - name: CPTDAY75
+      type: int32
+      description: Number of days from admission to CPT75
+    - name: CPTDAY76
+      type: int32
+      description: Number of days from admission to CPT76
+    - name: CPTDAY77
+      type: int32
+      description: Number of days from admission to CPT77
+    - name: CPTDAY78
+      type: int32
+      description: Number of days from admission to CPT78
+    - name: CPTDAY79
+      type: int32
+      description: Number of days from admission to CPT79
+    - name: CPTDAY80
+      type: int32
+      description: Number of days from admission to CPT80
+    - name: CPTDAY81
+      type: int32
+      description: Number of days from admission to CPT81
+    - name: CPTDAY82
+      type: int32
+      description: Number of days from admission to CPT82
+    - name: CPTDAY83
+      type: int32
+      description: Number of days from admission to CPT83
+    - name: CPTDAY84
+      type: int32
+      description: Number of days from admission to CPT84
+    - name: CPTDAY85
+      type: int32
+      description: Number of days from admission to CPT85
+    - name: CPTDAY86
+      type: int32
+      description: Number of days from admission to CPT86
+    - name: CPTDAY87
+      type: int32
+      description: Number of days from admission to CPT87
+    - name: CPTDAY88
+      type: int32
+      description: Number of days from admission to CPT88
+    - name: CPTDAY89
+      type: int32
+      description: Number of days from admission to CPT89
+    - name: CPTDAY90
+      type: int32
+      description: Number of days from admission to CPT90
+    - name: CPTDAY91
+      type: int32
+      description: Number of days from admission to CPT91
+    - name: CPTDAY92
+      type: int32
+      description: Number of days from admission to CPT92
+    - name: CPTDAY93
+      type: int32
+      description: Number of days from admission to CPT93
+    - name: CPTDAY94
+      type: int32
+      description: Number of days from admission to CPT94
+    - name: CPTDAY95
+      type: int32
+      description: Number of days from admission to CPT95
+    - name: CPTDAY96
+      type: int32
+      description: Number of days from admission to CPT96
+    - name: CPTDAY97
+      type: int32
+      description: Number of days from admission to CPT97
+    - name: CPTDAY98
+      type: int32
+      description: Number of days from admission to CPT98
+    - name: CPTDAY99
+      type: int32
+      description: Number of days from admission to CPT99
+    - name: CPTDAY100
+      type: int32
+      description: Number of days from admission to CPT100
+    - name: CPTDAY101
+      type: int32
+      description: Number of days from admission to CPT101
+    - name: CPTDAY102
+      type: int32
+      description: Number of days from admission to CPT102
+    - name: CPTDAY103
+      type: int32
+      description: Number of days from admission to CPT103
+    - name: CPTDAY104
+      type: int32
+      description: Number of days from admission to CPT104
+    - name: CPTDAY105
+      type: int32
+      description: Number of days from admission to CPT105
+    - name: CPTDAY106
+      type: int32
+      description: Number of days from admission to CPT106
+    - name: CPTDAY107
+      type: int32
+      description: Number of days from admission to CPT107
+    - name: CPTDAY108
+      type: int32
+      description: Number of days from admission to CPT108
+    - name: CPTDAY109
+      type: int32
+      description: Number of days from admission to CPT109
+    - name: CPTDAY110
+      type: int32
+      description: Number of days from admission to CPT110
+    - name: CPTDAY111
+      type: int32
+      description: Number of days from admission to CPT111
+    - name: CPTDAY112
+      type: int32
+      description: Number of days from admission to CPT112
+    - name: CPTDAY113
+      type: int32
+      description: Number of days from admission to CPT113
+    - name: CPTDAY114
+      type: int32
+      description: Number of days from admission to CPT114
+    - name: CPTDAY115
+      type: int32
+      description: Number of days from admission to CPT115
+    - name: CPTDAY116
+      type: int32
+      description: Number of days from admission to CPT116
+    - name: CPTDAY117
+      type: int32
+      description: Number of days from admission to CPT117
+    - name: CPTDAY118
+      type: int32
+      description: Number of days from admission to CPT118
+    - name: CPTDAY119
+      type: int32
+      description: Number of days from admission to CPT119
+    - name: CPTDAY120
+      type: int32
+      description: Number of days from admission to CPT120
+    - name: CPTDAY121
+      type: int32
+      description: Number of days from admission to CPT121
+    - name: CPTDAY122
+      type: int32
+      description: Number of days from admission to CPT122
+    - name: CPTDAY123
+      type: int32
+      description: Number of days from admission to CPT123
+    - name: CPTDAY124
+      type: int32
+      description: Number of days from admission to CPT124
+    - name: CPTDAY125
+      type: int32
+      description: Number of days from admission to CPT125
+    - name: CPTDAY126
+      type: int32
+      description: Number of days from admission to CPT126
+    - name: CPTDAY127
+      type: int32
+      description: Number of days from admission to CPT127
+    - name: CPTDAY128
+      type: int32
+      description: Number of days from admission to CPT128
+    - name: CPTDAY129
+      type: int32
+      description: Number of days from admission to CPT129
+    - name: CPTDAY130
+      type: int32
+      description: Number of days from admission to CPT130
+    - name: CPTDAY131
+      type: int32
+      description: Number of days from admission to CPT131
+    - name: CPTDAY132
+      type: int32
+      description: Number of days from admission to CPT132
+    - name: CPTDAY133
+      type: int32
+      description: Number of days from admission to CPT133
+    - name: CPTDAY134
+      type: int32
+      description: Number of days from admission to CPT134
+    - name: CPTDAY135
+      type: int32
+      description: Number of days from admission to CPT135
+    - name: CPTDAY136
+      type: int32
+      description: Number of days from admission to CPT136
+    - name: CPTDAY137
+      type: int32
+      description: Number of days from admission to CPT137
+    - name: CPTDAY138
+      type: int32
+      description: Number of days from admission to CPT138
+    - name: CPTDAY139
+      type: int32
+      description: Number of days from admission to CPT139
+    - name: CPTDAY140
+      type: int32
+      description: Number of days from admission to CPT140
+    - name: CPTDAY141
+      type: int32
+      description: Number of days from admission to CPT141
+    - name: CPTDAY142
+      type: int32
+      description: Number of days from admission to CPT142
+    - name: CPTDAY143
+      type: int32
+      description: Number of days from admission to CPT143
+    - name: CPTDAY144
+      type: int32
+      description: Number of days from admission to CPT144
+    - name: CPTDAY145
+      type: int32
+      description: Number of days from admission to CPT145
+    - name: CPTDAY146
+      type: int32
+      description: Number of days from admission to CPT146
+    - name: CPTDAY147
+      type: int32
+      description: Number of days from admission to CPT147
+    - name: CPTDAY148
+      type: int32
+      description: Number of days from admission to CPT148
+    - name: CPTDAY149
+      type: int32
+      description: Number of days from admission to CPT149
+    - name: CPTDAY150
+      type: int32
+      description: Number of days from admission to CPT150
+    - name: CPTDAY151
+      type: int32
+      description: Number of days from admission to CPT151
+    - name: CPTDAY152
+      type: int32
+      description: Number of days from admission to CPT152
+    - name: CPTDAY153
+      type: int32
+      description: Number of days from admission to CPT153
+    - name: CPTDAY154
+      type: int32
+      description: Number of days from admission to CPT154
+    - name: CPTDAY155
+      type: int32
+      description: Number of days from admission to CPT155
+    - name: CPTDAY156
+      type: int32
+      description: Number of days from admission to CPT156
+    - name: CPTDAY157
+      type: int32
+      description: Number of days from admission to CPT157
+    - name: CPTDAY158
+      type: int32
+      description: Number of days from admission to CPT158
+    - name: CPTDAY159
+      type: int32
+      description: Number of days from admission to CPT159
+    - name: CPTDAY160
+      type: int32
+      description: Number of days from admission to CPT160
+    - name: CPTDAY161
+      type: int32
+      description: Number of days from admission to CPT161
+    - name: CPTDAY162
+      type: int32
+      description: Number of days from admission to CPT162
+    - name: CPTDAY163
+      type: int32
+      description: Number of days from admission to CPT163
+    - name: CPTDAY164
+      type: int32
+      description: Number of days from admission to CPT164
+    - name: CPTDAY165
+      type: int32
+      description: Number of days from admission to CPT165
+    - name: CPTDAY166
+      type: int32
+      description: Number of days from admission to CPT166
+    - name: CPTDAY167
+      type: int32
+      description: Number of days from admission to CPT167
+    - name: CPTDAY168
+      type: int32
+      description: Number of days from admission to CPT168
+    - name: CPTDAY169
+      type: int32
+      description: Number of days from admission to CPT169
+    - name: CPTDAY170
+      type: int32
+      description: Number of days from admission to CPT170
+    - name: CPTDAY171
+      type: int32
+      description: Number of days from admission to CPT171
+    - name: CPTDAY172
+      type: int32
+      description: Number of days from admission to CPT172
+    - name: CPTDAY173
+      type: int32
+      description: Number of days from admission to CPT173
+    - name: CPTDAY174
+      type: int32
+      description: Number of days from admission to CPT174
+    - name: CPTDAY175
+      type: int32
+      description: Number of days from admission to CPT175
+    - name: CPTDAY176
+      type: int32
+      description: Number of days from admission to CPT176
+    - name: CPTDAY177
+      type: int32
+      description: Number of days from admission to CPT177
+    - name: CPTDAY178
+      type: int32
+      description: Number of days from admission to CPT178
+    - name: CPTDAY179
+      type: int32
+      description: Number of days from admission to CPT179
+    - name: CPTDAY180
+      type: int32
+      description: Number of days from admission to CPT180
+    - name: CPTDAY181
+      type: int32
+      description: Number of days from admission to CPT181
+    - name: CPTDAY182
+      type: int32
+      description: Number of days from admission to CPT182
+    - name: CPTDAY183
+      type: int32
+      description: Number of days from admission to CPT183
+    - name: CPTDAY184
+      type: int32
+      description: Number of days from admission to CPT184
+    - name: CPTDAY185
+      type: int32
+      description: Number of days from admission to CPT185
+    - name: CPTDAY186
+      type: int32
+      description: Number of days from admission to CPT186
+    - name: CPTDAY187
+      type: int32
+      description: Number of days from admission to CPT187
+    - name: CPTDAY188
+      type: int32
+      description: Number of days from admission to CPT188
+    - name: CPTDAY189
+      type: int32
+      description: Number of days from admission to CPT189
+    - name: CPTDAY190
+      type: int32
+      description: Number of days from admission to CPT190
+    - name: CPTDAY191
+      type: int32
+      description: Number of days from admission to CPT191
+    - name: CPTDAY192
+      type: int32
+      description: Number of days from admission to CPT192
+    - name: CPTDAY193
+      type: int32
+      description: Number of days from admission to CPT193
+    - name: CPTDAY194
+      type: int32
+      description: Number of days from admission to CPT194
+    - name: CPTDAY195
+      type: int32
+      description: Number of days from admission to CPT195
+    - name: CPTDAY196
+      type: int32
+      description: Number of days from admission to CPT196
+    - name: CPTDAY197
+      type: int32
+      description: Number of days from admission to CPT197
+    - name: CPTDAY198
+      type: int32
+      description: Number of days from admission to CPT198
+    - name: CPTDAY199
+      type: int32
+      description: Number of days from admission to CPT199
+    - name: CPTDAY200
+      type: int32
+      description: Number of days from admission to CPT200
+    - name: CPTM1_1
+      type: string
+      description: First CPT-4/HCPCS modifier 1
+    - name: CPTM1_2
+      type: string
+      description: First CPT-4/HCPCS modifier 2
+    - name: CPTM1_3
+      type: string
+      description: First CPT-4/HCPCS modifier 3
+    - name: CPTM1_4
+      type: string
+      description: First CPT-4/HCPCS modifier 4
+    - name: CPTM1_5
+      type: string
+      description: First CPT-4/HCPCS modifier 5
+    - name: CPTM1_6
+      type: string
+      description: First CPT-4/HCPCS modifier 6
+    - name: CPTM1_7
+      type: string
+      description: First CPT-4/HCPCS modifier 7
+    - name: CPTM1_8
+      type: string
+      description: First CPT-4/HCPCS modifier 8
+    - name: CPTM1_9
+      type: string
+      description: First CPT-4/HCPCS modifier 9
+    - name: CPTM1_10
+      type: string
+      description: First CPT-4/HCPCS modifier 10
+    - name: CPTM1_11
+      type: string
+      description: First CPT-4/HCPCS modifier 11
+    - name: CPTM1_12
+      type: string
+      description: First CPT-4/HCPCS modifier 12
+    - name: CPTM1_13
+      type: string
+      description: First CPT-4/HCPCS modifier 13
+    - name: CPTM1_14
+      type: string
+      description: First CPT-4/HCPCS modifier 14
+    - name: CPTM1_15
+      type: string
+      description: First CPT-4/HCPCS modifier 15
+    - name: CPTM1_16
+      type: string
+      description: First CPT-4/HCPCS modifier 16
+    - name: CPTM1_17
+      type: string
+      description: First CPT-4/HCPCS modifier 17
+    - name: CPTM1_18
+      type: string
+      description: First CPT-4/HCPCS modifier 18
+    - name: CPTM1_19
+      type: string
+      description: First CPT-4/HCPCS modifier 19
+    - name: CPTM1_20
+      type: string
+      description: First CPT-4/HCPCS modifier 20
+    - name: CPTM1_21
+      type: string
+      description: First CPT-4/HCPCS modifier 21
+    - name: CPTM1_22
+      type: string
+      description: First CPT-4/HCPCS modifier 22
+    - name: CPTM1_23
+      type: string
+      description: First CPT-4/HCPCS modifier 23
+    - name: CPTM1_24
+      type: string
+      description: First CPT-4/HCPCS modifier 24
+    - name: CPTM1_25
+      type: string
+      description: First CPT-4/HCPCS modifier 25
+    - name: CPTM1_26
+      type: string
+      description: First CPT-4/HCPCS modifier 26
+    - name: CPTM1_27
+      type: string
+      description: First CPT-4/HCPCS modifier 27
+    - name: CPTM1_28
+      type: string
+      description: First CPT-4/HCPCS modifier 28
+    - name: CPTM1_29
+      type: string
+      description: First CPT-4/HCPCS modifier 29
+    - name: CPTM1_30
+      type: string
+      description: First CPT-4/HCPCS modifier 30
+    - name: CPTM1_31
+      type: string
+      description: First CPT-4/HCPCS modifier 31
+    - name: CPTM1_32
+      type: string
+      description: First CPT-4/HCPCS modifier 32
+    - name: CPTM1_33
+      type: string
+      description: First CPT-4/HCPCS modifier 33
+    - name: CPTM1_34
+      type: string
+      description: First CPT-4/HCPCS modifier 34
+    - name: CPTM1_35
+      type: string
+      description: First CPT-4/HCPCS modifier 35
+    - name: CPTM1_36
+      type: string
+      description: First CPT-4/HCPCS modifier 36
+    - name: CPTM1_37
+      type: string
+      description: First CPT-4/HCPCS modifier 37
+    - name: CPTM1_38
+      type: string
+      description: First CPT-4/HCPCS modifier 38
+    - name: CPTM1_39
+      type: string
+      description: First CPT-4/HCPCS modifier 39
+    - name: CPTM1_40
+      type: string
+      description: First CPT-4/HCPCS modifier 40
+    - name: CPTM1_41
+      type: string
+      description: First CPT-4/HCPCS modifier 41
+    - name: CPTM1_42
+      type: string
+      description: First CPT-4/HCPCS modifier 42
+    - name: CPTM1_43
+      type: string
+      description: First CPT-4/HCPCS modifier 43
+    - name: CPTM1_44
+      type: string
+      description: First CPT-4/HCPCS modifier 44
+    - name: CPTM1_45
+      type: string
+      description: First CPT-4/HCPCS modifier 45
+    - name: CPTM1_46
+      type: string
+      description: First CPT-4/HCPCS modifier 46
+    - name: CPTM1_47
+      type: string
+      description: First CPT-4/HCPCS modifier 47
+    - name: CPTM1_48
+      type: string
+      description: First CPT-4/HCPCS modifier 48
+    - name: CPTM1_49
+      type: string
+      description: First CPT-4/HCPCS modifier 49
+    - name: CPTM1_50
+      type: string
+      description: First CPT-4/HCPCS modifier 50
+    - name: CPTM1_51
+      type: string
+      description: First CPT-4/HCPCS modifier 51
+    - name: CPTM1_52
+      type: string
+      description: First CPT-4/HCPCS modifier 52
+    - name: CPTM1_53
+      type: string
+      description: First CPT-4/HCPCS modifier 53
+    - name: CPTM1_54
+      type: string
+      description: First CPT-4/HCPCS modifier 54
+    - name: CPTM1_55
+      type: string
+      description: First CPT-4/HCPCS modifier 55
+    - name: CPTM1_56
+      type: string
+      description: First CPT-4/HCPCS modifier 56
+    - name: CPTM1_57
+      type: string
+      description: First CPT-4/HCPCS modifier 57
+    - name: CPTM1_58
+      type: string
+      description: First CPT-4/HCPCS modifier 58
+    - name: CPTM1_59
+      type: string
+      description: First CPT-4/HCPCS modifier 59
+    - name: CPTM1_60
+      type: string
+      description: First CPT-4/HCPCS modifier 60
+    - name: CPTM1_61
+      type: string
+      description: First CPT-4/HCPCS modifier 61
+    - name: CPTM1_62
+      type: string
+      description: First CPT-4/HCPCS modifier 62
+    - name: CPTM1_63
+      type: string
+      description: First CPT-4/HCPCS modifier 63
+    - name: CPTM1_64
+      type: string
+      description: First CPT-4/HCPCS modifier 64
+    - name: CPTM1_65
+      type: string
+      description: First CPT-4/HCPCS modifier 65
+    - name: CPTM1_66
+      type: string
+      description: First CPT-4/HCPCS modifier 66
+    - name: CPTM1_67
+      type: string
+      description: First CPT-4/HCPCS modifier 67
+    - name: CPTM1_68
+      type: string
+      description: First CPT-4/HCPCS modifier 68
+    - name: CPTM1_69
+      type: string
+      description: First CPT-4/HCPCS modifier 69
+    - name: CPTM1_70
+      type: string
+      description: First CPT-4/HCPCS modifier 70
+    - name: CPTM1_71
+      type: string
+      description: First CPT-4/HCPCS modifier 71
+    - name: CPTM1_72
+      type: string
+      description: First CPT-4/HCPCS modifier 72
+    - name: CPTM1_73
+      type: string
+      description: First CPT-4/HCPCS modifier 73
+    - name: CPTM1_74
+      type: string
+      description: First CPT-4/HCPCS modifier 74
+    - name: CPTM1_75
+      type: string
+      description: First CPT-4/HCPCS modifier 75
+    - name: CPTM1_76
+      type: string
+      description: First CPT-4/HCPCS modifier 76
+    - name: CPTM1_77
+      type: string
+      description: First CPT-4/HCPCS modifier 77
+    - name: CPTM1_78
+      type: string
+      description: First CPT-4/HCPCS modifier 78
+    - name: CPTM1_79
+      type: string
+      description: First CPT-4/HCPCS modifier 79
+    - name: CPTM1_80
+      type: string
+      description: First CPT-4/HCPCS modifier 80
+    - name: CPTM1_81
+      type: string
+      description: First CPT-4/HCPCS modifier 81
+    - name: CPTM1_82
+      type: string
+      description: First CPT-4/HCPCS modifier 82
+    - name: CPTM1_83
+      type: string
+      description: First CPT-4/HCPCS modifier 83
+    - name: CPTM1_84
+      type: string
+      description: First CPT-4/HCPCS modifier 84
+    - name: CPTM1_85
+      type: string
+      description: First CPT-4/HCPCS modifier 85
+    - name: CPTM1_86
+      type: string
+      description: First CPT-4/HCPCS modifier 86
+    - name: CPTM1_87
+      type: string
+      description: First CPT-4/HCPCS modifier 87
+    - name: CPTM1_88
+      type: string
+      description: First CPT-4/HCPCS modifier 88
+    - name: CPTM1_89
+      type: string
+      description: First CPT-4/HCPCS modifier 89
+    - name: CPTM1_90
+      type: string
+      description: First CPT-4/HCPCS modifier 90
+    - name: CPTM1_91
+      type: string
+      description: First CPT-4/HCPCS modifier 91
+    - name: CPTM1_92
+      type: string
+      description: First CPT-4/HCPCS modifier 92
+    - name: CPTM1_93
+      type: string
+      description: First CPT-4/HCPCS modifier 93
+    - name: CPTM1_94
+      type: string
+      description: First CPT-4/HCPCS modifier 94
+    - name: CPTM1_95
+      type: string
+      description: First CPT-4/HCPCS modifier 95
+    - name: CPTM1_96
+      type: string
+      description: First CPT-4/HCPCS modifier 96
+    - name: CPTM1_97
+      type: string
+      description: First CPT-4/HCPCS modifier 97
+    - name: CPTM1_98
+      type: string
+      description: First CPT-4/HCPCS modifier 98
+    - name: CPTM1_99
+      type: string
+      description: First CPT-4/HCPCS modifier 99
+    - name: CPTM1_100
+      type: string
+      description: First CPT-4/HCPCS modifier 100
+    - name: CPTM1_101
+      type: string
+      description: First CPT-4/HCPCS modifier 101
+    - name: CPTM1_102
+      type: string
+      description: First CPT-4/HCPCS modifier 102
+    - name: CPTM1_103
+      type: string
+      description: First CPT-4/HCPCS modifier 103
+    - name: CPTM1_104
+      type: string
+      description: First CPT-4/HCPCS modifier 104
+    - name: CPTM1_105
+      type: string
+      description: First CPT-4/HCPCS modifier 105
+    - name: CPTM1_106
+      type: string
+      description: First CPT-4/HCPCS modifier 106
+    - name: CPTM1_107
+      type: string
+      description: First CPT-4/HCPCS modifier 107
+    - name: CPTM1_108
+      type: string
+      description: First CPT-4/HCPCS modifier 108
+    - name: CPTM1_109
+      type: string
+      description: First CPT-4/HCPCS modifier 109
+    - name: CPTM1_110
+      type: string
+      description: First CPT-4/HCPCS modifier 110
+    - name: CPTM1_111
+      type: string
+      description: First CPT-4/HCPCS modifier 111
+    - name: CPTM1_112
+      type: string
+      description: First CPT-4/HCPCS modifier 112
+    - name: CPTM1_113
+      type: string
+      description: First CPT-4/HCPCS modifier 113
+    - name: CPTM1_114
+      type: string
+      description: First CPT-4/HCPCS modifier 114
+    - name: CPTM1_115
+      type: string
+      description: First CPT-4/HCPCS modifier 115
+    - name: CPTM1_116
+      type: string
+      description: First CPT-4/HCPCS modifier 116
+    - name: CPTM1_117
+      type: string
+      description: First CPT-4/HCPCS modifier 117
+    - name: CPTM1_118
+      type: string
+      description: First CPT-4/HCPCS modifier 118
+    - name: CPTM1_119
+      type: string
+      description: First CPT-4/HCPCS modifier 119
+    - name: CPTM1_120
+      type: string
+      description: First CPT-4/HCPCS modifier 120
+    - name: CPTM1_121
+      type: string
+      description: First CPT-4/HCPCS modifier 121
+    - name: CPTM1_122
+      type: string
+      description: First CPT-4/HCPCS modifier 122
+    - name: CPTM1_123
+      type: string
+      description: First CPT-4/HCPCS modifier 123
+    - name: CPTM1_124
+      type: string
+      description: First CPT-4/HCPCS modifier 124
+    - name: CPTM1_125
+      type: string
+      description: First CPT-4/HCPCS modifier 125
+    - name: CPTM1_126
+      type: string
+      description: First CPT-4/HCPCS modifier 126
+    - name: CPTM1_127
+      type: string
+      description: First CPT-4/HCPCS modifier 127
+    - name: CPTM1_128
+      type: string
+      description: First CPT-4/HCPCS modifier 128
+    - name: CPTM1_129
+      type: string
+      description: First CPT-4/HCPCS modifier 129
+    - name: CPTM1_130
+      type: string
+      description: First CPT-4/HCPCS modifier 130
+    - name: CPTM1_131
+      type: string
+      description: First CPT-4/HCPCS modifier 131
+    - name: CPTM1_132
+      type: string
+      description: First CPT-4/HCPCS modifier 132
+    - name: CPTM1_133
+      type: string
+      description: First CPT-4/HCPCS modifier 133
+    - name: CPTM1_134
+      type: string
+      description: First CPT-4/HCPCS modifier 134
+    - name: CPTM1_135
+      type: string
+      description: First CPT-4/HCPCS modifier 135
+    - name: CPTM1_136
+      type: string
+      description: First CPT-4/HCPCS modifier 136
+    - name: CPTM1_137
+      type: string
+      description: First CPT-4/HCPCS modifier 137
+    - name: CPTM1_138
+      type: string
+      description: First CPT-4/HCPCS modifier 138
+    - name: CPTM1_139
+      type: string
+      description: First CPT-4/HCPCS modifier 139
+    - name: CPTM1_140
+      type: string
+      description: First CPT-4/HCPCS modifier 140
+    - name: CPTM1_141
+      type: string
+      description: First CPT-4/HCPCS modifier 141
+    - name: CPTM1_142
+      type: string
+      description: First CPT-4/HCPCS modifier 142
+    - name: CPTM1_143
+      type: string
+      description: First CPT-4/HCPCS modifier 143
+    - name: CPTM1_144
+      type: string
+      description: First CPT-4/HCPCS modifier 144
+    - name: CPTM1_145
+      type: string
+      description: First CPT-4/HCPCS modifier 145
+    - name: CPTM1_146
+      type: string
+      description: First CPT-4/HCPCS modifier 146
+    - name: CPTM1_147
+      type: string
+      description: First CPT-4/HCPCS modifier 147
+    - name: CPTM1_148
+      type: string
+      description: First CPT-4/HCPCS modifier 148
+    - name: CPTM1_149
+      type: string
+      description: First CPT-4/HCPCS modifier 149
+    - name: CPTM1_150
+      type: string
+      description: First CPT-4/HCPCS modifier 150
+    - name: CPTM1_151
+      type: string
+      description: First CPT-4/HCPCS modifier 151
+    - name: CPTM1_152
+      type: string
+      description: First CPT-4/HCPCS modifier 152
+    - name: CPTM1_153
+      type: string
+      description: First CPT-4/HCPCS modifier 153
+    - name: CPTM1_154
+      type: string
+      description: First CPT-4/HCPCS modifier 154
+    - name: CPTM1_155
+      type: string
+      description: First CPT-4/HCPCS modifier 155
+    - name: CPTM1_156
+      type: string
+      description: First CPT-4/HCPCS modifier 156
+    - name: CPTM1_157
+      type: string
+      description: First CPT-4/HCPCS modifier 157
+    - name: CPTM1_158
+      type: string
+      description: First CPT-4/HCPCS modifier 158
+    - name: CPTM1_159
+      type: string
+      description: First CPT-4/HCPCS modifier 159
+    - name: CPTM1_160
+      type: string
+      description: First CPT-4/HCPCS modifier 160
+    - name: CPTM1_161
+      type: string
+      description: First CPT-4/HCPCS modifier 161
+    - name: CPTM1_162
+      type: string
+      description: First CPT-4/HCPCS modifier 162
+    - name: CPTM1_163
+      type: string
+      description: First CPT-4/HCPCS modifier 163
+    - name: CPTM1_164
+      type: string
+      description: First CPT-4/HCPCS modifier 164
+    - name: CPTM1_165
+      type: string
+      description: First CPT-4/HCPCS modifier 165
+    - name: CPTM1_166
+      type: string
+      description: First CPT-4/HCPCS modifier 166
+    - name: CPTM1_167
+      type: string
+      description: First CPT-4/HCPCS modifier 167
+    - name: CPTM1_168
+      type: string
+      description: First CPT-4/HCPCS modifier 168
+    - name: CPTM1_169
+      type: string
+      description: First CPT-4/HCPCS modifier 169
+    - name: CPTM1_170
+      type: string
+      description: First CPT-4/HCPCS modifier 170
+    - name: CPTM1_171
+      type: string
+      description: First CPT-4/HCPCS modifier 171
+    - name: CPTM1_172
+      type: string
+      description: First CPT-4/HCPCS modifier 172
+    - name: CPTM1_173
+      type: string
+      description: First CPT-4/HCPCS modifier 173
+    - name: CPTM1_174
+      type: string
+      description: First CPT-4/HCPCS modifier 174
+    - name: CPTM1_175
+      type: string
+      description: First CPT-4/HCPCS modifier 175
+    - name: CPTM1_176
+      type: string
+      description: First CPT-4/HCPCS modifier 176
+    - name: CPTM1_177
+      type: string
+      description: First CPT-4/HCPCS modifier 177
+    - name: CPTM1_178
+      type: string
+      description: First CPT-4/HCPCS modifier 178
+    - name: CPTM1_179
+      type: string
+      description: First CPT-4/HCPCS modifier 179
+    - name: CPTM1_180
+      type: string
+      description: First CPT-4/HCPCS modifier 180
+    - name: CPTM1_181
+      type: string
+      description: First CPT-4/HCPCS modifier 181
+    - name: CPTM1_182
+      type: string
+      description: First CPT-4/HCPCS modifier 182
+    - name: CPTM1_183
+      type: string
+      description: First CPT-4/HCPCS modifier 183
+    - name: CPTM1_184
+      type: string
+      description: First CPT-4/HCPCS modifier 184
+    - name: CPTM1_185
+      type: string
+      description: First CPT-4/HCPCS modifier 185
+    - name: CPTM1_186
+      type: string
+      description: First CPT-4/HCPCS modifier 186
+    - name: CPTM1_187
+      type: string
+      description: First CPT-4/HCPCS modifier 187
+    - name: CPTM1_188
+      type: string
+      description: First CPT-4/HCPCS modifier 188
+    - name: CPTM1_189
+      type: string
+      description: First CPT-4/HCPCS modifier 189
+    - name: CPTM1_190
+      type: string
+      description: First CPT-4/HCPCS modifier 190
+    - name: CPTM1_191
+      type: string
+      description: First CPT-4/HCPCS modifier 191
+    - name: CPTM1_192
+      type: string
+      description: First CPT-4/HCPCS modifier 192
+    - name: CPTM1_193
+      type: string
+      description: First CPT-4/HCPCS modifier 193
+    - name: CPTM1_194
+      type: string
+      description: First CPT-4/HCPCS modifier 194
+    - name: CPTM1_195
+      type: string
+      description: First CPT-4/HCPCS modifier 195
+    - name: CPTM1_196
+      type: string
+      description: First CPT-4/HCPCS modifier 196
+    - name: CPTM1_197
+      type: string
+      description: First CPT-4/HCPCS modifier 197
+    - name: CPTM1_198
+      type: string
+      description: First CPT-4/HCPCS modifier 198
+    - name: CPTM1_199
+      type: string
+      description: First CPT-4/HCPCS modifier 199
+    - name: CPTM1_200
+      type: string
+      description: First CPT-4/HCPCS modifier 200
+    - name: CPTM2_1
+      type: string
+      description: Second CPT-4/HCPCS modifier 1
+    - name: CPTM2_2
+      type: string
+      description: Second CPT-4/HCPCS modifier 2
+    - name: CPTM2_3
+      type: string
+      description: Second CPT-4/HCPCS modifier 3
+    - name: CPTM2_4
+      type: string
+      description: Second CPT-4/HCPCS modifier 4
+    - name: CPTM2_5
+      type: string
+      description: Second CPT-4/HCPCS modifier 5
+    - name: CPTM2_6
+      type: string
+      description: Second CPT-4/HCPCS modifier 6
+    - name: CPTM2_7
+      type: string
+      description: Second CPT-4/HCPCS modifier 7
+    - name: CPTM2_8
+      type: string
+      description: Second CPT-4/HCPCS modifier 8
+    - name: CPTM2_9
+      type: string
+      description: Second CPT-4/HCPCS modifier 9
+    - name: CPTM2_10
+      type: string
+      description: Second CPT-4/HCPCS modifier 10
+    - name: CPTM2_11
+      type: string
+      description: Second CPT-4/HCPCS modifier 11
+    - name: CPTM2_12
+      type: string
+      description: Second CPT-4/HCPCS modifier 12
+    - name: CPTM2_13
+      type: string
+      description: Second CPT-4/HCPCS modifier 13
+    - name: CPTM2_14
+      type: string
+      description: Second CPT-4/HCPCS modifier 14
+    - name: CPTM2_15
+      type: string
+      description: Second CPT-4/HCPCS modifier 15
+    - name: CPTM2_16
+      type: string
+      description: Second CPT-4/HCPCS modifier 16
+    - name: CPTM2_17
+      type: string
+      description: Second CPT-4/HCPCS modifier 17
+    - name: CPTM2_18
+      type: string
+      description: Second CPT-4/HCPCS modifier 18
+    - name: CPTM2_19
+      type: string
+      description: Second CPT-4/HCPCS modifier 19
+    - name: CPTM2_20
+      type: string
+      description: Second CPT-4/HCPCS modifier 20
+    - name: CPTM2_21
+      type: string
+      description: Second CPT-4/HCPCS modifier 21
+    - name: CPTM2_22
+      type: string
+      description: Second CPT-4/HCPCS modifier 22
+    - name: CPTM2_23
+      type: string
+      description: Second CPT-4/HCPCS modifier 23
+    - name: CPTM2_24
+      type: string
+      description: Second CPT-4/HCPCS modifier 24
+    - name: CPTM2_25
+      type: string
+      description: Second CPT-4/HCPCS modifier 25
+    - name: CPTM2_26
+      type: string
+      description: Second CPT-4/HCPCS modifier 26
+    - name: CPTM2_27
+      type: string
+      description: Second CPT-4/HCPCS modifier 27
+    - name: CPTM2_28
+      type: string
+      description: Second CPT-4/HCPCS modifier 28
+    - name: CPTM2_29
+      type: string
+      description: Second CPT-4/HCPCS modifier 29
+    - name: CPTM2_30
+      type: string
+      description: Second CPT-4/HCPCS modifier 30
+    - name: CPTM2_31
+      type: string
+      description: Second CPT-4/HCPCS modifier 31
+    - name: CPTM2_32
+      type: string
+      description: Second CPT-4/HCPCS modifier 32
+    - name: CPTM2_33
+      type: string
+      description: Second CPT-4/HCPCS modifier 33
+    - name: CPTM2_34
+      type: string
+      description: Second CPT-4/HCPCS modifier 34
+    - name: CPTM2_35
+      type: string
+      description: Second CPT-4/HCPCS modifier 35
+    - name: CPTM2_36
+      type: string
+      description: Second CPT-4/HCPCS modifier 36
+    - name: CPTM2_37
+      type: string
+      description: Second CPT-4/HCPCS modifier 37
+    - name: CPTM2_38
+      type: string
+      description: Second CPT-4/HCPCS modifier 38
+    - name: CPTM2_39
+      type: string
+      description: Second CPT-4/HCPCS modifier 39
+    - name: CPTM2_40
+      type: string
+      description: Second CPT-4/HCPCS modifier 40
+    - name: CPTM2_41
+      type: string
+      description: Second CPT-4/HCPCS modifier 41
+    - name: CPTM2_42
+      type: string
+      description: Second CPT-4/HCPCS modifier 42
+    - name: CPTM2_43
+      type: string
+      description: Second CPT-4/HCPCS modifier 43
+    - name: CPTM2_44
+      type: string
+      description: Second CPT-4/HCPCS modifier 44
+    - name: CPTM2_45
+      type: string
+      description: Second CPT-4/HCPCS modifier 45
+    - name: CPTM2_46
+      type: string
+      description: Second CPT-4/HCPCS modifier 46
+    - name: CPTM2_47
+      type: string
+      description: Second CPT-4/HCPCS modifier 47
+    - name: CPTM2_48
+      type: string
+      description: Second CPT-4/HCPCS modifier 48
+    - name: CPTM2_49
+      type: string
+      description: Second CPT-4/HCPCS modifier 49
+    - name: CPTM2_50
+      type: string
+      description: Second CPT-4/HCPCS modifier 50
+    - name: CPTM2_51
+      type: string
+      description: Second CPT-4/HCPCS modifier 51
+    - name: CPTM2_52
+      type: string
+      description: Second CPT-4/HCPCS modifier 52
+    - name: CPTM2_53
+      type: string
+      description: Second CPT-4/HCPCS modifier 53
+    - name: CPTM2_54
+      type: string
+      description: Second CPT-4/HCPCS modifier 54
+    - name: CPTM2_55
+      type: string
+      description: Second CPT-4/HCPCS modifier 55
+    - name: CPTM2_56
+      type: string
+      description: Second CPT-4/HCPCS modifier 56
+    - name: CPTM2_57
+      type: string
+      description: Second CPT-4/HCPCS modifier 57
+    - name: CPTM2_58
+      type: string
+      description: Second CPT-4/HCPCS modifier 58
+    - name: CPTM2_59
+      type: string
+      description: Second CPT-4/HCPCS modifier 59
+    - name: CPTM2_60
+      type: string
+      description: Second CPT-4/HCPCS modifier 60
+    - name: CPTM2_61
+      type: string
+      description: Second CPT-4/HCPCS modifier 61
+    - name: CPTM2_62
+      type: string
+      description: Second CPT-4/HCPCS modifier 62
+    - name: CPTM2_63
+      type: string
+      description: Second CPT-4/HCPCS modifier 63
+    - name: CPTM2_64
+      type: string
+      description: Second CPT-4/HCPCS modifier 64
+    - name: CPTM2_65
+      type: string
+      description: Second CPT-4/HCPCS modifier 65
+    - name: CPTM2_66
+      type: string
+      description: Second CPT-4/HCPCS modifier 66
+    - name: CPTM2_67
+      type: string
+      description: Second CPT-4/HCPCS modifier 67
+    - name: CPTM2_68
+      type: string
+      description: Second CPT-4/HCPCS modifier 68
+    - name: CPTM2_69
+      type: string
+      description: Second CPT-4/HCPCS modifier 69
+    - name: CPTM2_70
+      type: string
+      description: Second CPT-4/HCPCS modifier 70
+    - name: CPTM2_71
+      type: string
+      description: Second CPT-4/HCPCS modifier 71
+    - name: CPTM2_72
+      type: string
+      description: Second CPT-4/HCPCS modifier 72
+    - name: CPTM2_73
+      type: string
+      description: Second CPT-4/HCPCS modifier 73
+    - name: CPTM2_74
+      type: string
+      description: Second CPT-4/HCPCS modifier 74
+    - name: CPTM2_75
+      type: string
+      description: Second CPT-4/HCPCS modifier 75
+    - name: CPTM2_76
+      type: string
+      description: Second CPT-4/HCPCS modifier 76
+    - name: CPTM2_77
+      type: string
+      description: Second CPT-4/HCPCS modifier 77
+    - name: CPTM2_78
+      type: string
+      description: Second CPT-4/HCPCS modifier 78
+    - name: CPTM2_79
+      type: string
+      description: Second CPT-4/HCPCS modifier 79
+    - name: CPTM2_80
+      type: string
+      description: Second CPT-4/HCPCS modifier 80
+    - name: CPTM2_81
+      type: string
+      description: Second CPT-4/HCPCS modifier 81
+    - name: CPTM2_82
+      type: string
+      description: Second CPT-4/HCPCS modifier 82
+    - name: CPTM2_83
+      type: string
+      description: Second CPT-4/HCPCS modifier 83
+    - name: CPTM2_84
+      type: string
+      description: Second CPT-4/HCPCS modifier 84
+    - name: CPTM2_85
+      type: string
+      description: Second CPT-4/HCPCS modifier 85
+    - name: CPTM2_86
+      type: string
+      description: Second CPT-4/HCPCS modifier 86
+    - name: CPTM2_87
+      type: string
+      description: Second CPT-4/HCPCS modifier 87
+    - name: CPTM2_88
+      type: string
+      description: Second CPT-4/HCPCS modifier 88
+    - name: CPTM2_89
+      type: string
+      description: Second CPT-4/HCPCS modifier 89
+    - name: CPTM2_90
+      type: string
+      description: Second CPT-4/HCPCS modifier 90
+    - name: CPTM2_91
+      type: string
+      description: Second CPT-4/HCPCS modifier 91
+    - name: CPTM2_92
+      type: string
+      description: Second CPT-4/HCPCS modifier 92
+    - name: CPTM2_93
+      type: string
+      description: Second CPT-4/HCPCS modifier 93
+    - name: CPTM2_94
+      type: string
+      description: Second CPT-4/HCPCS modifier 94
+    - name: CPTM2_95
+      type: string
+      description: Second CPT-4/HCPCS modifier 95
+    - name: CPTM2_96
+      type: string
+      description: Second CPT-4/HCPCS modifier 96
+    - name: CPTM2_97
+      type: string
+      description: Second CPT-4/HCPCS modifier 97
+    - name: CPTM2_98
+      type: string
+      description: Second CPT-4/HCPCS modifier 98
+    - name: CPTM2_99
+      type: string
+      description: Second CPT-4/HCPCS modifier 99
+    - name: CPTM2_100
+      type: string
+      description: Second CPT-4/HCPCS modifier 100
+    - name: CPTM2_101
+      type: string
+      description: Second CPT-4/HCPCS modifier 101
+    - name: CPTM2_102
+      type: string
+      description: Second CPT-4/HCPCS modifier 102
+    - name: CPTM2_103
+      type: string
+      description: Second CPT-4/HCPCS modifier 103
+    - name: CPTM2_104
+      type: string
+      description: Second CPT-4/HCPCS modifier 104
+    - name: CPTM2_105
+      type: string
+      description: Second CPT-4/HCPCS modifier 105
+    - name: CPTM2_106
+      type: string
+      description: Second CPT-4/HCPCS modifier 106
+    - name: CPTM2_107
+      type: string
+      description: Second CPT-4/HCPCS modifier 107
+    - name: CPTM2_108
+      type: string
+      description: Second CPT-4/HCPCS modifier 108
+    - name: CPTM2_109
+      type: string
+      description: Second CPT-4/HCPCS modifier 109
+    - name: CPTM2_110
+      type: string
+      description: Second CPT-4/HCPCS modifier 110
+    - name: CPTM2_111
+      type: string
+      description: Second CPT-4/HCPCS modifier 111
+    - name: CPTM2_112
+      type: string
+      description: Second CPT-4/HCPCS modifier 112
+    - name: CPTM2_113
+      type: string
+      description: Second CPT-4/HCPCS modifier 113
+    - name: CPTM2_114
+      type: string
+      description: Second CPT-4/HCPCS modifier 114
+    - name: CPTM2_115
+      type: string
+      description: Second CPT-4/HCPCS modifier 115
+    - name: CPTM2_116
+      type: string
+      description: Second CPT-4/HCPCS modifier 116
+    - name: CPTM2_117
+      type: string
+      description: Second CPT-4/HCPCS modifier 117
+    - name: CPTM2_118
+      type: string
+      description: Second CPT-4/HCPCS modifier 118
+    - name: CPTM2_119
+      type: string
+      description: Second CPT-4/HCPCS modifier 119
+    - name: CPTM2_120
+      type: string
+      description: Second CPT-4/HCPCS modifier 120
+    - name: CPTM2_121
+      type: string
+      description: Second CPT-4/HCPCS modifier 121
+    - name: CPTM2_122
+      type: string
+      description: Second CPT-4/HCPCS modifier 122
+    - name: CPTM2_123
+      type: string
+      description: Second CPT-4/HCPCS modifier 123
+    - name: CPTM2_124
+      type: string
+      description: Second CPT-4/HCPCS modifier 124
+    - name: CPTM2_125
+      type: string
+      description: Second CPT-4/HCPCS modifier 125
+    - name: CPTM2_126
+      type: string
+      description: Second CPT-4/HCPCS modifier 126
+    - name: CPTM2_127
+      type: string
+      description: Second CPT-4/HCPCS modifier 127
+    - name: CPTM2_128
+      type: string
+      description: Second CPT-4/HCPCS modifier 128
+    - name: CPTM2_129
+      type: string
+      description: Second CPT-4/HCPCS modifier 129
+    - name: CPTM2_130
+      type: string
+      description: Second CPT-4/HCPCS modifier 130
+    - name: CPTM2_131
+      type: string
+      description: Second CPT-4/HCPCS modifier 131
+    - name: CPTM2_132
+      type: string
+      description: Second CPT-4/HCPCS modifier 132
+    - name: CPTM2_133
+      type: string
+      description: Second CPT-4/HCPCS modifier 133
+    - name: CPTM2_134
+      type: string
+      description: Second CPT-4/HCPCS modifier 134
+    - name: CPTM2_135
+      type: string
+      description: Second CPT-4/HCPCS modifier 135
+    - name: CPTM2_136
+      type: string
+      description: Second CPT-4/HCPCS modifier 136
+    - name: CPTM2_137
+      type: string
+      description: Second CPT-4/HCPCS modifier 137
+    - name: CPTM2_138
+      type: string
+      description: Second CPT-4/HCPCS modifier 138
+    - name: CPTM2_139
+      type: string
+      description: Second CPT-4/HCPCS modifier 139
+    - name: CPTM2_140
+      type: string
+      description: Second CPT-4/HCPCS modifier 140
+    - name: CPTM2_141
+      type: string
+      description: Second CPT-4/HCPCS modifier 141
+    - name: CPTM2_142
+      type: string
+      description: Second CPT-4/HCPCS modifier 142
+    - name: CPTM2_143
+      type: string
+      description: Second CPT-4/HCPCS modifier 143
+    - name: CPTM2_144
+      type: string
+      description: Second CPT-4/HCPCS modifier 144
+    - name: CPTM2_145
+      type: string
+      description: Second CPT-4/HCPCS modifier 145
+    - name: CPTM2_146
+      type: string
+      description: Second CPT-4/HCPCS modifier 146
+    - name: CPTM2_147
+      type: string
+      description: Second CPT-4/HCPCS modifier 147
+    - name: CPTM2_148
+      type: string
+      description: Second CPT-4/HCPCS modifier 148
+    - name: CPTM2_149
+      type: string
+      description: Second CPT-4/HCPCS modifier 149
+    - name: CPTM2_150
+      type: string
+      description: Second CPT-4/HCPCS modifier 150
+    - name: CPTM2_151
+      type: string
+      description: Second CPT-4/HCPCS modifier 151
+    - name: CPTM2_152
+      type: string
+      description: Second CPT-4/HCPCS modifier 152
+    - name: CPTM2_153
+      type: string
+      description: Second CPT-4/HCPCS modifier 153
+    - name: CPTM2_154
+      type: string
+      description: Second CPT-4/HCPCS modifier 154
+    - name: CPTM2_155
+      type: string
+      description: Second CPT-4/HCPCS modifier 155
+    - name: CPTM2_156
+      type: string
+      description: Second CPT-4/HCPCS modifier 156
+    - name: CPTM2_157
+      type: string
+      description: Second CPT-4/HCPCS modifier 157
+    - name: CPTM2_158
+      type: string
+      description: Second CPT-4/HCPCS modifier 158
+    - name: CPTM2_159
+      type: string
+      description: Second CPT-4/HCPCS modifier 159
+    - name: CPTM2_160
+      type: string
+      description: Second CPT-4/HCPCS modifier 160
+    - name: CPTM2_161
+      type: string
+      description: Second CPT-4/HCPCS modifier 161
+    - name: CPTM2_162
+      type: string
+      description: Second CPT-4/HCPCS modifier 162
+    - name: CPTM2_163
+      type: string
+      description: Second CPT-4/HCPCS modifier 163
+    - name: CPTM2_164
+      type: string
+      description: Second CPT-4/HCPCS modifier 164
+    - name: CPTM2_165
+      type: string
+      description: Second CPT-4/HCPCS modifier 165
+    - name: CPTM2_166
+      type: string
+      description: Second CPT-4/HCPCS modifier 166
+    - name: CPTM2_167
+      type: string
+      description: Second CPT-4/HCPCS modifier 167
+    - name: CPTM2_168
+      type: string
+      description: Second CPT-4/HCPCS modifier 168
+    - name: CPTM2_169
+      type: string
+      description: Second CPT-4/HCPCS modifier 169
+    - name: CPTM2_170
+      type: string
+      description: Second CPT-4/HCPCS modifier 170
+    - name: CPTM2_171
+      type: string
+      description: Second CPT-4/HCPCS modifier 171
+    - name: CPTM2_172
+      type: string
+      description: Second CPT-4/HCPCS modifier 172
+    - name: CPTM2_173
+      type: string
+      description: Second CPT-4/HCPCS modifier 173
+    - name: CPTM2_174
+      type: string
+      description: Second CPT-4/HCPCS modifier 174
+    - name: CPTM2_175
+      type: string
+      description: Second CPT-4/HCPCS modifier 175
+    - name: CPTM2_176
+      type: string
+      description: Second CPT-4/HCPCS modifier 176
+    - name: CPTM2_177
+      type: string
+      description: Second CPT-4/HCPCS modifier 177
+    - name: CPTM2_178
+      type: string
+      description: Second CPT-4/HCPCS modifier 178
+    - name: CPTM2_179
+      type: string
+      description: Second CPT-4/HCPCS modifier 179
+    - name: CPTM2_180
+      type: string
+      description: Second CPT-4/HCPCS modifier 180
+    - name: CPTM2_181
+      type: string
+      description: Second CPT-4/HCPCS modifier 181
+    - name: CPTM2_182
+      type: string
+      description: Second CPT-4/HCPCS modifier 182
+    - name: CPTM2_183
+      type: string
+      description: Second CPT-4/HCPCS modifier 183
+    - name: CPTM2_184
+      type: string
+      description: Second CPT-4/HCPCS modifier 184
+    - name: CPTM2_185
+      type: string
+      description: Second CPT-4/HCPCS modifier 185
+    - name: CPTM2_186
+      type: string
+      description: Second CPT-4/HCPCS modifier 186
+    - name: CPTM2_187
+      type: string
+      description: Second CPT-4/HCPCS modifier 187
+    - name: CPTM2_188
+      type: string
+      description: Second CPT-4/HCPCS modifier 188
+    - name: CPTM2_189
+      type: string
+      description: Second CPT-4/HCPCS modifier 189
+    - name: CPTM2_190
+      type: string
+      description: Second CPT-4/HCPCS modifier 190
+    - name: CPTM2_191
+      type: string
+      description: Second CPT-4/HCPCS modifier 191
+    - name: CPTM2_192
+      type: string
+      description: Second CPT-4/HCPCS modifier 192
+    - name: CPTM2_193
+      type: string
+      description: Second CPT-4/HCPCS modifier 193
+    - name: CPTM2_194
+      type: string
+      description: Second CPT-4/HCPCS modifier 194
+    - name: CPTM2_195
+      type: string
+      description: Second CPT-4/HCPCS modifier 195
+    - name: CPTM2_196
+      type: string
+      description: Second CPT-4/HCPCS modifier 196
+    - name: CPTM2_197
+      type: string
+      description: Second CPT-4/HCPCS modifier 197
+    - name: CPTM2_198
+      type: string
+      description: Second CPT-4/HCPCS modifier 198
+    - name: CPTM2_199
+      type: string
+      description: Second CPT-4/HCPCS modifier 199
+    - name: CPTM2_200
+      type: string
+      description: Second CPT-4/HCPCS modifier 200
+    - name: DaysToEvent
+      type: int32
+      description: Days from 'start date' to admission
+    - name: DHOUR
+      type: int32
+      description: Discharge Hour
+    - name: DIED
+      type: int32
+      description: Died during hospitalization
+    - name: DISP_X
+      type: string
+      description: Disposition of patient (as received from source)
+    - name: DISPUB04
+      type: int32
+      description: Disposition of patient (UB-04 standard coding)
+    - name: DISPUNIFORM
+      type: int32
+      description: Disposition of patient (uniform)
+    - name: DMONTH
+      type: int32
+      description: Discharge month
+    - name: DQTR
+      type: int32
+      description: Discharge quarter
+    - name: DSHOSPID
+      type: string
+      description: Data source hospital identifier
+    - name: DURATION
+      type: int32
+      description: Elapsed time for hospital care in hours and minutes
+    - name: FEMALE
+      type: int32
+      description: Indicator of sex
+    - name: HCUP_ED
+      type: int32
+      description: HCUP Emergency Department service indicator
+    - name: HCUP_OS
+      type: int32
+      description: HCUP Observation Stay service indicator
+    - name: HEART_RATE_X
+      type: int32
+      description: Heart rate of the patient, as received from data source
+    - name: HISPANIC
+      type: int32
+      description: Hispanic ethnicity (uniform)
+    - name: HISPANIC_X
+      type: string
+      description: Hispanic ethnicity (as received from source)
+    - name: Homeless
+      type: int32
+      description: Indicator that patient is homeless
+    - name: HOSP_NPI
+      type: string
+      description: Hospital NPI
+    - name: HOSPST
+      type: string
+      description: Hospital state postal code
+    - name: I10_DX_Visit_Reason1
+      type: string
+      description: ICD-10-CM Reason for visit diagnosis 1
+    - name: I10_DX_Visit_Reason2
+      type: string
+      description: ICD-10-CM Reason for visit diagnosis 2
+    - name: I10_DX_Visit_Reason3
+      type: string
+      description: ICD-10-CM Reason for visit diagnosis 3
+    - name: I10_DX1
+      type: string
+      description: ICD-10-CM Diagnosis 1
+    - name: I10_DX2
+      type: string
+      description: ICD-10-CM Diagnosis 2
+    - name: I10_DX3
+      type: string
+      description: ICD-10-CM Diagnosis 3
+    - name: I10_DX4
+      type: string
+      description: ICD-10-CM Diagnosis 4
+    - name: I10_DX5
+      type: string
+      description: ICD-10-CM Diagnosis 5
+    - name: I10_DX6
+      type: string
+      description: ICD-10-CM Diagnosis 6
+    - name: I10_DX7
+      type: string
+      description: ICD-10-CM Diagnosis 7
+    - name: I10_DX8
+      type: string
+      description: ICD-10-CM Diagnosis 8
+    - name: I10_DX9
+      type: string
+      description: ICD-10-CM Diagnosis 9
+    - name: I10_DX10
+      type: string
+      description: ICD-10-CM Diagnosis 10
+    - name: I10_DX11
+      type: string
+      description: ICD-10-CM Diagnosis 11
+    - name: I10_DX12
+      type: string
+      description: ICD-10-CM Diagnosis 12
+    - name: I10_DX13
+      type: string
+      description: ICD-10-CM Diagnosis 13
+    - name: I10_DX14
+      type: string
+      description: ICD-10-CM Diagnosis 14
+    - name: I10_DX15
+      type: string
+      description: ICD-10-CM Diagnosis 15
+    - name: I10_DX16
+      type: string
+      description: ICD-10-CM Diagnosis 16
+    - name: I10_DX17
+      type: string
+      description: ICD-10-CM Diagnosis 17
+    - name: I10_DX18
+      type: string
+      description: ICD-10-CM Diagnosis 18
+    - name: I10_DX19
+      type: string
+      description: ICD-10-CM Diagnosis 19
+    - name: I10_DX20
+      type: string
+      description: ICD-10-CM Diagnosis 20
+    - name: I10_DX21
+      type: string
+      description: ICD-10-CM Diagnosis 21
+    - name: I10_DX22
+      type: string
+      description: ICD-10-CM Diagnosis 22
+    - name: I10_DX23
+      type: string
+      description: ICD-10-CM Diagnosis 23
+    - name: I10_DX24
+      type: string
+      description: ICD-10-CM Diagnosis 24
+    - name: I10_DX25
+      type: string
+      description: ICD-10-CM Diagnosis 25
+    - name: I10_DX26
+      type: string
+      description: ICD-10-CM Diagnosis 26
+    - name: I10_DX27
+      type: string
+      description: ICD-10-CM Diagnosis 27
+    - name: I10_DX28
+      type: string
+      description: ICD-10-CM Diagnosis 28
+    - name: I10_DX29
+      type: string
+      description: ICD-10-CM Diagnosis 29
+    - name: I10_DX30
+      type: string
+      description: ICD-10-CM Diagnosis 30
+    - name: I10_NDX
+      type: int32
+      description: ICD-10-CM Number of diagnoses on this record
+    - name: I10_PROCTYPE
+      type: int32
+      description: ICD-10-PCS Procedure type indicator
+    - name: KEY
+      type: double
+      description: HCUP record identifier
+    - name: LOS
+      type: int32
+      description: Length of stay (cleaned)
+    - name: LOS_X
+      type: int32
+      description: Length of stay (as received from source)
+    - name: MARITALSTATUS_X
+      type: string
+      description: Patient's marital status (as received from source)
+    - name: MARITALSTATUSUB04
+      type: string
+      description: Patient's marital status, UB-04 standard coding
+    - name: MDNUM1_R
+      type: int32
+      description: Physician 1 number (re-identified)
+    - name: MDNUM2_R
+      type: int32
+      description: Physician 2 number (re-identified)
+    - name: MEDINCSTQ
+      type: int32
+      description: Median household income state quartile for patient ZIP Code
+    - name: NCPT
+      type: int32
+      description: Number of CPT/HCPCS procedures for this visit
+    - name: OPservice
+      type: string
+      description: Indicator of outpatient service (as received from source)
+    - name: OS_TIME
+      type: double
+      description: Observation stay time summed from UNITS
+    - name: PAY1
+      type: int32
+      description: Primary expected payer (uniform)
+    - name: PAY1_X
+      type: string
+      description: Primary expected payer (as received from source)
+    - name: PAY2
+      type: int32
+      description: Secondary expected payer (uniform)
+    - name: PAY2_X
+      type: string
+      description: Secondary expected payer (as received from source)
+    - name: PAY3
+      type: int32
+      description: Tertiary expected payer (uniform)
+    - name: PAY3_X
+      type: string
+      description: Tertiary expected payer (as received from source)
+    - name: PL_CBSA
+      type: int32
+      description: 'Patient location: Core Based Statistical Area (CBSA)'
+    - name: PL_NCHS
+      type: int32
+      description: 'Patient Location: NCHS Urban-Rural Code'
+    - name: PL_RUCC
+      type: int32
+      description: 'Patient location: Rural-Urban Continuum Codes (RUCC)'
+    - name: PL_UIC
+      type: int32
+      description: 'Patient location: Urban Influence Codes'
+    - name: PL_UR_CAT4
+      type: int32
+      description: 'Patient Location: Urban-Rural 4 Categories'
+    - name: PointOfOrigin_X
+      type: string
+      description: Point of origin for admission or visit, as received from source
+    - name: PointOfOriginUB04
+      type: string
+      description: Point of origin for admission or visit, UB-04 standard coding
+    - name: PSTATE
+      type: string
+      description: Patient State postal code
+    - name: PSTCO
+      type: int32
+      description: Patient state/county FIPS code
+    - name: PSTCO2
+      type: int32
+      description: Patient state/county FIPS code, possibly derived from ZIP Code
+    - name: RACE
+      type: int32
+      description: Race (uniform)
+    - name: RACE_X
+      type: string
+      description: Race (as received from source)
+    - name: STATE_AS
+      type: int32
+      description: State Ambulatory Surgery service indicator
+    - name: STATE_ED
+      type: int32
+      description: State Emergency Department service indicator
+    - name: STATE_OS
+      type: int32
+      description: State Observation Stay service indicator
+    - name: TOTCHG
+      type: double
+      description: Total charges (cleaned)
+    - name: TOTCHG_X
+      type: double
+      description: Total charges (as received from source)
+    - name: VisitLink
+      type: int32
+      description: Visit linkage variable
+    - name: YEAR
+      type: int32
+      description: Calendar year
+    - name: ZIP
+      type: string
+      description: Patient ZIP Code
+    - name: ZIP3
+      type: string
+      description: Patient ZIP Code, first 3 digits
+    - name: ZIPINC_QRTL
+      type: int32
+      description: Median household income national quartile for patient ZIP Code
+    - name: AYEAR
+      type: int32
+      description: Admission year
+    - name: BMONTH
+      type: int32
+      description: Birth month
+    - name: BYEAR
+      type: int32
+      description: Birth year
