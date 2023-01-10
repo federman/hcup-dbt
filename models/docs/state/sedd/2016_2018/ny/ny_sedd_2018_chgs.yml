@@ -1,0 +1,15 @@
+version: 2
+sources:
+- name: SEDD
+  tags:
+  - State
+  - ER
+  - SEDD
+  - Source
+  description: '{{ doc("sedd_description") }}'
+  meta:
+    external_location: D:\git\hcup-extraction-loading\extraction-loading\raw-hcup\{name}.parquet
+  tables:
+  - name: NY_SEDD_2018_CHGS
+    description: NY SEDD 2018 CHGS file. {{ doc("sedd_chgs_2016_2018_description")
+      }}
