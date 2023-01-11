@@ -8,7 +8,7 @@ sources:
   - Source
   description: '{{ doc("sedd_description") }}'
   meta:
-    external_location: D:\git\hcup-extraction-loading\extraction-loading\raw-hcup\{name}.parquet
+    external_location: \files.drexel.edu\encrypted\SOPH\UHC\SchnakeMahl_HCUP\dbt\v0\sources\{name}.parquet
   tables:
   - name: NY_SEDD_2017_CORE
     description: NY SEDD 2017 CORE file. {{ doc("sedd_core_2016_2018_description")
