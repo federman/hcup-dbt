@@ -7,6 +7,13 @@ hcup:
         - httpfs
         - parquet
       external_root: 'D:\git\hcup-dbt\external'
+    stage:
+      type: duckdb
+      path: hcup-dev.duckdb
+      extensions:
+        - httpfs
+        - parquet
+      external_root: '\\files.drexel.edu\encrypted\SOPH\UHC\SchnakeMahl_HCUP\dbt\v0\stage\'
     prod:
       type: duckdb
       path: hcup-prod.duckdb
