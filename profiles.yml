@@ -13,5 +13,5 @@ hcup:
       extensions:
         - httpfs
         - parquet
-      external_root: '\\files.drexel.edu\encrypted\SOPH\UHC\SchnakeMahl_HCUP\Database\Prototype\dbt-external-test\'
-  target: dev
+      external_root: '\\files.drexel.edu\encrypted\SOPH\UHC\SchnakeMahl_HCUP\dbt\v0\models\'
+  target: prod
