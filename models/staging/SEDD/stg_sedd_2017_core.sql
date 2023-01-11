@@ -1,6 +1,11 @@
 
+{% if target.name == 'stage' %}
+  {% set format_tmp = "csv"   %}
+  {% else %}       
+  {% set format_tmp = "parquet"   %}
+{% endif %}
 
-{{ config(materialized='external', format = 'csv') }}
+{{ config(materialized='external', format = format_tmp) }}
 SELECT
   "KEY",
   AGE,
