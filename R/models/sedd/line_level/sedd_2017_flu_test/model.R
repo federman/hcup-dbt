@@ -2,6 +2,11 @@
 { 
   ## Load Dependencies
   rm(list= ls())
+  library(dplyr)
+  library(dbplyr)
+  library(DBI)
+  library(nycflights13)
+  library(palmerpenguins)
   library(rstudioapi)
   library(tidyverse)
   library(glue)
@@ -12,9 +17,7 @@
   ## Set directory 
   setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
   db_dir = "\\\\files.drexel.edu\\encrypted\\SOPH\\UHC\\SchnakeMahl_HCUP\\Database\\Prototype\\parquet\\"
-  codebook_dir = "\\\\files.drexel.edu\\encrypted\\SOPH\\UHC\\SchnakeMahl_HCUP\\Database\\Prototype\\codebooks\\"
-  model_dir = "\\\\files.drexel.edu\\encrypted\\SOPH\\UHC\\SchnakeMahl_HCUP\\Database\\Prototype\\models\\"
-  
+
   ## Set target parameters
   dataset_id = "NY_SEDD_2017_CORE"
   model_id = "sedd_2017_flu_test"
@@ -22,16 +25,17 @@
 }
 
 
-# 1. Connect to Database --------------------------------------------------
+# 1. Connect to DuckDB --------------------------------------------------
 {
-
-  ## Open database
+  ## get subset
   db = arrow::open_dataset(glue("{db_dir}{dataset_id}.parquet"))
-  db
+  dfa = db %>% 
+    head(n=100) %>% 
+    collect()
   
-  ## Open codebook
-  codebook = read_csv((glue("{codebook_dir}{dataset_id}_codebook.csv")))
-  codebook
+  ## Create duckdb connection
+  con = DBI::dbConnect(duckdb::duckdb(), dbdir=":memory:")
+  df <- copy_to(con, dfa)
   
 }
 
@@ -46,8 +50,8 @@ flu_like_diag <- c('J069', 'J399', 'J200', 'J201','J202', 'J203', 'J204', 'J205'
                    'B052', 'B0681', 'B250', 'J120', 'J121', 'J122', 'J123', 'J1281', 'J1289', 'J129',
                    'J440', 'J441', 'J470', 'J471')  
 
-## 2.2 Write query ----------------------------------------------------------
-query =  db %>% 
+## 2.2 Stage ----------------------------------------------------------
+query =  df %>% 
   mutate(
     admit_date = paste0(AYEAR,"-",AMONTH,"-01"),
     flu = I10_DX_Visit_Reason1 %in% flu_diag | I10_DX_Visit_Reason2 %in% flu_diag | I10_DX1 %in% flu_diag | I10_DX2 %in% flu_diag,
@@ -57,46 +61,20 @@ query =  db %>%
     KEY,
     AGE, DIED, RACE, HISPANIC, FEMALE, PAY1, ZIP,
     admit_date, flu, flu_like
-  )
+  ) 
 
-## 2.3 Collection + transform  ----------------------------------------------------------
-output = query %>% 
-  collect()  %>% 
+query %>% show_query()
+
+## 2.3 Mart  ----------------------------------------------------------
+df2 = query
+q2 = query %>% 
   mutate(
     ili_diagnosis_var = case_when(
       flu & flu_like ~ "BOTH",
       flu & !flu_like ~ "ILI",
       !flu & flu_like ~ "ILI LIKE",
       TRUE ~ "OTHER"
-    ),
-    admit_date  = ymd(admit_date, quiet = T) 
+    )
   ) 
-
-## 2.4 Document Transformations  ----------------------------------------------------------
-#' please document your new transformations in transformations.csv
-
-
-# 3.  Save results ----------------------------------------------------------
-
-## 3.1  Generate codebook ----------------------------------------------------------
-model_codebook = tibble(var = names(output)) %>% 
-  left_join(codebook) %>% 
-  drop_na() %>% 
-  bind_rows(read_csv("tranformations.csv") %>% 
-              mutate(dataset_id = model_id))
-  
-
-## 3.2  Generate model metadata ----------------------------------------------------------
-model_details = list(
-  type = "table",
-  model_id = model_id,
-  n_columns = ncol(output),
-  n_rows = nrow(output),
-  path = glue("{model_dir}{model_id}.parquet"),
-  database = "sedd",
-  relation = "tbd"
-)
-
-## 3.3  Write to database  ----------------------------------------------------------
-arrow::write_parquet(output,
-                     sink = model_details$path)
+q2 %>% show_query()
+ 
