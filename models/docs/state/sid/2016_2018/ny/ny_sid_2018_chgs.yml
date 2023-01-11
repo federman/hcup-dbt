@@ -8,7 +8,7 @@ sources:
   - Source
   description: '{{ doc("sid_description") }}'
   meta:
-    external_location: \files.drexel.edu\encrypted\SOPH\UHC\SchnakeMahl_HCUP\dbt\v0\sources\{name}.parquet
+    external_location: \\files.drexel.edu\encrypted\SOPH\UHC\SchnakeMahl_HCUP\dbt\v0\sources\{name}.parquet
   tables:
   - name: NY_SID_2018_CHGS
     description: NY SID 2018 CHGS file. {{ doc("sid_chgs_2016_2018_description") }}
