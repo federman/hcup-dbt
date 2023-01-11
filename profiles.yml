@@ -10,6 +10,7 @@ hcup:
     stage:
       type: duckdb
       path: hcup-dev.duckdb
+      schema: csv
       extensions:
         - httpfs
         - parquet
@@ -17,6 +18,7 @@ hcup:
     prod:
       type: duckdb
       path: hcup-prod.duckdb
+      schema: parquet
       extensions:
         - httpfs
         - parquet
