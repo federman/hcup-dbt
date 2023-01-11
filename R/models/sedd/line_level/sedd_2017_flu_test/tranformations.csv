@@ -1,0 +1,5 @@
+var,value_type ,var_label
+admit_date,string,"Admission date, operationalized by concatenation of AYEAR and AMONTH."
+flu,boolean,"Indicator for ILI. True if any of I10_DX_Visit_Reason1, I10_DX_Visit_Reason2, I10_DX1, I10_DX2 included a flu related code (See model description)."
+flu_like,boolean,"Indicator for ILI. True if any of I10_DX_Visit_Reason1, I10_DX_Visit_Reason2, I10_DX1, I10_DX2 included a flu-like related code (See model description)."
+ili_diagnosis_var,string,"Code indicator for ILI status. Coding includes: `ILI` if encounter was has only the `flu` flag, `ILI LIKE` if encounter was only flagged as `flu-like`, `BOTH` if encounter has both `flu` and `flu-like` flags, `OTHER` if encounter was not flagged for either `flu` or `flu-like` diagnostic codes."

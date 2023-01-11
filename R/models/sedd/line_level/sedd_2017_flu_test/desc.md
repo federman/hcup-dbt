@@ -1,0 +1,1 @@
+Line level pull from NY SEDD 2017 CORE dataset including basic demogrpahic info. We also operationalized a `flu` and `flu-like` indicator. The diagnostic codes we used to generate these indicators are shown below in the model query below. 
