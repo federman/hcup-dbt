@@ -64,10 +64,10 @@ query =  df %>%
   ) 
 
 query %>% show_query()
-
+q1_res <- copy_to(con, collect(query))
 ## 2.3 Mart  ----------------------------------------------------------
-df2 = query
-q2 = query %>% 
+
+q2 = q1_res %>% 
   mutate(
     ili_diagnosis_var = case_when(
       flu & flu_like ~ "BOTH",
@@ -75,6 +75,15 @@ q2 = query %>%
       !flu & flu_like ~ "ILI LIKE",
       TRUE ~ "OTHER"
     )
-  ) 
+  )
 q2 %>% show_query()
+
+## 2.3 ZIP Layer  ----------------------------------------------------------
+
+q2_res <- copy_to(con, collect(q2))
+
+q3 = q2_res %>% 
+  count(AGE, RACE, HISPANIC, ZIP, FEMALE, flu, flu_like, ili_diagnosis_var)
+q3%>% show_query()
+
  
