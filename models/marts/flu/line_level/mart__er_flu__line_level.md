@@ -10,5 +10,4 @@ db = arrow::open_dataset("\\\\files.drexel.edu\\encrypted\\SOPH\\UHC\\SchnakeMah
 ```
  
 
-```
 {% enddocs %}
