@@ -5,7 +5,7 @@ This information aws scraped on 01/10/2023 from:
 
 {% docs sid_description %}
 
-# Abstract: HCUP State Inpatient Databases (SID) 
+## Abstract: HCUP State Inpatient Databases (SID) 
 The State Inpatient Databases (SID) are part of the Healthcare Cost and Utilization Project (HCUP), sponsored by the Agency for Healthcare Research and Quality (AHRQ).
 
 The HCUP State Inpatient Databases (SID) are a powerful set of hospital databases from data organizations in participating States.
@@ -25,13 +25,13 @@ Thirty-six of the data organizations participating in the HCUP have agreed to re
 
 Useful links include: 
 
-- [SEDD database home page provide database documentation for the SID, from a high-level Overview to all the detailed specifications, restrictions, and resources necessary for researchers working and publishing with the SID.](https://www.hcup-us.ahrq.gov/db/state/sedddbdocumentation.jsp)
+- [SEDD database home page](https://www.hcup-us.ahrq.gov/db/state/sedddbdocumentation.jsp)
 - [Intro to SEDD database](https://www.hcup-us.ahrq.gov/db/state/sedddist/SEDD_Introduction.jsp)
 
 
-# Introduction to SID
+## Introduction to SID
 
-## Overview
+#### Overview
 The Healthcare Cost and Utilization Project (HCUP) State Inpatient Databases (SID) consist of individual data files from data organizations in 49 participating data organizations. In general, the SID contain the universe of that State's hospital inpatient discharge records. They are composed of annual, State-specific files that share a common structure and common data elements. Most data elements are coded in a uniform format across all States. In addition to the core set of uniform data elements, the SID include State-specific data elements or data elements available only for a limited number of States. The uniform format of the SID helps facilitate cross-State comparisons. In addition, the SID are well suited for research that requires complete enumeration of hospitals and discharges within market areas or States.
 
 Thirty-six of the 49 data organizations that participate in the HCUP have agreed to release their State-specific files through the HCUP Central Distributor under the auspices of AHRQ. The individual state databases are in the same HCUP uniform format and represent 100 percent of records processed by AHRQ. However, the participating data organizations control the release of specific data elements.
@@ -48,7 +48,7 @@ SID documentation and tools—including file specifications, programming source 
 
 Starting with the 2006 SID, the AHA Linkage files are available via the HCUP User Support website www.hcup-us.ahrq.gov. The AHA Linkage files may not be available when the discharge-level database is released.
 
-## How the HCUP SID Differ from State Data Files
+#### How the HCUP SID Differ from State Data Files
 
 How the HCUP SID Differ from State Data Files
 
@@ -59,7 +59,7 @@ The SID available through the HCUP Central Distributor differ from the data file
 
 Because the data organizations dictate the data elements that may be released through the HCUP Central Distributor, the data elements on the SID are a subset of the data collected by the corresponding data organizations. HCUP uniform coding is used on most data elements on the SID. A few State-specific data elements retain the original values provided by the respective data organizations.
 
-## What Types of Hospitals Are Included in the SID?
+#### What Types of Hospitals Are Included in the SID?
 
 The types of hospitals included in the SID depend on the information provided by the data organizations and how the files were handled during HCUP processing. Most State government data organizations provide information on all acute care hospitals in the respective State. Private data organizations are often restricted to member hospitals and may not provide information on all hospitals in their State.
 
@@ -77,7 +77,7 @@ Tables showing the number of hospitals in the SID can be found online at the HCU
 
 Information contained in the AHA Annual Survey of Hospitals was used to determine if a hospital was a community hospital. Some hospitals could not be categorized as community or noncommunity hospitals because they could not be matched with AHA information. This occurs when a hospital was closed in a previous year or when the hospital does not report to the AHA.
 
-**What is the File Structure of the SEDD in the 2019-2021 Files?**
+#### What is the File Structure of the SEDD in the 2019-2021 Files?
 
 Based on the availability of data elements across States, data elements included in the SEDD are structured as follows:
 
@@ -86,7 +86,7 @@ Based on the availability of data elements across States, data elements included
 - AHA Linkage file
 - Diagnosis and Procedure Groups file
 
-**What is the File Structure of the SEDD in the 2016-2018 Files?**
+#### What is the File Structure of the SEDD in the 2016-2018 Files?
 
 Based on the availability of data elements across States, data elements included in the 2016 SEDD are structured as follows:
 
