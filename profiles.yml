@@ -3,10 +3,11 @@ hcup:
     dev:
       type: duckdb
       path: hcup-dev.duckdb
+      schema: csv
       extensions:
         - httpfs
         - parquet
-      external_root: 'D:\git\hcup-dbt\external'
+      external_root: 'C:\Users\rl627\Desktop\Git\hcup-dbt\external\dev\'
     stage:
       type: duckdb
       path: hcup-dev.duckdb
@@ -23,4 +24,4 @@ hcup:
         - httpfs
         - parquet
       external_root: '\\files.drexel.edu\encrypted\SOPH\UHC\SchnakeMahl_HCUP\dbt\v0\models\'
-  target: stage
+  target: dev
