@@ -8,7 +8,7 @@ models:
     - ER
     - SEDD
     - Source
-    - Stage
+    - Intermediate
   columns:
   - name: AGE
     type: int32
