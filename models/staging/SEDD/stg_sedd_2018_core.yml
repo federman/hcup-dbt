@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: stg_sedd_2018_core
+    description: '{{ doc("stg_sedd_desc") }}'
+    docs:
+      node_color: 'orange'
+    config:
+      tags: [ER, SEDD, State, stg]
+    meta:
+      owner: '@engineering'
+      model_maturity: prototype
