@@ -3,7 +3,7 @@ models:
 - name: stg_ny_sedd_2017_core
   description: '{{ doc("stg_sedd_description") }}'
   docs:
-    node_color: orange
+    node_color: '#829356'
   config:
     tags:
     - State

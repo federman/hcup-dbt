@@ -1,9 +1,7 @@
 version: 2
 models:
-- name: stg_ny_sedd_2018_core
-  description: '{{ doc("stg_sedd_description") }}'
-  docs:
-    node_color: '#829356'
+- name: int_sedd_flu_line_level
+  description:  This intermediate model compiles state level emergency room data across years and states into a single table.
   config:
     tags:
     - State
@@ -58,3 +56,12 @@ models:
     description: '{{ doc("stg_sedd_db_file_description") }}'
   - name: admit_date
     description: '{{ doc("stg_sedd_admit_date_description") }}'
+  - name: flu
+    type: boolean
+    description: '{{ doc("int_sedd_flu_description") }}'
+  - name: flu_like
+    type: boolean
+    description: '{{ doc("int_sedd_flu_like_description") }}'  
+  - name: ili_diagnosis_var  
+    type: string
+    description: '{{ doc("int_sedd_ili_diagnosis_var_description") }}'
