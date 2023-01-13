@@ -44,6 +44,6 @@ models:
   - name: ili_diagnosis_var  
     type: string
     description: '{{ doc("int_sedd_ili_diagnosis_var_description") }}'
-  - name: n  
+  - name: count 
     type: numeric
     description: '{{ doc("mart__er_flu__zip_level_n_description") }}'
