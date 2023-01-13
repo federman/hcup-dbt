@@ -12,9 +12,3 @@ db = arrow::open_dataset("\\\\files.drexel.edu\\encrypted\\SOPH\\UHC\\SchnakeMah
  
 {% enddocs %}
 
-
-{% docs mart__er_flu__zip_level_n_description %}
-
-this columns is the count of encounters by AGE, RACE, HISPANIC, ZIP, FEMALE, flu, flu_like, ili_diagnosis_var.
-
-{% enddocs %}
