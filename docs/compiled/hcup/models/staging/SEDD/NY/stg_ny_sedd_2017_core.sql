@@ -20,3 +20,6 @@ FROM '\\files.drexel.edu\encrypted\SOPH\UHC\SchnakeMahl_HCUP\dbt\v0\sources\NY_S
 
 
   
+  order by RANDOM()
+  limit 25
+  
