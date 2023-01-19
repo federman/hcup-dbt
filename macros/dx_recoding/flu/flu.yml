@@ -1,0 +1,7 @@
+version: 2
+
+macros:
+  - name: dx_flag_flu_like
+    description: Output is a boolean indicator (True/False) flag for `flu-like` dx codes. This macro will return True if any of the four columns - `I10_DX_Visit_Reason1`, `I10_DX_Visit_Reason2`, `I10_DX1`, and `I10_DX2` - contain a `flu-like` dx code. Please see the macro code below for a list of these `flu-like` dx codes. We got these from Grace's code and may need refining/documentation for how these codes were chosen. 
+  - name: dx_flag_flu
+    description: Output is a boolean indicator (True/False) flag for `flu-like` dx codes. This macro will return True if any of the four columns - `I10_DX_Visit_Reason1`, `I10_DX_Visit_Reason2`, `I10_DX1`, and `I10_DX2` - contain a `flu` dx code. Please see the macro code below for a list of these `flu` dx codes. We got these from Grace's code and may need refining/documentation for how these codes were chosen. 
