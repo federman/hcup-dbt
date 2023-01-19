@@ -5,8 +5,17 @@ This final user facing model is meant the analysis of all emergency room HCUP re
 To access this table, you can use the following code:
 
 ```r
+library(dplyr)
 library(arrow)
+
+## work within Arrow 
 db = arrow::open_dataset("\\\\files.drexel.edu\\encrypted\\SOPH\\UHC\\SchnakeMahl_HCUP\\dbt\\v0\\models\\mart__er_flu__line_level.parquet")
+db %>% filter(flu) 
+
+## work  within RAM
+df = db %>% collect()
+df %>% filter(flu) 
+
 ```
  
 
