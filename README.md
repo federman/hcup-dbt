@@ -1,4 +1,10 @@
-Welcome to your new dbt project!
+## HCUP DBT
+
+This is the datawarehousing repository for the HCUP project. Other useful links include:
+
+- Extraction loading codebase for moving raw HCUP data (.asc to .parquet) cna be found in our [extraction-loading repository](https://github.com/Drexel-UHC/hcup-extraction-loading)
+- [Grammer of data manipulation (R/Python) cheatsheet](https://github.com/ran-codes/python-rstudio)
+
 
 ### profiles.yml
 
