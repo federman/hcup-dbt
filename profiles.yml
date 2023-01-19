@@ -24,4 +24,4 @@ hcup:
         - httpfs
         - parquet
       external_root: '\\files.drexel.edu\encrypted\SOPH\UHC\SchnakeMahl_HCUP\dbt\v0\models\'
-  target: dev
+  target: prod
