@@ -2,7 +2,7 @@
 
 This is the datawarehousing repository for the HCUP project. Other useful links include:
 
-- Extraction loading codebase for moving raw HCUP data (.asc to .parquet) cna be found in our [extraction-loading repository](https://github.com/Drexel-UHC/hcup-extraction-loading)
+- [Extraction Loading repository that loads HCUP files as parquet](https://github.com/Drexel-UHC/hcup-extraction-loading)
 - [Grammer of data manipulation (R/Python) cheatsheet](https://github.com/ran-codes/python-rstudio)
 
 
