@@ -11,4 +11,4 @@ select
   flu,
   flu_like,
   ili_diagnosis_var
-FROM "main"."csv"."int_sedd_flu_line_level"
+FROM "main"."parquet"."int_sedd_flu_line_level"

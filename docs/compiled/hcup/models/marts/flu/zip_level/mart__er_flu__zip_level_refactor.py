@@ -19,7 +19,7 @@ def model(dbt, session):
 # this part is dbt logic for get ref work, do not modify
 
 def ref(*args,dbt_load_df_function):
-    refs = {"mart__er_flu__line_level": "main.csv.mart__er_flu__line_level"}
+    refs = {"mart__er_flu__line_level": "main.parquet.mart__er_flu__line_level"}
     key = ".".join(args)
     return dbt_load_df_function(refs[key])
 
@@ -44,10 +44,10 @@ class config:
 class this:
     """dbt.this() or dbt.this.identifier"""
     database = 'main'
-    schema = 'csv'
+    schema = 'parquet'
     identifier = 'mart__er_flu__zip_level_refactor'
     def __repr__(self):
-        return 'main.csv.mart__er_flu__zip_level_refactor'
+        return 'main.parquet.mart__er_flu__zip_level_refactor'
 
 
 class dbtObj:
