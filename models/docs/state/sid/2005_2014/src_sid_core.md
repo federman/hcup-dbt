@@ -1,4 +1,4 @@
-{% docs sid_core_2015_description %}
+{% docs sid_core_2005_2014_description %}
 
 The **Core** file is a discharge-level file that contains:
 
