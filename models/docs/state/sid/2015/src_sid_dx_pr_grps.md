@@ -1,4 +1,4 @@
-{% docs sid_diag_2005_2014_description %}
+{% docs sid_dx_pr_grps_2015_description %}
 
 # Diagnosis and Procedure Groups File details 
 
