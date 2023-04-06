@@ -1,0 +1,909 @@
+version: 2
+sources:
+- name: SID
+  tags:
+  - State
+  - Inpatient
+  - SID
+  - Source
+  description: '{{ doc("sid_description") }}'
+  meta:
+    external_location: \\files.drexel.edu\encrypted\SOPH\UHC\SchnakeMahl_HCUP\dbt\v0\sources\{name}.parquet
+  tables:
+  - name: KY_SID_2012_CORE
+    description: '{{ doc("sid_core_2005_2014_description") + "\n" + "\n" + doc("sid_2005_2014_description")}}'
+    columns:
+    - name: AGE
+      type: double
+      description: .na.character
+    - name: AGEDAY
+      type: double
+      description: .na.character
+    - name: AGEMONTH
+      type: double
+      description: .na.character
+    - name: AMONTH
+      type: double
+      description: .na.character
+    - name: ATYPE
+      type: double
+      description: .na.character
+    - name: AWEEKEND
+      type: double
+      description: .na.character
+    - name: BWT
+      type: double
+      description: .na.character
+    - name: DIED
+      type: double
+      description: .na.character
+    - name: DISPUB04
+      type: double
+      description: .na.character
+    - name: DISPUNIFORM
+      type: double
+      description: .na.character
+    - name: DISP_X
+      type: string
+      description: .na.character
+    - name: DNR
+      type: double
+      description: .na.character
+    - name: DQTR
+      type: double
+      description: .na.character
+    - name: DRG
+      type: double
+      description: .na.character
+    - name: DRG24
+      type: double
+      description: .na.character
+    - name: DRGVER
+      type: double
+      description: .na.character
+    - name: DRG_NoPOA
+      type: double
+      description: .na.character
+    - name: DSHOSPID
+      type: string
+      description: .na.character
+    - name: DX1
+      type: string
+      description: .na.character
+    - name: DX2
+      type: string
+      description: .na.character
+    - name: DX3
+      type: string
+      description: .na.character
+    - name: DX4
+      type: string
+      description: .na.character
+    - name: DX5
+      type: string
+      description: .na.character
+    - name: DX6
+      type: string
+      description: .na.character
+    - name: DX7
+      type: string
+      description: .na.character
+    - name: DX8
+      type: string
+      description: .na.character
+    - name: DX9
+      type: string
+      description: .na.character
+    - name: DX10
+      type: string
+      description: .na.character
+    - name: DX11
+      type: string
+      description: .na.character
+    - name: DX12
+      type: string
+      description: .na.character
+    - name: DX13
+      type: string
+      description: .na.character
+    - name: DX14
+      type: string
+      description: .na.character
+    - name: DX15
+      type: string
+      description: .na.character
+    - name: DX16
+      type: string
+      description: .na.character
+    - name: DX17
+      type: string
+      description: .na.character
+    - name: DX18
+      type: string
+      description: .na.character
+    - name: DX19
+      type: string
+      description: .na.character
+    - name: DX20
+      type: string
+      description: .na.character
+    - name: DX21
+      type: string
+      description: .na.character
+    - name: DX22
+      type: string
+      description: .na.character
+    - name: DX23
+      type: string
+      description: .na.character
+    - name: DX24
+      type: string
+      description: .na.character
+    - name: DX25
+      type: string
+      description: .na.character
+    - name: DXCCS1
+      type: double
+      description: .na.character
+    - name: DXCCS2
+      type: double
+      description: .na.character
+    - name: DXCCS3
+      type: double
+      description: .na.character
+    - name: DXCCS4
+      type: double
+      description: .na.character
+    - name: DXCCS5
+      type: double
+      description: .na.character
+    - name: DXCCS6
+      type: double
+      description: .na.character
+    - name: DXCCS7
+      type: double
+      description: .na.character
+    - name: DXCCS8
+      type: double
+      description: .na.character
+    - name: DXCCS9
+      type: double
+      description: .na.character
+    - name: DXCCS10
+      type: double
+      description: .na.character
+    - name: DXCCS11
+      type: double
+      description: .na.character
+    - name: DXCCS12
+      type: double
+      description: .na.character
+    - name: DXCCS13
+      type: double
+      description: .na.character
+    - name: DXCCS14
+      type: double
+      description: .na.character
+    - name: DXCCS15
+      type: double
+      description: .na.character
+    - name: DXCCS16
+      type: double
+      description: .na.character
+    - name: DXCCS17
+      type: double
+      description: .na.character
+    - name: DXCCS18
+      type: double
+      description: .na.character
+    - name: DXCCS19
+      type: double
+      description: .na.character
+    - name: DXCCS20
+      type: double
+      description: .na.character
+    - name: DXCCS21
+      type: double
+      description: .na.character
+    - name: DXCCS22
+      type: double
+      description: .na.character
+    - name: DXCCS23
+      type: double
+      description: .na.character
+    - name: DXCCS24
+      type: double
+      description: .na.character
+    - name: DXCCS25
+      type: double
+      description: .na.character
+    - name: DXPOA1
+      type: string
+      description: .na.character
+    - name: DXPOA2
+      type: string
+      description: .na.character
+    - name: DXPOA3
+      type: string
+      description: .na.character
+    - name: DXPOA4
+      type: string
+      description: .na.character
+    - name: DXPOA5
+      type: string
+      description: .na.character
+    - name: DXPOA6
+      type: string
+      description: .na.character
+    - name: DXPOA7
+      type: string
+      description: .na.character
+    - name: DXPOA8
+      type: string
+      description: .na.character
+    - name: DXPOA9
+      type: string
+      description: .na.character
+    - name: DXPOA10
+      type: string
+      description: .na.character
+    - name: DXPOA11
+      type: string
+      description: .na.character
+    - name: DXPOA12
+      type: string
+      description: .na.character
+    - name: DXPOA13
+      type: string
+      description: .na.character
+    - name: DXPOA14
+      type: string
+      description: .na.character
+    - name: DXPOA15
+      type: string
+      description: .na.character
+    - name: DXPOA16
+      type: string
+      description: .na.character
+    - name: DXPOA17
+      type: string
+      description: .na.character
+    - name: DXPOA18
+      type: string
+      description: .na.character
+    - name: DXPOA19
+      type: string
+      description: .na.character
+    - name: DXPOA20
+      type: string
+      description: .na.character
+    - name: DXPOA21
+      type: string
+      description: .na.character
+    - name: DXPOA22
+      type: string
+      description: .na.character
+    - name: DXPOA23
+      type: string
+      description: .na.character
+    - name: DXPOA24
+      type: string
+      description: .na.character
+    - name: DXPOA25
+      type: string
+      description: .na.character
+    - name: DX_Admitting
+      type: string
+      description: .na.character
+    - name: ECODE1
+      type: string
+      description: .na.character
+    - name: ECODE2
+      type: string
+      description: .na.character
+    - name: ECODE3
+      type: string
+      description: .na.character
+    - name: ECODE4
+      type: string
+      description: .na.character
+    - name: ECODE5
+      type: string
+      description: .na.character
+    - name: ECODE6
+      type: string
+      description: .na.character
+    - name: ECODE7
+      type: string
+      description: .na.character
+    - name: ECODE8
+      type: string
+      description: .na.character
+    - name: E_CCS1
+      type: double
+      description: .na.character
+    - name: E_CCS2
+      type: double
+      description: .na.character
+    - name: E_CCS3
+      type: double
+      description: .na.character
+    - name: E_CCS4
+      type: double
+      description: .na.character
+    - name: E_CCS5
+      type: double
+      description: .na.character
+    - name: E_CCS6
+      type: double
+      description: .na.character
+    - name: E_CCS7
+      type: double
+      description: .na.character
+    - name: E_CCS8
+      type: double
+      description: .na.character
+    - name: E_POA1
+      type: string
+      description: .na.character
+    - name: E_POA2
+      type: string
+      description: .na.character
+    - name: E_POA3
+      type: string
+      description: .na.character
+    - name: E_POA4
+      type: string
+      description: .na.character
+    - name: E_POA5
+      type: string
+      description: .na.character
+    - name: E_POA6
+      type: string
+      description: .na.character
+    - name: E_POA7
+      type: string
+      description: .na.character
+    - name: E_POA8
+      type: string
+      description: .na.character
+    - name: FEMALE
+      type: double
+      description: .na.character
+    - name: HCUP_ED
+      type: double
+      description: .na.character
+    - name: HCUP_OS
+      type: double
+      description: .na.character
+    - name: HISPANIC_X
+      type: string
+      description: .na.character
+    - name: HOSPBRTH
+      type: double
+      description: .na.character
+    - name: HOSPST
+      type: string
+      description: .na.character
+    - name: HOSP_NPI
+      type: string
+      description: .na.character
+    - name: KEY
+      type: double
+      description: .na.character
+    - name: LOS
+      type: double
+      description: .na.character
+    - name: LOS_X
+      type: double
+      description: .na.character
+    - name: MDC
+      type: double
+      description: .na.character
+    - name: MDC24
+      type: double
+      description: .na.character
+    - name: MDC_NoPOA
+      type: double
+      description: .na.character
+    - name: MEDINCSTQ
+      type: double
+      description: .na.character
+    - name: NCHRONIC
+      type: double
+      description: .na.character
+    - name: NDX
+      type: double
+      description: .na.character
+    - name: NECODE
+      type: double
+      description: .na.character
+    - name: NEOMAT
+      type: double
+      description: .na.character
+    - name: NPR
+      type: double
+      description: .na.character
+    - name: ORPROC
+      type: double
+      description: .na.character
+    - name: OS_TIME
+      type: double
+      description: .na.character
+    - name: PAY1
+      type: double
+      description: .na.character
+    - name: PAY1_X
+      type: string
+      description: .na.character
+    - name: PAY2
+      type: double
+      description: .na.character
+    - name: PAY2_X
+      type: string
+      description: .na.character
+    - name: PAY3
+      type: double
+      description: .na.character
+    - name: PAY3_X
+      type: string
+      description: .na.character
+    - name: PL_CBSA
+      type: double
+      description: .na.character
+    - name: PL_MSA1993
+      type: double
+      description: .na.character
+    - name: PL_NCHS2006
+      type: double
+      description: .na.character
+    - name: PL_RUCA10_2005
+      type: double
+      description: .na.character
+    - name: PL_RUCA2005
+      type: double
+      description: .na.character
+    - name: PL_RUCA4_2005
+      type: double
+      description: .na.character
+    - name: PL_RUCC2003
+      type: double
+      description: .na.character
+    - name: PL_UIC2003
+      type: double
+      description: .na.character
+    - name: PL_UR_CAT4
+      type: double
+      description: .na.character
+    - name: PR1
+      type: string
+      description: .na.character
+    - name: PR2
+      type: string
+      description: .na.character
+    - name: PR3
+      type: string
+      description: .na.character
+    - name: PR4
+      type: string
+      description: .na.character
+    - name: PR5
+      type: string
+      description: .na.character
+    - name: PR6
+      type: string
+      description: .na.character
+    - name: PR7
+      type: string
+      description: .na.character
+    - name: PR8
+      type: string
+      description: .na.character
+    - name: PR9
+      type: string
+      description: .na.character
+    - name: PR10
+      type: string
+      description: .na.character
+    - name: PR11
+      type: string
+      description: .na.character
+    - name: PR12
+      type: string
+      description: .na.character
+    - name: PR13
+      type: string
+      description: .na.character
+    - name: PR14
+      type: string
+      description: .na.character
+    - name: PR15
+      type: string
+      description: .na.character
+    - name: PR16
+      type: string
+      description: .na.character
+    - name: PR17
+      type: string
+      description: .na.character
+    - name: PR18
+      type: string
+      description: .na.character
+    - name: PR19
+      type: string
+      description: .na.character
+    - name: PR20
+      type: string
+      description: .na.character
+    - name: PR21
+      type: string
+      description: .na.character
+    - name: PR22
+      type: string
+      description: .na.character
+    - name: PR23
+      type: string
+      description: .na.character
+    - name: PR24
+      type: string
+      description: .na.character
+    - name: PR25
+      type: string
+      description: .na.character
+    - name: PRCCS1
+      type: double
+      description: .na.character
+    - name: PRCCS2
+      type: double
+      description: .na.character
+    - name: PRCCS3
+      type: double
+      description: .na.character
+    - name: PRCCS4
+      type: double
+      description: .na.character
+    - name: PRCCS5
+      type: double
+      description: .na.character
+    - name: PRCCS6
+      type: double
+      description: .na.character
+    - name: PRCCS7
+      type: double
+      description: .na.character
+    - name: PRCCS8
+      type: double
+      description: .na.character
+    - name: PRCCS9
+      type: double
+      description: .na.character
+    - name: PRCCS10
+      type: double
+      description: .na.character
+    - name: PRCCS11
+      type: double
+      description: .na.character
+    - name: PRCCS12
+      type: double
+      description: .na.character
+    - name: PRCCS13
+      type: double
+      description: .na.character
+    - name: PRCCS14
+      type: double
+      description: .na.character
+    - name: PRCCS15
+      type: double
+      description: .na.character
+    - name: PRCCS16
+      type: double
+      description: .na.character
+    - name: PRCCS17
+      type: double
+      description: .na.character
+    - name: PRCCS18
+      type: double
+      description: .na.character
+    - name: PRCCS19
+      type: double
+      description: .na.character
+    - name: PRCCS20
+      type: double
+      description: .na.character
+    - name: PRCCS21
+      type: double
+      description: .na.character
+    - name: PRCCS22
+      type: double
+      description: .na.character
+    - name: PRCCS23
+      type: double
+      description: .na.character
+    - name: PRCCS24
+      type: double
+      description: .na.character
+    - name: PRCCS25
+      type: double
+      description: .na.character
+    - name: PRDAY1
+      type: double
+      description: .na.character
+    - name: PRDAY2
+      type: double
+      description: .na.character
+    - name: PRDAY3
+      type: double
+      description: .na.character
+    - name: PRDAY4
+      type: double
+      description: .na.character
+    - name: PRDAY5
+      type: double
+      description: .na.character
+    - name: PRDAY6
+      type: double
+      description: .na.character
+    - name: PRDAY7
+      type: double
+      description: .na.character
+    - name: PRDAY8
+      type: double
+      description: .na.character
+    - name: PRDAY9
+      type: double
+      description: .na.character
+    - name: PRDAY10
+      type: double
+      description: .na.character
+    - name: PRDAY11
+      type: double
+      description: .na.character
+    - name: PRDAY12
+      type: double
+      description: .na.character
+    - name: PRDAY13
+      type: double
+      description: .na.character
+    - name: PRDAY14
+      type: double
+      description: .na.character
+    - name: PRDAY15
+      type: double
+      description: .na.character
+    - name: PRDAY16
+      type: double
+      description: .na.character
+    - name: PRDAY17
+      type: double
+      description: .na.character
+    - name: PRDAY18
+      type: double
+      description: .na.character
+    - name: PRDAY19
+      type: double
+      description: .na.character
+    - name: PRDAY20
+      type: double
+      description: .na.character
+    - name: PRDAY21
+      type: double
+      description: .na.character
+    - name: PRDAY22
+      type: double
+      description: .na.character
+    - name: PRDAY23
+      type: double
+      description: .na.character
+    - name: PRDAY24
+      type: double
+      description: .na.character
+    - name: PRDAY25
+      type: double
+      description: .na.character
+    - name: PROCTYPE
+      type: double
+      description: .na.character
+    - name: PSTATE
+      type: string
+      description: .na.character
+    - name: PSTCO
+      type: double
+      description: .na.character
+    - name: PSTCO2
+      type: double
+      description: .na.character
+    - name: PointOfOriginUB04
+      type: string
+      description: .na.character
+    - name: PointOfOrigin_X
+      type: string
+      description: .na.character
+    - name: RACE
+      type: double
+      description: .na.character
+    - name: RACE_X
+      type: string
+      description: .na.character
+    - name: TOTCHG
+      type: double
+      description: .na.character
+    - name: TOTCHG_X
+      type: double
+      description: .na.character
+    - name: TRAN_IN
+      type: double
+      description: .na.character
+    - name: TRAN_OUT
+      type: double
+      description: .na.character
+    - name: YEAR
+      type: double
+      description: .na.character
+    - name: ZIPINC_QRTL
+      type: double
+      description: .na.character
+    - name: ZIP
+      type: string
+      description: .na.character
+    - name: AYEAR
+      type: double
+      description: .na.character
+    - name: DMONTH
+      type: double
+      description: .na.character
+    - name: BMONTH
+      type: double
+      description: .na.character
+    - name: BYEAR
+      type: double
+      description: .na.character
+    - name: PRMONTH1
+      type: double
+      description: .na.character
+    - name: PRMONTH2
+      type: double
+      description: .na.character
+    - name: PRMONTH3
+      type: double
+      description: .na.character
+    - name: PRMONTH4
+      type: double
+      description: .na.character
+    - name: PRMONTH5
+      type: double
+      description: .na.character
+    - name: PRMONTH6
+      type: double
+      description: .na.character
+    - name: PRMONTH7
+      type: double
+      description: .na.character
+    - name: PRMONTH8
+      type: double
+      description: .na.character
+    - name: PRMONTH9
+      type: double
+      description: .na.character
+    - name: PRMONTH10
+      type: double
+      description: .na.character
+    - name: PRMONTH11
+      type: double
+      description: .na.character
+    - name: PRMONTH12
+      type: double
+      description: .na.character
+    - name: PRMONTH13
+      type: double
+      description: .na.character
+    - name: PRMONTH14
+      type: double
+      description: .na.character
+    - name: PRMONTH15
+      type: double
+      description: .na.character
+    - name: PRMONTH16
+      type: double
+      description: .na.character
+    - name: PRMONTH17
+      type: double
+      description: .na.character
+    - name: PRMONTH18
+      type: double
+      description: .na.character
+    - name: PRMONTH19
+      type: double
+      description: .na.character
+    - name: PRMONTH20
+      type: double
+      description: .na.character
+    - name: PRMONTH21
+      type: double
+      description: .na.character
+    - name: PRMONTH22
+      type: double
+      description: .na.character
+    - name: PRMONTH23
+      type: double
+      description: .na.character
+    - name: PRMONTH24
+      type: double
+      description: .na.character
+    - name: PRMONTH25
+      type: double
+      description: .na.character
+    - name: PRYEAR1
+      type: double
+      description: .na.character
+    - name: PRYEAR2
+      type: double
+      description: .na.character
+    - name: PRYEAR3
+      type: double
+      description: .na.character
+    - name: PRYEAR4
+      type: double
+      description: .na.character
+    - name: PRYEAR5
+      type: double
+      description: .na.character
+    - name: PRYEAR6
+      type: double
+      description: .na.character
+    - name: PRYEAR7
+      type: double
+      description: .na.character
+    - name: PRYEAR8
+      type: double
+      description: .na.character
+    - name: PRYEAR9
+      type: double
+      description: .na.character
+    - name: PRYEAR10
+      type: double
+      description: .na.character
+    - name: PRYEAR11
+      type: double
+      description: .na.character
+    - name: PRYEAR12
+      type: double
+      description: .na.character
+    - name: PRYEAR13
+      type: double
+      description: .na.character
+    - name: PRYEAR14
+      type: double
+      description: .na.character
+    - name: PRYEAR15
+      type: double
+      description: .na.character
+    - name: PRYEAR16
+      type: double
+      description: .na.character
+    - name: PRYEAR17
+      type: double
+      description: .na.character
+    - name: PRYEAR18
+      type: double
+      description: .na.character
+    - name: PRYEAR19
+      type: double
+      description: .na.character
+    - name: PRYEAR20
+      type: double
+      description: .na.character
+    - name: PRYEAR21
+      type: double
+      description: .na.character
+    - name: PRYEAR22
+      type: double
+      description: .na.character
+    - name: PRYEAR23
+      type: double
+      description: .na.character
+    - name: PRYEAR24
+      type: double
+      description: .na.character
+    - name: PRYEAR25
+      type: double
+      description: .na.character

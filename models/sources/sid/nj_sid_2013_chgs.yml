@@ -1,0 +1,36 @@
+version: 2
+sources:
+- name: SID
+  tags:
+  - State
+  - Inpatient
+  - SID
+  - Source
+  description: '{{ doc("sid_description") }}'
+  meta:
+    external_location: \\files.drexel.edu\encrypted\SOPH\UHC\SchnakeMahl_HCUP\dbt\v0\sources\{name}.parquet
+  tables:
+  - name: NJ_SID_2013_CHGS
+    description: '{{ doc("sid_chgs_2005_2014_description") + "\n" + "\n" + doc("sid_2005_2014_description")}}'
+    columns:
+    - name: CHARGE
+      type: double
+      description: .na.character
+    - name: CPTHCPCS
+      type: string
+      description: .na.character
+    - name: CPTMod1
+      type: string
+      description: .na.character
+    - name: CPTMod2
+      type: string
+      description: .na.character
+    - name: KEY
+      type: double
+      description: .na.character
+    - name: REVCODE
+      type: string
+      description: .na.character
+    - name: UNITS
+      type: double
+      description: .na.character

@@ -1,0 +1,518 @@
+version: 2
+sources:
+- name: SID
+  tags:
+  - State
+  - Inpatient
+  - SID
+  - Source
+  description: '{{ doc("sid_description") }}'
+  meta:
+    external_location: \\files.drexel.edu\encrypted\SOPH\UHC\SchnakeMahl_HCUP\dbt\v0\sources\{name}.parquet
+  tables:
+  - name: KY_SID_2015q4_DX_PR_GRPS
+    description: '{{ doc("sid_dx_pr_grps_2015_description") + "\n" + "\n" + doc("sid_2015_description")}}'
+    columns:
+    - name: I10_BODYSYSTEM1
+      type: int32
+      description: ICD-10-CM Body system 1
+    - name: I10_BODYSYSTEM2
+      type: int32
+      description: ICD-10-CM Body system 2
+    - name: I10_BODYSYSTEM3
+      type: int32
+      description: ICD-10-CM Body system 3
+    - name: I10_BODYSYSTEM4
+      type: int32
+      description: ICD-10-CM Body system 4
+    - name: I10_BODYSYSTEM5
+      type: int32
+      description: ICD-10-CM Body system 5
+    - name: I10_BODYSYSTEM6
+      type: int32
+      description: ICD-10-CM Body system 6
+    - name: I10_BODYSYSTEM7
+      type: int32
+      description: ICD-10-CM Body system 7
+    - name: I10_BODYSYSTEM8
+      type: int32
+      description: ICD-10-CM Body system 8
+    - name: I10_BODYSYSTEM9
+      type: int32
+      description: ICD-10-CM Body system 9
+    - name: I10_BODYSYSTEM10
+      type: int32
+      description: ICD-10-CM Body system 10
+    - name: I10_BODYSYSTEM11
+      type: int32
+      description: ICD-10-CM Body system 11
+    - name: I10_BODYSYSTEM12
+      type: int32
+      description: ICD-10-CM Body system 12
+    - name: I10_BODYSYSTEM13
+      type: int32
+      description: ICD-10-CM Body system 13
+    - name: I10_BODYSYSTEM14
+      type: int32
+      description: ICD-10-CM Body system 14
+    - name: I10_BODYSYSTEM15
+      type: int32
+      description: ICD-10-CM Body system 15
+    - name: I10_BODYSYSTEM16
+      type: int32
+      description: ICD-10-CM Body system 16
+    - name: I10_BODYSYSTEM17
+      type: int32
+      description: ICD-10-CM Body system 17
+    - name: I10_BODYSYSTEM18
+      type: int32
+      description: ICD-10-CM Body system 18
+    - name: I10_BODYSYSTEM19
+      type: int32
+      description: ICD-10-CM Body system 19
+    - name: I10_BODYSYSTEM20
+      type: int32
+      description: ICD-10-CM Body system 20
+    - name: I10_BODYSYSTEM21
+      type: int32
+      description: ICD-10-CM Body system 21
+    - name: I10_BODYSYSTEM22
+      type: int32
+      description: ICD-10-CM Body system 22
+    - name: I10_BODYSYSTEM23
+      type: int32
+      description: ICD-10-CM Body system 23
+    - name: I10_BODYSYSTEM24
+      type: int32
+      description: ICD-10-CM Body system 24
+    - name: I10_BODYSYSTEM25
+      type: int32
+      description: ICD-10-CM Body system 25
+    - name: I10_CHRON1
+      type: int32
+      description: ICD-10-CM Chronic condition indicator 1
+    - name: I10_CHRON2
+      type: int32
+      description: ICD-10-CM Chronic condition indicator 2
+    - name: I10_CHRON3
+      type: int32
+      description: ICD-10-CM Chronic condition indicator 3
+    - name: I10_CHRON4
+      type: int32
+      description: ICD-10-CM Chronic condition indicator 4
+    - name: I10_CHRON5
+      type: int32
+      description: ICD-10-CM Chronic condition indicator 5
+    - name: I10_CHRON6
+      type: int32
+      description: ICD-10-CM Chronic condition indicator 6
+    - name: I10_CHRON7
+      type: int32
+      description: ICD-10-CM Chronic condition indicator 7
+    - name: I10_CHRON8
+      type: int32
+      description: ICD-10-CM Chronic condition indicator 8
+    - name: I10_CHRON9
+      type: int32
+      description: ICD-10-CM Chronic condition indicator 9
+    - name: I10_CHRON10
+      type: int32
+      description: ICD-10-CM Chronic condition indicator 10
+    - name: I10_CHRON11
+      type: int32
+      description: ICD-10-CM Chronic condition indicator 11
+    - name: I10_CHRON12
+      type: int32
+      description: ICD-10-CM Chronic condition indicator 12
+    - name: I10_CHRON13
+      type: int32
+      description: ICD-10-CM Chronic condition indicator 13
+    - name: I10_CHRON14
+      type: int32
+      description: ICD-10-CM Chronic condition indicator 14
+    - name: I10_CHRON15
+      type: int32
+      description: ICD-10-CM Chronic condition indicator 15
+    - name: I10_CHRON16
+      type: int32
+      description: ICD-10-CM Chronic condition indicator 16
+    - name: I10_CHRON17
+      type: int32
+      description: ICD-10-CM Chronic condition indicator 17
+    - name: I10_CHRON18
+      type: int32
+      description: ICD-10-CM Chronic condition indicator 18
+    - name: I10_CHRON19
+      type: int32
+      description: ICD-10-CM Chronic condition indicator 19
+    - name: I10_CHRON20
+      type: int32
+      description: ICD-10-CM Chronic condition indicator 20
+    - name: I10_CHRON21
+      type: int32
+      description: ICD-10-CM Chronic condition indicator 21
+    - name: I10_CHRON22
+      type: int32
+      description: ICD-10-CM Chronic condition indicator 22
+    - name: I10_CHRON23
+      type: int32
+      description: ICD-10-CM Chronic condition indicator 23
+    - name: I10_CHRON24
+      type: int32
+      description: ICD-10-CM Chronic condition indicator 24
+    - name: I10_CHRON25
+      type: int32
+      description: ICD-10-CM Chronic condition indicator 25
+    - name: I10_DXMCCS1
+      type: string
+      description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 1'
+    - name: I10_DXMCCS2
+      type: string
+      description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 2'
+    - name: I10_DXMCCS3
+      type: string
+      description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 3'
+    - name: I10_DXMCCS4
+      type: string
+      description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 4'
+    - name: I10_DXMCCS5
+      type: string
+      description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 5'
+    - name: I10_DXMCCS6
+      type: string
+      description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 6'
+    - name: I10_DXMCCS7
+      type: string
+      description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 7'
+    - name: I10_DXMCCS8
+      type: string
+      description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 8'
+    - name: I10_DXMCCS9
+      type: string
+      description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 9'
+    - name: I10_DXMCCS10
+      type: string
+      description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 10'
+    - name: I10_DXMCCS11
+      type: string
+      description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 11'
+    - name: I10_DXMCCS12
+      type: string
+      description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 12'
+    - name: I10_DXMCCS13
+      type: string
+      description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 13'
+    - name: I10_DXMCCS14
+      type: string
+      description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 14'
+    - name: I10_DXMCCS15
+      type: string
+      description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 15'
+    - name: I10_DXMCCS16
+      type: string
+      description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 16'
+    - name: I10_DXMCCS17
+      type: string
+      description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 17'
+    - name: I10_DXMCCS18
+      type: string
+      description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 18'
+    - name: I10_DXMCCS19
+      type: string
+      description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 19'
+    - name: I10_DXMCCS20
+      type: string
+      description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 20'
+    - name: I10_DXMCCS21
+      type: string
+      description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 21'
+    - name: I10_DXMCCS22
+      type: string
+      description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 22'
+    - name: I10_DXMCCS23
+      type: string
+      description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 23'
+    - name: I10_DXMCCS24
+      type: string
+      description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 24'
+    - name: I10_DXMCCS25
+      type: string
+      description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 25'
+    - name: I10_ECauseMCCS1
+      type: string
+      description: 'ICD-10-CM Multi-Level CCS:  E Cause 1'
+    - name: I10_ECauseMCCS2
+      type: string
+      description: 'ICD-10-CM Multi-Level CCS:  E Cause 2'
+    - name: I10_ECauseMCCS3
+      type: string
+      description: 'ICD-10-CM Multi-Level CCS:  E Cause 3'
+    - name: I10_ECauseMCCS4
+      type: string
+      description: 'ICD-10-CM Multi-Level CCS:  E Cause 4'
+    - name: I10_ECauseMCCS5
+      type: string
+      description: 'ICD-10-CM Multi-Level CCS:  E Cause 5'
+    - name: I10_ECauseMCCS6
+      type: string
+      description: 'ICD-10-CM Multi-Level CCS:  E Cause 6'
+    - name: I10_ECauseMCCS7
+      type: string
+      description: 'ICD-10-CM Multi-Level CCS:  E Cause 7'
+    - name: I10_ECauseMCCS8
+      type: string
+      description: 'ICD-10-CM Multi-Level CCS:  E Cause 8'
+    - name: I10_ECauseMCCS9
+      type: string
+      description: 'ICD-10-CM Multi-Level CCS:  E Cause 9'
+    - name: I10_INJURY
+      type: int32
+      description: ICD-10-CM Injury diagnosis reported on record (1:I10_DX1 is an
+        injury; 2:I10_DX2
+    - name: I10_MULTINJURY
+      type: int32
+      description: ICD-10-CM More than one injury diagnosis reported on record
+    - name: I10_PCLASS1
+      type: int32
+      description: ICD-10-PCS Procedure class 1
+    - name: I10_PCLASS2
+      type: int32
+      description: ICD-10-PCS Procedure class 2
+    - name: I10_PCLASS3
+      type: int32
+      description: ICD-10-PCS Procedure class 3
+    - name: I10_PCLASS4
+      type: int32
+      description: ICD-10-PCS Procedure class 4
+    - name: I10_PCLASS5
+      type: int32
+      description: ICD-10-PCS Procedure class 5
+    - name: I10_PCLASS6
+      type: int32
+      description: ICD-10-PCS Procedure class 6
+    - name: I10_PCLASS7
+      type: int32
+      description: ICD-10-PCS Procedure class 7
+    - name: I10_PCLASS8
+      type: int32
+      description: ICD-10-PCS Procedure class 8
+    - name: I10_PCLASS9
+      type: int32
+      description: ICD-10-PCS Procedure class 9
+    - name: I10_PCLASS10
+      type: int32
+      description: ICD-10-PCS Procedure class 10
+    - name: I10_PCLASS11
+      type: int32
+      description: ICD-10-PCS Procedure class 11
+    - name: I10_PCLASS12
+      type: int32
+      description: ICD-10-PCS Procedure class 12
+    - name: I10_PCLASS13
+      type: int32
+      description: ICD-10-PCS Procedure class 13
+    - name: I10_PCLASS14
+      type: int32
+      description: ICD-10-PCS Procedure class 14
+    - name: I10_PCLASS15
+      type: int32
+      description: ICD-10-PCS Procedure class 15
+    - name: I10_PCLASS16
+      type: int32
+      description: ICD-10-PCS Procedure class 16
+    - name: I10_PCLASS17
+      type: int32
+      description: ICD-10-PCS Procedure class 17
+    - name: I10_PCLASS18
+      type: int32
+      description: ICD-10-PCS Procedure class 18
+    - name: I10_PCLASS19
+      type: int32
+      description: ICD-10-PCS Procedure class 19
+    - name: I10_PCLASS20
+      type: int32
+      description: ICD-10-PCS Procedure class 20
+    - name: I10_PCLASS21
+      type: int32
+      description: ICD-10-PCS Procedure class 21
+    - name: I10_PCLASS22
+      type: int32
+      description: ICD-10-PCS Procedure class 22
+    - name: I10_PCLASS23
+      type: int32
+      description: ICD-10-PCS Procedure class 23
+    - name: I10_PCLASS24
+      type: int32
+      description: ICD-10-PCS Procedure class 24
+    - name: I10_PCLASS25
+      type: int32
+      description: ICD-10-PCS Procedure class 25
+    - name: I10_PRMCCS1
+      type: string
+      description: 'ICD-10-PCS Multi-Level CCS:  Procedure 1'
+    - name: I10_PRMCCS2
+      type: string
+      description: 'ICD-10-PCS Multi-Level CCS:  Procedure 2'
+    - name: I10_PRMCCS3
+      type: string
+      description: 'ICD-10-PCS Multi-Level CCS:  Procedure 3'
+    - name: I10_PRMCCS4
+      type: string
+      description: 'ICD-10-PCS Multi-Level CCS:  Procedure 4'
+    - name: I10_PRMCCS5
+      type: string
+      description: 'ICD-10-PCS Multi-Level CCS:  Procedure 5'
+    - name: I10_PRMCCS6
+      type: string
+      description: 'ICD-10-PCS Multi-Level CCS:  Procedure 6'
+    - name: I10_PRMCCS7
+      type: string
+      description: 'ICD-10-PCS Multi-Level CCS:  Procedure 7'
+    - name: I10_PRMCCS8
+      type: string
+      description: 'ICD-10-PCS Multi-Level CCS:  Procedure 8'
+    - name: I10_PRMCCS9
+      type: string
+      description: 'ICD-10-PCS Multi-Level CCS:  Procedure 9'
+    - name: I10_PRMCCS10
+      type: string
+      description: 'ICD-10-PCS Multi-Level CCS:  Procedure 10'
+    - name: I10_PRMCCS11
+      type: string
+      description: 'ICD-10-PCS Multi-Level CCS:  Procedure 11'
+    - name: I10_PRMCCS12
+      type: string
+      description: 'ICD-10-PCS Multi-Level CCS:  Procedure 12'
+    - name: I10_PRMCCS13
+      type: string
+      description: 'ICD-10-PCS Multi-Level CCS:  Procedure 13'
+    - name: I10_PRMCCS14
+      type: string
+      description: 'ICD-10-PCS Multi-Level CCS:  Procedure 14'
+    - name: I10_PRMCCS15
+      type: string
+      description: 'ICD-10-PCS Multi-Level CCS:  Procedure 15'
+    - name: I10_PRMCCS16
+      type: string
+      description: 'ICD-10-PCS Multi-Level CCS:  Procedure 16'
+    - name: I10_PRMCCS17
+      type: string
+      description: 'ICD-10-PCS Multi-Level CCS:  Procedure 17'
+    - name: I10_PRMCCS18
+      type: string
+      description: 'ICD-10-PCS Multi-Level CCS:  Procedure 18'
+    - name: I10_PRMCCS19
+      type: string
+      description: 'ICD-10-PCS Multi-Level CCS:  Procedure 19'
+    - name: I10_PRMCCS20
+      type: string
+      description: 'ICD-10-PCS Multi-Level CCS:  Procedure 20'
+    - name: I10_PRMCCS21
+      type: string
+      description: 'ICD-10-PCS Multi-Level CCS:  Procedure 21'
+    - name: I10_PRMCCS22
+      type: string
+      description: 'ICD-10-PCS Multi-Level CCS:  Procedure 22'
+    - name: I10_PRMCCS23
+      type: string
+      description: 'ICD-10-PCS Multi-Level CCS:  Procedure 23'
+    - name: I10_PRMCCS24
+      type: string
+      description: 'ICD-10-PCS Multi-Level CCS:  Procedure 24'
+    - name: I10_PRMCCS25
+      type: string
+      description: 'ICD-10-PCS Multi-Level CCS:  Procedure 25'
+    - name: I10_U_BLOOD
+      type: int32
+      description: 'ICD-10-PCS Utilization Flag: Blood'
+    - name: I10_U_CATH
+      type: int32
+      description: 'ICD-10-PCS Utilization Flag: Cardiac Catheterization Lab'
+    - name: I10_U_CTSCAN
+      type: int32
+      description: 'ICD-10-PCS Utilization Flag: Computed Tomography Scan'
+    - name: I10_U_EKG
+      type: int32
+      description: 'ICD-10-PCS Utilization Flag: Electrocardiogram'
+    - name: I10_U_MHSA
+      type: int32
+      description: 'ICD-10-PCS Utilization Flag: Mental Health and Substance Abuse'
+    - name: I10_U_MRT
+      type: int32
+      description: 'ICD-10-PCS Utilization Flag: Magnetic Resonance Technology'
+    - name: I10_U_PACEMAKER
+      type: int32
+      description: 'ICD-10-PCS Utilization Flag: Pacemaker'
+    - name: I10_U_PHYTHERAPY
+      type: int32
+      description: 'ICD-10-PCS Utilization Flag: Physical Therapy'
+    - name: I10_U_RADTHERAPY
+      type: int32
+      description: 'ICD-10-PCS Utilization Flag: Radiology - Therapeutic and/or Chemotherapy
+        Adminis'
+    - name: I10_U_STRESS
+      type: int32
+      description: 'ICD-10-PCS Utilization Flag: Cardiac Stress Test'
+    - name: KEY
+      type: double
+      description: HCUP record identifier
+    - name: U_CCU
+      type: int32
+      description: 'Utilization Flag: Coronary Care Unit (CCU)'
+    - name: U_CHESTXRAY
+      type: int32
+      description: 'Utilization Flag: Chest X-Ray'
+    - name: U_DIALYSIS
+      type: int32
+      description: 'Utilization Flag: Renal Dialysis'
+    - name: U_ECHO
+      type: int32
+      description: 'Utilization Flag: Echocardiology'
+    - name: U_ED
+      type: int32
+      description: 'Utilization Flag: Emergency Room'
+    - name: U_EEG
+      type: int32
+      description: 'Utilization Flag: Electroencephalogram'
+    - name: U_EPO
+      type: int32
+      description: 'Utilization Flag: EPO'
+    - name: U_ICU
+      type: int32
+      description: 'Utilization Flag: Intensive Care Unit (ICU)'
+    - name: U_LITHOTRIPSY
+      type: int32
+      description: 'Utilization Flag: Lithotripsy'
+    - name: U_NEWBN2L
+      type: int32
+      description: 'Utilization Flag: Nursery Level II'
+    - name: U_NEWBN3L
+      type: int32
+      description: 'Utilization Flag: Nursery Level III'
+    - name: U_NEWBN4L
+      type: int32
+      description: 'Utilization Flag: Nursery Level IV'
+    - name: U_NUCMED
+      type: int32
+      description: 'Utilization Flag: Nuclear Medicine'
+    - name: U_OBSERVATION
+      type: int32
+      description: 'Utilization Flag: Observation Room'
+    - name: U_OCCTHERAPY
+      type: int32
+      description: 'Utilization Flag: Occupational Therapy'
+    - name: U_ORGANACQ
+      type: int32
+      description: 'Utilization Flag: Organ Acquisition'
+    - name: U_OTHIMPLANTS
+      type: int32
+      description: 'Utilization Flag: Other Implants'
+    - name: U_RESPTHERAPY
+      type: int32
+      description: 'Utilization Flag: Respiratory Services'
+    - name: U_SPEECHTHERAPY
+      type: int32
+      description: 'Utilization Flag: Speech - Language Pathology'
+    - name: U_ULTRASOUND
+      type: int32
+      description: 'Utilization Flag: Ultrasound'

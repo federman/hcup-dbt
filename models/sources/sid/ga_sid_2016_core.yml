@@ -1,0 +1,1694 @@
+version: 2
+sources:
+- name: SID
+  tags:
+  - State
+  - Inpatient
+  - SID
+  - Source
+  description: '{{ doc("sid_description") }}'
+  meta:
+    external_location: \\files.drexel.edu\encrypted\SOPH\UHC\SchnakeMahl_HCUP\dbt\v0\sources\{name}.parquet
+  tables:
+  - name: GA_SID_2016_CORE
+    description: '{{ doc("sid_core_2016_2018_description") + "\n" + "\n" + doc("sid_2016_2018_description")}}'
+    columns:
+    - name: AGE
+      type: int32
+      description: Age in years at admission
+    - name: AGEDAY
+      type: int32
+      description: Age in days (when age < 1 year)
+    - name: AGEMONTH
+      type: int32
+      description: Age in months (when age < 11 years)
+    - name: AMONTH
+      type: int32
+      description: Admission month
+    - name: ATYPE
+      type: int32
+      description: Admission type
+    - name: AWEEKEND
+      type: int32
+      description: Admission day is a weekend
+    - name: BILLTYPE
+      type: string
+      description: Type of bill, UB-04 coding
+    - name: BWT
+      type: int32
+      description: Birth weight in grams
+    - name: CPT1
+      type: string
+      description: CPT/HCPCS procedure code 1
+    - name: CPT2
+      type: string
+      description: CPT/HCPCS procedure code 2
+    - name: CPT3
+      type: string
+      description: CPT/HCPCS procedure code 3
+    - name: CPT4
+      type: string
+      description: CPT/HCPCS procedure code 4
+    - name: CPT5
+      type: string
+      description: CPT/HCPCS procedure code 5
+    - name: CPT6
+      type: string
+      description: CPT/HCPCS procedure code 6
+    - name: CPT7
+      type: string
+      description: CPT/HCPCS procedure code 7
+    - name: CPT8
+      type: string
+      description: CPT/HCPCS procedure code 8
+    - name: CPT9
+      type: string
+      description: CPT/HCPCS procedure code 9
+    - name: CPT10
+      type: string
+      description: CPT/HCPCS procedure code 10
+    - name: CPT11
+      type: string
+      description: CPT/HCPCS procedure code 11
+    - name: CPT12
+      type: string
+      description: CPT/HCPCS procedure code 12
+    - name: CPT13
+      type: string
+      description: CPT/HCPCS procedure code 13
+    - name: CPT14
+      type: string
+      description: CPT/HCPCS procedure code 14
+    - name: CPT15
+      type: string
+      description: CPT/HCPCS procedure code 15
+    - name: CPT16
+      type: string
+      description: CPT/HCPCS procedure code 16
+    - name: CPT17
+      type: string
+      description: CPT/HCPCS procedure code 17
+    - name: CPT18
+      type: string
+      description: CPT/HCPCS procedure code 18
+    - name: CPT19
+      type: string
+      description: CPT/HCPCS procedure code 19
+    - name: CPT20
+      type: string
+      description: CPT/HCPCS procedure code 20
+    - name: CPT21
+      type: string
+      description: CPT/HCPCS procedure code 21
+    - name: CPT22
+      type: string
+      description: CPT/HCPCS procedure code 22
+    - name: CPT23
+      type: string
+      description: CPT/HCPCS procedure code 23
+    - name: CPT24
+      type: string
+      description: CPT/HCPCS procedure code 24
+    - name: CPT25
+      type: string
+      description: CPT/HCPCS procedure code 25
+    - name: CPT26
+      type: string
+      description: CPT/HCPCS procedure code 26
+    - name: CPT27
+      type: string
+      description: CPT/HCPCS procedure code 27
+    - name: CPT28
+      type: string
+      description: CPT/HCPCS procedure code 28
+    - name: CPT29
+      type: string
+      description: CPT/HCPCS procedure code 29
+    - name: CPT30
+      type: string
+      description: CPT/HCPCS procedure code 30
+    - name: CPT31
+      type: string
+      description: CPT/HCPCS procedure code 31
+    - name: CPT32
+      type: string
+      description: CPT/HCPCS procedure code 32
+    - name: CPT33
+      type: string
+      description: CPT/HCPCS procedure code 33
+    - name: CPT34
+      type: string
+      description: CPT/HCPCS procedure code 34
+    - name: CPT35
+      type: string
+      description: CPT/HCPCS procedure code 35
+    - name: CPT36
+      type: string
+      description: CPT/HCPCS procedure code 36
+    - name: CPT37
+      type: string
+      description: CPT/HCPCS procedure code 37
+    - name: CPT38
+      type: string
+      description: CPT/HCPCS procedure code 38
+    - name: CPT39
+      type: string
+      description: CPT/HCPCS procedure code 39
+    - name: CPT40
+      type: string
+      description: CPT/HCPCS procedure code 40
+    - name: CPT41
+      type: string
+      description: CPT/HCPCS procedure code 41
+    - name: CPT42
+      type: string
+      description: CPT/HCPCS procedure code 42
+    - name: CPT43
+      type: string
+      description: CPT/HCPCS procedure code 43
+    - name: CPT44
+      type: string
+      description: CPT/HCPCS procedure code 44
+    - name: CPT45
+      type: string
+      description: CPT/HCPCS procedure code 45
+    - name: CPT46
+      type: string
+      description: CPT/HCPCS procedure code 46
+    - name: CPT47
+      type: string
+      description: CPT/HCPCS procedure code 47
+    - name: CPT48
+      type: string
+      description: CPT/HCPCS procedure code 48
+    - name: CPT49
+      type: string
+      description: CPT/HCPCS procedure code 49
+    - name: CPT50
+      type: string
+      description: CPT/HCPCS procedure code 50
+    - name: CPTCCS1
+      type: int32
+      description: 'CCS: CPT 1'
+    - name: CPTCCS2
+      type: int32
+      description: 'CCS: CPT 2'
+    - name: CPTCCS3
+      type: int32
+      description: 'CCS: CPT 3'
+    - name: CPTCCS4
+      type: int32
+      description: 'CCS: CPT 4'
+    - name: CPTCCS5
+      type: int32
+      description: 'CCS: CPT 5'
+    - name: CPTCCS6
+      type: int32
+      description: 'CCS: CPT 6'
+    - name: CPTCCS7
+      type: int32
+      description: 'CCS: CPT 7'
+    - name: CPTCCS8
+      type: int32
+      description: 'CCS: CPT 8'
+    - name: CPTCCS9
+      type: int32
+      description: 'CCS: CPT 9'
+    - name: CPTCCS10
+      type: int32
+      description: 'CCS: CPT 10'
+    - name: CPTCCS11
+      type: int32
+      description: 'CCS: CPT 11'
+    - name: CPTCCS12
+      type: int32
+      description: 'CCS: CPT 12'
+    - name: CPTCCS13
+      type: int32
+      description: 'CCS: CPT 13'
+    - name: CPTCCS14
+      type: int32
+      description: 'CCS: CPT 14'
+    - name: CPTCCS15
+      type: int32
+      description: 'CCS: CPT 15'
+    - name: CPTCCS16
+      type: int32
+      description: 'CCS: CPT 16'
+    - name: CPTCCS17
+      type: int32
+      description: 'CCS: CPT 17'
+    - name: CPTCCS18
+      type: int32
+      description: 'CCS: CPT 18'
+    - name: CPTCCS19
+      type: int32
+      description: 'CCS: CPT 19'
+    - name: CPTCCS20
+      type: int32
+      description: 'CCS: CPT 20'
+    - name: CPTCCS21
+      type: int32
+      description: 'CCS: CPT 21'
+    - name: CPTCCS22
+      type: int32
+      description: 'CCS: CPT 22'
+    - name: CPTCCS23
+      type: int32
+      description: 'CCS: CPT 23'
+    - name: CPTCCS24
+      type: int32
+      description: 'CCS: CPT 24'
+    - name: CPTCCS25
+      type: int32
+      description: 'CCS: CPT 25'
+    - name: CPTCCS26
+      type: int32
+      description: 'CCS: CPT 26'
+    - name: CPTCCS27
+      type: int32
+      description: 'CCS: CPT 27'
+    - name: CPTCCS28
+      type: int32
+      description: 'CCS: CPT 28'
+    - name: CPTCCS29
+      type: int32
+      description: 'CCS: CPT 29'
+    - name: CPTCCS30
+      type: int32
+      description: 'CCS: CPT 30'
+    - name: CPTCCS31
+      type: int32
+      description: 'CCS: CPT 31'
+    - name: CPTCCS32
+      type: int32
+      description: 'CCS: CPT 32'
+    - name: CPTCCS33
+      type: int32
+      description: 'CCS: CPT 33'
+    - name: CPTCCS34
+      type: int32
+      description: 'CCS: CPT 34'
+    - name: CPTCCS35
+      type: int32
+      description: 'CCS: CPT 35'
+    - name: CPTCCS36
+      type: int32
+      description: 'CCS: CPT 36'
+    - name: CPTCCS37
+      type: int32
+      description: 'CCS: CPT 37'
+    - name: CPTCCS38
+      type: int32
+      description: 'CCS: CPT 38'
+    - name: CPTCCS39
+      type: int32
+      description: 'CCS: CPT 39'
+    - name: CPTCCS40
+      type: int32
+      description: 'CCS: CPT 40'
+    - name: CPTCCS41
+      type: int32
+      description: 'CCS: CPT 41'
+    - name: CPTCCS42
+      type: int32
+      description: 'CCS: CPT 42'
+    - name: CPTCCS43
+      type: int32
+      description: 'CCS: CPT 43'
+    - name: CPTCCS44
+      type: int32
+      description: 'CCS: CPT 44'
+    - name: CPTCCS45
+      type: int32
+      description: 'CCS: CPT 45'
+    - name: CPTCCS46
+      type: int32
+      description: 'CCS: CPT 46'
+    - name: CPTCCS47
+      type: int32
+      description: 'CCS: CPT 47'
+    - name: CPTCCS48
+      type: int32
+      description: 'CCS: CPT 48'
+    - name: CPTCCS49
+      type: int32
+      description: 'CCS: CPT 49'
+    - name: CPTCCS50
+      type: int32
+      description: 'CCS: CPT 50'
+    - name: DaysToEvent
+      type: int32
+      description: Days from 'start date' to admission
+    - name: DIED
+      type: int32
+      description: Died during hospitalization
+    - name: DISP_X
+      type: string
+      description: Disposition of patient (as received from source)
+    - name: DISPUB04
+      type: int32
+      description: Disposition of patient (UB-04 standard coding)
+    - name: DISPUNIFORM
+      type: int32
+      description: Disposition of patient (uniform)
+    - name: DMONTH
+      type: int32
+      description: Discharge month
+    - name: DQTR
+      type: int32
+      description: Discharge quarter
+    - name: DRG
+      type: int32
+      description: DRG in effect on discharge date
+    - name: DRG_NoPOA
+      type: int32
+      description: DRG in use on discharge date, calculated without POA
+    - name: DRGVER
+      type: int32
+      description: DRG grouper version used on discharge date
+    - name: DXPOA1
+      type: string
+      description: Diagnosis 1, present on admission indicator
+    - name: DXPOA2
+      type: string
+      description: Diagnosis 2, present on admission indicator
+    - name: DXPOA3
+      type: string
+      description: Diagnosis 3, present on admission indicator
+    - name: DXPOA4
+      type: string
+      description: Diagnosis 4, present on admission indicator
+    - name: DXPOA5
+      type: string
+      description: Diagnosis 5, present on admission indicator
+    - name: DXPOA6
+      type: string
+      description: Diagnosis 6, present on admission indicator
+    - name: DXPOA7
+      type: string
+      description: Diagnosis 7, present on admission indicator
+    - name: DXPOA8
+      type: string
+      description: Diagnosis 8, present on admission indicator
+    - name: DXPOA9
+      type: string
+      description: Diagnosis 9, present on admission indicator
+    - name: DXPOA10
+      type: string
+      description: Diagnosis 10, present on admission indicator
+    - name: DXPOA11
+      type: string
+      description: Diagnosis 11, present on admission indicator
+    - name: DXPOA12
+      type: string
+      description: Diagnosis 12, present on admission indicator
+    - name: DXPOA13
+      type: string
+      description: Diagnosis 13, present on admission indicator
+    - name: DXPOA14
+      type: string
+      description: Diagnosis 14, present on admission indicator
+    - name: DXPOA15
+      type: string
+      description: Diagnosis 15, present on admission indicator
+    - name: DXPOA16
+      type: string
+      description: Diagnosis 16, present on admission indicator
+    - name: DXPOA17
+      type: string
+      description: Diagnosis 17, present on admission indicator
+    - name: DXPOA18
+      type: string
+      description: Diagnosis 18, present on admission indicator
+    - name: DXPOA19
+      type: string
+      description: Diagnosis 19, present on admission indicator
+    - name: DXPOA20
+      type: string
+      description: Diagnosis 20, present on admission indicator
+    - name: DXPOA21
+      type: string
+      description: Diagnosis 21, present on admission indicator
+    - name: DXPOA22
+      type: string
+      description: Diagnosis 22, present on admission indicator
+    - name: DXPOA23
+      type: string
+      description: Diagnosis 23, present on admission indicator
+    - name: DXPOA24
+      type: string
+      description: Diagnosis 24, present on admission indicator
+    - name: DXPOA25
+      type: string
+      description: Diagnosis 25, present on admission indicator
+    - name: DXPOA26
+      type: string
+      description: Diagnosis 26, present on admission indicator
+    - name: DXPOA27
+      type: string
+      description: Diagnosis 27, present on admission indicator
+    - name: DXPOA28
+      type: string
+      description: Diagnosis 28, present on admission indicator
+    - name: DXPOA29
+      type: string
+      description: Diagnosis 29, present on admission indicator
+    - name: DXPOA30
+      type: string
+      description: Diagnosis 30, present on admission indicator
+    - name: DXPOA31
+      type: string
+      description: Diagnosis 31, present on admission indicator
+    - name: DXPOA32
+      type: string
+      description: Diagnosis 32, present on admission indicator
+    - name: DXPOA33
+      type: string
+      description: Diagnosis 33, present on admission indicator
+    - name: DXPOA34
+      type: string
+      description: Diagnosis 34, present on admission indicator
+    - name: DXPOA35
+      type: string
+      description: Diagnosis 35, present on admission indicator
+    - name: DXPOA36
+      type: string
+      description: Diagnosis 36, present on admission indicator
+    - name: DXPOA37
+      type: string
+      description: Diagnosis 37, present on admission indicator
+    - name: DXPOA38
+      type: string
+      description: Diagnosis 38, present on admission indicator
+    - name: DXPOA39
+      type: string
+      description: Diagnosis 39, present on admission indicator
+    - name: DXPOA40
+      type: string
+      description: Diagnosis 40, present on admission indicator
+    - name: DXPOA41
+      type: string
+      description: Diagnosis 41, present on admission indicator
+    - name: DXPOA42
+      type: string
+      description: Diagnosis 42, present on admission indicator
+    - name: DXPOA43
+      type: string
+      description: Diagnosis 43, present on admission indicator
+    - name: DXPOA44
+      type: string
+      description: Diagnosis 44, present on admission indicator
+    - name: DXPOA45
+      type: string
+      description: Diagnosis 45, present on admission indicator
+    - name: DXPOA46
+      type: string
+      description: Diagnosis 46, present on admission indicator
+    - name: DXPOA47
+      type: string
+      description: Diagnosis 47, present on admission indicator
+    - name: DXPOA48
+      type: string
+      description: Diagnosis 48, present on admission indicator
+    - name: DXPOA49
+      type: string
+      description: Diagnosis 49, present on admission indicator
+    - name: DXPOA50
+      type: string
+      description: Diagnosis 50, present on admission indicator
+    - name: DXPOA51
+      type: string
+      description: Diagnosis 51, present on admission indicator
+    - name: DXPOA52
+      type: string
+      description: Diagnosis 52, present on admission indicator
+    - name: DXPOA53
+      type: string
+      description: Diagnosis 53, present on admission indicator
+    - name: DXPOA54
+      type: string
+      description: Diagnosis 54, present on admission indicator
+    - name: DXPOA55
+      type: string
+      description: Diagnosis 55, present on admission indicator
+    - name: DXPOA56
+      type: string
+      description: Diagnosis 56, present on admission indicator
+    - name: DXPOA57
+      type: string
+      description: Diagnosis 57, present on admission indicator
+    - name: DXPOA58
+      type: string
+      description: Diagnosis 58, present on admission indicator
+    - name: DXPOA59
+      type: string
+      description: Diagnosis 59, present on admission indicator
+    - name: DXPOA60
+      type: string
+      description: Diagnosis 60, present on admission indicator
+    - name: DXVER
+      type: int32
+      description: Diagnosis Version
+    - name: E_POA1
+      type: string
+      description: External cause 1, present on admission indicator
+    - name: E_POA2
+      type: string
+      description: External cause 2, present on admission indicator
+    - name: E_POA3
+      type: string
+      description: External cause 3, present on admission indicator
+    - name: E_POA4
+      type: string
+      description: External cause 4, present on admission indicator
+    - name: E_POA5
+      type: string
+      description: External cause 5, present on admission indicator
+    - name: E_POA6
+      type: string
+      description: External cause 6, present on admission indicator
+    - name: E_POA7
+      type: string
+      description: External cause 7, present on admission indicator
+    - name: E_POA8
+      type: string
+      description: External cause 8, present on admission indicator
+    - name: FEMALE
+      type: int32
+      description: Indicator of sex
+    - name: HCUP_ED
+      type: int32
+      description: HCUP Emergency Department service indicator
+    - name: HCUP_OS
+      type: int32
+      description: HCUP Observation Stay service indicator
+    - name: HISPANIC
+      type: int32
+      description: Hispanic ethnicity (uniform)
+    - name: HISPANIC_X
+      type: string
+      description: Hispanic ethnicity (as received from source)
+    - name: Homeless
+      type: int32
+      description: Indicator that patient is homeless
+    - name: HOSPST
+      type: string
+      description: Hospital state postal code
+    - name: I10_DX1
+      type: string
+      description: ICD-10-CM Diagnosis 1
+    - name: I10_DX2
+      type: string
+      description: ICD-10-CM Diagnosis 2
+    - name: I10_DX3
+      type: string
+      description: ICD-10-CM Diagnosis 3
+    - name: I10_DX4
+      type: string
+      description: ICD-10-CM Diagnosis 4
+    - name: I10_DX5
+      type: string
+      description: ICD-10-CM Diagnosis 5
+    - name: I10_DX6
+      type: string
+      description: ICD-10-CM Diagnosis 6
+    - name: I10_DX7
+      type: string
+      description: ICD-10-CM Diagnosis 7
+    - name: I10_DX8
+      type: string
+      description: ICD-10-CM Diagnosis 8
+    - name: I10_DX9
+      type: string
+      description: ICD-10-CM Diagnosis 9
+    - name: I10_DX10
+      type: string
+      description: ICD-10-CM Diagnosis 10
+    - name: I10_DX11
+      type: string
+      description: ICD-10-CM Diagnosis 11
+    - name: I10_DX12
+      type: string
+      description: ICD-10-CM Diagnosis 12
+    - name: I10_DX13
+      type: string
+      description: ICD-10-CM Diagnosis 13
+    - name: I10_DX14
+      type: string
+      description: ICD-10-CM Diagnosis 14
+    - name: I10_DX15
+      type: string
+      description: ICD-10-CM Diagnosis 15
+    - name: I10_DX16
+      type: string
+      description: ICD-10-CM Diagnosis 16
+    - name: I10_DX17
+      type: string
+      description: ICD-10-CM Diagnosis 17
+    - name: I10_DX18
+      type: string
+      description: ICD-10-CM Diagnosis 18
+    - name: I10_DX19
+      type: string
+      description: ICD-10-CM Diagnosis 19
+    - name: I10_DX20
+      type: string
+      description: ICD-10-CM Diagnosis 20
+    - name: I10_DX21
+      type: string
+      description: ICD-10-CM Diagnosis 21
+    - name: I10_DX22
+      type: string
+      description: ICD-10-CM Diagnosis 22
+    - name: I10_DX23
+      type: string
+      description: ICD-10-CM Diagnosis 23
+    - name: I10_DX24
+      type: string
+      description: ICD-10-CM Diagnosis 24
+    - name: I10_DX25
+      type: string
+      description: ICD-10-CM Diagnosis 25
+    - name: I10_DX26
+      type: string
+      description: ICD-10-CM Diagnosis 26
+    - name: I10_DX27
+      type: string
+      description: ICD-10-CM Diagnosis 27
+    - name: I10_DX28
+      type: string
+      description: ICD-10-CM Diagnosis 28
+    - name: I10_DX29
+      type: string
+      description: ICD-10-CM Diagnosis 29
+    - name: I10_DX30
+      type: string
+      description: ICD-10-CM Diagnosis 30
+    - name: I10_DX31
+      type: string
+      description: ICD-10-CM Diagnosis 31
+    - name: I10_DX32
+      type: string
+      description: ICD-10-CM Diagnosis 32
+    - name: I10_DX33
+      type: string
+      description: ICD-10-CM Diagnosis 33
+    - name: I10_DX34
+      type: string
+      description: ICD-10-CM Diagnosis 34
+    - name: I10_DX35
+      type: string
+      description: ICD-10-CM Diagnosis 35
+    - name: I10_DX36
+      type: string
+      description: ICD-10-CM Diagnosis 36
+    - name: I10_DX37
+      type: string
+      description: ICD-10-CM Diagnosis 37
+    - name: I10_DX38
+      type: string
+      description: ICD-10-CM Diagnosis 38
+    - name: I10_DX39
+      type: string
+      description: ICD-10-CM Diagnosis 39
+    - name: I10_DX40
+      type: string
+      description: ICD-10-CM Diagnosis 40
+    - name: I10_DX41
+      type: string
+      description: ICD-10-CM Diagnosis 41
+    - name: I10_DX42
+      type: string
+      description: ICD-10-CM Diagnosis 42
+    - name: I10_DX43
+      type: string
+      description: ICD-10-CM Diagnosis 43
+    - name: I10_DX44
+      type: string
+      description: ICD-10-CM Diagnosis 44
+    - name: I10_DX45
+      type: string
+      description: ICD-10-CM Diagnosis 45
+    - name: I10_DX46
+      type: string
+      description: ICD-10-CM Diagnosis 46
+    - name: I10_DX47
+      type: string
+      description: ICD-10-CM Diagnosis 47
+    - name: I10_DX48
+      type: string
+      description: ICD-10-CM Diagnosis 48
+    - name: I10_DX49
+      type: string
+      description: ICD-10-CM Diagnosis 49
+    - name: I10_DX50
+      type: string
+      description: ICD-10-CM Diagnosis 50
+    - name: I10_DX51
+      type: string
+      description: ICD-10-CM Diagnosis 51
+    - name: I10_DX52
+      type: string
+      description: ICD-10-CM Diagnosis 52
+    - name: I10_DX53
+      type: string
+      description: ICD-10-CM Diagnosis 53
+    - name: I10_DX54
+      type: string
+      description: ICD-10-CM Diagnosis 54
+    - name: I10_DX55
+      type: string
+      description: ICD-10-CM Diagnosis 55
+    - name: I10_DX56
+      type: string
+      description: ICD-10-CM Diagnosis 56
+    - name: I10_DX57
+      type: string
+      description: ICD-10-CM Diagnosis 57
+    - name: I10_DX58
+      type: string
+      description: ICD-10-CM Diagnosis 58
+    - name: I10_DX59
+      type: string
+      description: ICD-10-CM Diagnosis 59
+    - name: I10_DX60
+      type: string
+      description: ICD-10-CM Diagnosis 60
+    - name: I10_ECAUSE1
+      type: string
+      description: ICD-10-CM External cause 1
+    - name: I10_ECAUSE2
+      type: string
+      description: ICD-10-CM External cause 2
+    - name: I10_ECAUSE3
+      type: string
+      description: ICD-10-CM External cause 3
+    - name: I10_ECAUSE4
+      type: string
+      description: ICD-10-CM External cause 4
+    - name: I10_ECAUSE5
+      type: string
+      description: ICD-10-CM External cause 5
+    - name: I10_ECAUSE6
+      type: string
+      description: ICD-10-CM External cause 6
+    - name: I10_ECAUSE7
+      type: string
+      description: ICD-10-CM External cause 7
+    - name: I10_ECAUSE8
+      type: string
+      description: ICD-10-CM External cause 8
+    - name: I10_NDX
+      type: int32
+      description: ICD-10-CM Number of diagnoses on this record
+    - name: I10_NECAUSE
+      type: int32
+      description: ICD-10-CM Number of External cause codes on this record
+    - name: I10_NPR
+      type: int32
+      description: ICD-10-PCS Number of procedures on this record
+    - name: I10_PR1
+      type: string
+      description: ICD-10-PCS Procedure 1
+    - name: I10_PR2
+      type: string
+      description: ICD-10-PCS Procedure 2
+    - name: I10_PR3
+      type: string
+      description: ICD-10-PCS Procedure 3
+    - name: I10_PR4
+      type: string
+      description: ICD-10-PCS Procedure 4
+    - name: I10_PR5
+      type: string
+      description: ICD-10-PCS Procedure 5
+    - name: I10_PR6
+      type: string
+      description: ICD-10-PCS Procedure 6
+    - name: I10_PR7
+      type: string
+      description: ICD-10-PCS Procedure 7
+    - name: I10_PR8
+      type: string
+      description: ICD-10-PCS Procedure 8
+    - name: I10_PR9
+      type: string
+      description: ICD-10-PCS Procedure 9
+    - name: I10_PR10
+      type: string
+      description: ICD-10-PCS Procedure 10
+    - name: I10_PR11
+      type: string
+      description: ICD-10-PCS Procedure 11
+    - name: I10_PR12
+      type: string
+      description: ICD-10-PCS Procedure 12
+    - name: I10_PR13
+      type: string
+      description: ICD-10-PCS Procedure 13
+    - name: I10_PR14
+      type: string
+      description: ICD-10-PCS Procedure 14
+    - name: I10_PR15
+      type: string
+      description: ICD-10-PCS Procedure 15
+    - name: I10_PR16
+      type: string
+      description: ICD-10-PCS Procedure 16
+    - name: I10_PR17
+      type: string
+      description: ICD-10-PCS Procedure 17
+    - name: I10_PR18
+      type: string
+      description: ICD-10-PCS Procedure 18
+    - name: I10_PR19
+      type: string
+      description: ICD-10-PCS Procedure 19
+    - name: I10_PR20
+      type: string
+      description: ICD-10-PCS Procedure 20
+    - name: I10_PR21
+      type: string
+      description: ICD-10-PCS Procedure 21
+    - name: I10_PR22
+      type: string
+      description: ICD-10-PCS Procedure 22
+    - name: I10_PR23
+      type: string
+      description: ICD-10-PCS Procedure 23
+    - name: I10_PR24
+      type: string
+      description: ICD-10-PCS Procedure 24
+    - name: I10_PR25
+      type: string
+      description: ICD-10-PCS Procedure 25
+    - name: I10_PR26
+      type: string
+      description: ICD-10-PCS Procedure 26
+    - name: I10_PR27
+      type: string
+      description: ICD-10-PCS Procedure 27
+    - name: I10_PR28
+      type: string
+      description: ICD-10-PCS Procedure 28
+    - name: I10_PR29
+      type: string
+      description: ICD-10-PCS Procedure 29
+    - name: I10_PR30
+      type: string
+      description: ICD-10-PCS Procedure 30
+    - name: I10_PR31
+      type: string
+      description: ICD-10-PCS Procedure 31
+    - name: I10_PR32
+      type: string
+      description: ICD-10-PCS Procedure 32
+    - name: I10_PR33
+      type: string
+      description: ICD-10-PCS Procedure 33
+    - name: I10_PR34
+      type: string
+      description: ICD-10-PCS Procedure 34
+    - name: I10_PR35
+      type: string
+      description: ICD-10-PCS Procedure 35
+    - name: I10_PR36
+      type: string
+      description: ICD-10-PCS Procedure 36
+    - name: I10_PR37
+      type: string
+      description: ICD-10-PCS Procedure 37
+    - name: I10_PR38
+      type: string
+      description: ICD-10-PCS Procedure 38
+    - name: I10_PR39
+      type: string
+      description: ICD-10-PCS Procedure 39
+    - name: I10_PR40
+      type: string
+      description: ICD-10-PCS Procedure 40
+    - name: I10_PR41
+      type: string
+      description: ICD-10-PCS Procedure 41
+    - name: I10_PR42
+      type: string
+      description: ICD-10-PCS Procedure 42
+    - name: I10_PR43
+      type: string
+      description: ICD-10-PCS Procedure 43
+    - name: I10_PR44
+      type: string
+      description: ICD-10-PCS Procedure 44
+    - name: I10_PR45
+      type: string
+      description: ICD-10-PCS Procedure 45
+    - name: I10_PR46
+      type: string
+      description: ICD-10-PCS Procedure 46
+    - name: I10_PR47
+      type: string
+      description: ICD-10-PCS Procedure 47
+    - name: I10_PR48
+      type: string
+      description: ICD-10-PCS Procedure 48
+    - name: I10_PR49
+      type: string
+      description: ICD-10-PCS Procedure 49
+    - name: I10_PR50
+      type: string
+      description: ICD-10-PCS Procedure 50
+    - name: I10_PR51
+      type: string
+      description: ICD-10-PCS Procedure 51
+    - name: I10_PR52
+      type: string
+      description: ICD-10-PCS Procedure 52
+    - name: I10_PR53
+      type: string
+      description: ICD-10-PCS Procedure 53
+    - name: I10_PR54
+      type: string
+      description: ICD-10-PCS Procedure 54
+    - name: I10_PR55
+      type: string
+      description: ICD-10-PCS Procedure 55
+    - name: I10_PR56
+      type: string
+      description: ICD-10-PCS Procedure 56
+    - name: I10_PR57
+      type: string
+      description: ICD-10-PCS Procedure 57
+    - name: I10_PR58
+      type: string
+      description: ICD-10-PCS Procedure 58
+    - name: I10_PR59
+      type: string
+      description: ICD-10-PCS Procedure 59
+    - name: I10_PR60
+      type: string
+      description: ICD-10-PCS Procedure 60
+    - name: I10_PROCTYPE
+      type: int32
+      description: ICD-10-PCS Procedure type indicator
+    - name: KEY
+      type: double
+      description: HCUP record identifier
+    - name: LOS
+      type: int32
+      description: Length of stay (cleaned)
+    - name: LOS_X
+      type: int32
+      description: Length of stay (as received from source)
+    - name: MARITALSTATUS_X
+      type: string
+      description: Patient's marital status (as received from source)
+    - name: MARITALSTATUSUB04
+      type: string
+      description: Patient's marital status, UB-04 standard coding
+    - name: MDC
+      type: int32
+      description: MDC in effect on discharge date
+    - name: MDC_NoPOA
+      type: int32
+      description: MDC in use on discharge date, calculated without POA
+    - name: MDNUM1_R
+      type: int32
+      description: Physician 1 number (re-identified)
+    - name: MDNUM2_R
+      type: int32
+      description: Physician 2 number (re-identified)
+    - name: MDNUM3_R
+      type: int32
+      description: Physician 3 number (re-identified)
+    - name: MDNUM4_R
+      type: int32
+      description: Physician 4 number (re-identified)
+    - name: MEDINCSTQ
+      type: int32
+      description: Median household income state quartile for patient ZIP Code
+    - name: NCPT
+      type: int32
+      description: Number of CPT/HCPCS procedures for this visit
+    - name: OS_TIME
+      type: double
+      description: Observation stay time summed from UNITS
+    - name: PAY1
+      type: int32
+      description: Primary expected payer (uniform)
+    - name: PAY1_X
+      type: string
+      description: Primary expected payer (as received from source)
+    - name: PAY2
+      type: int32
+      description: Secondary expected payer (uniform)
+    - name: PAY2_X
+      type: string
+      description: Secondary expected payer (as received from source)
+    - name: PAY3
+      type: int32
+      description: Tertiary expected payer (uniform)
+    - name: PAY3_X
+      type: string
+      description: Tertiary expected payer (as received from source)
+    - name: PL_CBSA
+      type: int32
+      description: 'Patient location: Core Based Statistical Area (CBSA)'
+    - name: PL_NCHS
+      type: int32
+      description: 'Patient Location: NCHS Urban-Rural Code'
+    - name: PL_RUCC
+      type: int32
+      description: 'Patient location: Rural-Urban Continuum Codes(RUCC)'
+    - name: PL_UIC
+      type: int32
+      description: 'Patient location: Urban Influence Codes'
+    - name: PL_UR_CAT4
+      type: int32
+      description: 'Patient Location: Urban-Rural 4 Categories'
+    - name: POA_Disch_Edit1
+      type: int32
+      description: Discharge has POA missing on all nonexempt diagnoses
+    - name: POA_Disch_Edit2
+      type: int32
+      description: Discharge has POA missing on all nonexempt secondary diagnoses
+    - name: POA_Hosp_Edit1
+      type: int32
+      description: Hospital reported POA as Y on all diagnoses on all discharges
+    - name: POA_Hosp_Edit2
+      type: int32
+      description: Hospital reported POA as missing on all non-Medicare discharges
+    - name: POA_Hosp_Edit3
+      type: int32
+      description: Hospital reported POA as missing on all nonexempt diagnoses for
+        15% or more of d
+    - name: POA_Hosp_Edit3_Value
+      type: double
+      description: Percentage of discharges with all nonexempt diagnoses missing POA
+        indicators
+    - name: PointOfOrigin_X
+      type: string
+      description: Point of origin for admission or visit, as received from source
+    - name: PointOfOriginUB04
+      type: string
+      description: Point of origin for admission or visit, UB-04 standard coding
+    - name: PRDAY1
+      type: int32
+      description: Number of days from admission to I10_PR1
+    - name: PRDAY2
+      type: int32
+      description: Number of days from admission to I10_PR2
+    - name: PRDAY3
+      type: int32
+      description: Number of days from admission to I10_PR3
+    - name: PRDAY4
+      type: int32
+      description: Number of days from admission to I10_PR4
+    - name: PRDAY5
+      type: int32
+      description: Number of days from admission to I10_PR5
+    - name: PRDAY6
+      type: int32
+      description: Number of days from admission to I10_PR6
+    - name: PRDAY7
+      type: int32
+      description: Number of days from admission to I10_PR7
+    - name: PRDAY8
+      type: int32
+      description: Number of days from admission to I10_PR8
+    - name: PRDAY9
+      type: int32
+      description: Number of days from admission to I10_PR9
+    - name: PRDAY10
+      type: int32
+      description: Number of days from admission to I10_PR10
+    - name: PRDAY11
+      type: int32
+      description: Number of days from admission to I10_PR11
+    - name: PRDAY12
+      type: int32
+      description: Number of days from admission to I10_PR12
+    - name: PRDAY13
+      type: int32
+      description: Number of days from admission to I10_PR13
+    - name: PRDAY14
+      type: int32
+      description: Number of days from admission to I10_PR14
+    - name: PRDAY15
+      type: int32
+      description: Number of days from admission to I10_PR15
+    - name: PRDAY16
+      type: int32
+      description: Number of days from admission to I10_PR16
+    - name: PRDAY17
+      type: int32
+      description: Number of days from admission to I10_PR17
+    - name: PRDAY18
+      type: int32
+      description: Number of days from admission to I10_PR18
+    - name: PRDAY19
+      type: int32
+      description: Number of days from admission to I10_PR19
+    - name: PRDAY20
+      type: int32
+      description: Number of days from admission to I10_PR20
+    - name: PRDAY21
+      type: int32
+      description: Number of days from admission to I10_PR21
+    - name: PRDAY22
+      type: int32
+      description: Number of days from admission to I10_PR22
+    - name: PRDAY23
+      type: int32
+      description: Number of days from admission to I10_PR23
+    - name: PRDAY24
+      type: int32
+      description: Number of days from admission to I10_PR24
+    - name: PRDAY25
+      type: int32
+      description: Number of days from admission to I10_PR25
+    - name: PRDAY26
+      type: int32
+      description: Number of days from admission to I10_PR26
+    - name: PRDAY27
+      type: int32
+      description: Number of days from admission to I10_PR27
+    - name: PRDAY28
+      type: int32
+      description: Number of days from admission to I10_PR28
+    - name: PRDAY29
+      type: int32
+      description: Number of days from admission to I10_PR29
+    - name: PRDAY30
+      type: int32
+      description: Number of days from admission to I10_PR30
+    - name: PRDAY31
+      type: int32
+      description: Number of days from admission to I10_PR31
+    - name: PRDAY32
+      type: int32
+      description: Number of days from admission to I10_PR32
+    - name: PRDAY33
+      type: int32
+      description: Number of days from admission to I10_PR33
+    - name: PRDAY34
+      type: int32
+      description: Number of days from admission to I10_PR34
+    - name: PRDAY35
+      type: int32
+      description: Number of days from admission to I10_PR35
+    - name: PRDAY36
+      type: int32
+      description: Number of days from admission to I10_PR36
+    - name: PRDAY37
+      type: int32
+      description: Number of days from admission to I10_PR37
+    - name: PRDAY38
+      type: int32
+      description: Number of days from admission to I10_PR38
+    - name: PRDAY39
+      type: int32
+      description: Number of days from admission to I10_PR39
+    - name: PRDAY40
+      type: int32
+      description: Number of days from admission to I10_PR40
+    - name: PRDAY41
+      type: int32
+      description: Number of days from admission to I10_PR41
+    - name: PRDAY42
+      type: int32
+      description: Number of days from admission to I10_PR42
+    - name: PRDAY43
+      type: int32
+      description: Number of days from admission to I10_PR43
+    - name: PRDAY44
+      type: int32
+      description: Number of days from admission to I10_PR44
+    - name: PRDAY45
+      type: int32
+      description: Number of days from admission to I10_PR45
+    - name: PRDAY46
+      type: int32
+      description: Number of days from admission to I10_PR46
+    - name: PRDAY47
+      type: int32
+      description: Number of days from admission to I10_PR47
+    - name: PRDAY48
+      type: int32
+      description: Number of days from admission to I10_PR48
+    - name: PRDAY49
+      type: int32
+      description: Number of days from admission to I10_PR49
+    - name: PRDAY50
+      type: int32
+      description: Number of days from admission to I10_PR50
+    - name: PRDAY51
+      type: int32
+      description: Number of days from admission to I10_PR51
+    - name: PRDAY52
+      type: int32
+      description: Number of days from admission to I10_PR52
+    - name: PRDAY53
+      type: int32
+      description: Number of days from admission to I10_PR53
+    - name: PRDAY54
+      type: int32
+      description: Number of days from admission to I10_PR54
+    - name: PRDAY55
+      type: int32
+      description: Number of days from admission to I10_PR55
+    - name: PRDAY56
+      type: int32
+      description: Number of days from admission to I10_PR56
+    - name: PRDAY57
+      type: int32
+      description: Number of days from admission to I10_PR57
+    - name: PRDAY58
+      type: int32
+      description: Number of days from admission to I10_PR58
+    - name: PRDAY59
+      type: int32
+      description: Number of days from admission to I10_PR59
+    - name: PRDAY60
+      type: int32
+      description: Number of days from admission to I10_PR60
+    - name: PrimLang
+      type: string
+      description: Primary language of patient
+    - name: PRVER
+      type: int32
+      description: Procedure Version
+    - name: PSTATE
+      type: string
+      description: Patient State postal code
+    - name: PSTCO
+      type: int32
+      description: Patient state/county FIPS code
+    - name: PSTCO2
+      type: int32
+      description: Patient state/county FIPS code, possibly derived from ZIP Code
+    - name: RACE
+      type: int32
+      description: Race (uniform)
+    - name: RACE_X
+      type: string
+      description: Race (as received from source)
+    - name: TOTCHG
+      type: double
+      description: Total charges (cleaned)
+    - name: TOTCHG_X
+      type: double
+      description: Total charges (as received from source)
+    - name: TRAN_IN
+      type: int32
+      description: Transfer in indicator
+    - name: TRAN_OUT
+      type: int32
+      description: Transfer out indicator
+    - name: VisitLink
+      type: int32
+      description: Visit linkage variable
+    - name: YEAR
+      type: int32
+      description: Calendar year
+    - name: ZIP
+      type: string
+      description: Patient ZIP Code
+    - name: ZIP3
+      type: string
+      description: Patient ZIP Code, first 3 digits
+    - name: ZIPINC_QRTL
+      type: int32
+      description: Median household income national quartile for patient ZIP Code
+    - name: HOSPID
+      type: int32
+      description: HCUP hospital identification number
+    - name: AYEAR
+      type: int32
+      description: Admission year
+    - name: BMONTH
+      type: int32
+      description: Birth month
+    - name: BYEAR
+      type: int32
+      description: Birth year
+    - name: PRMONTH1
+      type: int32
+      description: Month of procedure 1
+    - name: PRMONTH2
+      type: int32
+      description: Month of procedure 2
+    - name: PRMONTH3
+      type: int32
+      description: Month of procedure 3
+    - name: PRMONTH4
+      type: int32
+      description: Month of procedure 4
+    - name: PRMONTH5
+      type: int32
+      description: Month of procedure 5
+    - name: PRMONTH6
+      type: int32
+      description: Month of procedure 6
+    - name: PRMONTH7
+      type: int32
+      description: Month of procedure 7
+    - name: PRMONTH8
+      type: int32
+      description: Month of procedure 8
+    - name: PRMONTH9
+      type: int32
+      description: Month of procedure 9
+    - name: PRMONTH10
+      type: int32
+      description: Month of procedure 10
+    - name: PRMONTH11
+      type: int32
+      description: Month of procedure 11
+    - name: PRMONTH12
+      type: int32
+      description: Month of procedure 12
+    - name: PRMONTH13
+      type: int32
+      description: Month of procedure 13
+    - name: PRMONTH14
+      type: int32
+      description: Month of procedure 14
+    - name: PRMONTH15
+      type: int32
+      description: Month of procedure 15
+    - name: PRMONTH16
+      type: int32
+      description: Month of procedure 16
+    - name: PRMONTH17
+      type: int32
+      description: Month of procedure 17
+    - name: PRMONTH18
+      type: int32
+      description: Month of procedure 18
+    - name: PRMONTH19
+      type: int32
+      description: Month of procedure 19
+    - name: PRMONTH20
+      type: int32
+      description: Month of procedure 20
+    - name: PRMONTH21
+      type: int32
+      description: Month of procedure 21
+    - name: PRMONTH22
+      type: int32
+      description: Month of procedure 22
+    - name: PRMONTH23
+      type: int32
+      description: Month of procedure 23
+    - name: PRMONTH24
+      type: int32
+      description: Month of procedure 24
+    - name: PRMONTH25
+      type: int32
+      description: Month of procedure 25
+    - name: PRMONTH26
+      type: int32
+      description: Month of procedure 26
+    - name: PRMONTH27
+      type: int32
+      description: Month of procedure 27
+    - name: PRMONTH28
+      type: int32
+      description: Month of procedure 28
+    - name: PRMONTH29
+      type: int32
+      description: Month of procedure 29
+    - name: PRMONTH30
+      type: int32
+      description: Month of procedure 30
+    - name: PRMONTH31
+      type: int32
+      description: Month of procedure 31
+    - name: PRMONTH32
+      type: int32
+      description: Month of procedure 32
+    - name: PRMONTH33
+      type: int32
+      description: Month of procedure 33
+    - name: PRMONTH34
+      type: int32
+      description: Month of procedure 34
+    - name: PRMONTH35
+      type: int32
+      description: Month of procedure 35
+    - name: PRMONTH36
+      type: int32
+      description: Month of procedure 36
+    - name: PRMONTH37
+      type: int32
+      description: Month of procedure 37
+    - name: PRMONTH38
+      type: int32
+      description: Month of procedure 38
+    - name: PRMONTH39
+      type: int32
+      description: Month of procedure 39
+    - name: PRMONTH40
+      type: int32
+      description: Month of procedure 40
+    - name: PRMONTH41
+      type: int32
+      description: Month of procedure 41
+    - name: PRMONTH42
+      type: int32
+      description: Month of procedure 42
+    - name: PRMONTH43
+      type: int32
+      description: Month of procedure 43
+    - name: PRMONTH44
+      type: int32
+      description: Month of procedure 44
+    - name: PRMONTH45
+      type: int32
+      description: Month of procedure 45
+    - name: PRMONTH46
+      type: int32
+      description: Month of procedure 46
+    - name: PRMONTH47
+      type: int32
+      description: Month of procedure 47
+    - name: PRMONTH48
+      type: int32
+      description: Month of procedure 48
+    - name: PRMONTH49
+      type: int32
+      description: Month of procedure 49
+    - name: PRMONTH50
+      type: int32
+      description: Month of procedure 50
+    - name: PRMONTH51
+      type: int32
+      description: Month of procedure 51
+    - name: PRMONTH52
+      type: int32
+      description: Month of procedure 52
+    - name: PRMONTH53
+      type: int32
+      description: Month of procedure 53
+    - name: PRMONTH54
+      type: int32
+      description: Month of procedure 54
+    - name: PRMONTH55
+      type: int32
+      description: Month of procedure 55
+    - name: PRMONTH56
+      type: int32
+      description: Month of procedure 56
+    - name: PRMONTH57
+      type: int32
+      description: Month of procedure 57
+    - name: PRMONTH58
+      type: int32
+      description: Month of procedure 58
+    - name: PRMONTH59
+      type: int32
+      description: Month of procedure 59
+    - name: PRMONTH60
+      type: int32
+      description: Month of procedure 60
+    - name: PRYEAR1
+      type: int32
+      description: Year of procedure 1
+    - name: PRYEAR2
+      type: int32
+      description: Year of procedure 2
+    - name: PRYEAR3
+      type: int32
+      description: Year of procedure 3
+    - name: PRYEAR4
+      type: int32
+      description: Year of procedure 4
+    - name: PRYEAR5
+      type: int32
+      description: Year of procedure 5
+    - name: PRYEAR6
+      type: int32
+      description: Year of procedure 6
+    - name: PRYEAR7
+      type: int32
+      description: Year of procedure 7
+    - name: PRYEAR8
+      type: int32
+      description: Year of procedure 8
+    - name: PRYEAR9
+      type: int32
+      description: Year of procedure 9
+    - name: PRYEAR10
+      type: int32
+      description: Year of procedure 10
+    - name: PRYEAR11
+      type: int32
+      description: Year of procedure 11
+    - name: PRYEAR12
+      type: int32
+      description: Year of procedure 12
+    - name: PRYEAR13
+      type: int32
+      description: Year of procedure 13
+    - name: PRYEAR14
+      type: int32
+      description: Year of procedure 14
+    - name: PRYEAR15
+      type: int32
+      description: Year of procedure 15
+    - name: PRYEAR16
+      type: int32
+      description: Year of procedure 16
+    - name: PRYEAR17
+      type: int32
+      description: Year of procedure 17
+    - name: PRYEAR18
+      type: int32
+      description: Year of procedure 18
+    - name: PRYEAR19
+      type: int32
+      description: Year of procedure 19
+    - name: PRYEAR20
+      type: int32
+      description: Year of procedure 20
+    - name: PRYEAR21
+      type: int32
+      description: Year of procedure 21
+    - name: PRYEAR22
+      type: int32
+      description: Year of procedure 22
+    - name: PRYEAR23
+      type: int32
+      description: Year of procedure 23
+    - name: PRYEAR24
+      type: int32
+      description: Year of procedure 24
+    - name: PRYEAR25
+      type: int32
+      description: Year of procedure 25
+    - name: PRYEAR26
+      type: int32
+      description: Year of procedure 26
+    - name: PRYEAR27
+      type: int32
+      description: Year of procedure 27
+    - name: PRYEAR28
+      type: int32
+      description: Year of procedure 28
+    - name: PRYEAR29
+      type: int32
+      description: Year of procedure 29
+    - name: PRYEAR30
+      type: int32
+      description: Year of procedure 30
+    - name: PRYEAR31
+      type: int32
+      description: Year of procedure 31
+    - name: PRYEAR32
+      type: int32
+      description: Year of procedure 32
+    - name: PRYEAR33
+      type: int32
+      description: Year of procedure 33
+    - name: PRYEAR34
+      type: int32
+      description: Year of procedure 34
+    - name: PRYEAR35
+      type: int32
+      description: Year of procedure 35
+    - name: PRYEAR36
+      type: int32
+      description: Year of procedure 36
+    - name: PRYEAR37
+      type: int32
+      description: Year of procedure 37
+    - name: PRYEAR38
+      type: int32
+      description: Year of procedure 38
+    - name: PRYEAR39
+      type: int32
+      description: Year of procedure 39
+    - name: PRYEAR40
+      type: int32
+      description: Year of procedure 40
+    - name: PRYEAR41
+      type: int32
+      description: Year of procedure 41
+    - name: PRYEAR42
+      type: int32
+      description: Year of procedure 42
+    - name: PRYEAR43
+      type: int32
+      description: Year of procedure 43
+    - name: PRYEAR44
+      type: int32
+      description: Year of procedure 44
+    - name: PRYEAR45
+      type: int32
+      description: Year of procedure 45
+    - name: PRYEAR46
+      type: int32
+      description: Year of procedure 46
+    - name: PRYEAR47
+      type: int32
+      description: Year of procedure 47
+    - name: PRYEAR48
+      type: int32
+      description: Year of procedure 48
+    - name: PRYEAR49
+      type: int32
+      description: Year of procedure 49
+    - name: PRYEAR50
+      type: int32
+      description: Year of procedure 50
+    - name: PRYEAR51
+      type: int32
+      description: Year of procedure 51
+    - name: PRYEAR52
+      type: int32
+      description: Year of procedure 52
+    - name: PRYEAR53
+      type: int32
+      description: Year of procedure 53
+    - name: PRYEAR54
+      type: int32
+      description: Year of procedure 54
+    - name: PRYEAR55
+      type: int32
+      description: Year of procedure 55
+    - name: PRYEAR56
+      type: int32
+      description: Year of procedure 56
+    - name: PRYEAR57
+      type: int32
+      description: Year of procedure 57
+    - name: PRYEAR58
+      type: int32
+      description: Year of procedure 58
+    - name: PRYEAR59
+      type: int32
+      description: Year of procedure 59
+    - name: PRYEAR60
+      type: int32
+      description: Year of procedure 60

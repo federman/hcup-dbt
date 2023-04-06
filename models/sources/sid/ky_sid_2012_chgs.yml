@@ -10,18 +10,18 @@ sources:
   meta:
     external_location: \\files.drexel.edu\encrypted\SOPH\UHC\SchnakeMahl_HCUP\dbt\v0\sources\{name}.parquet
   tables:
-  - name: NY_SID_2017_CHGS
-    description: '{{ doc("sid_chgs_2016_2018_description") + "\n" + "\n" + doc("sid_2016_2018_description")}}'
+  - name: KY_SID_2012_CHGS
+    description: '{{ doc("sid_chgs_2005_2014_description") + "\n" + "\n" + doc("sid_2005_2014_description")}}'
     columns:
     - name: CHARGE
       type: double
-      description: Line item charges (as received from source)
+      description: .na.character
     - name: KEY
       type: double
-      description: HCUP record identifier
+      description: .na.character
     - name: REVCODE
       type: string
-      description: Line item revenue code (as received from source)
+      description: .na.character
     - name: UNITS
       type: double
-      description: Line item units (as received from source)
+      description: .na.character

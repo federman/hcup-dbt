@@ -1,0 +1,240 @@
+version: 2
+sources:
+- name: SID
+  tags:
+  - State
+  - Inpatient
+  - SID
+  - Source
+  description: '{{ doc("sid_description") }}'
+  meta:
+    external_location: \\files.drexel.edu\encrypted\SOPH\UHC\SchnakeMahl_HCUP\dbt\v0\sources\{name}.parquet
+  tables:
+  - name: AZ_SID_2018_CHGS
+    description: '{{ doc("sid_chgs_2016_2018_description") + "\n" + "\n" + doc("sid_2016_2018_description")}}'
+    columns:
+    - name: CHG1
+      type: double
+      description: Detailed charges 1 (as received from source)
+    - name: CHG2
+      type: double
+      description: Detailed charges 2 (as received from source)
+    - name: CHG3
+      type: double
+      description: Detailed charges 3 (as received from source)
+    - name: CHG4
+      type: double
+      description: Detailed charges 4 (as received from source)
+    - name: CHG5
+      type: double
+      description: Detailed charges 5 (as received from source)
+    - name: CHG6
+      type: double
+      description: Detailed charges 6 (as received from source)
+    - name: CHG7
+      type: double
+      description: Detailed charges 7 (as received from source)
+    - name: CHG8
+      type: double
+      description: Detailed charges 8 (as received from source)
+    - name: CHG9
+      type: double
+      description: Detailed charges 9 (as received from source)
+    - name: CHG10
+      type: double
+      description: Detailed charges 10 (as received from source)
+    - name: CHG11
+      type: double
+      description: Detailed charges 11 (as received from source)
+    - name: CHG12
+      type: double
+      description: Detailed charges 12 (as received from source)
+    - name: CHG13
+      type: double
+      description: Detailed charges 13 (as received from source)
+    - name: CHG14
+      type: double
+      description: Detailed charges 14 (as received from source)
+    - name: CHG15
+      type: double
+      description: Detailed charges 15 (as received from source)
+    - name: CHG16
+      type: double
+      description: Detailed charges 16 (as received from source)
+    - name: CHG17
+      type: double
+      description: Detailed charges 17 (as received from source)
+    - name: CHG18
+      type: double
+      description: Detailed charges 18 (as received from source)
+    - name: CHG19
+      type: double
+      description: Detailed charges 19 (as received from source)
+    - name: CHG20
+      type: double
+      description: Detailed charges 20 (as received from source)
+    - name: CHG21
+      type: double
+      description: Detailed charges 21 (as received from source)
+    - name: CHG22
+      type: double
+      description: Detailed charges 22 (as received from source)
+    - name: CHG23
+      type: double
+      description: Detailed charges 23 (as received from source)
+    - name: CHG24
+      type: double
+      description: Detailed charges 24 (as received from source)
+    - name: CHG25
+      type: double
+      description: Detailed charges 25 (as received from source)
+    - name: CHG26
+      type: double
+      description: Detailed charges 26 (as received from source)
+    - name: CHG27
+      type: double
+      description: Detailed charges 27 (as received from source)
+    - name: CHG28
+      type: double
+      description: Detailed charges 28 (as received from source)
+    - name: CHG29
+      type: double
+      description: Detailed charges 29 (as received from source)
+    - name: CHG30
+      type: double
+      description: Detailed charges 30 (as received from source)
+    - name: CHG31
+      type: double
+      description: Detailed charges 31 (as received from source)
+    - name: CHG32
+      type: double
+      description: Detailed charges 32 (as received from source)
+    - name: CHG33
+      type: double
+      description: Detailed charges 33 (as received from source)
+    - name: CHG34
+      type: double
+      description: Detailed charges 34 (as received from source)
+    - name: CHG35
+      type: double
+      description: Detailed charges 35 (as received from source)
+    - name: CHG36
+      type: double
+      description: Detailed charges 36 (as received from source)
+    - name: CHG37
+      type: double
+      description: Detailed charges 37 (as received from source)
+    - name: CHG38
+      type: double
+      description: Detailed charges 38 (as received from source)
+    - name: CHG39
+      type: double
+      description: Detailed charges 39 (as received from source)
+    - name: CHG40
+      type: double
+      description: Detailed charges 40 (as received from source)
+    - name: CHG41
+      type: double
+      description: Detailed charges 41 (as received from source)
+    - name: CHG42
+      type: double
+      description: Detailed charges 42 (as received from source)
+    - name: CHG43
+      type: double
+      description: Detailed charges 43 (as received from source)
+    - name: CHG44
+      type: double
+      description: Detailed charges 44 (as received from source)
+    - name: CHG45
+      type: double
+      description: Detailed charges 45 (as received from source)
+    - name: CHG46
+      type: double
+      description: Detailed charges 46 (as received from source)
+    - name: CHG47
+      type: double
+      description: Detailed charges 47 (as received from source)
+    - name: CHG48
+      type: double
+      description: Detailed charges 48 (as received from source)
+    - name: CHG49
+      type: double
+      description: Detailed charges 49 (as received from source)
+    - name: CHG50
+      type: double
+      description: Detailed charges 50 (as received from source)
+    - name: CHG51
+      type: double
+      description: Detailed charges 51 (as received from source)
+    - name: CHG52
+      type: double
+      description: Detailed charges 52 (as received from source)
+    - name: CHG53
+      type: double
+      description: Detailed charges 53 (as received from source)
+    - name: CHG54
+      type: double
+      description: Detailed charges 54 (as received from source)
+    - name: CHG55
+      type: double
+      description: Detailed charges 55 (as received from source)
+    - name: CHG56
+      type: double
+      description: Detailed charges 56 (as received from source)
+    - name: CHG57
+      type: double
+      description: Detailed charges 57 (as received from source)
+    - name: CHG58
+      type: double
+      description: Detailed charges 58 (as received from source)
+    - name: CHG59
+      type: double
+      description: Detailed charges 59 (as received from source)
+    - name: CHG60
+      type: double
+      description: Detailed charges 60 (as received from source)
+    - name: CHG61
+      type: double
+      description: Detailed charges 61 (as received from source)
+    - name: CHG62
+      type: double
+      description: Detailed charges 62 (as received from source)
+    - name: CHG63
+      type: double
+      description: Detailed charges 63 (as received from source)
+    - name: CHG64
+      type: double
+      description: Detailed charges 64 (as received from source)
+    - name: CHG65
+      type: double
+      description: Detailed charges 65 (as received from source)
+    - name: CHG66
+      type: double
+      description: Detailed charges 66 (as received from source)
+    - name: CHG67
+      type: double
+      description: Detailed charges 67 (as received from source)
+    - name: CHG68
+      type: double
+      description: Detailed charges 68 (as received from source)
+    - name: CHG69
+      type: double
+      description: Detailed charges 69 (as received from source)
+    - name: CHG70
+      type: double
+      description: Detailed charges 70 (as received from source)
+    - name: CHG71
+      type: double
+      description: Detailed charges 71 (as received from source)
+    - name: CHG72
+      type: double
+      description: Detailed charges 72 (as received from source)
+    - name: CHG73
+      type: double
+      description: Detailed charges 73 (as received from source)
+    - name: CHG74
+      type: double
+      description: Detailed charges 74 (as received from source)
+    - name: KEY
+      type: double
+      description: HCUP record identifier

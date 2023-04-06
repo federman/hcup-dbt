@@ -1,0 +1,93 @@
+version: 2
+sources:
+- name: SID
+  tags:
+  - State
+  - Inpatient
+  - SID
+  - Source
+  description: '{{ doc("sid_description") }}'
+  meta:
+    external_location: \\files.drexel.edu\encrypted\SOPH\UHC\SchnakeMahl_HCUP\dbt\v0\sources\{name}.parquet
+  tables:
+  - name: FL_SID_2014_CHGS
+    description: '{{ doc("sid_chgs_2005_2014_description") + "\n" + "\n" + doc("sid_2005_2014_description")}}'
+    columns:
+    - name: CHG1
+      type: double
+      description: Detailed charges 1 (as received from source)
+    - name: CHG2
+      type: double
+      description: Detailed charges 2 (as received from source)
+    - name: CHG3
+      type: double
+      description: Detailed charges 3 (as received from source)
+    - name: CHG4
+      type: double
+      description: Detailed charges 4 (as received from source)
+    - name: CHG5
+      type: double
+      description: Detailed charges 5 (as received from source)
+    - name: CHG6
+      type: double
+      description: Detailed charges 6 (as received from source)
+    - name: CHG7
+      type: double
+      description: Detailed charges 7 (as received from source)
+    - name: CHG8
+      type: double
+      description: Detailed charges 8 (as received from source)
+    - name: CHG9
+      type: double
+      description: Detailed charges 9 (as received from source)
+    - name: CHG10
+      type: double
+      description: Detailed charges 10 (as received from source)
+    - name: CHG11
+      type: double
+      description: Detailed charges 11 (as received from source)
+    - name: CHG12
+      type: double
+      description: Detailed charges 12 (as received from source)
+    - name: CHG13
+      type: double
+      description: Detailed charges 13 (as received from source)
+    - name: CHG14
+      type: double
+      description: Detailed charges 14 (as received from source)
+    - name: CHG15
+      type: double
+      description: Detailed charges 15 (as received from source)
+    - name: CHG16
+      type: double
+      description: Detailed charges 16 (as received from source)
+    - name: CHG17
+      type: double
+      description: Detailed charges 17 (as received from source)
+    - name: CHG18
+      type: double
+      description: Detailed charges 18 (as received from source)
+    - name: CHG19
+      type: double
+      description: Detailed charges 19 (as received from source)
+    - name: CHG20
+      type: double
+      description: Detailed charges 20 (as received from source)
+    - name: CHG21
+      type: double
+      description: Detailed charges 21 (as received from source)
+    - name: CHG22
+      type: double
+      description: Detailed charges 22 (as received from source)
+    - name: CHG23
+      type: double
+      description: Detailed charges 23 (as received from source)
+    - name: CHG24
+      type: double
+      description: Detailed charges 24 (as received from source)
+    - name: CHG25
+      type: double
+      description: Detailed charges 25 (as received from source)
+    - name: KEY
+      type: double
+      description: HCUP record identifier

@@ -11,7 +11,7 @@ sources:
     external_location: \\files.drexel.edu\encrypted\SOPH\UHC\SchnakeMahl_HCUP\dbt\v0\sources\{name}.parquet
   tables:
   - name: NY_SID_2018_CORE
-    description: NY SID 2018 CORE file. {{ doc("sid_core_2016_2018_description") }}
+    description: '{{ doc("sid_core_2016_2018_description") + "\n" + "\n" + doc("sid_2016_2018_description")}}'
     columns:
     - name: AGE
       type: int32

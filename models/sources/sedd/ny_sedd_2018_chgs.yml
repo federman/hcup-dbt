@@ -11,8 +11,7 @@ sources:
     external_location: \\files.drexel.edu\encrypted\SOPH\UHC\SchnakeMahl_HCUP\dbt\v0\sources\{name}.parquet
   tables:
   - name: NY_SEDD_2018_CHGS
-    description: NY SEDD 2018 CHGS file. {{ doc("sedd_chgs_2016_2018_description")
-      }}
+    description: '{{ doc("sedd_chgs_2016_2018_description") + "\n" + "\n" + doc("sedd_2016_2018_description")}}'
     columns:
     - name: CHARGE
       type: double

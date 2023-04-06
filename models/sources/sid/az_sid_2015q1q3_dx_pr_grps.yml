@@ -1,0 +1,383 @@
+version: 2
+sources:
+- name: SID
+  tags:
+  - State
+  - Inpatient
+  - SID
+  - Source
+  description: '{{ doc("sid_description") }}'
+  meta:
+    external_location: \\files.drexel.edu\encrypted\SOPH\UHC\SchnakeMahl_HCUP\dbt\v0\sources\{name}.parquet
+  tables:
+  - name: AZ_SID_2015q1q3_DX_PR_GRPS
+    description: '{{ doc("sid_dx_pr_grps_2015_description") + "\n" + "\n" + doc("sid_2015_description")}}'
+    columns:
+    - name: BODYSYSTEM1
+      type: int32
+      description: Body system 1
+    - name: BODYSYSTEM2
+      type: int32
+      description: Body system 2
+    - name: BODYSYSTEM3
+      type: int32
+      description: Body system 3
+    - name: BODYSYSTEM4
+      type: int32
+      description: Body system 4
+    - name: BODYSYSTEM5
+      type: int32
+      description: Body system 5
+    - name: BODYSYSTEM6
+      type: int32
+      description: Body system 6
+    - name: BODYSYSTEM7
+      type: int32
+      description: Body system 7
+    - name: BODYSYSTEM8
+      type: int32
+      description: Body system 8
+    - name: BODYSYSTEM9
+      type: int32
+      description: Body system 9
+    - name: BODYSYSTEM10
+      type: int32
+      description: Body system 10
+    - name: BODYSYSTEM11
+      type: int32
+      description: Body system 11
+    - name: BODYSYSTEM12
+      type: int32
+      description: Body system 12
+    - name: BODYSYSTEM13
+      type: int32
+      description: Body system 13
+    - name: BODYSYSTEM14
+      type: int32
+      description: Body system 14
+    - name: BODYSYSTEM15
+      type: int32
+      description: Body system 15
+    - name: BODYSYSTEM16
+      type: int32
+      description: Body system 16
+    - name: BODYSYSTEM17
+      type: int32
+      description: Body system 17
+    - name: BODYSYSTEM18
+      type: int32
+      description: Body system 18
+    - name: BODYSYSTEM19
+      type: int32
+      description: Body system 19
+    - name: BODYSYSTEM20
+      type: int32
+      description: Body system 20
+    - name: BODYSYSTEM21
+      type: int32
+      description: Body system 21
+    - name: BODYSYSTEM22
+      type: int32
+      description: Body system 22
+    - name: BODYSYSTEM23
+      type: int32
+      description: Body system 23
+    - name: BODYSYSTEM24
+      type: int32
+      description: Body system 24
+    - name: BODYSYSTEM25
+      type: int32
+      description: Body system 25
+    - name: CHRON1
+      type: int32
+      description: Chronic condition indicator 1
+    - name: CHRON2
+      type: int32
+      description: Chronic condition indicator 2
+    - name: CHRON3
+      type: int32
+      description: Chronic condition indicator 3
+    - name: CHRON4
+      type: int32
+      description: Chronic condition indicator 4
+    - name: CHRON5
+      type: int32
+      description: Chronic condition indicator 5
+    - name: CHRON6
+      type: int32
+      description: Chronic condition indicator 6
+    - name: CHRON7
+      type: int32
+      description: Chronic condition indicator 7
+    - name: CHRON8
+      type: int32
+      description: Chronic condition indicator 8
+    - name: CHRON9
+      type: int32
+      description: Chronic condition indicator 9
+    - name: CHRON10
+      type: int32
+      description: Chronic condition indicator 10
+    - name: CHRON11
+      type: int32
+      description: Chronic condition indicator 11
+    - name: CHRON12
+      type: int32
+      description: Chronic condition indicator 12
+    - name: CHRON13
+      type: int32
+      description: Chronic condition indicator 13
+    - name: CHRON14
+      type: int32
+      description: Chronic condition indicator 14
+    - name: CHRON15
+      type: int32
+      description: Chronic condition indicator 15
+    - name: CHRON16
+      type: int32
+      description: Chronic condition indicator 16
+    - name: CHRON17
+      type: int32
+      description: Chronic condition indicator 17
+    - name: CHRON18
+      type: int32
+      description: Chronic condition indicator 18
+    - name: CHRON19
+      type: int32
+      description: Chronic condition indicator 19
+    - name: CHRON20
+      type: int32
+      description: Chronic condition indicator 20
+    - name: CHRON21
+      type: int32
+      description: Chronic condition indicator 21
+    - name: CHRON22
+      type: int32
+      description: Chronic condition indicator 22
+    - name: CHRON23
+      type: int32
+      description: Chronic condition indicator 23
+    - name: CHRON24
+      type: int32
+      description: Chronic condition indicator 24
+    - name: CHRON25
+      type: int32
+      description: Chronic condition indicator 25
+    - name: DXMCCS1
+      type: string
+      description: 'Multi-Level CCS:  Diagnosis 1'
+    - name: DXMCCS2
+      type: string
+      description: 'Multi-Level CCS:  Diagnosis 2'
+    - name: DXMCCS3
+      type: string
+      description: 'Multi-Level CCS:  Diagnosis 3'
+    - name: DXMCCS4
+      type: string
+      description: 'Multi-Level CCS:  Diagnosis 4'
+    - name: DXMCCS5
+      type: string
+      description: 'Multi-Level CCS:  Diagnosis 5'
+    - name: DXMCCS6
+      type: string
+      description: 'Multi-Level CCS:  Diagnosis 6'
+    - name: DXMCCS7
+      type: string
+      description: 'Multi-Level CCS:  Diagnosis 7'
+    - name: DXMCCS8
+      type: string
+      description: 'Multi-Level CCS:  Diagnosis 8'
+    - name: DXMCCS9
+      type: string
+      description: 'Multi-Level CCS:  Diagnosis 9'
+    - name: DXMCCS10
+      type: string
+      description: 'Multi-Level CCS:  Diagnosis 10'
+    - name: DXMCCS11
+      type: string
+      description: 'Multi-Level CCS:  Diagnosis 11'
+    - name: DXMCCS12
+      type: string
+      description: 'Multi-Level CCS:  Diagnosis 12'
+    - name: DXMCCS13
+      type: string
+      description: 'Multi-Level CCS:  Diagnosis 13'
+    - name: DXMCCS14
+      type: string
+      description: 'Multi-Level CCS:  Diagnosis 14'
+    - name: DXMCCS15
+      type: string
+      description: 'Multi-Level CCS:  Diagnosis 15'
+    - name: DXMCCS16
+      type: string
+      description: 'Multi-Level CCS:  Diagnosis 16'
+    - name: DXMCCS17
+      type: string
+      description: 'Multi-Level CCS:  Diagnosis 17'
+    - name: DXMCCS18
+      type: string
+      description: 'Multi-Level CCS:  Diagnosis 18'
+    - name: DXMCCS19
+      type: string
+      description: 'Multi-Level CCS:  Diagnosis 19'
+    - name: DXMCCS20
+      type: string
+      description: 'Multi-Level CCS:  Diagnosis 20'
+    - name: DXMCCS21
+      type: string
+      description: 'Multi-Level CCS:  Diagnosis 21'
+    - name: DXMCCS22
+      type: string
+      description: 'Multi-Level CCS:  Diagnosis 22'
+    - name: DXMCCS23
+      type: string
+      description: 'Multi-Level CCS:  Diagnosis 23'
+    - name: DXMCCS24
+      type: string
+      description: 'Multi-Level CCS:  Diagnosis 24'
+    - name: DXMCCS25
+      type: string
+      description: 'Multi-Level CCS:  Diagnosis 25'
+    - name: E_MCCS1
+      type: string
+      description: 'Multi-Level CCS:  E Code 1'
+    - name: E_MCCS2
+      type: string
+      description: 'Multi-Level CCS:  E Code 2'
+    - name: E_MCCS3
+      type: string
+      description: 'Multi-Level CCS:  E Code 3'
+    - name: E_MCCS4
+      type: string
+      description: 'Multi-Level CCS:  E Code 4'
+    - name: E_MCCS5
+      type: string
+      description: 'Multi-Level CCS:  E Code 5'
+    - name: E_MCCS6
+      type: string
+      description: 'Multi-Level CCS:  E Code 6'
+    - name: INJURY
+      type: int32
+      description: 'Injury diagnosis reported on record (1:DX1 is an injury; 2:DX2+
+        is an injury; 0:'
+    - name: INJURY_CUT
+      type: int32
+      description: Injury by cutting or piercing (by E codes)
+    - name: INJURY_DROWN
+      type: int32
+      description: Injury by drowning or submersion (by E codes)
+    - name: INJURY_FALL
+      type: int32
+      description: Injury by falling (by E codes)
+    - name: INJURY_FIRE
+      type: int32
+      description: Injury by fire, flame or hot object (by E codes)
+    - name: INJURY_FIREARM
+      type: int32
+      description: Injury by firearm (by E codes)
+    - name: INJURY_MACHINERY
+      type: int32
+      description: Injury by machinery (by E codes)
+    - name: INJURY_MVT
+      type: int32
+      description: Injury involving motor vehicle traffic (by E codes)
+    - name: INJURY_NATURE
+      type: int32
+      description: Injury involving nature or environmental factors (by E codes)
+    - name: INJURY_POISON
+      type: int32
+      description: Injury by poison (by E codes)
+    - name: INJURY_STRUCK
+      type: int32
+      description: Injury from being struck by or against (by E codes)
+    - name: INJURY_SUFFOCATION
+      type: int32
+      description: Injury by suffocation (by E codes)
+    - name: INTENT_ASSAULT
+      type: int32
+      description: Injury by assault indicated on the record (by E codes)
+    - name: INTENT_SELF_HARM
+      type: int32
+      description: Intentional self harm indicated on the record (by diagnosis and/or
+        E codes)
+    - name: INTENT_UNINTENTIONAL
+      type: int32
+      description: Unintentional injury indicated on the record (by E codes)
+    - name: KEY
+      type: double
+      description: HCUP record identifier
+    - name: MULTINJURY
+      type: int32
+      description: More than one injury diagnosis reported on record
+    - name: PCLASS1
+      type: int32
+      description: Procedure class 1
+    - name: PCLASS2
+      type: int32
+      description: Procedure class 2
+    - name: PCLASS3
+      type: int32
+      description: Procedure class 3
+    - name: PCLASS4
+      type: int32
+      description: Procedure class 4
+    - name: PCLASS5
+      type: int32
+      description: Procedure class 5
+    - name: PCLASS6
+      type: int32
+      description: Procedure class 6
+    - name: PCLASS7
+      type: int32
+      description: Procedure class 7
+    - name: PCLASS8
+      type: int32
+      description: Procedure class 8
+    - name: PCLASS9
+      type: int32
+      description: Procedure class 9
+    - name: PCLASS10
+      type: int32
+      description: Procedure class 10
+    - name: PCLASS11
+      type: int32
+      description: Procedure class 11
+    - name: PCLASS12
+      type: int32
+      description: Procedure class 12
+    - name: PRMCCS1
+      type: string
+      description: 'Multi-Level CCS:  Procedure 1'
+    - name: PRMCCS2
+      type: string
+      description: 'Multi-Level CCS:  Procedure 2'
+    - name: PRMCCS3
+      type: string
+      description: 'Multi-Level CCS:  Procedure 3'
+    - name: PRMCCS4
+      type: string
+      description: 'Multi-Level CCS:  Procedure 4'
+    - name: PRMCCS5
+      type: string
+      description: 'Multi-Level CCS:  Procedure 5'
+    - name: PRMCCS6
+      type: string
+      description: 'Multi-Level CCS:  Procedure 6'
+    - name: PRMCCS7
+      type: string
+      description: 'Multi-Level CCS:  Procedure 7'
+    - name: PRMCCS8
+      type: string
+      description: 'Multi-Level CCS:  Procedure 8'
+    - name: PRMCCS9
+      type: string
+      description: 'Multi-Level CCS:  Procedure 9'
+    - name: PRMCCS10
+      type: string
+      description: 'Multi-Level CCS:  Procedure 10'
+    - name: PRMCCS11
+      type: string
+      description: 'Multi-Level CCS:  Procedure 11'
+    - name: PRMCCS12
+      type: string
+      description: 'Multi-Level CCS:  Procedure 12'

@@ -10,12 +10,15 @@ sources:
   meta:
     external_location: \\files.drexel.edu\encrypted\SOPH\UHC\SchnakeMahl_HCUP\dbt\v0\sources\{name}.parquet
   tables:
-  - name: NY_SID_2017_CHGS
+  - name: GA_SID_2016_CHGS
     description: '{{ doc("sid_chgs_2016_2018_description") + "\n" + "\n" + doc("sid_2016_2018_description")}}'
     columns:
     - name: CHARGE
       type: double
       description: Line item charges (as received from source)
+    - name: CPTHCPCS
+      type: string
+      description: Line item CPT-4/HCPCS procedure code (as received from source)
     - name: KEY
       type: double
       description: HCUP record identifier

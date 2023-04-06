@@ -1,0 +1,555 @@
+version: 2
+sources:
+- name: SID
+  tags:
+  - State
+  - Inpatient
+  - SID
+  - Source
+  description: '{{ doc("sid_description") }}'
+  meta:
+    external_location: \\files.drexel.edu\encrypted\SOPH\UHC\SchnakeMahl_HCUP\dbt\v0\sources\{name}.parquet
+  tables:
+  - name: KY_SID_2012_DX_PR_GRPS
+    description: '{{ doc("sid_dx_pr_grps_2005_2014_description") + "\n" + "\n" + doc("sid_2005_2014_description")}}'
+    columns:
+    - name: CHRON1
+      type: double
+      description: .na.character
+    - name: CHRON2
+      type: double
+      description: .na.character
+    - name: CHRON3
+      type: double
+      description: .na.character
+    - name: CHRON4
+      type: double
+      description: .na.character
+    - name: CHRON5
+      type: double
+      description: .na.character
+    - name: CHRON6
+      type: double
+      description: .na.character
+    - name: CHRON7
+      type: double
+      description: .na.character
+    - name: CHRON8
+      type: double
+      description: .na.character
+    - name: CHRON9
+      type: double
+      description: .na.character
+    - name: CHRON10
+      type: double
+      description: .na.character
+    - name: CHRON11
+      type: double
+      description: .na.character
+    - name: CHRON12
+      type: double
+      description: .na.character
+    - name: CHRON13
+      type: double
+      description: .na.character
+    - name: CHRON14
+      type: double
+      description: .na.character
+    - name: CHRON15
+      type: double
+      description: .na.character
+    - name: CHRON16
+      type: double
+      description: .na.character
+    - name: CHRON17
+      type: double
+      description: .na.character
+    - name: CHRON18
+      type: double
+      description: .na.character
+    - name: CHRON19
+      type: double
+      description: .na.character
+    - name: CHRON20
+      type: double
+      description: .na.character
+    - name: CHRON21
+      type: double
+      description: .na.character
+    - name: CHRON22
+      type: double
+      description: .na.character
+    - name: CHRON23
+      type: double
+      description: .na.character
+    - name: CHRON24
+      type: double
+      description: .na.character
+    - name: CHRON25
+      type: double
+      description: .na.character
+    - name: CHRONB1
+      type: double
+      description: .na.character
+    - name: CHRONB2
+      type: double
+      description: .na.character
+    - name: CHRONB3
+      type: double
+      description: .na.character
+    - name: CHRONB4
+      type: double
+      description: .na.character
+    - name: CHRONB5
+      type: double
+      description: .na.character
+    - name: CHRONB6
+      type: double
+      description: .na.character
+    - name: CHRONB7
+      type: double
+      description: .na.character
+    - name: CHRONB8
+      type: double
+      description: .na.character
+    - name: CHRONB9
+      type: double
+      description: .na.character
+    - name: CHRONB10
+      type: double
+      description: .na.character
+    - name: CHRONB11
+      type: double
+      description: .na.character
+    - name: CHRONB12
+      type: double
+      description: .na.character
+    - name: CHRONB13
+      type: double
+      description: .na.character
+    - name: CHRONB14
+      type: double
+      description: .na.character
+    - name: CHRONB15
+      type: double
+      description: .na.character
+    - name: CHRONB16
+      type: double
+      description: .na.character
+    - name: CHRONB17
+      type: double
+      description: .na.character
+    - name: CHRONB18
+      type: double
+      description: .na.character
+    - name: CHRONB19
+      type: double
+      description: .na.character
+    - name: CHRONB20
+      type: double
+      description: .na.character
+    - name: CHRONB21
+      type: double
+      description: .na.character
+    - name: CHRONB22
+      type: double
+      description: .na.character
+    - name: CHRONB23
+      type: double
+      description: .na.character
+    - name: CHRONB24
+      type: double
+      description: .na.character
+    - name: CHRONB25
+      type: double
+      description: .na.character
+    - name: DXMCCS1
+      type: string
+      description: .na.character
+    - name: DXMCCS2
+      type: string
+      description: .na.character
+    - name: DXMCCS3
+      type: string
+      description: .na.character
+    - name: DXMCCS4
+      type: string
+      description: .na.character
+    - name: DXMCCS5
+      type: string
+      description: .na.character
+    - name: DXMCCS6
+      type: string
+      description: .na.character
+    - name: DXMCCS7
+      type: string
+      description: .na.character
+    - name: DXMCCS8
+      type: string
+      description: .na.character
+    - name: DXMCCS9
+      type: string
+      description: .na.character
+    - name: DXMCCS10
+      type: string
+      description: .na.character
+    - name: DXMCCS11
+      type: string
+      description: .na.character
+    - name: DXMCCS12
+      type: string
+      description: .na.character
+    - name: DXMCCS13
+      type: string
+      description: .na.character
+    - name: DXMCCS14
+      type: string
+      description: .na.character
+    - name: DXMCCS15
+      type: string
+      description: .na.character
+    - name: DXMCCS16
+      type: string
+      description: .na.character
+    - name: DXMCCS17
+      type: string
+      description: .na.character
+    - name: DXMCCS18
+      type: string
+      description: .na.character
+    - name: DXMCCS19
+      type: string
+      description: .na.character
+    - name: DXMCCS20
+      type: string
+      description: .na.character
+    - name: DXMCCS21
+      type: string
+      description: .na.character
+    - name: DXMCCS22
+      type: string
+      description: .na.character
+    - name: DXMCCS23
+      type: string
+      description: .na.character
+    - name: DXMCCS24
+      type: string
+      description: .na.character
+    - name: DXMCCS25
+      type: string
+      description: .na.character
+    - name: E_MCCS1
+      type: string
+      description: .na.character
+    - name: E_MCCS2
+      type: string
+      description: .na.character
+    - name: E_MCCS3
+      type: string
+      description: .na.character
+    - name: E_MCCS4
+      type: string
+      description: .na.character
+    - name: E_MCCS5
+      type: string
+      description: .na.character
+    - name: E_MCCS6
+      type: string
+      description: .na.character
+    - name: E_MCCS7
+      type: string
+      description: .na.character
+    - name: E_MCCS8
+      type: string
+      description: .na.character
+    - name: INJURY
+      type: double
+      description: .na.character
+    - name: INJURY_CUT
+      type: double
+      description: .na.character
+    - name: INJURY_DROWN
+      type: double
+      description: .na.character
+    - name: INJURY_FALL
+      type: double
+      description: .na.character
+    - name: INJURY_FIRE
+      type: double
+      description: .na.character
+    - name: INJURY_FIREARM
+      type: double
+      description: .na.character
+    - name: INJURY_MACHINERY
+      type: double
+      description: .na.character
+    - name: INJURY_MVT
+      type: double
+      description: .na.character
+    - name: INJURY_NATURE
+      type: double
+      description: .na.character
+    - name: INJURY_POISON
+      type: double
+      description: .na.character
+    - name: INJURY_STRUCK
+      type: double
+      description: .na.character
+    - name: INJURY_SUFFOCATION
+      type: double
+      description: .na.character
+    - name: INTENT_ASSAULT
+      type: double
+      description: .na.character
+    - name: INTENT_SELF_HARM
+      type: double
+      description: .na.character
+    - name: INTENT_UNINTENTIONAL
+      type: double
+      description: .na.character
+    - name: KEY
+      type: double
+      description: .na.character
+    - name: MULTINJURY
+      type: double
+      description: .na.character
+    - name: PCLASS1
+      type: double
+      description: .na.character
+    - name: PCLASS2
+      type: double
+      description: .na.character
+    - name: PCLASS3
+      type: double
+      description: .na.character
+    - name: PCLASS4
+      type: double
+      description: .na.character
+    - name: PCLASS5
+      type: double
+      description: .na.character
+    - name: PCLASS6
+      type: double
+      description: .na.character
+    - name: PCLASS7
+      type: double
+      description: .na.character
+    - name: PCLASS8
+      type: double
+      description: .na.character
+    - name: PCLASS9
+      type: double
+      description: .na.character
+    - name: PCLASS10
+      type: double
+      description: .na.character
+    - name: PCLASS11
+      type: double
+      description: .na.character
+    - name: PCLASS12
+      type: double
+      description: .na.character
+    - name: PCLASS13
+      type: double
+      description: .na.character
+    - name: PCLASS14
+      type: double
+      description: .na.character
+    - name: PCLASS15
+      type: double
+      description: .na.character
+    - name: PCLASS16
+      type: double
+      description: .na.character
+    - name: PCLASS17
+      type: double
+      description: .na.character
+    - name: PCLASS18
+      type: double
+      description: .na.character
+    - name: PCLASS19
+      type: double
+      description: .na.character
+    - name: PCLASS20
+      type: double
+      description: .na.character
+    - name: PCLASS21
+      type: double
+      description: .na.character
+    - name: PCLASS22
+      type: double
+      description: .na.character
+    - name: PCLASS23
+      type: double
+      description: .na.character
+    - name: PCLASS24
+      type: double
+      description: .na.character
+    - name: PCLASS25
+      type: double
+      description: .na.character
+    - name: PRMCCS1
+      type: string
+      description: .na.character
+    - name: PRMCCS2
+      type: string
+      description: .na.character
+    - name: PRMCCS3
+      type: string
+      description: .na.character
+    - name: PRMCCS4
+      type: string
+      description: .na.character
+    - name: PRMCCS5
+      type: string
+      description: .na.character
+    - name: PRMCCS6
+      type: string
+      description: .na.character
+    - name: PRMCCS7
+      type: string
+      description: .na.character
+    - name: PRMCCS8
+      type: string
+      description: .na.character
+    - name: PRMCCS9
+      type: string
+      description: .na.character
+    - name: PRMCCS10
+      type: string
+      description: .na.character
+    - name: PRMCCS11
+      type: string
+      description: .na.character
+    - name: PRMCCS12
+      type: string
+      description: .na.character
+    - name: PRMCCS13
+      type: string
+      description: .na.character
+    - name: PRMCCS14
+      type: string
+      description: .na.character
+    - name: PRMCCS15
+      type: string
+      description: .na.character
+    - name: PRMCCS16
+      type: string
+      description: .na.character
+    - name: PRMCCS17
+      type: string
+      description: .na.character
+    - name: PRMCCS18
+      type: string
+      description: .na.character
+    - name: PRMCCS19
+      type: string
+      description: .na.character
+    - name: PRMCCS20
+      type: string
+      description: .na.character
+    - name: PRMCCS21
+      type: string
+      description: .na.character
+    - name: PRMCCS22
+      type: string
+      description: .na.character
+    - name: PRMCCS23
+      type: string
+      description: .na.character
+    - name: PRMCCS24
+      type: string
+      description: .na.character
+    - name: PRMCCS25
+      type: string
+      description: .na.character
+    - name: U_BLOOD
+      type: double
+      description: .na.character
+    - name: U_CATH
+      type: double
+      description: .na.character
+    - name: U_CCU
+      type: double
+      description: .na.character
+    - name: U_CHESTXRAY
+      type: double
+      description: .na.character
+    - name: U_CTSCAN
+      type: double
+      description: .na.character
+    - name: U_DIALYSIS
+      type: double
+      description: .na.character
+    - name: U_ECHO
+      type: double
+      description: .na.character
+    - name: U_ED
+      type: double
+      description: .na.character
+    - name: U_EEG
+      type: double
+      description: .na.character
+    - name: U_EKG
+      type: double
+      description: .na.character
+    - name: U_EPO
+      type: double
+      description: .na.character
+    - name: U_ICU
+      type: double
+      description: .na.character
+    - name: U_LITHOTRIPSY
+      type: double
+      description: .na.character
+    - name: U_MHSA
+      type: double
+      description: .na.character
+    - name: U_MRT
+      type: double
+      description: .na.character
+    - name: U_NEWBN2L
+      type: double
+      description: .na.character
+    - name: U_NEWBN3L
+      type: double
+      description: .na.character
+    - name: U_NEWBN4L
+      type: double
+      description: .na.character
+    - name: U_NUCMED
+      type: double
+      description: .na.character
+    - name: U_OBSERVATION
+      type: double
+      description: .na.character
+    - name: U_OCCTHERAPY
+      type: double
+      description: .na.character
+    - name: U_ORGANACQ
+      type: double
+      description: .na.character
+    - name: U_OTHIMPLANTS
+      type: double
+      description: .na.character
+    - name: U_PACEMAKER
+      type: double
+      description: .na.character
+    - name: U_PHYTHERAPY
+      type: double
+      description: .na.character
+    - name: U_RADTHERAPY
+      type: double
+      description: .na.character
+    - name: U_RESPTHERAPY
+      type: double
+      description: .na.character
+    - name: U_SPEECHTHERAPY
+      type: double
+      description: .na.character
+    - name: U_STRESS
+      type: double
+      description: .na.character
+    - name: U_ULTRASOUND
+      type: double
+      description: .na.character

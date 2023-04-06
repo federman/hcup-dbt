@@ -1,0 +1,72 @@
+version: 2
+sources:
+- name: SID
+  tags:
+  - State
+  - Inpatient
+  - SID
+  - Source
+  description: '{{ doc("sid_description") }}'
+  meta:
+    external_location: \\files.drexel.edu\encrypted\SOPH\UHC\SchnakeMahl_HCUP\dbt\v0\sources\{name}.parquet
+  tables:
+  - name: AZ_SID_2019_DX_PR_GRPS
+    description: '{{ doc("sid_dx_pr_grps_2019_2021_description") + "\n" + "\n" + doc("sid_2019_2021_description")}}'
+    columns:
+    - name: I10_INJURY
+      type: int32
+      description: 'Injury ICD-10-CM diagnosis reported on record (1: First-listed
+        injury; 2: Other'
+    - name: I10_INJURY_CUT
+      type: int32
+      description: 'Mechanism of injury: cut or pierce'
+    - name: I10_INJURY_DROWN
+      type: int32
+      description: 'Mechanism of injury: drowning or submersion'
+    - name: I10_INJURY_FALL
+      type: int32
+      description: 'Mechanism of injury: fall'
+    - name: I10_INJURY_FIRE
+      type: int32
+      description: 'Mechanism of injury: fire, flame, hot object, or hot substance'
+    - name: I10_INJURY_FIREARM
+      type: int32
+      description: 'Mechanism of injury: firearm'
+    - name: I10_INJURY_MACHINERY
+      type: int32
+      description: 'Mechanism of injury: machinery'
+    - name: I10_INJURY_MVT
+      type: int32
+      description: 'Mechanism of injury: motor vehicle traffic, including the occupant
+        of a car, mot'
+    - name: I10_INJURY_NATURE
+      type: int32
+      description: 'Mechanism of injury: natural or environmental, included venomous
+        and nonvenomous'
+    - name: I10_INJURY_OVEREXERTION
+      type: int32
+      description: 'Mechanism of injury: overexertion'
+    - name: I10_INJURY_POISON
+      type: int32
+      description: 'Mechanism of injury: poisoning, including drugs and nondrugs'
+    - name: I10_INJURY_STRUCK
+      type: int32
+      description: 'Mechanism of injury: struck by or against'
+    - name: I10_INJURY_SUFFOCATION
+      type: int32
+      description: 'Mechanism of injury: suffocation'
+    - name: I10_INTENT_ASSAULT
+      type: int32
+      description: 'Intent of injury: assault'
+    - name: I10_INTENT_SELF_HARM
+      type: int32
+      description: 'Intent of injury: intentional self-harm'
+    - name: I10_INTENT_UNINTENTIONAL
+      type: int32
+      description: 'Intent of injury: unintentional'
+    - name: I10_MULTINJURY
+      type: int32
+      description: Multiple ICD-10-CM injuries reported on record
+    - name: KEY
+      type: double
+      description: HCUP record identifier

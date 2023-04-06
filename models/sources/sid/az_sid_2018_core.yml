@@ -10,7 +10,7 @@ sources:
   meta:
     external_location: \\files.drexel.edu\encrypted\SOPH\UHC\SchnakeMahl_HCUP\dbt\v0\sources\{name}.parquet
   tables:
-  - name: NY_SID_2017_CORE
+  - name: AZ_SID_2018_CORE
     description: '{{ doc("sid_core_2016_2018_description") + "\n" + "\n" + doc("sid_2016_2018_description")}}'
     columns:
     - name: AGE
@@ -28,24 +28,15 @@ sources:
     - name: AMONTH
       type: int32
       description: Admission month
-    - name: ANESTH
-      type: int32
-      description: Method of anesthesia
     - name: ATYPE
       type: int32
       description: Admission type
     - name: AWEEKEND
       type: int32
       description: Admission day is a weekend
-    - name: BLOOD
-      type: int32
-      description: Pints of blood furnished to the patient
     - name: BWT
       type: int32
       description: Birth weight in grams
-    - name: DaysToEvent
-      type: int32
-      description: Days from 'start date' to admission
     - name: DHOUR
       type: int32
       description: Discharge Hour
@@ -64,6 +55,9 @@ sources:
     - name: DMONTH
       type: int32
       description: Discharge month
+    - name: DNR
+      type: int32
+      description: Do not resuscitate indicator
     - name: DQTR
       type: int32
       description: Discharge quarter
@@ -172,18 +166,6 @@ sources:
     - name: DXPOA31
       type: string
       description: Diagnosis 31, present on admission indicator
-    - name: DXPOA32
-      type: string
-      description: Diagnosis 32, present on admission indicator
-    - name: DXPOA33
-      type: string
-      description: Diagnosis 33, present on admission indicator
-    - name: DXPOA34
-      type: string
-      description: Diagnosis 34, present on admission indicator
-    - name: DXVER
-      type: int32
-      description: Diagnosis Version
     - name: FEMALE
       type: int32
       description: Indicator of sex
@@ -304,15 +286,6 @@ sources:
     - name: I10_DX31
       type: string
       description: ICD-10-CM Diagnosis 31
-    - name: I10_DX32
-      type: string
-      description: ICD-10-CM Diagnosis 32
-    - name: I10_DX33
-      type: string
-      description: ICD-10-CM Diagnosis 33
-    - name: I10_DX34
-      type: string
-      description: ICD-10-CM Diagnosis 34
     - name: I10_NDX
       type: int32
       description: ICD-10-CM Number of diagnoses on this record
@@ -355,45 +328,6 @@ sources:
     - name: I10_PR12
       type: string
       description: ICD-10-PCS Procedure 12
-    - name: I10_PR13
-      type: string
-      description: ICD-10-PCS Procedure 13
-    - name: I10_PR14
-      type: string
-      description: ICD-10-PCS Procedure 14
-    - name: I10_PR15
-      type: string
-      description: ICD-10-PCS Procedure 15
-    - name: I10_PR16
-      type: string
-      description: ICD-10-PCS Procedure 16
-    - name: I10_PR17
-      type: string
-      description: ICD-10-PCS Procedure 17
-    - name: I10_PR18
-      type: string
-      description: ICD-10-PCS Procedure 18
-    - name: I10_PR19
-      type: string
-      description: ICD-10-PCS Procedure 19
-    - name: I10_PR20
-      type: string
-      description: ICD-10-PCS Procedure 20
-    - name: I10_PR21
-      type: string
-      description: ICD-10-PCS Procedure 21
-    - name: I10_PR22
-      type: string
-      description: ICD-10-PCS Procedure 22
-    - name: I10_PR23
-      type: string
-      description: ICD-10-PCS Procedure 23
-    - name: I10_PR24
-      type: string
-      description: ICD-10-PCS Procedure 24
-    - name: I10_PR25
-      type: string
-      description: ICD-10-PCS Procedure 25
     - name: I10_PROCTYPE
       type: int32
       description: ICD-10-PCS Procedure type indicator
@@ -406,6 +340,15 @@ sources:
     - name: LOS_X
       type: int32
       description: Length of stay (as received from source)
+    - name: MARITALSTATUSUB04
+      type: string
+      description: Patient's marital status, UB-04 standard coding
+    - name: MDBOARD1
+      type: string
+      description: Physician 1 licensing board (as received from source)
+    - name: MDBOARD2
+      type: string
+      description: Physician 2 licensing board (as received from source)
     - name: MDC
       type: int32
       description: MDC in effect on discharge date
@@ -418,12 +361,15 @@ sources:
     - name: MDNUM2_R
       type: int32
       description: Physician 2 number (re-identified)
+    - name: MDNUM3_R
+      type: int32
+      description: Physician 3 number (re-identified)
     - name: MEDINCSTQ
       type: int32
       description: Median household income state quartile for patient ZIP Code
-    - name: OS_TIME
-      type: double
-      description: Observation stay time summed from UNITS
+    - name: MRN_R
+      type: int32
+      description: Medical record number (re-identified)
     - name: P7EDSRC_X
       type: string
       description: Condition Code P7, Direct Inpatient Admission from Emergency Room
@@ -433,18 +379,6 @@ sources:
     - name: PAY1_X
       type: string
       description: Primary expected payer (as received from source)
-    - name: PAY2
-      type: int32
-      description: Secondary expected payer (uniform)
-    - name: PAY2_X
-      type: string
-      description: Secondary expected payer (as received from source)
-    - name: PAY3
-      type: int32
-      description: Tertiary expected payer (uniform)
-    - name: PAY3_X
-      type: string
-      description: Tertiary expected payer (as received from source)
     - name: PL_CBSA
       type: int32
       description: 'Patient location: Core Based Statistical Area (CBSA)'
@@ -453,7 +387,7 @@ sources:
       description: 'Patient Location: NCHS Urban-Rural Code'
     - name: PL_RUCC
       type: int32
-      description: 'Patient location: Rural-Urban Continuum Codes (RUCC)'
+      description: 'Patient location: Rural-Urban Continuum Codes(RUCC)'
     - name: PL_UIC
       type: int32
       description: 'Patient location: Urban Influence Codes'
@@ -522,54 +456,9 @@ sources:
     - name: PRDAY12
       type: int32
       description: Number of days from admission to I10_PR12
-    - name: PRDAY13
-      type: int32
-      description: Number of days from admission to I10_PR13
-    - name: PRDAY14
-      type: int32
-      description: Number of days from admission to I10_PR14
-    - name: PRDAY15
-      type: int32
-      description: Number of days from admission to I10_PR15
-    - name: PRDAY16
-      type: int32
-      description: Number of days from admission to I10_PR16
-    - name: PRDAY17
-      type: int32
-      description: Number of days from admission to I10_PR17
-    - name: PRDAY18
-      type: int32
-      description: Number of days from admission to I10_PR18
-    - name: PRDAY19
-      type: int32
-      description: Number of days from admission to I10_PR19
-    - name: PRDAY20
-      type: int32
-      description: Number of days from admission to I10_PR20
-    - name: PRDAY21
-      type: int32
-      description: Number of days from admission to I10_PR21
-    - name: PRDAY22
-      type: int32
-      description: Number of days from admission to I10_PR22
-    - name: PRDAY23
-      type: int32
-      description: Number of days from admission to I10_PR23
-    - name: PRDAY24
-      type: int32
-      description: Number of days from admission to I10_PR24
-    - name: PRDAY25
-      type: int32
-      description: Number of days from admission to I10_PR25
-    - name: PRVER
-      type: int32
-      description: Procedure Version
     - name: PSTATE
       type: string
       description: Patient State postal code
-    - name: PSTCO
-      type: int32
-      description: Patient state/county FIPS code
     - name: PSTCO2
       type: int32
       description: Patient state/county FIPS code, possibly derived from ZIP Code
@@ -582,6 +471,9 @@ sources:
     - name: RACE_X
       type: string
       description: Race (as received from source)
+    - name: SPLIT_IPED
+      type: int32
+      description: Split IP/ED records-single visit, from CAH
     - name: TOTCHG
       type: double
       description: Total charges (cleaned)
@@ -594,9 +486,6 @@ sources:
     - name: TRAN_OUT
       type: int32
       description: Transfer out indicator
-    - name: VisitLink
-      type: int32
-      description: Visit linkage variable
     - name: YEAR
       type: int32
       description: Calendar year
@@ -612,12 +501,6 @@ sources:
     - name: AYEAR
       type: int32
       description: Admission year
-    - name: BMONTH
-      type: int32
-      description: Birth month
-    - name: BYEAR
-      type: int32
-      description: Birth year
     - name: PRMONTH1
       type: int32
       description: Month of procedure 1
@@ -654,45 +537,6 @@ sources:
     - name: PRMONTH12
       type: int32
       description: Month of procedure 12
-    - name: PRMONTH13
-      type: int32
-      description: Month of procedure 13
-    - name: PRMONTH14
-      type: int32
-      description: Month of procedure 14
-    - name: PRMONTH15
-      type: int32
-      description: Month of procedure 15
-    - name: PRMONTH16
-      type: int32
-      description: Month of procedure 16
-    - name: PRMONTH17
-      type: int32
-      description: Month of procedure 17
-    - name: PRMONTH18
-      type: int32
-      description: Month of procedure 18
-    - name: PRMONTH19
-      type: int32
-      description: Month of procedure 19
-    - name: PRMONTH20
-      type: int32
-      description: Month of procedure 20
-    - name: PRMONTH21
-      type: int32
-      description: Month of procedure 21
-    - name: PRMONTH22
-      type: int32
-      description: Month of procedure 22
-    - name: PRMONTH23
-      type: int32
-      description: Month of procedure 23
-    - name: PRMONTH24
-      type: int32
-      description: Month of procedure 24
-    - name: PRMONTH25
-      type: int32
-      description: Month of procedure 25
     - name: PRYEAR1
       type: int32
       description: Year of procedure 1
@@ -729,42 +573,3 @@ sources:
     - name: PRYEAR12
       type: int32
       description: Year of procedure 12
-    - name: PRYEAR13
-      type: int32
-      description: Year of procedure 13
-    - name: PRYEAR14
-      type: int32
-      description: Year of procedure 14
-    - name: PRYEAR15
-      type: int32
-      description: Year of procedure 15
-    - name: PRYEAR16
-      type: int32
-      description: Year of procedure 16
-    - name: PRYEAR17
-      type: int32
-      description: Year of procedure 17
-    - name: PRYEAR18
-      type: int32
-      description: Year of procedure 18
-    - name: PRYEAR19
-      type: int32
-      description: Year of procedure 19
-    - name: PRYEAR20
-      type: int32
-      description: Year of procedure 20
-    - name: PRYEAR21
-      type: int32
-      description: Year of procedure 21
-    - name: PRYEAR22
-      type: int32
-      description: Year of procedure 22
-    - name: PRYEAR23
-      type: int32
-      description: Year of procedure 23
-    - name: PRYEAR24
-      type: int32
-      description: Year of procedure 24
-    - name: PRYEAR25
-      type: int32
-      description: Year of procedure 25

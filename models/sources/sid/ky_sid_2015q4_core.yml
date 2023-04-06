@@ -10,8 +10,8 @@ sources:
   meta:
     external_location: \\files.drexel.edu\encrypted\SOPH\UHC\SchnakeMahl_HCUP\dbt\v0\sources\{name}.parquet
   tables:
-  - name: NY_SID_2017_CORE
-    description: '{{ doc("sid_core_2016_2018_description") + "\n" + "\n" + doc("sid_2016_2018_description")}}'
+  - name: KY_SID_2015q4_CORE
+    description: '{{ doc("sid_core_2015_description") + "\n" + "\n" + doc("sid_2015_description")}}'
     columns:
     - name: AGE
       type: int32
@@ -22,33 +22,21 @@ sources:
     - name: AGEMONTH
       type: int32
       description: Age in months (when age < 11 years)
-    - name: AHOUR
-      type: int32
-      description: Admission Hour
     - name: AMONTH
       type: int32
       description: Admission month
-    - name: ANESTH
-      type: int32
-      description: Method of anesthesia
     - name: ATYPE
       type: int32
       description: Admission type
     - name: AWEEKEND
       type: int32
       description: Admission day is a weekend
-    - name: BLOOD
-      type: int32
-      description: Pints of blood furnished to the patient
+    - name: BILLTYPE
+      type: string
+      description: Type of bill, UB-04 coding
     - name: BWT
       type: int32
       description: Birth weight in grams
-    - name: DaysToEvent
-      type: int32
-      description: Days from 'start date' to admission
-    - name: DHOUR
-      type: int32
-      description: Discharge Hour
     - name: DIED
       type: int32
       description: Died during hospitalization
@@ -64,6 +52,9 @@ sources:
     - name: DMONTH
       type: int32
       description: Discharge month
+    - name: DNR
+      type: int32
+      description: Do not resuscitate indicator
     - name: DQTR
       type: int32
       description: Discharge quarter
@@ -73,6 +64,9 @@ sources:
     - name: DRG_NoPOA
       type: int32
       description: DRG in use on discharge date, calculated without POA
+    - name: DRG32
+      type: int32
+      description: DRG, version 32
     - name: DRGVER
       type: int32
       description: DRG grouper version used on discharge date
@@ -154,36 +148,36 @@ sources:
     - name: DXPOA25
       type: string
       description: Diagnosis 25, present on admission indicator
-    - name: DXPOA26
-      type: string
-      description: Diagnosis 26, present on admission indicator
-    - name: DXPOA27
-      type: string
-      description: Diagnosis 27, present on admission indicator
-    - name: DXPOA28
-      type: string
-      description: Diagnosis 28, present on admission indicator
-    - name: DXPOA29
-      type: string
-      description: Diagnosis 29, present on admission indicator
-    - name: DXPOA30
-      type: string
-      description: Diagnosis 30, present on admission indicator
-    - name: DXPOA31
-      type: string
-      description: Diagnosis 31, present on admission indicator
-    - name: DXPOA32
-      type: string
-      description: Diagnosis 32, present on admission indicator
-    - name: DXPOA33
-      type: string
-      description: Diagnosis 33, present on admission indicator
-    - name: DXPOA34
-      type: string
-      description: Diagnosis 34, present on admission indicator
     - name: DXVER
       type: int32
       description: Diagnosis Version
+    - name: E_POA1
+      type: string
+      description: E Cause 1, present on admission indicator
+    - name: E_POA2
+      type: string
+      description: E Cause 2, present on admission indicator
+    - name: E_POA3
+      type: string
+      description: E Cause 3, present on admission indicator
+    - name: E_POA4
+      type: string
+      description: E Cause 4, present on admission indicator
+    - name: E_POA5
+      type: string
+      description: E Cause 5, present on admission indicator
+    - name: E_POA6
+      type: string
+      description: E Cause 6, present on admission indicator
+    - name: E_POA7
+      type: string
+      description: E Cause 7, present on admission indicator
+    - name: E_POA8
+      type: string
+      description: E Cause 8, present on admission indicator
+    - name: E_POA9
+      type: string
+      description: E Cause 9, present on admission indicator
     - name: FEMALE
       type: int32
       description: Indicator of sex
@@ -199,9 +193,6 @@ sources:
     - name: HISPANIC_X
       type: string
       description: Hispanic ethnicity (as received from source)
-    - name: Homeless
-      type: int32
-      description: Indicator that patient is homeless
     - name: HOSP_NPI
       type: string
       description: Hospital NPI
@@ -286,39 +277,156 @@ sources:
     - name: I10_DX25
       type: string
       description: ICD-10-CM Diagnosis 25
-    - name: I10_DX26
+    - name: I10_DXCCS1
+      type: int32
+      description: 'ICD-10-CM CCS: diagnosis 1'
+    - name: I10_DXCCS2
+      type: int32
+      description: 'ICD-10-CM CCS: diagnosis 2'
+    - name: I10_DXCCS3
+      type: int32
+      description: 'ICD-10-CM CCS: diagnosis 3'
+    - name: I10_DXCCS4
+      type: int32
+      description: 'ICD-10-CM CCS: diagnosis 4'
+    - name: I10_DXCCS5
+      type: int32
+      description: 'ICD-10-CM CCS: diagnosis 5'
+    - name: I10_DXCCS6
+      type: int32
+      description: 'ICD-10-CM CCS: diagnosis 6'
+    - name: I10_DXCCS7
+      type: int32
+      description: 'ICD-10-CM CCS: diagnosis 7'
+    - name: I10_DXCCS8
+      type: int32
+      description: 'ICD-10-CM CCS: diagnosis 8'
+    - name: I10_DXCCS9
+      type: int32
+      description: 'ICD-10-CM CCS: diagnosis 9'
+    - name: I10_DXCCS10
+      type: int32
+      description: 'ICD-10-CM CCS: diagnosis 10'
+    - name: I10_DXCCS11
+      type: int32
+      description: 'ICD-10-CM CCS: diagnosis 11'
+    - name: I10_DXCCS12
+      type: int32
+      description: 'ICD-10-CM CCS: diagnosis 12'
+    - name: I10_DXCCS13
+      type: int32
+      description: 'ICD-10-CM CCS: diagnosis 13'
+    - name: I10_DXCCS14
+      type: int32
+      description: 'ICD-10-CM CCS: diagnosis 14'
+    - name: I10_DXCCS15
+      type: int32
+      description: 'ICD-10-CM CCS: diagnosis 15'
+    - name: I10_DXCCS16
+      type: int32
+      description: 'ICD-10-CM CCS: diagnosis 16'
+    - name: I10_DXCCS17
+      type: int32
+      description: 'ICD-10-CM CCS: diagnosis 17'
+    - name: I10_DXCCS18
+      type: int32
+      description: 'ICD-10-CM CCS: diagnosis 18'
+    - name: I10_DXCCS19
+      type: int32
+      description: 'ICD-10-CM CCS: diagnosis 19'
+    - name: I10_DXCCS20
+      type: int32
+      description: 'ICD-10-CM CCS: diagnosis 20'
+    - name: I10_DXCCS21
+      type: int32
+      description: 'ICD-10-CM CCS: diagnosis 21'
+    - name: I10_DXCCS22
+      type: int32
+      description: 'ICD-10-CM CCS: diagnosis 22'
+    - name: I10_DXCCS23
+      type: int32
+      description: 'ICD-10-CM CCS: diagnosis 23'
+    - name: I10_DXCCS24
+      type: int32
+      description: 'ICD-10-CM CCS: diagnosis 24'
+    - name: I10_DXCCS25
+      type: int32
+      description: 'ICD-10-CM CCS: diagnosis 25'
+    - name: I10_ECAUSE1
       type: string
-      description: ICD-10-CM Diagnosis 26
-    - name: I10_DX27
+      description: ICD-10-CM E Cause 1
+    - name: I10_ECAUSE2
       type: string
-      description: ICD-10-CM Diagnosis 27
-    - name: I10_DX28
+      description: ICD-10-CM E Cause 2
+    - name: I10_ECAUSE3
       type: string
-      description: ICD-10-CM Diagnosis 28
-    - name: I10_DX29
+      description: ICD-10-CM E Cause 3
+    - name: I10_ECAUSE4
       type: string
-      description: ICD-10-CM Diagnosis 29
-    - name: I10_DX30
+      description: ICD-10-CM E Cause 4
+    - name: I10_ECAUSE5
       type: string
-      description: ICD-10-CM Diagnosis 30
-    - name: I10_DX31
+      description: ICD-10-CM E Cause 5
+    - name: I10_ECAUSE6
       type: string
-      description: ICD-10-CM Diagnosis 31
-    - name: I10_DX32
+      description: ICD-10-CM E Cause 6
+    - name: I10_ECAUSE7
       type: string
-      description: ICD-10-CM Diagnosis 32
-    - name: I10_DX33
+      description: ICD-10-CM E Cause 7
+    - name: I10_ECAUSE8
       type: string
-      description: ICD-10-CM Diagnosis 33
-    - name: I10_DX34
+      description: ICD-10-CM E Cause 8
+    - name: I10_ECAUSE9
       type: string
-      description: ICD-10-CM Diagnosis 34
+      description: ICD-10-CM E Cause 9
+    - name: I10_ECauseCCS1
+      type: int32
+      description: 'ICD-10-CM CCS: E Cause 1'
+    - name: I10_ECauseCCS2
+      type: int32
+      description: 'ICD-10-CM CCS: E Cause 2'
+    - name: I10_ECauseCCS3
+      type: int32
+      description: 'ICD-10-CM CCS: E Cause 3'
+    - name: I10_ECauseCCS4
+      type: int32
+      description: 'ICD-10-CM CCS: E Cause 4'
+    - name: I10_ECauseCCS5
+      type: int32
+      description: 'ICD-10-CM CCS: E Cause 5'
+    - name: I10_ECauseCCS6
+      type: int32
+      description: 'ICD-10-CM CCS: E Cause 6'
+    - name: I10_ECauseCCS7
+      type: int32
+      description: 'ICD-10-CM CCS: E Cause 7'
+    - name: I10_ECauseCCS8
+      type: int32
+      description: 'ICD-10-CM CCS: E Cause 8'
+    - name: I10_ECauseCCS9
+      type: int32
+      description: 'ICD-10-CM CCS: E Cause 9'
+    - name: I10_HOSPBRTH
+      type: int32
+      description: ICD-10-CM Indicator of birth in this hospital
+    - name: I10_NCHRONIC
+      type: int32
+      description: ICD-10-CM Number of chronic conditions
     - name: I10_NDX
       type: int32
       description: ICD-10-CM Number of diagnoses on this record
+    - name: I10_NECAUSE
+      type: int32
+      description: ICD-10-CM Number of E Causes on this record
+    - name: I10_NEOMAT
+      type: int32
+      description: ICD-10-CM/PCS Neonatal and/or maternal I10_DX and/or I10_PR
     - name: I10_NPR
       type: int32
       description: ICD-10-PCS Number of procedures on this record
+    - name: I10_ORPROC
+      type: int32
+      description: ICD-10-PCS Major operating room procedure indicator
     - name: I10_PR1
       type: string
       description: ICD-10-PCS Procedure 1
@@ -394,9 +502,87 @@ sources:
     - name: I10_PR25
       type: string
       description: ICD-10-PCS Procedure 25
+    - name: I10_PRCCS1
+      type: int32
+      description: 'ICD-10-PCS CCS: procedure 1'
+    - name: I10_PRCCS2
+      type: int32
+      description: 'ICD-10-PCS CCS: procedure 2'
+    - name: I10_PRCCS3
+      type: int32
+      description: 'ICD-10-PCS CCS: procedure 3'
+    - name: I10_PRCCS4
+      type: int32
+      description: 'ICD-10-PCS CCS: procedure 4'
+    - name: I10_PRCCS5
+      type: int32
+      description: 'ICD-10-PCS CCS: procedure 5'
+    - name: I10_PRCCS6
+      type: int32
+      description: 'ICD-10-PCS CCS: procedure 6'
+    - name: I10_PRCCS7
+      type: int32
+      description: 'ICD-10-PCS CCS: procedure 7'
+    - name: I10_PRCCS8
+      type: int32
+      description: 'ICD-10-PCS CCS: procedure 8'
+    - name: I10_PRCCS9
+      type: int32
+      description: 'ICD-10-PCS CCS: procedure 9'
+    - name: I10_PRCCS10
+      type: int32
+      description: 'ICD-10-PCS CCS: procedure 10'
+    - name: I10_PRCCS11
+      type: int32
+      description: 'ICD-10-PCS CCS: procedure 11'
+    - name: I10_PRCCS12
+      type: int32
+      description: 'ICD-10-PCS CCS: procedure 12'
+    - name: I10_PRCCS13
+      type: int32
+      description: 'ICD-10-PCS CCS: procedure 13'
+    - name: I10_PRCCS14
+      type: int32
+      description: 'ICD-10-PCS CCS: procedure 14'
+    - name: I10_PRCCS15
+      type: int32
+      description: 'ICD-10-PCS CCS: procedure 15'
+    - name: I10_PRCCS16
+      type: int32
+      description: 'ICD-10-PCS CCS: procedure 16'
+    - name: I10_PRCCS17
+      type: int32
+      description: 'ICD-10-PCS CCS: procedure 17'
+    - name: I10_PRCCS18
+      type: int32
+      description: 'ICD-10-PCS CCS: procedure 18'
+    - name: I10_PRCCS19
+      type: int32
+      description: 'ICD-10-PCS CCS: procedure 19'
+    - name: I10_PRCCS20
+      type: int32
+      description: 'ICD-10-PCS CCS: procedure 20'
+    - name: I10_PRCCS21
+      type: int32
+      description: 'ICD-10-PCS CCS: procedure 21'
+    - name: I10_PRCCS22
+      type: int32
+      description: 'ICD-10-PCS CCS: procedure 22'
+    - name: I10_PRCCS23
+      type: int32
+      description: 'ICD-10-PCS CCS: procedure 23'
+    - name: I10_PRCCS24
+      type: int32
+      description: 'ICD-10-PCS CCS: procedure 24'
+    - name: I10_PRCCS25
+      type: int32
+      description: 'ICD-10-PCS CCS: procedure 25'
     - name: I10_PROCTYPE
       type: int32
       description: ICD-10-PCS Procedure type indicator
+    - name: I10_SERVICELINE
+      type: int32
+      description: ICD-10-CM/PCS Hospital Service Line
     - name: KEY
       type: double
       description: HCUP record identifier
@@ -412,21 +598,15 @@ sources:
     - name: MDC_NoPOA
       type: int32
       description: MDC in use on discharge date, calculated without POA
-    - name: MDNUM1_R
+    - name: MDC32
       type: int32
-      description: Physician 1 number (re-identified)
-    - name: MDNUM2_R
-      type: int32
-      description: Physician 2 number (re-identified)
+      description: MDC, version 32
     - name: MEDINCSTQ
       type: int32
       description: Median household income state quartile for patient ZIP Code
     - name: OS_TIME
       type: double
       description: Observation stay time summed from UNITS
-    - name: P7EDSRC_X
-      type: string
-      description: Condition Code P7, Direct Inpatient Admission from Emergency Room
     - name: PAY1
       type: int32
       description: Primary expected payer (uniform)
@@ -453,7 +633,7 @@ sources:
       description: 'Patient Location: NCHS Urban-Rural Code'
     - name: PL_RUCC
       type: int32
-      description: 'Patient location: Rural-Urban Continuum Codes (RUCC)'
+      description: 'Patient location: Rural-Urban Continuum Codes(RUCC)'
     - name: PL_UIC
       type: int32
       description: 'Patient location: Urban Influence Codes'
@@ -576,9 +756,6 @@ sources:
     - name: RACE
       type: int32
       description: Race (uniform)
-    - name: RACE_EDIT
-      type: int32
-      description: Race Edit Checks
     - name: RACE_X
       type: string
       description: Race (as received from source)
@@ -594,18 +771,12 @@ sources:
     - name: TRAN_OUT
       type: int32
       description: Transfer out indicator
-    - name: VisitLink
-      type: int32
-      description: Visit linkage variable
     - name: YEAR
       type: int32
       description: Calendar year
     - name: ZIP
       type: string
       description: Patient ZIP Code
-    - name: ZIP3
-      type: string
-      description: Patient ZIP Code, first 3 digits
     - name: ZIPINC_QRTL
       type: int32
       description: Median household income national quartile for patient ZIP Code

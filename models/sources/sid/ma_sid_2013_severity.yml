@@ -1,0 +1,84 @@
+version: 2
+sources:
+- name: SID
+  tags:
+  - State
+  - Inpatient
+  - SID
+  - Source
+  description: '{{ doc("sid_description") }}'
+  meta:
+    external_location: \\files.drexel.edu\encrypted\SOPH\UHC\SchnakeMahl_HCUP\dbt\v0\sources\{name}.parquet
+  tables:
+  - name: MA_SID_2013_SEVERITY
+    description: '{{ doc("sid_severity_2005_2014_description") + "\n" + "\n" + doc("sid_2005_2014_description")}}'
+    columns:
+    - name: KEY
+      type: double
+      description: .na.character
+    - name: CM_ANEMDEF
+      type: double
+      description: .na.character
+    - name: CM_ARTH
+      type: double
+      description: .na.character
+    - name: CM_BLDLOSS
+      type: double
+      description: .na.character
+    - name: CM_CHF
+      type: double
+      description: .na.character
+    - name: CM_CHRNLUNG
+      type: double
+      description: .na.character
+    - name: CM_COAG
+      type: double
+      description: .na.character
+    - name: CM_DM
+      type: double
+      description: .na.character
+    - name: CM_DMCX
+      type: double
+      description: .na.character
+    - name: CM_HTN_C
+      type: double
+      description: .na.character
+    - name: CM_HYPOTHY
+      type: double
+      description: .na.character
+    - name: CM_LYMPH
+      type: double
+      description: .na.character
+    - name: CM_LYTES
+      type: double
+      description: .na.character
+    - name: CM_METS
+      type: double
+      description: .na.character
+    - name: CM_NEURO
+      type: double
+      description: .na.character
+    - name: CM_PARA
+      type: double
+      description: .na.character
+    - name: CM_PERIVASC
+      type: double
+      description: .na.character
+    - name: CM_PULMCIRC
+      type: double
+      description: .na.character
+    - name: CM_RENLFAIL
+      type: double
+      description: .na.character
+    - name: CM_TUMOR
+      type: double
+      description: .na.character
+    - name: CM_ULCER
+      type: double
+      description: .na.character
+    - name: CM_VALVE
+      type: double
+      description: .na.character
+    - name: CM_WGHTLOSS
+      type: double
+      description: .na.character
