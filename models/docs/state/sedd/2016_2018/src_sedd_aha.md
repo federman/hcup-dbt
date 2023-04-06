@@ -1,4 +1,7 @@
 {% docs sedd_aha_2016_2018_description %}
+
+# AHA Linkage file details 
+
 The AHA Linkage file contains AHA linkage data elements that allow the SEDD to be used in conjunction with the AHA Annual Survey of Hospitals' data files. These files contain information about hospital characteristics and are available for purchase through the AHA. Because the data organizations in participating States determine whether the AHA linkage data elements may be released through the HCUP Central Distributor with the SEDD, not all SEDD include AHA linkage data elements.
 
 Starting with the 2006 SEDD, the AHA Linkage files are available via the HCUP User Support website (www.hcup-us.ahrq.gov). The AHA Linkage files may not be available when the discharge-level database is released.

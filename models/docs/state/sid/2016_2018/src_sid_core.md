@@ -1,5 +1,7 @@
 {% docs sid_core_2016_2018_description %}
 
+# Core file details
+
 The Core file is a discharge-level file that contains:
 
 - Core data elements that form the nucleus of the SID

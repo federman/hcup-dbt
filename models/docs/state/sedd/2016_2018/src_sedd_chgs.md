@@ -1,4 +1,7 @@
 {% docs sedd_chgs_2016_2018_description %}
+
+# Charges file details 
+
 The Charges file contains detailed charge information. There are three kinds of Charges files:
 
 1. Line item detail in which a submitted charge pertains to a specified revenue center and there may be multiple charges reported for the same revenue center. This type of Charges file includes multiple records per discharge abstract. Each record includes the following information for one service:

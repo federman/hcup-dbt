@@ -1,5 +1,7 @@
 {% docs sid_chgs_2019_2021_description %}
 
+# Charges file details
+
 The Charges file contains detailed charge information. There are three kinds of Charges files:
 
 ## 1. Summarized detail
