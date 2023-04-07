@@ -1,0 +1,120 @@
+version: 2
+sources:
+- name: ACS
+  tags:
+  - ACS
+  - Census
+  - ZCTA-level
+  - Exposures
+  description: 'American Community Survey data'
+  meta:
+    external_location: \\files.drexel.edu\encrypted\SOPH\UHC\SchnakeMahl_HCUP\dbt\v0\sources\{name}.parquet
+  tables:
+  - name: acs_zcta_indicators
+    description: 'ZCTA-level ACS indicators'
+    columns:
+    - name: YEAR
+      type: int
+      description: year of the ACS data (latest year of the 5-year span)
+    - name: ZCTA
+      type: string
+      description: 5-digit ZCTA geographic ID code
+    - name: total
+      type: double
+      description: total population count
+    - name: p_age_00_04
+      type: double
+      description: age composition - proportion of population aged 0-4 years. From ACS table B01001.
+    - name: p_age_05_09
+      type: double
+      description: age composition - proportion of population aged 5-9 years. From ACS table B01001.
+    - name: p_age_10_14
+      type: double
+      description: age composition - proportion of population aged 10-14 years. From ACS table B01001.
+    - name: p_age_15_19
+      type: double
+      description: age composition - proportion of population aged 15-19 years. From ACS table B01001.  
+    - name: p_age_20_24
+      type: double
+      description: age composition - proportion of population aged 20-24 years. From ACS table B01001.
+    - name: p_age_25_29
+      type: double
+      description: age composition - proportion of population aged 25-29 years. From ACS table B01001.
+    - name: p_age_30_34
+      type: double
+      description: age composition - proportion of population aged 30-34 years. From ACS table B01001.
+    - name: p_age_35_39
+      type: double
+      description: age composition - proportion of population aged 35-39 years. From ACS table B01001.
+    - name: p_age_40_44
+      type: double
+      description: age composition - proportion of population aged 40-44 years. From ACS table B01001.
+    - name: p_age_45_49
+      type: double
+      description: age composition - proportion of population aged 45-49 years. From ACS table B01001.
+    - name: p_age_50_54
+      type: double
+      description: age composition - proportion of population aged 50-54 years. From ACS table B01001.
+    - name: p_age_55_59
+      type: double
+      description: age composition - proportion of population aged 55-59 years. From ACS table B01001.
+    - name: p_age_60_64
+      type: double
+      description: age composition - proportion of population aged 60-64 years. From ACS table B01001.
+    - name: p_age_65_69
+      type: double
+      description: age composition - proportion of population aged 65-69 years. From ACS table B01001.
+    - name: p_age_70_74
+      type: double
+      description: age composition - proportion of population aged 70-74 years. From ACS table B01001.
+    - name: p_age_75_79
+      type: double
+      description: age composition - proportion of population aged 75-79 years. From ACS table B01001.
+    - name: p_age_80_84
+      type: double
+      description: age composition - proportion of population aged 80-84 years. From ACS table B01001.
+    - name: p_age_85
+      type: double
+      description: age composition - proportion of population aged 85+ years. From ACS table B01001.
+    - name: p_race_white
+      type: double
+      description: race composition - proportion of population that is White. From ACS table B02001.
+    - name: p_race_black
+      type: double
+      description: race composition - proportion of population that is Black. From ACS table B02001.
+    - name: p_race_pi
+      type: double
+      description: race composition - proportion of population that is Pacific Islander. From ACS table B02001.
+    - name: p_race_api
+      type: double
+      description: race composition - proportion of population that is Asian or Pacific Islander. From ACS table B02001.
+    - name: p_race_aian
+      type: double
+      description: race composition - proportion of population that is Alaska Native/American Indian (Native American). From ACS table B02001.
+    - name: p_race_other
+      type: double
+      description: race composition - proportion of population that is Other (includes multiracial). From ACS table B02001.
+    - name: p_rh_hisp
+      type: double
+      description: race/ethnicity composition - proportion of population that is Hispanic. From ACS table B03002.
+    - name: p_rh_nhwhite
+      type: double
+      description: race/ethnicity composition - proportion of population that is Non-Hispanic White. From ACS table B03002.
+    - name: p_rh_nhblack
+      type: double
+      description: race/ethnicity composition - proportion of population that is Non-Hispanic Black. From ACS table B03002.
+    - name: p_rh_nhpi
+      type: double
+      description: race/ethnicity composition - proportion of population that is Non-Hispanic Pacific Islander. From ACS table B03002.
+    - name: p_rh_nhapi
+      type: double
+      description: race/ethnicity composition - proportion of population that is Non-Hispanic Asian or Pacific Islander. From ACS table B03002.
+    - name: p_rh_nhaian
+      type: double
+      description: race/ethnicity composition - proportion of population that is Non-Hispanic Alaska Native/American Indian (Native American). From ACS table B03002.
+    - name: p_rh_nhother
+      type: double
+      description: race/ethnicity composition - proportion of population that is Non-Hispanic Other (includes multiracial). From ACS table B03002.
+    - name: p_poverty
+      type: double
+      description: proportion of population below poverty level. From ACS table B17001.
