@@ -1,0 +1,19 @@
+version: 2
+sources:
+- name: Crosswalks
+  tags:
+  - Geographic-relationships
+  description: 'Crosswalks to link between various geographic levels or metadata.'
+  meta:
+    external_location: \\files.drexel.edu\encrypted\SOPH\UHC\SchnakeMahl_HCUP\dbt\v0\sources\{name}.parquet
+  tables:
+  - name: xwalk_zip_zcta
+    description: "This is a crosswalk from zip codes to ZCTA. This crosswalk was obtains from Heather Rollins."
+    columns:
+    - name: ZIP
+      type: string code
+      description: 5-digit Z
+    - name: ZCTA
+      type: string
+      description: 5-digit ZCTA geographic ID code
+    
