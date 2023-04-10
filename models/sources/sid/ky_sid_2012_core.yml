@@ -15,442 +15,442 @@ sources:
     columns:
     - name: AGE
       type: double
-      description: .na.character
+      description: Age in years at admission
     - name: AGEDAY
       type: double
-      description: .na.character
+      description: Age in days (when age < 1 year)
     - name: AGEMONTH
       type: double
-      description: .na.character
+      description: Age in months (when age < 11 years)
     - name: AMONTH
       type: double
-      description: .na.character
+      description: Admission month
     - name: ATYPE
       type: double
-      description: .na.character
+      description: Admission type
     - name: AWEEKEND
       type: double
-      description: .na.character
+      description: Admission day is a weekend
     - name: BWT
       type: double
-      description: .na.character
+      description: Birth weight in grams
     - name: DIED
       type: double
-      description: .na.character
+      description: Died during hospitalization
     - name: DISPUB04
       type: double
-      description: .na.character
+      description: Disposition of patient (UB-04 standard coding)
     - name: DISPUNIFORM
       type: double
-      description: .na.character
+      description: Disposition of patient (uniform)
     - name: DISP_X
       type: string
-      description: .na.character
+      description: Disposition of patient (as received from source)
     - name: DNR
       type: double
-      description: .na.character
+      description: Do not resuscitate indicator
     - name: DQTR
       type: double
-      description: .na.character
+      description: Discharge quarter
     - name: DRG
       type: double
-      description: .na.character
+      description: DRG in effect on discharge date
     - name: DRG24
       type: double
-      description: .na.character
+      description: DRG, version 24
     - name: DRGVER
       type: double
-      description: .na.character
+      description: DRG grouper version used on discharge date
     - name: DRG_NoPOA
       type: double
-      description: .na.character
+      description: DRG in use on discharge date, calculated without POA
     - name: DSHOSPID
       type: string
-      description: .na.character
+      description: Data source hospital identifier
     - name: DX1
       type: string
-      description: .na.character
+      description: Diagnosis 1
     - name: DX2
       type: string
-      description: .na.character
+      description: Diagnosis 2
     - name: DX3
       type: string
-      description: .na.character
+      description: Diagnosis 3
     - name: DX4
       type: string
-      description: .na.character
+      description: Diagnosis 4
     - name: DX5
       type: string
-      description: .na.character
+      description: Diagnosis 5
     - name: DX6
       type: string
-      description: .na.character
+      description: Diagnosis 6
     - name: DX7
       type: string
-      description: .na.character
+      description: Diagnosis 7
     - name: DX8
       type: string
-      description: .na.character
+      description: Diagnosis 8
     - name: DX9
       type: string
-      description: .na.character
+      description: Diagnosis 9
     - name: DX10
       type: string
-      description: .na.character
+      description: Diagnosis 10
     - name: DX11
       type: string
-      description: .na.character
+      description: Diagnosis 11
     - name: DX12
       type: string
-      description: .na.character
+      description: Diagnosis 12
     - name: DX13
       type: string
-      description: .na.character
+      description: Diagnosis 13
     - name: DX14
       type: string
-      description: .na.character
+      description: Diagnosis 14
     - name: DX15
       type: string
-      description: .na.character
+      description: Diagnosis 15
     - name: DX16
       type: string
-      description: .na.character
+      description: Diagnosis 16
     - name: DX17
       type: string
-      description: .na.character
+      description: Diagnosis 17
     - name: DX18
       type: string
-      description: .na.character
+      description: Diagnosis 18
     - name: DX19
       type: string
-      description: .na.character
+      description: Diagnosis 19
     - name: DX20
       type: string
-      description: .na.character
+      description: Diagnosis 20
     - name: DX21
       type: string
-      description: .na.character
+      description: Diagnosis 21
     - name: DX22
       type: string
-      description: .na.character
+      description: Diagnosis 22
     - name: DX23
       type: string
-      description: .na.character
+      description: Diagnosis 23
     - name: DX24
       type: string
-      description: .na.character
+      description: Diagnosis 24
     - name: DX25
       type: string
-      description: .na.character
+      description: Diagnosis 25
     - name: DXCCS1
       type: double
-      description: .na.character
+      description: 'CCS: diagnosis 1'
     - name: DXCCS2
       type: double
-      description: .na.character
+      description: 'CCS: diagnosis 2'
     - name: DXCCS3
       type: double
-      description: .na.character
+      description: 'CCS: diagnosis 3'
     - name: DXCCS4
       type: double
-      description: .na.character
+      description: 'CCS: diagnosis 4'
     - name: DXCCS5
       type: double
-      description: .na.character
+      description: 'CCS: diagnosis 5'
     - name: DXCCS6
       type: double
-      description: .na.character
+      description: 'CCS: diagnosis 6'
     - name: DXCCS7
       type: double
-      description: .na.character
+      description: 'CCS: diagnosis 7'
     - name: DXCCS8
       type: double
-      description: .na.character
+      description: 'CCS: diagnosis 8'
     - name: DXCCS9
       type: double
-      description: .na.character
+      description: 'CCS: diagnosis 9'
     - name: DXCCS10
       type: double
-      description: .na.character
+      description: 'CCS: diagnosis 10'
     - name: DXCCS11
       type: double
-      description: .na.character
+      description: 'CCS: diagnosis 11'
     - name: DXCCS12
       type: double
-      description: .na.character
+      description: 'CCS: diagnosis 12'
     - name: DXCCS13
       type: double
-      description: .na.character
+      description: 'CCS: diagnosis 13'
     - name: DXCCS14
       type: double
-      description: .na.character
+      description: 'CCS: diagnosis 14'
     - name: DXCCS15
       type: double
-      description: .na.character
+      description: 'CCS: diagnosis 15'
     - name: DXCCS16
       type: double
-      description: .na.character
+      description: 'CCS: diagnosis 16'
     - name: DXCCS17
       type: double
-      description: .na.character
+      description: 'CCS: diagnosis 17'
     - name: DXCCS18
       type: double
-      description: .na.character
+      description: 'CCS: diagnosis 18'
     - name: DXCCS19
       type: double
-      description: .na.character
+      description: 'CCS: diagnosis 19'
     - name: DXCCS20
       type: double
-      description: .na.character
+      description: 'CCS: diagnosis 20'
     - name: DXCCS21
       type: double
-      description: .na.character
+      description: 'CCS: diagnosis 21'
     - name: DXCCS22
       type: double
-      description: .na.character
+      description: 'CCS: diagnosis 22'
     - name: DXCCS23
       type: double
-      description: .na.character
+      description: 'CCS: diagnosis 23'
     - name: DXCCS24
       type: double
-      description: .na.character
+      description: 'CCS: diagnosis 24'
     - name: DXCCS25
       type: double
-      description: .na.character
+      description: 'CCS: diagnosis 25'
     - name: DXPOA1
       type: string
-      description: .na.character
+      description: Diagnosis 1, present on admission indicator
     - name: DXPOA2
       type: string
-      description: .na.character
+      description: Diagnosis 2, present on admission indicator
     - name: DXPOA3
       type: string
-      description: .na.character
+      description: Diagnosis 3, present on admission indicator
     - name: DXPOA4
       type: string
-      description: .na.character
+      description: Diagnosis 4, present on admission indicator
     - name: DXPOA5
       type: string
-      description: .na.character
+      description: Diagnosis 5, present on admission indicator
     - name: DXPOA6
       type: string
-      description: .na.character
+      description: Diagnosis 6, present on admission indicator
     - name: DXPOA7
       type: string
-      description: .na.character
+      description: Diagnosis 7, present on admission indicator
     - name: DXPOA8
       type: string
-      description: .na.character
+      description: Diagnosis 8, present on admission indicator
     - name: DXPOA9
       type: string
-      description: .na.character
+      description: Diagnosis 9, present on admission indicator
     - name: DXPOA10
       type: string
-      description: .na.character
+      description: Diagnosis 10, present on admission indicator
     - name: DXPOA11
       type: string
-      description: .na.character
+      description: Diagnosis 11, present on admission indicator
     - name: DXPOA12
       type: string
-      description: .na.character
+      description: Diagnosis 12, present on admission indicator
     - name: DXPOA13
       type: string
-      description: .na.character
+      description: Diagnosis 13, present on admission indicator
     - name: DXPOA14
       type: string
-      description: .na.character
+      description: Diagnosis 14, present on admission indicator
     - name: DXPOA15
       type: string
-      description: .na.character
+      description: Diagnosis 15, present on admission indicator
     - name: DXPOA16
       type: string
-      description: .na.character
+      description: Diagnosis 16, present on admission indicator
     - name: DXPOA17
       type: string
-      description: .na.character
+      description: Diagnosis 17, present on admission indicator
     - name: DXPOA18
       type: string
-      description: .na.character
+      description: Diagnosis 18, present on admission indicator
     - name: DXPOA19
       type: string
-      description: .na.character
+      description: Diagnosis 19, present on admission indicator
     - name: DXPOA20
       type: string
-      description: .na.character
+      description: Diagnosis 20, present on admission indicator
     - name: DXPOA21
       type: string
-      description: .na.character
+      description: Diagnosis 21, present on admission indicator
     - name: DXPOA22
       type: string
-      description: .na.character
+      description: Diagnosis 22, present on admission indicator
     - name: DXPOA23
       type: string
-      description: .na.character
+      description: Diagnosis 23, present on admission indicator
     - name: DXPOA24
       type: string
-      description: .na.character
+      description: Diagnosis 24, present on admission indicator
     - name: DXPOA25
       type: string
-      description: .na.character
+      description: Diagnosis 25, present on admission indicator
     - name: DX_Admitting
       type: string
-      description: .na.character
+      description: Admitting Diagnosis Code
     - name: ECODE1
       type: string
-      description: .na.character
+      description: E code 1
     - name: ECODE2
       type: string
-      description: .na.character
+      description: E code 2
     - name: ECODE3
       type: string
-      description: .na.character
+      description: E code 3
     - name: ECODE4
       type: string
-      description: .na.character
+      description: E code 4
     - name: ECODE5
       type: string
-      description: .na.character
+      description: E code 5
     - name: ECODE6
       type: string
-      description: .na.character
+      description: E code 6
     - name: ECODE7
       type: string
-      description: .na.character
+      description: E code 7
     - name: ECODE8
       type: string
-      description: .na.character
+      description: E code 8
     - name: E_CCS1
       type: double
-      description: .na.character
+      description: 'CCS: E Code 1'
     - name: E_CCS2
       type: double
-      description: .na.character
+      description: 'CCS: E Code 2'
     - name: E_CCS3
       type: double
-      description: .na.character
+      description: 'CCS: E Code 3'
     - name: E_CCS4
       type: double
-      description: .na.character
+      description: 'CCS: E Code 4'
     - name: E_CCS5
       type: double
-      description: .na.character
+      description: 'CCS: E Code 5'
     - name: E_CCS6
       type: double
-      description: .na.character
+      description: 'CCS: E Code 6'
     - name: E_CCS7
       type: double
-      description: .na.character
+      description: 'CCS: E Code 7'
     - name: E_CCS8
       type: double
-      description: .na.character
+      description: 'CCS: E Code 8'
     - name: E_POA1
       type: string
-      description: .na.character
+      description: E Code 1, present on admission indicator
     - name: E_POA2
       type: string
-      description: .na.character
+      description: E Code 2, present on admission indicator
     - name: E_POA3
       type: string
-      description: .na.character
+      description: E Code 3, present on admission indicator
     - name: E_POA4
       type: string
-      description: .na.character
+      description: E Code 4, present on admission indicator
     - name: E_POA5
       type: string
-      description: .na.character
+      description: E Code 5, present on admission indicator
     - name: E_POA6
       type: string
-      description: .na.character
+      description: E Code 6, present on admission indicator
     - name: E_POA7
       type: string
-      description: .na.character
+      description: E Code 7, present on admission indicator
     - name: E_POA8
       type: string
-      description: .na.character
+      description: E Code 8, present on admission indicator
     - name: FEMALE
       type: double
-      description: .na.character
+      description: Indicator of sex
     - name: HCUP_ED
       type: double
-      description: .na.character
+      description: HCUP Emergency Department service indicator
     - name: HCUP_OS
       type: double
-      description: .na.character
+      description: HCUP Observation Stay service indicator
     - name: HISPANIC_X
       type: string
-      description: .na.character
+      description: Hispanic ethnicity (as received from source)
     - name: HOSPBRTH
       type: double
-      description: .na.character
+      description: Indicator of birth in this hospital
     - name: HOSPST
       type: string
-      description: .na.character
+      description: Hospital state postal code
     - name: HOSP_NPI
       type: string
-      description: .na.character
+      description: Hospital NPI
     - name: KEY
       type: double
-      description: .na.character
+      description: HCUP record identifier
     - name: LOS
       type: double
-      description: .na.character
+      description: Length of stay (cleaned)
     - name: LOS_X
       type: double
-      description: .na.character
+      description: Length of stay (as received from source)
     - name: MDC
       type: double
-      description: .na.character
+      description: MDC in effect on discharge date
     - name: MDC24
       type: double
-      description: .na.character
+      description: MDC, version 24
     - name: MDC_NoPOA
       type: double
-      description: .na.character
+      description: MDC in use on discharge date, calculated without POA
     - name: MEDINCSTQ
       type: double
-      description: .na.character
+      description: Median household income state quartile for patient ZIP Code
     - name: NCHRONIC
       type: double
-      description: .na.character
+      description: Number of chronic conditions
     - name: NDX
       type: double
-      description: .na.character
+      description: Number of diagnoses on this record
     - name: NECODE
       type: double
-      description: .na.character
+      description: Number of E codes on this record
     - name: NEOMAT
       type: double
-      description: .na.character
+      description: Neonatal and/or maternal DX and/or PR
     - name: NPR
       type: double
-      description: .na.character
+      description: Number of procedures on this record
     - name: ORPROC
       type: double
-      description: .na.character
+      description: Major operating room procedure indicator
     - name: OS_TIME
       type: double
-      description: .na.character
+      description: Observation stay time summed from UNITS
     - name: PAY1
       type: double
-      description: .na.character
+      description: Primary expected payer (uniform)
     - name: PAY1_X
       type: string
-      description: .na.character
+      description: Primary expected payer (as received from source)
     - name: PAY2
       type: double
-      description: .na.character
+      description: Secondary expected payer (uniform)
     - name: PAY2_X
       type: string
-      description: .na.character
+      description: Secondary expected payer (as received from source)
     - name: PAY3
       type: double
-      description: .na.character
+      description: Tertiary expected payer (uniform)
     - name: PAY3_X
       type: string
-      description: .na.character
+      description: Tertiary expected payer (as received from source)
     - name: PL_CBSA
       type: double
-      description: .na.character
+      description: 'Patient location: Core Based Statistical Area (CBSA)'
     - name: PL_MSA1993
       type: double
       description: .na.character
@@ -474,436 +474,436 @@ sources:
       description: .na.character
     - name: PL_UR_CAT4
       type: double
-      description: .na.character
+      description: 'Patient Location: Urban-Rural 4 Categories'
     - name: PR1
       type: string
-      description: .na.character
+      description: Procedure 1
     - name: PR2
       type: string
-      description: .na.character
+      description: Procedure 2
     - name: PR3
       type: string
-      description: .na.character
+      description: Procedure 3
     - name: PR4
       type: string
-      description: .na.character
+      description: Procedure 4
     - name: PR5
       type: string
-      description: .na.character
+      description: Procedure 5
     - name: PR6
       type: string
-      description: .na.character
+      description: Procedure 6
     - name: PR7
       type: string
-      description: .na.character
+      description: Procedure 7
     - name: PR8
       type: string
-      description: .na.character
+      description: Procedure 8
     - name: PR9
       type: string
-      description: .na.character
+      description: Procedure 9
     - name: PR10
       type: string
-      description: .na.character
+      description: Procedure 10
     - name: PR11
       type: string
-      description: .na.character
+      description: Procedure 11
     - name: PR12
       type: string
-      description: .na.character
+      description: Procedure 12
     - name: PR13
       type: string
-      description: .na.character
+      description: Procedure 13
     - name: PR14
       type: string
-      description: .na.character
+      description: Procedure 14
     - name: PR15
       type: string
-      description: .na.character
+      description: Procedure 15
     - name: PR16
       type: string
-      description: .na.character
+      description: Procedure 16
     - name: PR17
       type: string
-      description: .na.character
+      description: Procedure 17
     - name: PR18
       type: string
-      description: .na.character
+      description: Procedure 18
     - name: PR19
       type: string
-      description: .na.character
+      description: Procedure 19
     - name: PR20
       type: string
-      description: .na.character
+      description: Procedure 20
     - name: PR21
       type: string
-      description: .na.character
+      description: Procedure 21
     - name: PR22
       type: string
-      description: .na.character
+      description: Procedure 22
     - name: PR23
       type: string
-      description: .na.character
+      description: Procedure 23
     - name: PR24
       type: string
-      description: .na.character
+      description: Procedure 24
     - name: PR25
       type: string
-      description: .na.character
+      description: Procedure 25
     - name: PRCCS1
       type: double
-      description: .na.character
+      description: 'CCS: procedure 1'
     - name: PRCCS2
       type: double
-      description: .na.character
+      description: 'CCS: procedure 2'
     - name: PRCCS3
       type: double
-      description: .na.character
+      description: 'CCS: procedure 3'
     - name: PRCCS4
       type: double
-      description: .na.character
+      description: 'CCS: procedure 4'
     - name: PRCCS5
       type: double
-      description: .na.character
+      description: 'CCS: procedure 5'
     - name: PRCCS6
       type: double
-      description: .na.character
+      description: 'CCS: procedure 6'
     - name: PRCCS7
       type: double
-      description: .na.character
+      description: 'CCS: procedure 7'
     - name: PRCCS8
       type: double
-      description: .na.character
+      description: 'CCS: procedure 8'
     - name: PRCCS9
       type: double
-      description: .na.character
+      description: 'CCS: procedure 9'
     - name: PRCCS10
       type: double
-      description: .na.character
+      description: 'CCS: procedure 10'
     - name: PRCCS11
       type: double
-      description: .na.character
+      description: 'CCS: procedure 11'
     - name: PRCCS12
       type: double
-      description: .na.character
+      description: 'CCS: procedure 12'
     - name: PRCCS13
       type: double
-      description: .na.character
+      description: 'CCS: procedure 13'
     - name: PRCCS14
       type: double
-      description: .na.character
+      description: 'CCS: procedure 14'
     - name: PRCCS15
       type: double
-      description: .na.character
+      description: 'CCS: procedure 15'
     - name: PRCCS16
       type: double
-      description: .na.character
+      description: 'CCS: procedure 16'
     - name: PRCCS17
       type: double
-      description: .na.character
+      description: 'CCS: procedure 17'
     - name: PRCCS18
       type: double
-      description: .na.character
+      description: 'CCS: procedure 18'
     - name: PRCCS19
       type: double
-      description: .na.character
+      description: 'CCS: procedure 19'
     - name: PRCCS20
       type: double
-      description: .na.character
+      description: 'CCS: procedure 20'
     - name: PRCCS21
       type: double
-      description: .na.character
+      description: 'CCS: procedure 21'
     - name: PRCCS22
       type: double
-      description: .na.character
+      description: 'CCS: procedure 22'
     - name: PRCCS23
       type: double
-      description: .na.character
+      description: 'CCS: procedure 23'
     - name: PRCCS24
       type: double
-      description: .na.character
+      description: 'CCS: procedure 24'
     - name: PRCCS25
       type: double
-      description: .na.character
+      description: 'CCS: procedure 25'
     - name: PRDAY1
       type: double
-      description: .na.character
+      description: Number of days from admission to PR1
     - name: PRDAY2
       type: double
-      description: .na.character
+      description: Number of days from admission to PR2
     - name: PRDAY3
       type: double
-      description: .na.character
+      description: Number of days from admission to PR3
     - name: PRDAY4
       type: double
-      description: .na.character
+      description: Number of days from admission to PR4
     - name: PRDAY5
       type: double
-      description: .na.character
+      description: Number of days from admission to PR5
     - name: PRDAY6
       type: double
-      description: .na.character
+      description: Number of days from admission to PR6
     - name: PRDAY7
       type: double
-      description: .na.character
+      description: Number of days from admission to PR7
     - name: PRDAY8
       type: double
-      description: .na.character
+      description: Number of days from admission to PR8
     - name: PRDAY9
       type: double
-      description: .na.character
+      description: Number of days from admission to PR9
     - name: PRDAY10
       type: double
-      description: .na.character
+      description: Number of days from admission to PR10
     - name: PRDAY11
       type: double
-      description: .na.character
+      description: Number of days from admission to PR11
     - name: PRDAY12
       type: double
-      description: .na.character
+      description: Number of days from admission to PR12
     - name: PRDAY13
       type: double
-      description: .na.character
+      description: Number of days from admission to PR13
     - name: PRDAY14
       type: double
-      description: .na.character
+      description: Number of days from admission to PR14
     - name: PRDAY15
       type: double
-      description: .na.character
+      description: Number of days from admission to PR15
     - name: PRDAY16
       type: double
-      description: .na.character
+      description: Number of days from admission to PR16
     - name: PRDAY17
       type: double
-      description: .na.character
+      description: Number of days from admission to PR17
     - name: PRDAY18
       type: double
-      description: .na.character
+      description: Number of days from admission to PR18
     - name: PRDAY19
       type: double
-      description: .na.character
+      description: Number of days from admission to PR19
     - name: PRDAY20
       type: double
-      description: .na.character
+      description: Number of days from admission to PR20
     - name: PRDAY21
       type: double
-      description: .na.character
+      description: Number of days from admission to PR21
     - name: PRDAY22
       type: double
-      description: .na.character
+      description: Number of days from admission to PR22
     - name: PRDAY23
       type: double
-      description: .na.character
+      description: Number of days from admission to PR23
     - name: PRDAY24
       type: double
-      description: .na.character
+      description: Number of days from admission to PR24
     - name: PRDAY25
       type: double
-      description: .na.character
+      description: Number of days from admission to PR25
     - name: PROCTYPE
       type: double
-      description: .na.character
+      description: Procedure type indicator
     - name: PSTATE
       type: string
-      description: .na.character
+      description: Patient State postal code
     - name: PSTCO
       type: double
-      description: .na.character
+      description: Patient state/county FIPS code
     - name: PSTCO2
       type: double
-      description: .na.character
+      description: Patient state/county FIPS code, possibly derived from ZIP Code
     - name: PointOfOriginUB04
       type: string
-      description: .na.character
+      description: Point of origin for admission or visit, UB-04 standard coding
     - name: PointOfOrigin_X
       type: string
-      description: .na.character
+      description: Point of origin for admission or visit, as received from source
     - name: RACE
       type: double
-      description: .na.character
+      description: Race (uniform)
     - name: RACE_X
       type: string
-      description: .na.character
+      description: Race (as received from source)
     - name: TOTCHG
       type: double
-      description: .na.character
+      description: Total charges (cleaned)
     - name: TOTCHG_X
       type: double
-      description: .na.character
+      description: Total charges (as received from source)
     - name: TRAN_IN
       type: double
-      description: .na.character
+      description: Transfer in indicator
     - name: TRAN_OUT
       type: double
-      description: .na.character
+      description: Transfer out indicator
     - name: YEAR
       type: double
-      description: .na.character
+      description: Calendar year
     - name: ZIPINC_QRTL
       type: double
-      description: .na.character
+      description: Median household income national quartile for patient ZIP Code
     - name: ZIP
       type: string
-      description: .na.character
+      description: Patient ZIP Code
     - name: AYEAR
       type: double
-      description: .na.character
+      description: Admission year
     - name: DMONTH
       type: double
-      description: .na.character
+      description: Discharge month
     - name: BMONTH
       type: double
-      description: .na.character
+      description: Birth month
     - name: BYEAR
       type: double
-      description: .na.character
+      description: Birth year
     - name: PRMONTH1
       type: double
-      description: .na.character
+      description: Month of procedure 1
     - name: PRMONTH2
       type: double
-      description: .na.character
+      description: Month of procedure 2
     - name: PRMONTH3
       type: double
-      description: .na.character
+      description: Month of procedure 3
     - name: PRMONTH4
       type: double
-      description: .na.character
+      description: Month of procedure 4
     - name: PRMONTH5
       type: double
-      description: .na.character
+      description: Month of procedure 5
     - name: PRMONTH6
       type: double
-      description: .na.character
+      description: Month of procedure 6
     - name: PRMONTH7
       type: double
-      description: .na.character
+      description: Month of procedure 7
     - name: PRMONTH8
       type: double
-      description: .na.character
+      description: Month of procedure 8
     - name: PRMONTH9
       type: double
-      description: .na.character
+      description: Month of procedure 9
     - name: PRMONTH10
       type: double
-      description: .na.character
+      description: Month of procedure 10
     - name: PRMONTH11
       type: double
-      description: .na.character
+      description: Month of procedure 11
     - name: PRMONTH12
       type: double
-      description: .na.character
+      description: Month of procedure 12
     - name: PRMONTH13
       type: double
-      description: .na.character
+      description: Month of procedure 13
     - name: PRMONTH14
       type: double
-      description: .na.character
+      description: Month of procedure 14
     - name: PRMONTH15
       type: double
-      description: .na.character
+      description: Month of procedure 15
     - name: PRMONTH16
       type: double
-      description: .na.character
+      description: Month of procedure 16
     - name: PRMONTH17
       type: double
-      description: .na.character
+      description: Month of procedure 17
     - name: PRMONTH18
       type: double
-      description: .na.character
+      description: Month of procedure 18
     - name: PRMONTH19
       type: double
-      description: .na.character
+      description: Month of procedure 19
     - name: PRMONTH20
       type: double
-      description: .na.character
+      description: Month of procedure 20
     - name: PRMONTH21
       type: double
-      description: .na.character
+      description: Month of procedure 21
     - name: PRMONTH22
       type: double
-      description: .na.character
+      description: Month of procedure 22
     - name: PRMONTH23
       type: double
-      description: .na.character
+      description: Month of procedure 23
     - name: PRMONTH24
       type: double
-      description: .na.character
+      description: Month of procedure 24
     - name: PRMONTH25
       type: double
-      description: .na.character
+      description: Month of procedure 25
     - name: PRYEAR1
       type: double
-      description: .na.character
+      description: Year of procedure 1
     - name: PRYEAR2
       type: double
-      description: .na.character
+      description: Year of procedure 2
     - name: PRYEAR3
       type: double
-      description: .na.character
+      description: Year of procedure 3
     - name: PRYEAR4
       type: double
-      description: .na.character
+      description: Year of procedure 4
     - name: PRYEAR5
       type: double
-      description: .na.character
+      description: Year of procedure 5
     - name: PRYEAR6
       type: double
-      description: .na.character
+      description: Year of procedure 6
     - name: PRYEAR7
       type: double
-      description: .na.character
+      description: Year of procedure 7
     - name: PRYEAR8
       type: double
-      description: .na.character
+      description: Year of procedure 8
     - name: PRYEAR9
       type: double
-      description: .na.character
+      description: Year of procedure 9
     - name: PRYEAR10
       type: double
-      description: .na.character
+      description: Year of procedure 10
     - name: PRYEAR11
       type: double
-      description: .na.character
+      description: Year of procedure 11
     - name: PRYEAR12
       type: double
-      description: .na.character
+      description: Year of procedure 12
     - name: PRYEAR13
       type: double
-      description: .na.character
+      description: Year of procedure 13
     - name: PRYEAR14
       type: double
-      description: .na.character
+      description: Year of procedure 14
     - name: PRYEAR15
       type: double
-      description: .na.character
+      description: Year of procedure 15
     - name: PRYEAR16
       type: double
-      description: .na.character
+      description: Year of procedure 16
     - name: PRYEAR17
       type: double
-      description: .na.character
+      description: Year of procedure 17
     - name: PRYEAR18
       type: double
-      description: .na.character
+      description: Year of procedure 18
     - name: PRYEAR19
       type: double
-      description: .na.character
+      description: Year of procedure 19
     - name: PRYEAR20
       type: double
-      description: .na.character
+      description: Year of procedure 20
     - name: PRYEAR21
       type: double
-      description: .na.character
+      description: Year of procedure 21
     - name: PRYEAR22
       type: double
-      description: .na.character
+      description: Year of procedure 22
     - name: PRYEAR23
       type: double
-      description: .na.character
+      description: Year of procedure 23
     - name: PRYEAR24
       type: double
-      description: .na.character
+      description: Year of procedure 24
     - name: PRYEAR25
       type: double
-      description: .na.character
+      description: Year of procedure 25

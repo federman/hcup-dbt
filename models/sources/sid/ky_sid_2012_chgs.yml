@@ -15,13 +15,13 @@ sources:
     columns:
     - name: CHARGE
       type: double
-      description: .na.character
+      description: Line item charges (as received from source)
     - name: KEY
       type: double
-      description: .na.character
+      description: HCUP record identifier
     - name: REVCODE
       type: string
-      description: .na.character
+      description: Line item revenue code (as received from source)
     - name: UNITS
       type: double
-      description: .na.character
+      description: Line item units (as received from source)

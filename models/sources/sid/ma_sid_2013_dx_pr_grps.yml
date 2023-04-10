@@ -15,49 +15,49 @@ sources:
     columns:
     - name: CHRON1
       type: double
-      description: .na.character
+      description: Chronic condition indicator 1
     - name: CHRON2
       type: double
-      description: .na.character
+      description: Chronic condition indicator 2
     - name: CHRON3
       type: double
-      description: .na.character
+      description: Chronic condition indicator 3
     - name: CHRON4
       type: double
-      description: .na.character
+      description: Chronic condition indicator 4
     - name: CHRON5
       type: double
-      description: .na.character
+      description: Chronic condition indicator 5
     - name: CHRON6
       type: double
-      description: .na.character
+      description: Chronic condition indicator 6
     - name: CHRON7
       type: double
-      description: .na.character
+      description: Chronic condition indicator 7
     - name: CHRON8
       type: double
-      description: .na.character
+      description: Chronic condition indicator 8
     - name: CHRON9
       type: double
-      description: .na.character
+      description: Chronic condition indicator 9
     - name: CHRON10
       type: double
-      description: .na.character
+      description: Chronic condition indicator 10
     - name: CHRON11
       type: double
-      description: .na.character
+      description: Chronic condition indicator 11
     - name: CHRON12
       type: double
-      description: .na.character
+      description: Chronic condition indicator 12
     - name: CHRON13
       type: double
-      description: .na.character
+      description: Chronic condition indicator 13
     - name: CHRON14
       type: double
-      description: .na.character
+      description: Chronic condition indicator 14
     - name: CHRON15
       type: double
-      description: .na.character
+      description: Chronic condition indicator 15
     - name: CHRONB1
       type: double
       description: .na.character
@@ -105,301 +105,304 @@ sources:
       description: .na.character
     - name: DXMCCS1
       type: string
-      description: .na.character
+      description: 'Multi-Level CCS:  Diagnosis 1'
     - name: DXMCCS2
       type: string
-      description: .na.character
+      description: 'Multi-Level CCS:  Diagnosis 2'
     - name: DXMCCS3
       type: string
-      description: .na.character
+      description: 'Multi-Level CCS:  Diagnosis 3'
     - name: DXMCCS4
       type: string
-      description: .na.character
+      description: 'Multi-Level CCS:  Diagnosis 4'
     - name: DXMCCS5
       type: string
-      description: .na.character
+      description: 'Multi-Level CCS:  Diagnosis 5'
     - name: DXMCCS6
       type: string
-      description: .na.character
+      description: 'Multi-Level CCS:  Diagnosis 6'
     - name: DXMCCS7
       type: string
-      description: .na.character
+      description: 'Multi-Level CCS:  Diagnosis 7'
     - name: DXMCCS8
       type: string
-      description: .na.character
+      description: 'Multi-Level CCS:  Diagnosis 8'
     - name: DXMCCS9
       type: string
-      description: .na.character
+      description: 'Multi-Level CCS:  Diagnosis 9'
     - name: DXMCCS10
       type: string
-      description: .na.character
+      description: 'Multi-Level CCS:  Diagnosis 10'
     - name: DXMCCS11
       type: string
-      description: .na.character
+      description: 'Multi-Level CCS:  Diagnosis 11'
     - name: DXMCCS12
       type: string
-      description: .na.character
+      description: 'Multi-Level CCS:  Diagnosis 12'
     - name: DXMCCS13
       type: string
-      description: .na.character
+      description: 'Multi-Level CCS:  Diagnosis 13'
     - name: DXMCCS14
       type: string
-      description: .na.character
+      description: 'Multi-Level CCS:  Diagnosis 14'
     - name: DXMCCS15
       type: string
-      description: .na.character
+      description: 'Multi-Level CCS:  Diagnosis 15'
     - name: E_MCCS1
       type: string
-      description: .na.character
+      description: 'Multi-Level CCS:  E Code 1'
     - name: E_MCCS2
       type: string
-      description: .na.character
+      description: 'Multi-Level CCS:  E Code 2'
     - name: E_MCCS3
       type: string
-      description: .na.character
+      description: 'Multi-Level CCS:  E Code 3'
     - name: E_MCCS4
       type: string
-      description: .na.character
+      description: 'Multi-Level CCS:  E Code 4'
     - name: E_MCCS5
       type: string
-      description: .na.character
+      description: 'Multi-Level CCS:  E Code 5'
     - name: E_MCCS6
       type: string
-      description: .na.character
+      description: 'Multi-Level CCS:  E Code 6'
     - name: E_MCCS7
       type: string
-      description: .na.character
+      description: 'Multi-Level CCS:  E Code 7'
     - name: E_MCCS8
       type: string
-      description: .na.character
+      description: 'Multi-Level CCS:  E Code 8'
     - name: INJURY
       type: double
-      description: .na.character
+      description: 'Injury diagnosis reported on record (1:DX1 is an injury; 2:DX2+
+        is an injury; 0:'
     - name: INJURY_CUT
       type: double
-      description: .na.character
+      description: Injury by cutting or piercing (by E codes)
     - name: INJURY_DROWN
       type: double
-      description: .na.character
+      description: Injury by drowning or submersion (by E codes)
     - name: INJURY_FALL
       type: double
-      description: .na.character
+      description: Injury by falling (by E codes)
     - name: INJURY_FIRE
       type: double
-      description: .na.character
+      description: Injury by fire, flame or hot object (by E codes)
     - name: INJURY_FIREARM
       type: double
-      description: .na.character
+      description: Injury by firearm (by E codes)
     - name: INJURY_MACHINERY
       type: double
-      description: .na.character
+      description: Injury by machinery (by E codes)
     - name: INJURY_MVT
       type: double
-      description: .na.character
+      description: Injury involving motor vehicle traffic (by E codes)
     - name: INJURY_NATURE
       type: double
-      description: .na.character
+      description: Injury involving nature or environmental factors (by E codes)
     - name: INJURY_POISON
       type: double
-      description: .na.character
+      description: Injury by poison (by E codes)
     - name: INJURY_STRUCK
       type: double
-      description: .na.character
+      description: Injury from being struck by or against (by E codes)
     - name: INJURY_SUFFOCATION
       type: double
-      description: .na.character
+      description: Injury by suffocation (by E codes)
     - name: INTENT_ASSAULT
       type: double
-      description: .na.character
+      description: Injury by assault indicated on the record (by E codes)
     - name: INTENT_SELF_HARM
       type: double
-      description: .na.character
+      description: Intentional self harm indicated on the record (by diagnosis and/or
+        E codes)
     - name: INTENT_UNINTENTIONAL
       type: double
-      description: .na.character
+      description: Unintentional injury indicated on the record (by E codes)
     - name: KEY
       type: double
-      description: .na.character
+      description: HCUP record identifier
     - name: MULTINJURY
       type: double
-      description: .na.character
+      description: More than one injury diagnosis reported on record
     - name: PCLASS1
       type: double
-      description: .na.character
+      description: Procedure class 1
     - name: PCLASS2
       type: double
-      description: .na.character
+      description: Procedure class 2
     - name: PCLASS3
       type: double
-      description: .na.character
+      description: Procedure class 3
     - name: PCLASS4
       type: double
-      description: .na.character
+      description: Procedure class 4
     - name: PCLASS5
       type: double
-      description: .na.character
+      description: Procedure class 5
     - name: PCLASS6
       type: double
-      description: .na.character
+      description: Procedure class 6
     - name: PCLASS7
       type: double
-      description: .na.character
+      description: Procedure class 7
     - name: PCLASS8
       type: double
-      description: .na.character
+      description: Procedure class 8
     - name: PCLASS9
       type: double
-      description: .na.character
+      description: Procedure class 9
     - name: PCLASS10
       type: double
-      description: .na.character
+      description: Procedure class 10
     - name: PCLASS11
       type: double
-      description: .na.character
+      description: Procedure class 11
     - name: PCLASS12
       type: double
-      description: .na.character
+      description: Procedure class 12
     - name: PCLASS13
       type: double
-      description: .na.character
+      description: Procedure class 13
     - name: PCLASS14
       type: double
-      description: .na.character
+      description: Procedure class 14
     - name: PCLASS15
       type: double
-      description: .na.character
+      description: Procedure class 15
     - name: PRMCCS1
       type: string
-      description: .na.character
+      description: 'Multi-Level CCS:  Procedure 1'
     - name: PRMCCS2
       type: string
-      description: .na.character
+      description: 'Multi-Level CCS:  Procedure 2'
     - name: PRMCCS3
       type: string
-      description: .na.character
+      description: 'Multi-Level CCS:  Procedure 3'
     - name: PRMCCS4
       type: string
-      description: .na.character
+      description: 'Multi-Level CCS:  Procedure 4'
     - name: PRMCCS5
       type: string
-      description: .na.character
+      description: 'Multi-Level CCS:  Procedure 5'
     - name: PRMCCS6
       type: string
-      description: .na.character
+      description: 'Multi-Level CCS:  Procedure 6'
     - name: PRMCCS7
       type: string
-      description: .na.character
+      description: 'Multi-Level CCS:  Procedure 7'
     - name: PRMCCS8
       type: string
-      description: .na.character
+      description: 'Multi-Level CCS:  Procedure 8'
     - name: PRMCCS9
       type: string
-      description: .na.character
+      description: 'Multi-Level CCS:  Procedure 9'
     - name: PRMCCS10
       type: string
-      description: .na.character
+      description: 'Multi-Level CCS:  Procedure 10'
     - name: PRMCCS11
       type: string
-      description: .na.character
+      description: 'Multi-Level CCS:  Procedure 11'
     - name: PRMCCS12
       type: string
-      description: .na.character
+      description: 'Multi-Level CCS:  Procedure 12'
     - name: PRMCCS13
       type: string
-      description: .na.character
+      description: 'Multi-Level CCS:  Procedure 13'
     - name: PRMCCS14
       type: string
-      description: .na.character
+      description: 'Multi-Level CCS:  Procedure 14'
     - name: PRMCCS15
       type: string
-      description: .na.character
+      description: 'Multi-Level CCS:  Procedure 15'
     - name: U_BLOOD
       type: double
-      description: .na.character
+      description: 'Utilization Flag: Blood'
     - name: U_CATH
       type: double
-      description: .na.character
+      description: 'Utilization Flag: Cardiac Catheterization Lab'
     - name: U_CCU
       type: double
-      description: .na.character
+      description: 'Utilization Flag: Coronary Care Unit (CCU)'
     - name: U_CHESTXRAY
       type: double
-      description: .na.character
+      description: 'Utilization Flag: Chest X-Ray'
     - name: U_CTSCAN
       type: double
-      description: .na.character
+      description: 'Utilization Flag: Computed Tomography Scan'
     - name: U_DIALYSIS
       type: double
-      description: .na.character
+      description: 'Utilization Flag: Renal Dialysis'
     - name: U_ECHO
       type: double
-      description: .na.character
+      description: 'Utilization Flag: Echocardiology'
     - name: U_ED
       type: double
-      description: .na.character
+      description: 'Utilization Flag: Emergency Room'
     - name: U_EEG
       type: double
-      description: .na.character
+      description: 'Utilization Flag: Electroencephalogram'
     - name: U_EKG
       type: double
-      description: .na.character
+      description: 'Utilization Flag: Electrocardiogram'
     - name: U_EPO
       type: double
-      description: .na.character
+      description: 'Utilization Flag: EPO'
     - name: U_ICU
       type: double
-      description: .na.character
+      description: 'Utilization Flag: Intensive Care Unit (ICU)'
     - name: U_LITHOTRIPSY
       type: double
-      description: .na.character
+      description: 'Utilization Flag: Lithotripsy'
     - name: U_MHSA
       type: double
-      description: .na.character
+      description: 'Utilization Flag: Mental Health and Substance Abuse'
     - name: U_MRT
       type: double
-      description: .na.character
+      description: 'Utilization Flag: Magnetic Resonance Technology'
     - name: U_NEWBN2L
       type: double
-      description: .na.character
+      description: 'Utilization Flag: Nursery Level II'
     - name: U_NEWBN3L
       type: double
-      description: .na.character
+      description: 'Utilization Flag: Nursery Level III'
     - name: U_NEWBN4L
       type: double
-      description: .na.character
+      description: 'Utilization Flag: Nursery Level IV'
     - name: U_NUCMED
       type: double
-      description: .na.character
+      description: 'Utilization Flag: Nuclear Medicine'
     - name: U_OBSERVATION
       type: double
-      description: .na.character
+      description: 'Utilization Flag: Observation Room'
     - name: U_OCCTHERAPY
       type: double
-      description: .na.character
+      description: 'Utilization Flag: Occupational Therapy'
     - name: U_ORGANACQ
       type: double
-      description: .na.character
+      description: 'Utilization Flag: Organ Acquisition'
     - name: U_OTHIMPLANTS
       type: double
-      description: .na.character
+      description: 'Utilization Flag: Other Implants'
     - name: U_PACEMAKER
       type: double
-      description: .na.character
+      description: 'Utilization Flag: Pacemaker'
     - name: U_PHYTHERAPY
       type: double
-      description: .na.character
+      description: 'Utilization Flag: Physical Therapy'
     - name: U_RADTHERAPY
       type: double
-      description: .na.character
+      description: 'Utilization Flag: Radiology - Therapeutic and/or Chemotherapy
+        Administration'
     - name: U_RESPTHERAPY
       type: double
-      description: .na.character
+      description: 'Utilization Flag: Respiratory Services'
     - name: U_SPEECHTHERAPY
       type: double
-      description: .na.character
+      description: 'Utilization Flag: Speech - Language Pathology'
     - name: U_STRESS
       type: double
-      description: .na.character
+      description: 'Utilization Flag: Cardiac Stress Test'
     - name: U_ULTRASOUND
       type: double
-      description: .na.character
+      description: 'Utilization Flag: Ultrasound'

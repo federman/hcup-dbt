@@ -15,403 +15,403 @@ sources:
     columns:
     - name: KEY
       type: double
-      description: .na.character
+      description: HCUP record identifier
     - name: NREVCD
       type: double
-      description: .na.character
+      description: Number of revenue codes for this discharge
     - name: REVCD1
       type: string
-      description: .na.character
+      description: Revenue code 1 (as received from source)
     - name: REVCD2
       type: string
-      description: .na.character
+      description: Revenue code 2 (as received from source)
     - name: REVCD3
       type: string
-      description: .na.character
+      description: Revenue code 3 (as received from source)
     - name: REVCD4
       type: string
-      description: .na.character
+      description: Revenue code 4 (as received from source)
     - name: REVCD5
       type: string
-      description: .na.character
+      description: Revenue code 5 (as received from source)
     - name: REVCD6
       type: string
-      description: .na.character
+      description: Revenue code 6 (as received from source)
     - name: REVCD7
       type: string
-      description: .na.character
+      description: Revenue code 7 (as received from source)
     - name: REVCD8
       type: string
-      description: .na.character
+      description: Revenue code 8 (as received from source)
     - name: REVCD9
       type: string
-      description: .na.character
+      description: Revenue code 9 (as received from source)
     - name: REVCD10
       type: string
-      description: .na.character
+      description: Revenue code 10 (as received from source)
     - name: REVCD11
       type: string
-      description: .na.character
+      description: Revenue code 11 (as received from source)
     - name: REVCD12
       type: string
-      description: .na.character
+      description: Revenue code 12 (as received from source)
     - name: REVCD13
       type: string
-      description: .na.character
+      description: Revenue code 13 (as received from source)
     - name: REVCD14
       type: string
-      description: .na.character
+      description: Revenue code 14 (as received from source)
     - name: REVCD15
       type: string
-      description: .na.character
+      description: Revenue code 15 (as received from source)
     - name: REVCD16
       type: string
-      description: .na.character
+      description: Revenue code 16 (as received from source)
     - name: REVCD17
       type: string
-      description: .na.character
+      description: Revenue code 17 (as received from source)
     - name: REVCD18
       type: string
-      description: .na.character
+      description: Revenue code 18 (as received from source)
     - name: REVCD19
       type: string
-      description: .na.character
+      description: Revenue code 19 (as received from source)
     - name: REVCD20
       type: string
-      description: .na.character
+      description: Revenue code 20 (as received from source)
     - name: REVCD21
       type: string
-      description: .na.character
+      description: Revenue code 21 (as received from source)
     - name: REVCD22
       type: string
-      description: .na.character
+      description: Revenue code 22 (as received from source)
     - name: REVCD23
       type: string
-      description: .na.character
+      description: Revenue code 23 (as received from source)
     - name: REVCD24
       type: string
-      description: .na.character
+      description: Revenue code 24 (as received from source)
     - name: REVCD25
       type: string
-      description: .na.character
+      description: Revenue code 25 (as received from source)
     - name: REVCD26
       type: string
-      description: .na.character
+      description: Revenue code 26 (as received from source)
     - name: REVCD27
       type: string
-      description: .na.character
+      description: Revenue code 27 (as received from source)
     - name: REVCD28
       type: string
-      description: .na.character
+      description: Revenue code 28 (as received from source)
     - name: REVCD29
       type: string
-      description: .na.character
+      description: Revenue code 29 (as received from source)
     - name: REVCD30
       type: string
-      description: .na.character
+      description: Revenue code 30 (as received from source)
     - name: REVCD31
       type: string
-      description: .na.character
+      description: Revenue code 31 (as received from source)
     - name: REVCD32
       type: string
-      description: .na.character
+      description: Revenue code 32 (as received from source)
     - name: REVCD33
       type: string
-      description: .na.character
+      description: Revenue code 33 (as received from source)
     - name: REVCD34
       type: string
-      description: .na.character
+      description: Revenue code 34 (as received from source)
     - name: REVCD35
       type: string
-      description: .na.character
+      description: Revenue code 35 (as received from source)
     - name: REVCD36
       type: string
-      description: .na.character
+      description: Revenue code 36 (as received from source)
     - name: REVCD37
       type: string
-      description: .na.character
+      description: Revenue code 37 (as received from source)
     - name: REVCD38
       type: string
-      description: .na.character
+      description: Revenue code 38 (as received from source)
     - name: REVCD39
       type: string
-      description: .na.character
+      description: Revenue code 39 (as received from source)
     - name: REVCD40
       type: string
-      description: .na.character
+      description: Revenue code 40 (as received from source)
     - name: REVCD41
       type: string
-      description: .na.character
+      description: Revenue code 41 (as received from source)
     - name: REVCD42
       type: string
-      description: .na.character
+      description: Revenue code 42 (as received from source)
     - name: REVCD43
       type: string
-      description: .na.character
+      description: Revenue code 43 (as received from source)
     - name: REVCD44
       type: string
-      description: .na.character
+      description: Revenue code 44 (as received from source)
     - name: REVCHG1
       type: double
-      description: .na.character
+      description: Detailed charges for revenue code 1 (as received from source)
     - name: REVCHG2
       type: double
-      description: .na.character
+      description: Detailed charges for revenue code 2 (as received from source)
     - name: REVCHG3
       type: double
-      description: .na.character
+      description: Detailed charges for revenue code 3 (as received from source)
     - name: REVCHG4
       type: double
-      description: .na.character
+      description: Detailed charges for revenue code 4 (as received from source)
     - name: REVCHG5
       type: double
-      description: .na.character
+      description: Detailed charges for revenue code 5 (as received from source)
     - name: REVCHG6
       type: double
-      description: .na.character
+      description: Detailed charges for revenue code 6 (as received from source)
     - name: REVCHG7
       type: double
-      description: .na.character
+      description: Detailed charges for revenue code 7 (as received from source)
     - name: REVCHG8
       type: double
-      description: .na.character
+      description: Detailed charges for revenue code 8 (as received from source)
     - name: REVCHG9
       type: double
-      description: .na.character
+      description: Detailed charges for revenue code 9 (as received from source)
     - name: REVCHG10
       type: double
-      description: .na.character
+      description: Detailed charges for revenue code 10 (as received from source)
     - name: REVCHG11
       type: double
-      description: .na.character
+      description: Detailed charges for revenue code 11 (as received from source)
     - name: REVCHG12
       type: double
-      description: .na.character
+      description: Detailed charges for revenue code 12 (as received from source)
     - name: REVCHG13
       type: double
-      description: .na.character
+      description: Detailed charges for revenue code 13 (as received from source)
     - name: REVCHG14
       type: double
-      description: .na.character
+      description: Detailed charges for revenue code 14 (as received from source)
     - name: REVCHG15
       type: double
-      description: .na.character
+      description: Detailed charges for revenue code 15 (as received from source)
     - name: REVCHG16
       type: double
-      description: .na.character
+      description: Detailed charges for revenue code 16 (as received from source)
     - name: REVCHG17
       type: double
-      description: .na.character
+      description: Detailed charges for revenue code 17 (as received from source)
     - name: REVCHG18
       type: double
-      description: .na.character
+      description: Detailed charges for revenue code 18 (as received from source)
     - name: REVCHG19
       type: double
-      description: .na.character
+      description: Detailed charges for revenue code 19 (as received from source)
     - name: REVCHG20
       type: double
-      description: .na.character
+      description: Detailed charges for revenue code 20 (as received from source)
     - name: REVCHG21
       type: double
-      description: .na.character
+      description: Detailed charges for revenue code 21 (as received from source)
     - name: REVCHG22
       type: double
-      description: .na.character
+      description: Detailed charges for revenue code 22 (as received from source)
     - name: REVCHG23
       type: double
-      description: .na.character
+      description: Detailed charges for revenue code 23 (as received from source)
     - name: REVCHG24
       type: double
-      description: .na.character
+      description: Detailed charges for revenue code 24 (as received from source)
     - name: REVCHG25
       type: double
-      description: .na.character
+      description: Detailed charges for revenue code 25 (as received from source)
     - name: REVCHG26
       type: double
-      description: .na.character
+      description: Detailed charges for revenue code 26 (as received from source)
     - name: REVCHG27
       type: double
-      description: .na.character
+      description: Detailed charges for revenue code 27 (as received from source)
     - name: REVCHG28
       type: double
-      description: .na.character
+      description: Detailed charges for revenue code 28 (as received from source)
     - name: REVCHG29
       type: double
-      description: .na.character
+      description: Detailed charges for revenue code 29 (as received from source)
     - name: REVCHG30
       type: double
-      description: .na.character
+      description: Detailed charges for revenue code 30 (as received from source)
     - name: REVCHG31
       type: double
-      description: .na.character
+      description: Detailed charges for revenue code 31 (as received from source)
     - name: REVCHG32
       type: double
-      description: .na.character
+      description: Detailed charges for revenue code 32 (as received from source)
     - name: REVCHG33
       type: double
-      description: .na.character
+      description: Detailed charges for revenue code 33 (as received from source)
     - name: REVCHG34
       type: double
-      description: .na.character
+      description: Detailed charges for revenue code 34 (as received from source)
     - name: REVCHG35
       type: double
-      description: .na.character
+      description: Detailed charges for revenue code 35 (as received from source)
     - name: REVCHG36
       type: double
-      description: .na.character
+      description: Detailed charges for revenue code 36 (as received from source)
     - name: REVCHG37
       type: double
-      description: .na.character
+      description: Detailed charges for revenue code 37 (as received from source)
     - name: REVCHG38
       type: double
-      description: .na.character
+      description: Detailed charges for revenue code 38 (as received from source)
     - name: REVCHG39
       type: double
-      description: .na.character
+      description: Detailed charges for revenue code 39 (as received from source)
     - name: REVCHG40
       type: double
-      description: .na.character
+      description: Detailed charges for revenue code 40 (as received from source)
     - name: REVCHG41
       type: double
-      description: .na.character
+      description: Detailed charges for revenue code 41 (as received from source)
     - name: REVCHG42
       type: double
-      description: .na.character
+      description: Detailed charges for revenue code 42 (as received from source)
     - name: REVCHG43
       type: double
-      description: .na.character
+      description: Detailed charges for revenue code 43 (as received from source)
     - name: REVCHG44
       type: double
-      description: .na.character
+      description: Detailed charges for revenue code 44 (as received from source)
     - name: UNIT1
       type: double
-      description: .na.character
+      description: Units of service 1 (as received from source)
     - name: UNIT2
       type: double
-      description: .na.character
+      description: Units of service 2 (as received from source)
     - name: UNIT3
       type: double
-      description: .na.character
+      description: Units of service 3 (as received from source)
     - name: UNIT4
       type: double
-      description: .na.character
+      description: Units of service 4 (as received from source)
     - name: UNIT5
       type: double
-      description: .na.character
+      description: Units of service 5 (as received from source)
     - name: UNIT6
       type: double
-      description: .na.character
+      description: Units of service 6 (as received from source)
     - name: UNIT7
       type: double
-      description: .na.character
+      description: Units of service 7 (as received from source)
     - name: UNIT8
       type: double
-      description: .na.character
+      description: Units of service 8 (as received from source)
     - name: UNIT9
       type: double
-      description: .na.character
+      description: Units of service 9 (as received from source)
     - name: UNIT10
       type: double
-      description: .na.character
+      description: Units of service 10 (as received from source)
     - name: UNIT11
       type: double
-      description: .na.character
+      description: Units of service 11 (as received from source)
     - name: UNIT12
       type: double
-      description: .na.character
+      description: Units of service 12 (as received from source)
     - name: UNIT13
       type: double
-      description: .na.character
+      description: Units of service 13 (as received from source)
     - name: UNIT14
       type: double
-      description: .na.character
+      description: Units of service 14 (as received from source)
     - name: UNIT15
       type: double
-      description: .na.character
+      description: Units of service 15 (as received from source)
     - name: UNIT16
       type: double
-      description: .na.character
+      description: Units of service 16 (as received from source)
     - name: UNIT17
       type: double
-      description: .na.character
+      description: Units of service 17 (as received from source)
     - name: UNIT18
       type: double
-      description: .na.character
+      description: Units of service 18 (as received from source)
     - name: UNIT19
       type: double
-      description: .na.character
+      description: Units of service 19 (as received from source)
     - name: UNIT20
       type: double
-      description: .na.character
+      description: Units of service 20 (as received from source)
     - name: UNIT21
       type: double
-      description: .na.character
+      description: Units of service 21 (as received from source)
     - name: UNIT22
       type: double
-      description: .na.character
+      description: Units of service 22 (as received from source)
     - name: UNIT23
       type: double
-      description: .na.character
+      description: Units of service 23 (as received from source)
     - name: UNIT24
       type: double
-      description: .na.character
+      description: Units of service 24 (as received from source)
     - name: UNIT25
       type: double
-      description: .na.character
+      description: Units of service 25 (as received from source)
     - name: UNIT26
       type: double
-      description: .na.character
+      description: Units of service 26 (as received from source)
     - name: UNIT27
       type: double
-      description: .na.character
+      description: Units of service 27 (as received from source)
     - name: UNIT28
       type: double
-      description: .na.character
+      description: Units of service 28 (as received from source)
     - name: UNIT29
       type: double
-      description: .na.character
+      description: Units of service 29 (as received from source)
     - name: UNIT30
       type: double
-      description: .na.character
+      description: Units of service 30 (as received from source)
     - name: UNIT31
       type: double
-      description: .na.character
+      description: Units of service 31 (as received from source)
     - name: UNIT32
       type: double
-      description: .na.character
+      description: Units of service 32 (as received from source)
     - name: UNIT33
       type: double
-      description: .na.character
+      description: Units of service 33 (as received from source)
     - name: UNIT34
       type: double
-      description: .na.character
+      description: Units of service 34 (as received from source)
     - name: UNIT35
       type: double
-      description: .na.character
+      description: Units of service 35 (as received from source)
     - name: UNIT36
       type: double
-      description: .na.character
+      description: Units of service 36 (as received from source)
     - name: UNIT37
       type: double
-      description: .na.character
+      description: Units of service 37 (as received from source)
     - name: UNIT38
       type: double
-      description: .na.character
+      description: Units of service 38 (as received from source)
     - name: UNIT39
       type: double
-      description: .na.character
+      description: Units of service 39 (as received from source)
     - name: UNIT40
       type: double
-      description: .na.character
+      description: Units of service 40 (as received from source)
     - name: UNIT41
       type: double
-      description: .na.character
+      description: Units of service 41 (as received from source)
     - name: UNIT42
       type: double
-      description: .na.character
+      description: Units of service 42 (as received from source)
     - name: UNIT43
       type: double
-      description: .na.character
+      description: Units of service 43 (as received from source)
     - name: UNIT44
       type: double
-      description: .na.character
+      description: Units of service 44 (as received from source)

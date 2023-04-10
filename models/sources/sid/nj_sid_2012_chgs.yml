@@ -15,22 +15,22 @@ sources:
     columns:
     - name: CHARGE
       type: double
-      description: .na.character
+      description: Line item charges (as received from source)
     - name: CPTHCPCS
       type: string
-      description: .na.character
+      description: Line item CPT-4/HCPCS procedure code (as received from source)
     - name: CPTMod1
       type: string
-      description: .na.character
+      description: Line item CPT-4/HCPCS first modifier (as received from source)
     - name: CPTMod2
       type: string
-      description: .na.character
+      description: Line item CPT-4/HCPCS second modifier (as received from source)
     - name: KEY
       type: double
-      description: .na.character
+      description: HCUP record identifier
     - name: REVCODE
       type: string
-      description: .na.character
+      description: Line item revenue code (as received from source)
     - name: UNITS
       type: double
-      description: .na.character
+      description: Line item units (as received from source)
