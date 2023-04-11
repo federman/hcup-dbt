@@ -1,0 +1,23 @@
+version: 2
+models:
+- name: base__az_sid_2019_chgs
+  description: '{{ doc("base__sid_description") }}'
+  docs:
+    node_color: '#829356'
+  config:
+    tags:
+    - State
+    - Inpatient
+    - SID
+    - Source
+    - base__sid
+  columns:
+  - name: KEY
+    type: double
+    description: HCUP record identifier
+  - name: CHARGE
+    description: '{{ doc("base__sid_CHARGE_description") }}'
+  - name: db_file
+    description: '{{ doc("base__sid_db_file_description") }}'
+  - name: admit_date
+    description: '{{ doc("base__sid_admit_date_description") }}'
