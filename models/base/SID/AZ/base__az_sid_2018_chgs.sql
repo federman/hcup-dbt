@@ -2,8 +2,8 @@
 SELECT
   CHARGE,
   KEY,
-  'sid_core' AS db_file,
-  CONCAT_WS('', AYEAR, '-', AMONTH, '-01') AS admit_date,
+  'SID' AS db,
+  'CHGS' AS file,
 FROM {{ source('SID', 'AZ_SID_2018_CHGS') }}
 
 {{ limit_data_in_dev() }}

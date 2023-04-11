@@ -32,8 +32,8 @@ SELECT
   ZIP,
   ZIP3,
   ZIPINC_QRTL,
-  'sid_core' AS db_file,
-  CONCAT_WS('', AYEAR, '-', AMONTH, '-01') AS admit_date,
+  'SID' AS db,
+  'CORE' AS file,
 FROM {{ source('SID', 'NJ_SID_2017_CORE') }}
 
 {{ limit_data_in_dev() }}

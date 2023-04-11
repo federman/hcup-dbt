@@ -27,7 +27,7 @@ models:
   - name: UNITS
     type: double
     description: Line item units (as received from source)
-  - name: db_file
-    description: '{{ doc("base__sid_db_file_description") }}'
-  - name: admit_date
-    description: '{{ doc("base__sid_admit_date_description") }}'
+  - name: db
+    description: '{{ doc("base__sid_db_description") }}'
+  - name: file
+    description: '{{ doc("base__sid_file_description") }}'
