@@ -2,9 +2,9 @@
 with 
 
 staged as (
-  select * from {{ref('stg_ny_sedd_2018_core')}}
+  select * from {{ref('base__ny_sedd_2018_core')}}
   union
-  select * from {{ref('stg_ny_sedd_2017_core')}}
+  select * from {{ref('base__ny_sedd_2017_core')}}
 ),
 
 int as (
