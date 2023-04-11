@@ -6,7 +6,6 @@ select
   RACE,
   HISPANIC,
   FEMALE,
-  admit_date,
   ZIP,
   flu,
   flu_like,
