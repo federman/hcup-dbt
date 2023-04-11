@@ -30,8 +30,8 @@ staged as (
 int as (
   select 
   *,
-  {{dx_flag_flu()}} AS flu,
-  {{dx_flag_flu_like()}} AS flu_like, 
+  {{dx_flag_flu(db="SID")}} AS flu,
+  {{dx_flag_flu_like(db="SID")}} AS flu_like, 
   from staged
 ),
 
