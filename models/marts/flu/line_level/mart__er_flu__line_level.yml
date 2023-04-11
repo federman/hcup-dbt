@@ -30,8 +30,6 @@ models:
   - name: FEMALE
     type: int32
     description: Indicator of sex
-  - name: admit_date
-    description: '{{ doc("stg_sedd_admit_date_description") }}'
   - name: ZIP
     type: string
     description: Patient ZIP Code

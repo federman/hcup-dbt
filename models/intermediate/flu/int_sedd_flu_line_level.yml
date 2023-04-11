@@ -52,10 +52,6 @@ models:
   - name: AYEAR
     type: int32
     description: Admission year
-  - name: db_file
-    description: '{{ doc("stg_sedd_db_file_description") }}'
-  - name: admit_date
-    description: '{{ doc("stg_sedd_admit_date_description") }}'
   - name: flu
     type: boolean
     description: '{{ doc("int_sedd_flu_description") }}'
