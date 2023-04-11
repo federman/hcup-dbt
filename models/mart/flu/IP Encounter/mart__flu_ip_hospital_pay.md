@@ -1,8 +1,8 @@
-{% docs mart__flu_ip_rh_hospital_description %}
+{% docs mart__flu_ip_hospital_pay_description %}
 
 # Overview 
 
-- **Request:** `Number of IP flu and ILI visits by hospital and race/ethnicity`
+- **Request:** `Number of IP flu and ILI visits by by hospital and line of business (e.g. medicaid, medicare, commercial, uninsured)`
 - **Issue:** https://github.com/Drexel-UHC/hcup-dbt/issues/19
 - Please comment in the issue above for any questions, issues or requests.
 
@@ -16,7 +16,7 @@ If you have access to the HCUP encrypted server, you can access this table using
 library(dplyr)
 library(arrow)
 
-db = arrow::open_dataset("\\\\files.drexel.edu\\encrypted\\SOPH\\UHC\\SchnakeMahl_HCUP\\dbt\\v0\\models\\mart__flu_ip_rh_hospital.parquet")
+db = arrow::open_dataset("\\\\files.drexel.edu\\encrypted\\SOPH\\UHC\\SchnakeMahl_HCUP\\dbt\\v0\\models\\mart__flu_ip_hospital_pay.parquet")
 db %>% collect()
 ```
 
@@ -24,7 +24,7 @@ db %>% collect()
 
 ```stata
 * Set the path to the Stata dataset
-local path_to_dta "\\\\files.drexel.edu\\encrypted\\SOPH\\UHC\\SchnakeMahl_HCUP\\dbt\\v0\\models\\mart__flu_ip_rh_hospital.dta"
+local path_to_dta "\\\\files.drexel.edu\\encrypted\\SOPH\\UHC\\SchnakeMahl_HCUP\\dbt\\v0\\models\\mart__flu_ip_hospital_pay.dta"
 
 * Read the Stata dataset into a Stata dataset
 use `path_to_dta', clear
@@ -37,7 +37,7 @@ browse
 
 ```sas
 /* Set the path to the SAS dataset */
-%let path_to_sas = '\\\\files.drexel.edu\\encrypted\\SOPH\\UHC\\SchnakeMahl_HCUP\\dbt\\v0\\models\\mart__flu_ip_rh_hospital.sas7bdat';
+%let path_to_sas = '\\\\files.drexel.edu\\encrypted\\SOPH\\UHC\\SchnakeMahl_HCUP\\dbt\\v0\\models\\mart__flu_ip_hospital_pay.sas7bdat';
 
 /* Import the SAS dataset */
 proc import datafile="&path_to_sas"
@@ -58,7 +58,7 @@ import pyarrow.parquet as pq
 import pandas as pd
 
 # Open the Arrow dataset
-db = pq.read_table("\\\\files.drexel.edu\\encrypted\\SOPH\\UHC\\SchnakeMahl_HCUP\\dbt\\v0\\models\\mart__flu_ip_rh_hospital.parquet")
+db = pq.read_table("\\\\files.drexel.edu\\encrypted\\SOPH\\UHC\\SchnakeMahl_HCUP\\dbt\\v0\\models\\mart__flu_ip_hospital_pay.parquet")
 
 # Convert the dataset to a Pandas DataFrame
 df = db.to_pandas()

@@ -1,7 +1,7 @@
 version: 2
 models:
-- name: mart__flu_ip_rh_hospital
-  description:  '{{ doc("mart__flu_ip_rh_hospital_description") }}'
+- name: mart__flu_ip_hospital_pay
+  description:  '{{ doc("mart__flu_ip_hospital_pay_description") }}'
   docs:
     node_color: '#9A2617'
   config:
@@ -19,14 +19,14 @@ models:
   - name: ili_diagnosis_var  
     type: string
     description: '{{ doc("int__ili_diagnosis_var_description") }}'
-  - name: race_ethnicity  
+  - name: insurance  
     type: string
-    description: '{{ doc("var__race_ethnicity") }}'
+    description: '{{ doc("var__insurance") }}'
   - name: HOSP_NPI  
     type: string
     description: 'Hospital NPI'
   - name: n_ip_discharges  
     type: integer
-    description: 'Tabulated count of number of in-patient discharges grouped by ili_diagnosis_var, race_ethnicity, and hospital.'
+    description: 'Tabulated count of number of in-patient discharges grouped by ili_diagnosis_var, hospital, and payment type.'
 
 
