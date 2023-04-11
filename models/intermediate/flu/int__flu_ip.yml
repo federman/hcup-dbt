@@ -121,3 +121,6 @@ models:
   - name: ili_diagnosis_var  
     type: string
     description: '{{ doc("int__ili_diagnosis_var_description") }}'
+  - name: race_ethnicity  
+    type: string
+    description: 'Human readable value for race and ethnicity. Please see recode_race_ethnicity() macro for details.'
