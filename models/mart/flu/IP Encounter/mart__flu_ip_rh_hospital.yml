@@ -1,7 +1,7 @@
 version: 2
 models:
-- name: mart__flu_ip_urban_rh
-  description:  '{{ doc("mart__flu_ip_urban_rh_description") }}'
+- name: mart__flu_ip_rh_hospital
+  description:  '{{ doc("mart__mart__flu_ip_rh_hospital_description") }}'
   docs:
     node_color: '#9A2617'
   config:
