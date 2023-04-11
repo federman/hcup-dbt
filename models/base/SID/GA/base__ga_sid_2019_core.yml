@@ -18,6 +18,9 @@ models:
   - name: AMONTH
     type: int32
     description: Admission month
+  - name: AYEAR
+    type: int32
+    description: Admission year
   - name: CPT1
     type: string
     description: CPT/HCPCS procedure code 1
@@ -36,12 +39,12 @@ models:
   - name: DIED
     type: int32
     description: Died during hospitalization
-  - name: DISPUB04
-    type: int32
-    description: Disposition of patient (UB-04 standard coding)
   - name: DISP_X
     type: string
     description: Disposition of patient (as received from source)
+  - name: DISPUB04
+    type: int32
+    description: Disposition of patient (UB-04 standard coding)
   - name: DMONTH
     type: int32
     description: Discharge month
@@ -96,9 +99,6 @@ models:
   - name: ZIPINC_QRTL
     type: int32
     description: Median household income national quartile for patient ZIP Code
-  - name: AYEAR
-    type: int32
-    description: Admission year
   - name: db_file
     description: '{{ doc("base__sid_db_file_description") }}'
   - name: admit_date

@@ -16,6 +16,9 @@ sources:
     - name: CHARGE
       type: double
       description: Line item charges (as received from source)
+    - name: CHARGE
+      type: double
+      description: Line item charges (as received from source)
     - name: CPTHCPCS
       type: string
       description: Line item CPT-4/HCPCS procedure code (as received from source)

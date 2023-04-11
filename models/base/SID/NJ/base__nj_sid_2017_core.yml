@@ -18,6 +18,9 @@ models:
   - name: AMONTH
     type: int32
     description: Admission month
+  - name: AYEAR
+    type: int32
+    description: Admission year
   - name: CPT1
     type: string
     description: CPT/HCPCS procedure code 1
@@ -105,9 +108,6 @@ models:
   - name: ZIPINC_QRTL
     type: int32
     description: Median household income national quartile for patient ZIP Code
-  - name: AYEAR
-    type: int32
-    description: Admission year
   - name: db_file
     description: '{{ doc("base__sid_db_file_description") }}'
   - name: admit_date

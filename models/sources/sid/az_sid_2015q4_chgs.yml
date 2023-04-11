@@ -13,33 +13,12 @@ sources:
   - name: AZ_SID_2015q4_CHGS
     description: '{{ doc("sid_chgs_2015_description") + "\n" + "\n" + doc("sid_2015_description")}}'
     columns:
+    - name: CHARGE
+      type: double
+      description: Line item charges (as received from source)
     - name: CHG1
       type: double
       description: Detailed charges 1 (as received from source)
-    - name: CHG2
-      type: double
-      description: Detailed charges 2 (as received from source)
-    - name: CHG3
-      type: double
-      description: Detailed charges 3 (as received from source)
-    - name: CHG4
-      type: double
-      description: Detailed charges 4 (as received from source)
-    - name: CHG5
-      type: double
-      description: Detailed charges 5 (as received from source)
-    - name: CHG6
-      type: double
-      description: Detailed charges 6 (as received from source)
-    - name: CHG7
-      type: double
-      description: Detailed charges 7 (as received from source)
-    - name: CHG8
-      type: double
-      description: Detailed charges 8 (as received from source)
-    - name: CHG9
-      type: double
-      description: Detailed charges 9 (as received from source)
     - name: CHG10
       type: double
       description: Detailed charges 10 (as received from source)
@@ -70,6 +49,9 @@ sources:
     - name: CHG19
       type: double
       description: Detailed charges 19 (as received from source)
+    - name: CHG2
+      type: double
+      description: Detailed charges 2 (as received from source)
     - name: CHG20
       type: double
       description: Detailed charges 20 (as received from source)
@@ -100,6 +82,9 @@ sources:
     - name: CHG29
       type: double
       description: Detailed charges 29 (as received from source)
+    - name: CHG3
+      type: double
+      description: Detailed charges 3 (as received from source)
     - name: CHG30
       type: double
       description: Detailed charges 30 (as received from source)
@@ -130,6 +115,9 @@ sources:
     - name: CHG39
       type: double
       description: Detailed charges 39 (as received from source)
+    - name: CHG4
+      type: double
+      description: Detailed charges 4 (as received from source)
     - name: CHG40
       type: double
       description: Detailed charges 40 (as received from source)
@@ -160,6 +148,9 @@ sources:
     - name: CHG49
       type: double
       description: Detailed charges 49 (as received from source)
+    - name: CHG5
+      type: double
+      description: Detailed charges 5 (as received from source)
     - name: CHG50
       type: double
       description: Detailed charges 50 (as received from source)
@@ -190,6 +181,9 @@ sources:
     - name: CHG59
       type: double
       description: Detailed charges 59 (as received from source)
+    - name: CHG6
+      type: double
+      description: Detailed charges 6 (as received from source)
     - name: CHG60
       type: double
       description: Detailed charges 60 (as received from source)
@@ -220,6 +214,9 @@ sources:
     - name: CHG69
       type: double
       description: Detailed charges 69 (as received from source)
+    - name: CHG7
+      type: double
+      description: Detailed charges 7 (as received from source)
     - name: CHG70
       type: double
       description: Detailed charges 70 (as received from source)
@@ -235,6 +232,12 @@ sources:
     - name: CHG74
       type: double
       description: Detailed charges 74 (as received from source)
+    - name: CHG8
+      type: double
+      description: Detailed charges 8 (as received from source)
+    - name: CHG9
+      type: double
+      description: Detailed charges 9 (as received from source)
     - name: KEY
       type: double
       description: HCUP record identifier

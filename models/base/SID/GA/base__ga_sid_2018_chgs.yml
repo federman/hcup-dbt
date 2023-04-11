@@ -15,6 +15,9 @@ models:
   - name: CHARGE
     type: double
     description: Line item charges (as received from source)
+  - name: CHARGE
+    type: double
+    description: Line item charges (as received from source)
   - name: KEY
     type: double
     description: HCUP record identifier

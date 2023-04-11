@@ -16,30 +16,6 @@ sources:
     - name: I10_BODYSYSTEM1
       type: int32
       description: ICD-10-CM Body system 1
-    - name: I10_BODYSYSTEM2
-      type: int32
-      description: ICD-10-CM Body system 2
-    - name: I10_BODYSYSTEM3
-      type: int32
-      description: ICD-10-CM Body system 3
-    - name: I10_BODYSYSTEM4
-      type: int32
-      description: ICD-10-CM Body system 4
-    - name: I10_BODYSYSTEM5
-      type: int32
-      description: ICD-10-CM Body system 5
-    - name: I10_BODYSYSTEM6
-      type: int32
-      description: ICD-10-CM Body system 6
-    - name: I10_BODYSYSTEM7
-      type: int32
-      description: ICD-10-CM Body system 7
-    - name: I10_BODYSYSTEM8
-      type: int32
-      description: ICD-10-CM Body system 8
-    - name: I10_BODYSYSTEM9
-      type: int32
-      description: ICD-10-CM Body system 9
     - name: I10_BODYSYSTEM10
       type: int32
       description: ICD-10-CM Body system 10
@@ -70,6 +46,9 @@ sources:
     - name: I10_BODYSYSTEM19
       type: int32
       description: ICD-10-CM Body system 19
+    - name: I10_BODYSYSTEM2
+      type: int32
+      description: ICD-10-CM Body system 2
     - name: I10_BODYSYSTEM20
       type: int32
       description: ICD-10-CM Body system 20
@@ -100,6 +79,9 @@ sources:
     - name: I10_BODYSYSTEM29
       type: int32
       description: ICD-10-CM Body system 29
+    - name: I10_BODYSYSTEM3
+      type: int32
+      description: ICD-10-CM Body system 3
     - name: I10_BODYSYSTEM30
       type: int32
       description: ICD-10-CM Body system 30
@@ -130,6 +112,9 @@ sources:
     - name: I10_BODYSYSTEM39
       type: int32
       description: ICD-10-CM Body system 39
+    - name: I10_BODYSYSTEM4
+      type: int32
+      description: ICD-10-CM Body system 4
     - name: I10_BODYSYSTEM40
       type: int32
       description: ICD-10-CM Body system 40
@@ -160,6 +145,9 @@ sources:
     - name: I10_BODYSYSTEM49
       type: int32
       description: ICD-10-CM Body system 49
+    - name: I10_BODYSYSTEM5
+      type: int32
+      description: ICD-10-CM Body system 5
     - name: I10_BODYSYSTEM50
       type: int32
       description: ICD-10-CM Body system 50
@@ -190,6 +178,9 @@ sources:
     - name: I10_BODYSYSTEM59
       type: int32
       description: ICD-10-CM Body system 59
+    - name: I10_BODYSYSTEM6
+      type: int32
+      description: ICD-10-CM Body system 6
     - name: I10_BODYSYSTEM60
       type: int32
       description: ICD-10-CM Body system 60
@@ -220,39 +211,24 @@ sources:
     - name: I10_BODYSYSTEM69
       type: int32
       description: ICD-10-CM Body system 69
+    - name: I10_BODYSYSTEM7
+      type: int32
+      description: ICD-10-CM Body system 7
     - name: I10_BODYSYSTEM70
       type: int32
       description: ICD-10-CM Body system 70
     - name: I10_BODYSYSTEM71
       type: int32
       description: ICD-10-CM Body system 71
+    - name: I10_BODYSYSTEM8
+      type: int32
+      description: ICD-10-CM Body system 8
+    - name: I10_BODYSYSTEM9
+      type: int32
+      description: ICD-10-CM Body system 9
     - name: I10_CHRON1
       type: int32
       description: ICD-10-CM Chronic condition indicator 1
-    - name: I10_CHRON2
-      type: int32
-      description: ICD-10-CM Chronic condition indicator 2
-    - name: I10_CHRON3
-      type: int32
-      description: ICD-10-CM Chronic condition indicator 3
-    - name: I10_CHRON4
-      type: int32
-      description: ICD-10-CM Chronic condition indicator 4
-    - name: I10_CHRON5
-      type: int32
-      description: ICD-10-CM Chronic condition indicator 5
-    - name: I10_CHRON6
-      type: int32
-      description: ICD-10-CM Chronic condition indicator 6
-    - name: I10_CHRON7
-      type: int32
-      description: ICD-10-CM Chronic condition indicator 7
-    - name: I10_CHRON8
-      type: int32
-      description: ICD-10-CM Chronic condition indicator 8
-    - name: I10_CHRON9
-      type: int32
-      description: ICD-10-CM Chronic condition indicator 9
     - name: I10_CHRON10
       type: int32
       description: ICD-10-CM Chronic condition indicator 10
@@ -283,6 +259,9 @@ sources:
     - name: I10_CHRON19
       type: int32
       description: ICD-10-CM Chronic condition indicator 19
+    - name: I10_CHRON2
+      type: int32
+      description: ICD-10-CM Chronic condition indicator 2
     - name: I10_CHRON20
       type: int32
       description: ICD-10-CM Chronic condition indicator 20
@@ -313,6 +292,9 @@ sources:
     - name: I10_CHRON29
       type: int32
       description: ICD-10-CM Chronic condition indicator 29
+    - name: I10_CHRON3
+      type: int32
+      description: ICD-10-CM Chronic condition indicator 3
     - name: I10_CHRON30
       type: int32
       description: ICD-10-CM Chronic condition indicator 30
@@ -343,6 +325,9 @@ sources:
     - name: I10_CHRON39
       type: int32
       description: ICD-10-CM Chronic condition indicator 39
+    - name: I10_CHRON4
+      type: int32
+      description: ICD-10-CM Chronic condition indicator 4
     - name: I10_CHRON40
       type: int32
       description: ICD-10-CM Chronic condition indicator 40
@@ -373,6 +358,9 @@ sources:
     - name: I10_CHRON49
       type: int32
       description: ICD-10-CM Chronic condition indicator 49
+    - name: I10_CHRON5
+      type: int32
+      description: ICD-10-CM Chronic condition indicator 5
     - name: I10_CHRON50
       type: int32
       description: ICD-10-CM Chronic condition indicator 50
@@ -403,6 +391,9 @@ sources:
     - name: I10_CHRON59
       type: int32
       description: ICD-10-CM Chronic condition indicator 59
+    - name: I10_CHRON6
+      type: int32
+      description: ICD-10-CM Chronic condition indicator 6
     - name: I10_CHRON60
       type: int32
       description: ICD-10-CM Chronic condition indicator 60
@@ -433,39 +424,24 @@ sources:
     - name: I10_CHRON69
       type: int32
       description: ICD-10-CM Chronic condition indicator 69
+    - name: I10_CHRON7
+      type: int32
+      description: ICD-10-CM Chronic condition indicator 7
     - name: I10_CHRON70
       type: int32
       description: ICD-10-CM Chronic condition indicator 70
     - name: I10_CHRON71
       type: int32
       description: ICD-10-CM Chronic condition indicator 71
+    - name: I10_CHRON8
+      type: int32
+      description: ICD-10-CM Chronic condition indicator 8
+    - name: I10_CHRON9
+      type: int32
+      description: ICD-10-CM Chronic condition indicator 9
     - name: I10_DXMCCS1
       type: string
       description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 1'
-    - name: I10_DXMCCS2
-      type: string
-      description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 2'
-    - name: I10_DXMCCS3
-      type: string
-      description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 3'
-    - name: I10_DXMCCS4
-      type: string
-      description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 4'
-    - name: I10_DXMCCS5
-      type: string
-      description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 5'
-    - name: I10_DXMCCS6
-      type: string
-      description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 6'
-    - name: I10_DXMCCS7
-      type: string
-      description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 7'
-    - name: I10_DXMCCS8
-      type: string
-      description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 8'
-    - name: I10_DXMCCS9
-      type: string
-      description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 9'
     - name: I10_DXMCCS10
       type: string
       description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 10'
@@ -496,6 +472,9 @@ sources:
     - name: I10_DXMCCS19
       type: string
       description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 19'
+    - name: I10_DXMCCS2
+      type: string
+      description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 2'
     - name: I10_DXMCCS20
       type: string
       description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 20'
@@ -526,6 +505,9 @@ sources:
     - name: I10_DXMCCS29
       type: string
       description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 29'
+    - name: I10_DXMCCS3
+      type: string
+      description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 3'
     - name: I10_DXMCCS30
       type: string
       description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 30'
@@ -556,6 +538,9 @@ sources:
     - name: I10_DXMCCS39
       type: string
       description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 39'
+    - name: I10_DXMCCS4
+      type: string
+      description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 4'
     - name: I10_DXMCCS40
       type: string
       description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 40'
@@ -586,6 +571,9 @@ sources:
     - name: I10_DXMCCS49
       type: string
       description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 49'
+    - name: I10_DXMCCS5
+      type: string
+      description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 5'
     - name: I10_DXMCCS50
       type: string
       description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 50'
@@ -616,6 +604,9 @@ sources:
     - name: I10_DXMCCS59
       type: string
       description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 59'
+    - name: I10_DXMCCS6
+      type: string
+      description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 6'
     - name: I10_DXMCCS60
       type: string
       description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 60'
@@ -646,15 +637,30 @@ sources:
     - name: I10_DXMCCS69
       type: string
       description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 69'
+    - name: I10_DXMCCS7
+      type: string
+      description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 7'
     - name: I10_DXMCCS70
       type: string
       description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 70'
     - name: I10_DXMCCS71
       type: string
       description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 71'
+    - name: I10_DXMCCS8
+      type: string
+      description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 8'
+    - name: I10_DXMCCS9
+      type: string
+      description: 'ICD-10-CM Multi-Level CCS:  Diagnosis 9'
     - name: I10_ECauseMCCS1
       type: string
       description: 'ICD-10-CM Multi-Level CCS:  E Cause 1'
+    - name: I10_ECauseMCCS10
+      type: string
+      description: 'ICD-10-CM Multi-Level CCS:  E Cause 10'
+    - name: I10_ECauseMCCS11
+      type: string
+      description: 'ICD-10-CM Multi-Level CCS:  E Cause 11'
     - name: I10_ECauseMCCS2
       type: string
       description: 'ICD-10-CM Multi-Level CCS:  E Cause 2'
@@ -679,12 +685,6 @@ sources:
     - name: I10_ECauseMCCS9
       type: string
       description: 'ICD-10-CM Multi-Level CCS:  E Cause 9'
-    - name: I10_ECauseMCCS10
-      type: string
-      description: 'ICD-10-CM Multi-Level CCS:  E Cause 10'
-    - name: I10_ECauseMCCS11
-      type: string
-      description: 'ICD-10-CM Multi-Level CCS:  E Cause 11'
     - name: I10_INJURY
       type: int32
       description: ICD-10-CM Injury diagnosis reported on record (1:I10_DX1 is an
@@ -695,30 +695,6 @@ sources:
     - name: I10_PCLASS1
       type: int32
       description: ICD-10-PCS Procedure class 1
-    - name: I10_PCLASS2
-      type: int32
-      description: ICD-10-PCS Procedure class 2
-    - name: I10_PCLASS3
-      type: int32
-      description: ICD-10-PCS Procedure class 3
-    - name: I10_PCLASS4
-      type: int32
-      description: ICD-10-PCS Procedure class 4
-    - name: I10_PCLASS5
-      type: int32
-      description: ICD-10-PCS Procedure class 5
-    - name: I10_PCLASS6
-      type: int32
-      description: ICD-10-PCS Procedure class 6
-    - name: I10_PCLASS7
-      type: int32
-      description: ICD-10-PCS Procedure class 7
-    - name: I10_PCLASS8
-      type: int32
-      description: ICD-10-PCS Procedure class 8
-    - name: I10_PCLASS9
-      type: int32
-      description: ICD-10-PCS Procedure class 9
     - name: I10_PCLASS10
       type: int32
       description: ICD-10-PCS Procedure class 10
@@ -749,6 +725,9 @@ sources:
     - name: I10_PCLASS19
       type: int32
       description: ICD-10-PCS Procedure class 19
+    - name: I10_PCLASS2
+      type: int32
+      description: ICD-10-PCS Procedure class 2
     - name: I10_PCLASS20
       type: int32
       description: ICD-10-PCS Procedure class 20
@@ -779,6 +758,9 @@ sources:
     - name: I10_PCLASS29
       type: int32
       description: ICD-10-PCS Procedure class 29
+    - name: I10_PCLASS3
+      type: int32
+      description: ICD-10-PCS Procedure class 3
     - name: I10_PCLASS30
       type: int32
       description: ICD-10-PCS Procedure class 30
@@ -809,6 +791,9 @@ sources:
     - name: I10_PCLASS39
       type: int32
       description: ICD-10-PCS Procedure class 39
+    - name: I10_PCLASS4
+      type: int32
+      description: ICD-10-PCS Procedure class 4
     - name: I10_PCLASS40
       type: int32
       description: ICD-10-PCS Procedure class 40
@@ -839,6 +824,9 @@ sources:
     - name: I10_PCLASS49
       type: int32
       description: ICD-10-PCS Procedure class 49
+    - name: I10_PCLASS5
+      type: int32
+      description: ICD-10-PCS Procedure class 5
     - name: I10_PCLASS50
       type: int32
       description: ICD-10-PCS Procedure class 50
@@ -869,6 +857,9 @@ sources:
     - name: I10_PCLASS59
       type: int32
       description: ICD-10-PCS Procedure class 59
+    - name: I10_PCLASS6
+      type: int32
+      description: ICD-10-PCS Procedure class 6
     - name: I10_PCLASS60
       type: int32
       description: ICD-10-PCS Procedure class 60
@@ -890,33 +881,18 @@ sources:
     - name: I10_PCLASS66
       type: int32
       description: ICD-10-PCS Procedure class 66
+    - name: I10_PCLASS7
+      type: int32
+      description: ICD-10-PCS Procedure class 7
+    - name: I10_PCLASS8
+      type: int32
+      description: ICD-10-PCS Procedure class 8
+    - name: I10_PCLASS9
+      type: int32
+      description: ICD-10-PCS Procedure class 9
     - name: I10_PRMCCS1
       type: string
       description: 'ICD-10-PCS Multi-Level CCS:  Procedure 1'
-    - name: I10_PRMCCS2
-      type: string
-      description: 'ICD-10-PCS Multi-Level CCS:  Procedure 2'
-    - name: I10_PRMCCS3
-      type: string
-      description: 'ICD-10-PCS Multi-Level CCS:  Procedure 3'
-    - name: I10_PRMCCS4
-      type: string
-      description: 'ICD-10-PCS Multi-Level CCS:  Procedure 4'
-    - name: I10_PRMCCS5
-      type: string
-      description: 'ICD-10-PCS Multi-Level CCS:  Procedure 5'
-    - name: I10_PRMCCS6
-      type: string
-      description: 'ICD-10-PCS Multi-Level CCS:  Procedure 6'
-    - name: I10_PRMCCS7
-      type: string
-      description: 'ICD-10-PCS Multi-Level CCS:  Procedure 7'
-    - name: I10_PRMCCS8
-      type: string
-      description: 'ICD-10-PCS Multi-Level CCS:  Procedure 8'
-    - name: I10_PRMCCS9
-      type: string
-      description: 'ICD-10-PCS Multi-Level CCS:  Procedure 9'
     - name: I10_PRMCCS10
       type: string
       description: 'ICD-10-PCS Multi-Level CCS:  Procedure 10'
@@ -947,6 +923,9 @@ sources:
     - name: I10_PRMCCS19
       type: string
       description: 'ICD-10-PCS Multi-Level CCS:  Procedure 19'
+    - name: I10_PRMCCS2
+      type: string
+      description: 'ICD-10-PCS Multi-Level CCS:  Procedure 2'
     - name: I10_PRMCCS20
       type: string
       description: 'ICD-10-PCS Multi-Level CCS:  Procedure 20'
@@ -977,6 +956,9 @@ sources:
     - name: I10_PRMCCS29
       type: string
       description: 'ICD-10-PCS Multi-Level CCS:  Procedure 29'
+    - name: I10_PRMCCS3
+      type: string
+      description: 'ICD-10-PCS Multi-Level CCS:  Procedure 3'
     - name: I10_PRMCCS30
       type: string
       description: 'ICD-10-PCS Multi-Level CCS:  Procedure 30'
@@ -1007,6 +989,9 @@ sources:
     - name: I10_PRMCCS39
       type: string
       description: 'ICD-10-PCS Multi-Level CCS:  Procedure 39'
+    - name: I10_PRMCCS4
+      type: string
+      description: 'ICD-10-PCS Multi-Level CCS:  Procedure 4'
     - name: I10_PRMCCS40
       type: string
       description: 'ICD-10-PCS Multi-Level CCS:  Procedure 40'
@@ -1037,6 +1022,9 @@ sources:
     - name: I10_PRMCCS49
       type: string
       description: 'ICD-10-PCS Multi-Level CCS:  Procedure 49'
+    - name: I10_PRMCCS5
+      type: string
+      description: 'ICD-10-PCS Multi-Level CCS:  Procedure 5'
     - name: I10_PRMCCS50
       type: string
       description: 'ICD-10-PCS Multi-Level CCS:  Procedure 50'
@@ -1067,6 +1055,9 @@ sources:
     - name: I10_PRMCCS59
       type: string
       description: 'ICD-10-PCS Multi-Level CCS:  Procedure 59'
+    - name: I10_PRMCCS6
+      type: string
+      description: 'ICD-10-PCS Multi-Level CCS:  Procedure 6'
     - name: I10_PRMCCS60
       type: string
       description: 'ICD-10-PCS Multi-Level CCS:  Procedure 60'
@@ -1088,6 +1079,15 @@ sources:
     - name: I10_PRMCCS66
       type: string
       description: 'ICD-10-PCS Multi-Level CCS:  Procedure 66'
+    - name: I10_PRMCCS7
+      type: string
+      description: 'ICD-10-PCS Multi-Level CCS:  Procedure 7'
+    - name: I10_PRMCCS8
+      type: string
+      description: 'ICD-10-PCS Multi-Level CCS:  Procedure 8'
+    - name: I10_PRMCCS9
+      type: string
+      description: 'ICD-10-PCS Multi-Level CCS:  Procedure 9'
     - name: I10_U_BLOOD
       type: int32
       description: 'ICD-10-PCS Utilization Flag: Blood'

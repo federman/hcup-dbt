@@ -13,6 +13,9 @@ sources:
   - name: MA_SID_2016_CHGS
     description: '{{ doc("sid_chgs_2016_2018_description") + "\n" + "\n" + doc("sid_2016_2018_description")}}'
     columns:
+    - name: CHARGE
+      type: double
+      description: Line item charges (as received from source)
     - name: KEY
       type: double
       description: HCUP record identifier
@@ -22,30 +25,6 @@ sources:
     - name: REVCD1
       type: string
       description: Revenue code 1 (as received from source)
-    - name: REVCD2
-      type: string
-      description: Revenue code 2 (as received from source)
-    - name: REVCD3
-      type: string
-      description: Revenue code 3 (as received from source)
-    - name: REVCD4
-      type: string
-      description: Revenue code 4 (as received from source)
-    - name: REVCD5
-      type: string
-      description: Revenue code 5 (as received from source)
-    - name: REVCD6
-      type: string
-      description: Revenue code 6 (as received from source)
-    - name: REVCD7
-      type: string
-      description: Revenue code 7 (as received from source)
-    - name: REVCD8
-      type: string
-      description: Revenue code 8 (as received from source)
-    - name: REVCD9
-      type: string
-      description: Revenue code 9 (as received from source)
     - name: REVCD10
       type: string
       description: Revenue code 10 (as received from source)
@@ -76,6 +55,9 @@ sources:
     - name: REVCD19
       type: string
       description: Revenue code 19 (as received from source)
+    - name: REVCD2
+      type: string
+      description: Revenue code 2 (as received from source)
     - name: REVCD20
       type: string
       description: Revenue code 20 (as received from source)
@@ -106,6 +88,9 @@ sources:
     - name: REVCD29
       type: string
       description: Revenue code 29 (as received from source)
+    - name: REVCD3
+      type: string
+      description: Revenue code 3 (as received from source)
     - name: REVCD30
       type: string
       description: Revenue code 30 (as received from source)
@@ -136,6 +121,9 @@ sources:
     - name: REVCD39
       type: string
       description: Revenue code 39 (as received from source)
+    - name: REVCD4
+      type: string
+      description: Revenue code 4 (as received from source)
     - name: REVCD40
       type: string
       description: Revenue code 40 (as received from source)
@@ -163,33 +151,24 @@ sources:
     - name: REVCD48
       type: string
       description: Revenue code 48 (as received from source)
+    - name: REVCD5
+      type: string
+      description: Revenue code 5 (as received from source)
+    - name: REVCD6
+      type: string
+      description: Revenue code 6 (as received from source)
+    - name: REVCD7
+      type: string
+      description: Revenue code 7 (as received from source)
+    - name: REVCD8
+      type: string
+      description: Revenue code 8 (as received from source)
+    - name: REVCD9
+      type: string
+      description: Revenue code 9 (as received from source)
     - name: REVCHG1
       type: double
       description: Detailed charges for revenue code 1 (as received from source)
-    - name: REVCHG2
-      type: double
-      description: Detailed charges for revenue code 2 (as received from source)
-    - name: REVCHG3
-      type: double
-      description: Detailed charges for revenue code 3 (as received from source)
-    - name: REVCHG4
-      type: double
-      description: Detailed charges for revenue code 4 (as received from source)
-    - name: REVCHG5
-      type: double
-      description: Detailed charges for revenue code 5 (as received from source)
-    - name: REVCHG6
-      type: double
-      description: Detailed charges for revenue code 6 (as received from source)
-    - name: REVCHG7
-      type: double
-      description: Detailed charges for revenue code 7 (as received from source)
-    - name: REVCHG8
-      type: double
-      description: Detailed charges for revenue code 8 (as received from source)
-    - name: REVCHG9
-      type: double
-      description: Detailed charges for revenue code 9 (as received from source)
     - name: REVCHG10
       type: double
       description: Detailed charges for revenue code 10 (as received from source)
@@ -220,6 +199,9 @@ sources:
     - name: REVCHG19
       type: double
       description: Detailed charges for revenue code 19 (as received from source)
+    - name: REVCHG2
+      type: double
+      description: Detailed charges for revenue code 2 (as received from source)
     - name: REVCHG20
       type: double
       description: Detailed charges for revenue code 20 (as received from source)
@@ -250,6 +232,9 @@ sources:
     - name: REVCHG29
       type: double
       description: Detailed charges for revenue code 29 (as received from source)
+    - name: REVCHG3
+      type: double
+      description: Detailed charges for revenue code 3 (as received from source)
     - name: REVCHG30
       type: double
       description: Detailed charges for revenue code 30 (as received from source)
@@ -280,6 +265,9 @@ sources:
     - name: REVCHG39
       type: double
       description: Detailed charges for revenue code 39 (as received from source)
+    - name: REVCHG4
+      type: double
+      description: Detailed charges for revenue code 4 (as received from source)
     - name: REVCHG40
       type: double
       description: Detailed charges for revenue code 40 (as received from source)
@@ -307,33 +295,24 @@ sources:
     - name: REVCHG48
       type: double
       description: Detailed charges for revenue code 48 (as received from source)
+    - name: REVCHG5
+      type: double
+      description: Detailed charges for revenue code 5 (as received from source)
+    - name: REVCHG6
+      type: double
+      description: Detailed charges for revenue code 6 (as received from source)
+    - name: REVCHG7
+      type: double
+      description: Detailed charges for revenue code 7 (as received from source)
+    - name: REVCHG8
+      type: double
+      description: Detailed charges for revenue code 8 (as received from source)
+    - name: REVCHG9
+      type: double
+      description: Detailed charges for revenue code 9 (as received from source)
     - name: UNIT1
       type: double
       description: Units of service 1 (as received from source)
-    - name: UNIT2
-      type: double
-      description: Units of service 2 (as received from source)
-    - name: UNIT3
-      type: double
-      description: Units of service 3 (as received from source)
-    - name: UNIT4
-      type: double
-      description: Units of service 4 (as received from source)
-    - name: UNIT5
-      type: double
-      description: Units of service 5 (as received from source)
-    - name: UNIT6
-      type: double
-      description: Units of service 6 (as received from source)
-    - name: UNIT7
-      type: double
-      description: Units of service 7 (as received from source)
-    - name: UNIT8
-      type: double
-      description: Units of service 8 (as received from source)
-    - name: UNIT9
-      type: double
-      description: Units of service 9 (as received from source)
     - name: UNIT10
       type: double
       description: Units of service 10 (as received from source)
@@ -364,6 +343,9 @@ sources:
     - name: UNIT19
       type: double
       description: Units of service 19 (as received from source)
+    - name: UNIT2
+      type: double
+      description: Units of service 2 (as received from source)
     - name: UNIT20
       type: double
       description: Units of service 20 (as received from source)
@@ -394,6 +376,9 @@ sources:
     - name: UNIT29
       type: double
       description: Units of service 29 (as received from source)
+    - name: UNIT3
+      type: double
+      description: Units of service 3 (as received from source)
     - name: UNIT30
       type: double
       description: Units of service 30 (as received from source)
@@ -424,6 +409,9 @@ sources:
     - name: UNIT39
       type: double
       description: Units of service 39 (as received from source)
+    - name: UNIT4
+      type: double
+      description: Units of service 4 (as received from source)
     - name: UNIT40
       type: double
       description: Units of service 40 (as received from source)
@@ -451,3 +439,18 @@ sources:
     - name: UNIT48
       type: double
       description: Units of service 48 (as received from source)
+    - name: UNIT5
+      type: double
+      description: Units of service 5 (as received from source)
+    - name: UNIT6
+      type: double
+      description: Units of service 6 (as received from source)
+    - name: UNIT7
+      type: double
+      description: Units of service 7 (as received from source)
+    - name: UNIT8
+      type: double
+      description: Units of service 8 (as received from source)
+    - name: UNIT9
+      type: double
+      description: Units of service 9 (as received from source)

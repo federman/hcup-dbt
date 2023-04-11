@@ -34,39 +34,24 @@ sources:
     - name: AWEEKEND
       type: int32
       description: Admission day is a weekend
+    - name: AYEAR
+      type: int32
+      description: Admission year
     - name: BILLTYPE
       type: string
       description: Type of bill, UB-04 coding
+    - name: BMONTH
+      type: int32
+      description: Birth month
     - name: BWT
       type: int32
       description: Birth weight in grams
+    - name: BYEAR
+      type: int32
+      description: Birth year
     - name: CPT1
       type: string
       description: CPT/HCPCS procedure code 1
-    - name: CPT2
-      type: string
-      description: CPT/HCPCS procedure code 2
-    - name: CPT3
-      type: string
-      description: CPT/HCPCS procedure code 3
-    - name: CPT4
-      type: string
-      description: CPT/HCPCS procedure code 4
-    - name: CPT5
-      type: string
-      description: CPT/HCPCS procedure code 5
-    - name: CPT6
-      type: string
-      description: CPT/HCPCS procedure code 6
-    - name: CPT7
-      type: string
-      description: CPT/HCPCS procedure code 7
-    - name: CPT8
-      type: string
-      description: CPT/HCPCS procedure code 8
-    - name: CPT9
-      type: string
-      description: CPT/HCPCS procedure code 9
     - name: CPT10
       type: string
       description: CPT/HCPCS procedure code 10
@@ -97,6 +82,9 @@ sources:
     - name: CPT19
       type: string
       description: CPT/HCPCS procedure code 19
+    - name: CPT2
+      type: string
+      description: CPT/HCPCS procedure code 2
     - name: CPT20
       type: string
       description: CPT/HCPCS procedure code 20
@@ -127,6 +115,9 @@ sources:
     - name: CPT29
       type: string
       description: CPT/HCPCS procedure code 29
+    - name: CPT3
+      type: string
+      description: CPT/HCPCS procedure code 3
     - name: CPT30
       type: string
       description: CPT/HCPCS procedure code 30
@@ -157,6 +148,9 @@ sources:
     - name: CPT39
       type: string
       description: CPT/HCPCS procedure code 39
+    - name: CPT4
+      type: string
+      description: CPT/HCPCS procedure code 4
     - name: CPT40
       type: string
       description: CPT/HCPCS procedure code 40
@@ -187,36 +181,27 @@ sources:
     - name: CPT49
       type: string
       description: CPT/HCPCS procedure code 49
+    - name: CPT5
+      type: string
+      description: CPT/HCPCS procedure code 5
     - name: CPT50
       type: string
       description: CPT/HCPCS procedure code 50
+    - name: CPT6
+      type: string
+      description: CPT/HCPCS procedure code 6
+    - name: CPT7
+      type: string
+      description: CPT/HCPCS procedure code 7
+    - name: CPT8
+      type: string
+      description: CPT/HCPCS procedure code 8
+    - name: CPT9
+      type: string
+      description: CPT/HCPCS procedure code 9
     - name: CPTCCS1
       type: int32
       description: 'CCS: CPT 1'
-    - name: CPTCCS2
-      type: int32
-      description: 'CCS: CPT 2'
-    - name: CPTCCS3
-      type: int32
-      description: 'CCS: CPT 3'
-    - name: CPTCCS4
-      type: int32
-      description: 'CCS: CPT 4'
-    - name: CPTCCS5
-      type: int32
-      description: 'CCS: CPT 5'
-    - name: CPTCCS6
-      type: int32
-      description: 'CCS: CPT 6'
-    - name: CPTCCS7
-      type: int32
-      description: 'CCS: CPT 7'
-    - name: CPTCCS8
-      type: int32
-      description: 'CCS: CPT 8'
-    - name: CPTCCS9
-      type: int32
-      description: 'CCS: CPT 9'
     - name: CPTCCS10
       type: int32
       description: 'CCS: CPT 10'
@@ -247,6 +232,9 @@ sources:
     - name: CPTCCS19
       type: int32
       description: 'CCS: CPT 19'
+    - name: CPTCCS2
+      type: int32
+      description: 'CCS: CPT 2'
     - name: CPTCCS20
       type: int32
       description: 'CCS: CPT 20'
@@ -277,6 +265,9 @@ sources:
     - name: CPTCCS29
       type: int32
       description: 'CCS: CPT 29'
+    - name: CPTCCS3
+      type: int32
+      description: 'CCS: CPT 3'
     - name: CPTCCS30
       type: int32
       description: 'CCS: CPT 30'
@@ -307,6 +298,9 @@ sources:
     - name: CPTCCS39
       type: int32
       description: 'CCS: CPT 39'
+    - name: CPTCCS4
+      type: int32
+      description: 'CCS: CPT 4'
     - name: CPTCCS40
       type: int32
       description: 'CCS: CPT 40'
@@ -337,36 +331,27 @@ sources:
     - name: CPTCCS49
       type: int32
       description: 'CCS: CPT 49'
+    - name: CPTCCS5
+      type: int32
+      description: 'CCS: CPT 5'
     - name: CPTCCS50
       type: int32
       description: 'CCS: CPT 50'
+    - name: CPTCCS6
+      type: int32
+      description: 'CCS: CPT 6'
+    - name: CPTCCS7
+      type: int32
+      description: 'CCS: CPT 7'
+    - name: CPTCCS8
+      type: int32
+      description: 'CCS: CPT 8'
+    - name: CPTCCS9
+      type: int32
+      description: 'CCS: CPT 9'
     - name: CPTM1_1
       type: string
       description: First CPT-4/HCPCS modifier 1
-    - name: CPTM1_2
-      type: string
-      description: First CPT-4/HCPCS modifier 2
-    - name: CPTM1_3
-      type: string
-      description: First CPT-4/HCPCS modifier 3
-    - name: CPTM1_4
-      type: string
-      description: First CPT-4/HCPCS modifier 4
-    - name: CPTM1_5
-      type: string
-      description: First CPT-4/HCPCS modifier 5
-    - name: CPTM1_6
-      type: string
-      description: First CPT-4/HCPCS modifier 6
-    - name: CPTM1_7
-      type: string
-      description: First CPT-4/HCPCS modifier 7
-    - name: CPTM1_8
-      type: string
-      description: First CPT-4/HCPCS modifier 8
-    - name: CPTM1_9
-      type: string
-      description: First CPT-4/HCPCS modifier 9
     - name: CPTM1_10
       type: string
       description: First CPT-4/HCPCS modifier 10
@@ -397,6 +382,9 @@ sources:
     - name: CPTM1_19
       type: string
       description: First CPT-4/HCPCS modifier 19
+    - name: CPTM1_2
+      type: string
+      description: First CPT-4/HCPCS modifier 2
     - name: CPTM1_20
       type: string
       description: First CPT-4/HCPCS modifier 20
@@ -427,6 +415,9 @@ sources:
     - name: CPTM1_29
       type: string
       description: First CPT-4/HCPCS modifier 29
+    - name: CPTM1_3
+      type: string
+      description: First CPT-4/HCPCS modifier 3
     - name: CPTM1_30
       type: string
       description: First CPT-4/HCPCS modifier 30
@@ -457,6 +448,9 @@ sources:
     - name: CPTM1_39
       type: string
       description: First CPT-4/HCPCS modifier 39
+    - name: CPTM1_4
+      type: string
+      description: First CPT-4/HCPCS modifier 4
     - name: CPTM1_40
       type: string
       description: First CPT-4/HCPCS modifier 40
@@ -487,36 +481,27 @@ sources:
     - name: CPTM1_49
       type: string
       description: First CPT-4/HCPCS modifier 49
+    - name: CPTM1_5
+      type: string
+      description: First CPT-4/HCPCS modifier 5
     - name: CPTM1_50
       type: string
       description: First CPT-4/HCPCS modifier 50
+    - name: CPTM1_6
+      type: string
+      description: First CPT-4/HCPCS modifier 6
+    - name: CPTM1_7
+      type: string
+      description: First CPT-4/HCPCS modifier 7
+    - name: CPTM1_8
+      type: string
+      description: First CPT-4/HCPCS modifier 8
+    - name: CPTM1_9
+      type: string
+      description: First CPT-4/HCPCS modifier 9
     - name: CPTM2_1
       type: string
       description: Second CPT-4/HCPCS modifier 1
-    - name: CPTM2_2
-      type: string
-      description: Second CPT-4/HCPCS modifier 2
-    - name: CPTM2_3
-      type: string
-      description: Second CPT-4/HCPCS modifier 3
-    - name: CPTM2_4
-      type: string
-      description: Second CPT-4/HCPCS modifier 4
-    - name: CPTM2_5
-      type: string
-      description: Second CPT-4/HCPCS modifier 5
-    - name: CPTM2_6
-      type: string
-      description: Second CPT-4/HCPCS modifier 6
-    - name: CPTM2_7
-      type: string
-      description: Second CPT-4/HCPCS modifier 7
-    - name: CPTM2_8
-      type: string
-      description: Second CPT-4/HCPCS modifier 8
-    - name: CPTM2_9
-      type: string
-      description: Second CPT-4/HCPCS modifier 9
     - name: CPTM2_10
       type: string
       description: Second CPT-4/HCPCS modifier 10
@@ -547,6 +532,9 @@ sources:
     - name: CPTM2_19
       type: string
       description: Second CPT-4/HCPCS modifier 19
+    - name: CPTM2_2
+      type: string
+      description: Second CPT-4/HCPCS modifier 2
     - name: CPTM2_20
       type: string
       description: Second CPT-4/HCPCS modifier 20
@@ -577,6 +565,9 @@ sources:
     - name: CPTM2_29
       type: string
       description: Second CPT-4/HCPCS modifier 29
+    - name: CPTM2_3
+      type: string
+      description: Second CPT-4/HCPCS modifier 3
     - name: CPTM2_30
       type: string
       description: Second CPT-4/HCPCS modifier 30
@@ -607,6 +598,9 @@ sources:
     - name: CPTM2_39
       type: string
       description: Second CPT-4/HCPCS modifier 39
+    - name: CPTM2_4
+      type: string
+      description: Second CPT-4/HCPCS modifier 4
     - name: CPTM2_40
       type: string
       description: Second CPT-4/HCPCS modifier 40
@@ -637,9 +631,24 @@ sources:
     - name: CPTM2_49
       type: string
       description: Second CPT-4/HCPCS modifier 49
+    - name: CPTM2_5
+      type: string
+      description: Second CPT-4/HCPCS modifier 5
     - name: CPTM2_50
       type: string
       description: Second CPT-4/HCPCS modifier 50
+    - name: CPTM2_6
+      type: string
+      description: Second CPT-4/HCPCS modifier 6
+    - name: CPTM2_7
+      type: string
+      description: Second CPT-4/HCPCS modifier 7
+    - name: CPTM2_8
+      type: string
+      description: Second CPT-4/HCPCS modifier 8
+    - name: CPTM2_9
+      type: string
+      description: Second CPT-4/HCPCS modifier 9
     - name: DHOUR
       type: int32
       description: Discharge Hour
@@ -679,30 +688,6 @@ sources:
     - name: DXPOA1
       type: string
       description: Diagnosis 1, present on admission indicator
-    - name: DXPOA2
-      type: string
-      description: Diagnosis 2, present on admission indicator
-    - name: DXPOA3
-      type: string
-      description: Diagnosis 3, present on admission indicator
-    - name: DXPOA4
-      type: string
-      description: Diagnosis 4, present on admission indicator
-    - name: DXPOA5
-      type: string
-      description: Diagnosis 5, present on admission indicator
-    - name: DXPOA6
-      type: string
-      description: Diagnosis 6, present on admission indicator
-    - name: DXPOA7
-      type: string
-      description: Diagnosis 7, present on admission indicator
-    - name: DXPOA8
-      type: string
-      description: Diagnosis 8, present on admission indicator
-    - name: DXPOA9
-      type: string
-      description: Diagnosis 9, present on admission indicator
     - name: DXPOA10
       type: string
       description: Diagnosis 10, present on admission indicator
@@ -733,6 +718,9 @@ sources:
     - name: DXPOA19
       type: string
       description: Diagnosis 19, present on admission indicator
+    - name: DXPOA2
+      type: string
+      description: Diagnosis 2, present on admission indicator
     - name: DXPOA20
       type: string
       description: Diagnosis 20, present on admission indicator
@@ -763,6 +751,9 @@ sources:
     - name: DXPOA29
       type: string
       description: Diagnosis 29, present on admission indicator
+    - name: DXPOA3
+      type: string
+      description: Diagnosis 3, present on admission indicator
     - name: DXPOA30
       type: string
       description: Diagnosis 30, present on admission indicator
@@ -793,12 +784,30 @@ sources:
     - name: DXPOA39
       type: string
       description: Diagnosis 39, present on admission indicator
+    - name: DXPOA4
+      type: string
+      description: Diagnosis 4, present on admission indicator
     - name: DXPOA40
       type: string
       description: Diagnosis 40, present on admission indicator
     - name: DXPOA41
       type: string
       description: Diagnosis 41, present on admission indicator
+    - name: DXPOA5
+      type: string
+      description: Diagnosis 5, present on admission indicator
+    - name: DXPOA6
+      type: string
+      description: Diagnosis 6, present on admission indicator
+    - name: DXPOA7
+      type: string
+      description: Diagnosis 7, present on admission indicator
+    - name: DXPOA8
+      type: string
+      description: Diagnosis 8, present on admission indicator
+    - name: DXPOA9
+      type: string
+      description: Diagnosis 9, present on admission indicator
     - name: DXVER
       type: int32
       description: Diagnosis Version
@@ -829,30 +838,6 @@ sources:
     - name: I10_DX1
       type: string
       description: ICD-10-CM Diagnosis 1
-    - name: I10_DX2
-      type: string
-      description: ICD-10-CM Diagnosis 2
-    - name: I10_DX3
-      type: string
-      description: ICD-10-CM Diagnosis 3
-    - name: I10_DX4
-      type: string
-      description: ICD-10-CM Diagnosis 4
-    - name: I10_DX5
-      type: string
-      description: ICD-10-CM Diagnosis 5
-    - name: I10_DX6
-      type: string
-      description: ICD-10-CM Diagnosis 6
-    - name: I10_DX7
-      type: string
-      description: ICD-10-CM Diagnosis 7
-    - name: I10_DX8
-      type: string
-      description: ICD-10-CM Diagnosis 8
-    - name: I10_DX9
-      type: string
-      description: ICD-10-CM Diagnosis 9
     - name: I10_DX10
       type: string
       description: ICD-10-CM Diagnosis 10
@@ -883,6 +868,9 @@ sources:
     - name: I10_DX19
       type: string
       description: ICD-10-CM Diagnosis 19
+    - name: I10_DX2
+      type: string
+      description: ICD-10-CM Diagnosis 2
     - name: I10_DX20
       type: string
       description: ICD-10-CM Diagnosis 20
@@ -913,6 +901,9 @@ sources:
     - name: I10_DX29
       type: string
       description: ICD-10-CM Diagnosis 29
+    - name: I10_DX3
+      type: string
+      description: ICD-10-CM Diagnosis 3
     - name: I10_DX30
       type: string
       description: ICD-10-CM Diagnosis 30
@@ -943,12 +934,30 @@ sources:
     - name: I10_DX39
       type: string
       description: ICD-10-CM Diagnosis 39
+    - name: I10_DX4
+      type: string
+      description: ICD-10-CM Diagnosis 4
     - name: I10_DX40
       type: string
       description: ICD-10-CM Diagnosis 40
     - name: I10_DX41
       type: string
       description: ICD-10-CM Diagnosis 41
+    - name: I10_DX5
+      type: string
+      description: ICD-10-CM Diagnosis 5
+    - name: I10_DX6
+      type: string
+      description: ICD-10-CM Diagnosis 6
+    - name: I10_DX7
+      type: string
+      description: ICD-10-CM Diagnosis 7
+    - name: I10_DX8
+      type: string
+      description: ICD-10-CM Diagnosis 8
+    - name: I10_DX9
+      type: string
+      description: ICD-10-CM Diagnosis 9
     - name: I10_NDX
       type: int32
       description: ICD-10-CM Number of diagnoses on this record
@@ -958,30 +967,6 @@ sources:
     - name: I10_PR1
       type: string
       description: ICD-10-PCS Procedure 1
-    - name: I10_PR2
-      type: string
-      description: ICD-10-PCS Procedure 2
-    - name: I10_PR3
-      type: string
-      description: ICD-10-PCS Procedure 3
-    - name: I10_PR4
-      type: string
-      description: ICD-10-PCS Procedure 4
-    - name: I10_PR5
-      type: string
-      description: ICD-10-PCS Procedure 5
-    - name: I10_PR6
-      type: string
-      description: ICD-10-PCS Procedure 6
-    - name: I10_PR7
-      type: string
-      description: ICD-10-PCS Procedure 7
-    - name: I10_PR8
-      type: string
-      description: ICD-10-PCS Procedure 8
-    - name: I10_PR9
-      type: string
-      description: ICD-10-PCS Procedure 9
     - name: I10_PR10
       type: string
       description: ICD-10-PCS Procedure 10
@@ -1012,6 +997,9 @@ sources:
     - name: I10_PR19
       type: string
       description: ICD-10-PCS Procedure 19
+    - name: I10_PR2
+      type: string
+      description: ICD-10-PCS Procedure 2
     - name: I10_PR20
       type: string
       description: ICD-10-PCS Procedure 20
@@ -1030,6 +1018,27 @@ sources:
     - name: I10_PR25
       type: string
       description: ICD-10-PCS Procedure 25
+    - name: I10_PR3
+      type: string
+      description: ICD-10-PCS Procedure 3
+    - name: I10_PR4
+      type: string
+      description: ICD-10-PCS Procedure 4
+    - name: I10_PR5
+      type: string
+      description: ICD-10-PCS Procedure 5
+    - name: I10_PR6
+      type: string
+      description: ICD-10-PCS Procedure 6
+    - name: I10_PR7
+      type: string
+      description: ICD-10-PCS Procedure 7
+    - name: I10_PR8
+      type: string
+      description: ICD-10-PCS Procedure 8
+    - name: I10_PR9
+      type: string
+      description: ICD-10-PCS Procedure 9
     - name: I10_PROCTYPE
       type: int32
       description: ICD-10-PCS Procedure type indicator
@@ -1140,30 +1149,6 @@ sources:
     - name: PRDAY1
       type: int32
       description: Number of days from admission to I10_PR1
-    - name: PRDAY2
-      type: int32
-      description: Number of days from admission to I10_PR2
-    - name: PRDAY3
-      type: int32
-      description: Number of days from admission to I10_PR3
-    - name: PRDAY4
-      type: int32
-      description: Number of days from admission to I10_PR4
-    - name: PRDAY5
-      type: int32
-      description: Number of days from admission to I10_PR5
-    - name: PRDAY6
-      type: int32
-      description: Number of days from admission to I10_PR6
-    - name: PRDAY7
-      type: int32
-      description: Number of days from admission to I10_PR7
-    - name: PRDAY8
-      type: int32
-      description: Number of days from admission to I10_PR8
-    - name: PRDAY9
-      type: int32
-      description: Number of days from admission to I10_PR9
     - name: PRDAY10
       type: int32
       description: Number of days from admission to I10_PR10
@@ -1194,6 +1179,9 @@ sources:
     - name: PRDAY19
       type: int32
       description: Number of days from admission to I10_PR19
+    - name: PRDAY2
+      type: int32
+      description: Number of days from admission to I10_PR2
     - name: PRDAY20
       type: int32
       description: Number of days from admission to I10_PR20
@@ -1212,96 +1200,33 @@ sources:
     - name: PRDAY25
       type: int32
       description: Number of days from admission to I10_PR25
+    - name: PRDAY3
+      type: int32
+      description: Number of days from admission to I10_PR3
+    - name: PRDAY4
+      type: int32
+      description: Number of days from admission to I10_PR4
+    - name: PRDAY5
+      type: int32
+      description: Number of days from admission to I10_PR5
+    - name: PRDAY6
+      type: int32
+      description: Number of days from admission to I10_PR6
+    - name: PRDAY7
+      type: int32
+      description: Number of days from admission to I10_PR7
+    - name: PRDAY8
+      type: int32
+      description: Number of days from admission to I10_PR8
+    - name: PRDAY9
+      type: int32
+      description: Number of days from admission to I10_PR9
     - name: PrimLang
       type: string
       description: Primary language of patient
-    - name: PRVER
-      type: int32
-      description: Procedure Version
-    - name: PSTATE
-      type: string
-      description: Patient State postal code
-    - name: PSTCO
-      type: int32
-      description: Patient state/county FIPS code
-    - name: PSTCO2
-      type: int32
-      description: Patient state/county FIPS code, possibly derived from ZIP Code
-    - name: RACE
-      type: int32
-      description: Race (uniform)
-    - name: RACE_EDIT
-      type: int32
-      description: Race Edit Checks
-    - name: RACE_X
-      type: string
-      description: Race (as received from source)
-    - name: READMIT
-      type: int32
-      description: Readmission
-    - name: TOTCHG
-      type: double
-      description: Total charges (cleaned)
-    - name: TOTCHG_X
-      type: double
-      description: Total charges (as received from source)
-    - name: TRAN_IN
-      type: int32
-      description: Transfer in indicator
-    - name: TRAN_OUT
-      type: int32
-      description: Transfer out indicator
-    - name: YEAR
-      type: int32
-      description: Calendar year
-    - name: ZIP
-      type: string
-      description: Patient ZIP Code
-    - name: ZIP3
-      type: string
-      description: Patient ZIP Code, first 3 digits
-    - name: ZIPINC_QRTL
-      type: int32
-      description: Median household income national quartile for patient ZIP Code
-    - name: TOWN
-      type: string
-      description: Patient town of residence (as received from source)
-    - name: AYEAR
-      type: int32
-      description: Admission year
-    - name: BMONTH
-      type: int32
-      description: Birth month
-    - name: BYEAR
-      type: int32
-      description: Birth year
     - name: PRMONTH1
       type: int32
       description: Month of procedure 1
-    - name: PRMONTH2
-      type: int32
-      description: Month of procedure 2
-    - name: PRMONTH3
-      type: int32
-      description: Month of procedure 3
-    - name: PRMONTH4
-      type: int32
-      description: Month of procedure 4
-    - name: PRMONTH5
-      type: int32
-      description: Month of procedure 5
-    - name: PRMONTH6
-      type: int32
-      description: Month of procedure 6
-    - name: PRMONTH7
-      type: int32
-      description: Month of procedure 7
-    - name: PRMONTH8
-      type: int32
-      description: Month of procedure 8
-    - name: PRMONTH9
-      type: int32
-      description: Month of procedure 9
     - name: PRMONTH10
       type: int32
       description: Month of procedure 10
@@ -1332,6 +1257,9 @@ sources:
     - name: PRMONTH19
       type: int32
       description: Month of procedure 19
+    - name: PRMONTH2
+      type: int32
+      description: Month of procedure 2
     - name: PRMONTH20
       type: int32
       description: Month of procedure 20
@@ -1350,33 +1278,33 @@ sources:
     - name: PRMONTH25
       type: int32
       description: Month of procedure 25
+    - name: PRMONTH3
+      type: int32
+      description: Month of procedure 3
+    - name: PRMONTH4
+      type: int32
+      description: Month of procedure 4
+    - name: PRMONTH5
+      type: int32
+      description: Month of procedure 5
+    - name: PRMONTH6
+      type: int32
+      description: Month of procedure 6
+    - name: PRMONTH7
+      type: int32
+      description: Month of procedure 7
+    - name: PRMONTH8
+      type: int32
+      description: Month of procedure 8
+    - name: PRMONTH9
+      type: int32
+      description: Month of procedure 9
+    - name: PRVER
+      type: int32
+      description: Procedure Version
     - name: PRYEAR1
       type: int32
       description: Year of procedure 1
-    - name: PRYEAR2
-      type: int32
-      description: Year of procedure 2
-    - name: PRYEAR3
-      type: int32
-      description: Year of procedure 3
-    - name: PRYEAR4
-      type: int32
-      description: Year of procedure 4
-    - name: PRYEAR5
-      type: int32
-      description: Year of procedure 5
-    - name: PRYEAR6
-      type: int32
-      description: Year of procedure 6
-    - name: PRYEAR7
-      type: int32
-      description: Year of procedure 7
-    - name: PRYEAR8
-      type: int32
-      description: Year of procedure 8
-    - name: PRYEAR9
-      type: int32
-      description: Year of procedure 9
     - name: PRYEAR10
       type: int32
       description: Year of procedure 10
@@ -1407,6 +1335,9 @@ sources:
     - name: PRYEAR19
       type: int32
       description: Year of procedure 19
+    - name: PRYEAR2
+      type: int32
+      description: Year of procedure 2
     - name: PRYEAR20
       type: int32
       description: Year of procedure 20
@@ -1425,3 +1356,72 @@ sources:
     - name: PRYEAR25
       type: int32
       description: Year of procedure 25
+    - name: PRYEAR3
+      type: int32
+      description: Year of procedure 3
+    - name: PRYEAR4
+      type: int32
+      description: Year of procedure 4
+    - name: PRYEAR5
+      type: int32
+      description: Year of procedure 5
+    - name: PRYEAR6
+      type: int32
+      description: Year of procedure 6
+    - name: PRYEAR7
+      type: int32
+      description: Year of procedure 7
+    - name: PRYEAR8
+      type: int32
+      description: Year of procedure 8
+    - name: PRYEAR9
+      type: int32
+      description: Year of procedure 9
+    - name: PSTATE
+      type: string
+      description: Patient State postal code
+    - name: PSTCO
+      type: int32
+      description: Patient state/county FIPS code
+    - name: PSTCO2
+      type: int32
+      description: Patient state/county FIPS code, possibly derived from ZIP Code
+    - name: RACE
+      type: int32
+      description: Race (uniform)
+    - name: RACE_EDIT
+      type: int32
+      description: Race Edit Checks
+    - name: RACE_X
+      type: string
+      description: Race (as received from source)
+    - name: READMIT
+      type: int32
+      description: Readmission
+    - name: TOTCHG
+      type: double
+      description: Total charges (cleaned)
+    - name: TOTCHG_X
+      type: double
+      description: Total charges (as received from source)
+    - name: TOWN
+      type: string
+      description: Patient town of residence (as received from source)
+    - name: TRAN_IN
+      type: int32
+      description: Transfer in indicator
+    - name: TRAN_OUT
+      type: int32
+      description: Transfer out indicator
+    - name: YEAR
+      type: int32
+      description: Calendar year
+    - name: ZIP
+      type: string
+      description: Patient ZIP Code
+    - name: ZIP3
+      type: string
+      description: Patient ZIP Code, first 3 digits
+    - name: ZIPINC_QRTL
+      type: int32
+      description: Median household income national quartile for patient ZIP Code

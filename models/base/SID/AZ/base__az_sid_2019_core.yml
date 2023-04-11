@@ -18,18 +18,21 @@ models:
   - name: AMONTH
     type: int32
     description: Admission month
+  - name: AYEAR
+    type: int32
+    description: Admission year
   - name: DHOUR
     type: int32
     description: Discharge Hour
   - name: DIED
     type: int32
     description: Died during hospitalization
-  - name: DISPUB04
-    type: int32
-    description: Disposition of patient (UB-04 standard coding)
   - name: DISP_X
     type: string
     description: Disposition of patient (as received from source)
+  - name: DISPUB04
+    type: int32
+    description: Disposition of patient (UB-04 standard coding)
   - name: DMONTH
     type: int32
     description: Discharge month
@@ -54,21 +57,21 @@ models:
   - name: HISPANIC
     type: int32
     description: Hispanic ethnicity (uniform)
-  - name: HOSPST
-    type: string
-    description: Hospital state postal code
   - name: HOSP_NPI
     type: string
     description: Hospital NPI
+  - name: HOSPST
+    type: string
+    description: Hospital state postal code
+  - name: I10_DX_Admitting
+    type: string
+    description: ICD-10-CM Admitting Diagnosis Code
   - name: I10_DX1
     type: string
     description: ICD-10-CM Diagnosis 1
   - name: I10_DX2
     type: string
     description: ICD-10-CM Diagnosis 2
-  - name: I10_DX_Admitting
-    type: string
-    description: ICD-10-CM Admitting Diagnosis Code
   - name: LOS
     type: int32
     description: Length of stay (cleaned)
@@ -87,9 +90,6 @@ models:
   - name: ZIPINC_QRTL
     type: int32
     description: Median household income national quartile for patient ZIP Code
-  - name: AYEAR
-    type: int32
-    description: Admission year
   - name: db_file
     description: '{{ doc("base__sid_db_file_description") }}'
   - name: admit_date

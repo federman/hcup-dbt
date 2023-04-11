@@ -16,6 +16,24 @@ sources:
     - name: CHRON1
       type: double
       description: Chronic condition indicator 1
+    - name: CHRON10
+      type: double
+      description: Chronic condition indicator 10
+    - name: CHRON11
+      type: double
+      description: Chronic condition indicator 11
+    - name: CHRON12
+      type: double
+      description: Chronic condition indicator 12
+    - name: CHRON13
+      type: double
+      description: Chronic condition indicator 13
+    - name: CHRON14
+      type: double
+      description: Chronic condition indicator 14
+    - name: CHRON15
+      type: double
+      description: Chronic condition indicator 15
     - name: CHRON2
       type: double
       description: Chronic condition indicator 2
@@ -40,25 +58,25 @@ sources:
     - name: CHRON9
       type: double
       description: Chronic condition indicator 9
-    - name: CHRON10
-      type: double
-      description: Chronic condition indicator 10
-    - name: CHRON11
-      type: double
-      description: Chronic condition indicator 11
-    - name: CHRON12
-      type: double
-      description: Chronic condition indicator 12
-    - name: CHRON13
-      type: double
-      description: Chronic condition indicator 13
-    - name: CHRON14
-      type: double
-      description: Chronic condition indicator 14
-    - name: CHRON15
-      type: double
-      description: Chronic condition indicator 15
     - name: CHRONB1
+      type: double
+      description: .na.character
+    - name: CHRONB10
+      type: double
+      description: .na.character
+    - name: CHRONB11
+      type: double
+      description: .na.character
+    - name: CHRONB12
+      type: double
+      description: .na.character
+    - name: CHRONB13
+      type: double
+      description: .na.character
+    - name: CHRONB14
+      type: double
+      description: .na.character
+    - name: CHRONB15
       type: double
       description: .na.character
     - name: CHRONB2
@@ -85,27 +103,27 @@ sources:
     - name: CHRONB9
       type: double
       description: .na.character
-    - name: CHRONB10
-      type: double
-      description: .na.character
-    - name: CHRONB11
-      type: double
-      description: .na.character
-    - name: CHRONB12
-      type: double
-      description: .na.character
-    - name: CHRONB13
-      type: double
-      description: .na.character
-    - name: CHRONB14
-      type: double
-      description: .na.character
-    - name: CHRONB15
-      type: double
-      description: .na.character
     - name: DXMCCS1
       type: string
       description: 'Multi-Level CCS:  Diagnosis 1'
+    - name: DXMCCS10
+      type: string
+      description: 'Multi-Level CCS:  Diagnosis 10'
+    - name: DXMCCS11
+      type: string
+      description: 'Multi-Level CCS:  Diagnosis 11'
+    - name: DXMCCS12
+      type: string
+      description: 'Multi-Level CCS:  Diagnosis 12'
+    - name: DXMCCS13
+      type: string
+      description: 'Multi-Level CCS:  Diagnosis 13'
+    - name: DXMCCS14
+      type: string
+      description: 'Multi-Level CCS:  Diagnosis 14'
+    - name: DXMCCS15
+      type: string
+      description: 'Multi-Level CCS:  Diagnosis 15'
     - name: DXMCCS2
       type: string
       description: 'Multi-Level CCS:  Diagnosis 2'
@@ -130,24 +148,6 @@ sources:
     - name: DXMCCS9
       type: string
       description: 'Multi-Level CCS:  Diagnosis 9'
-    - name: DXMCCS10
-      type: string
-      description: 'Multi-Level CCS:  Diagnosis 10'
-    - name: DXMCCS11
-      type: string
-      description: 'Multi-Level CCS:  Diagnosis 11'
-    - name: DXMCCS12
-      type: string
-      description: 'Multi-Level CCS:  Diagnosis 12'
-    - name: DXMCCS13
-      type: string
-      description: 'Multi-Level CCS:  Diagnosis 13'
-    - name: DXMCCS14
-      type: string
-      description: 'Multi-Level CCS:  Diagnosis 14'
-    - name: DXMCCS15
-      type: string
-      description: 'Multi-Level CCS:  Diagnosis 15'
     - name: E_MCCS1
       type: string
       description: 'Multi-Level CCS:  E Code 1'
@@ -228,6 +228,24 @@ sources:
     - name: PCLASS1
       type: double
       description: Procedure class 1
+    - name: PCLASS10
+      type: double
+      description: Procedure class 10
+    - name: PCLASS11
+      type: double
+      description: Procedure class 11
+    - name: PCLASS12
+      type: double
+      description: Procedure class 12
+    - name: PCLASS13
+      type: double
+      description: Procedure class 13
+    - name: PCLASS14
+      type: double
+      description: Procedure class 14
+    - name: PCLASS15
+      type: double
+      description: Procedure class 15
     - name: PCLASS2
       type: double
       description: Procedure class 2
@@ -252,27 +270,27 @@ sources:
     - name: PCLASS9
       type: double
       description: Procedure class 9
-    - name: PCLASS10
-      type: double
-      description: Procedure class 10
-    - name: PCLASS11
-      type: double
-      description: Procedure class 11
-    - name: PCLASS12
-      type: double
-      description: Procedure class 12
-    - name: PCLASS13
-      type: double
-      description: Procedure class 13
-    - name: PCLASS14
-      type: double
-      description: Procedure class 14
-    - name: PCLASS15
-      type: double
-      description: Procedure class 15
     - name: PRMCCS1
       type: string
       description: 'Multi-Level CCS:  Procedure 1'
+    - name: PRMCCS10
+      type: string
+      description: 'Multi-Level CCS:  Procedure 10'
+    - name: PRMCCS11
+      type: string
+      description: 'Multi-Level CCS:  Procedure 11'
+    - name: PRMCCS12
+      type: string
+      description: 'Multi-Level CCS:  Procedure 12'
+    - name: PRMCCS13
+      type: string
+      description: 'Multi-Level CCS:  Procedure 13'
+    - name: PRMCCS14
+      type: string
+      description: 'Multi-Level CCS:  Procedure 14'
+    - name: PRMCCS15
+      type: string
+      description: 'Multi-Level CCS:  Procedure 15'
     - name: PRMCCS2
       type: string
       description: 'Multi-Level CCS:  Procedure 2'
@@ -297,24 +315,6 @@ sources:
     - name: PRMCCS9
       type: string
       description: 'Multi-Level CCS:  Procedure 9'
-    - name: PRMCCS10
-      type: string
-      description: 'Multi-Level CCS:  Procedure 10'
-    - name: PRMCCS11
-      type: string
-      description: 'Multi-Level CCS:  Procedure 11'
-    - name: PRMCCS12
-      type: string
-      description: 'Multi-Level CCS:  Procedure 12'
-    - name: PRMCCS13
-      type: string
-      description: 'Multi-Level CCS:  Procedure 13'
-    - name: PRMCCS14
-      type: string
-      description: 'Multi-Level CCS:  Procedure 14'
-    - name: PRMCCS15
-      type: string
-      description: 'Multi-Level CCS:  Procedure 15'
     - name: U_BLOOD
       type: double
       description: 'Utilization Flag: Blood'

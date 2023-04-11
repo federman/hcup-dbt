@@ -16,30 +16,6 @@ sources:
     - name: BODYSYSTEM1
       type: int32
       description: Body system 1
-    - name: BODYSYSTEM2
-      type: int32
-      description: Body system 2
-    - name: BODYSYSTEM3
-      type: int32
-      description: Body system 3
-    - name: BODYSYSTEM4
-      type: int32
-      description: Body system 4
-    - name: BODYSYSTEM5
-      type: int32
-      description: Body system 5
-    - name: BODYSYSTEM6
-      type: int32
-      description: Body system 6
-    - name: BODYSYSTEM7
-      type: int32
-      description: Body system 7
-    - name: BODYSYSTEM8
-      type: int32
-      description: Body system 8
-    - name: BODYSYSTEM9
-      type: int32
-      description: Body system 9
     - name: BODYSYSTEM10
       type: int32
       description: Body system 10
@@ -70,6 +46,9 @@ sources:
     - name: BODYSYSTEM19
       type: int32
       description: Body system 19
+    - name: BODYSYSTEM2
+      type: int32
+      description: Body system 2
     - name: BODYSYSTEM20
       type: int32
       description: Body system 20
@@ -100,6 +79,9 @@ sources:
     - name: BODYSYSTEM29
       type: int32
       description: Body system 29
+    - name: BODYSYSTEM3
+      type: int32
+      description: Body system 3
     - name: BODYSYSTEM30
       type: int32
       description: Body system 30
@@ -130,6 +112,9 @@ sources:
     - name: BODYSYSTEM39
       type: int32
       description: Body system 39
+    - name: BODYSYSTEM4
+      type: int32
+      description: Body system 4
     - name: BODYSYSTEM40
       type: int32
       description: Body system 40
@@ -160,6 +145,9 @@ sources:
     - name: BODYSYSTEM49
       type: int32
       description: Body system 49
+    - name: BODYSYSTEM5
+      type: int32
+      description: Body system 5
     - name: BODYSYSTEM50
       type: int32
       description: Body system 50
@@ -190,6 +178,9 @@ sources:
     - name: BODYSYSTEM59
       type: int32
       description: Body system 59
+    - name: BODYSYSTEM6
+      type: int32
+      description: Body system 6
     - name: BODYSYSTEM60
       type: int32
       description: Body system 60
@@ -220,39 +211,24 @@ sources:
     - name: BODYSYSTEM69
       type: int32
       description: Body system 69
+    - name: BODYSYSTEM7
+      type: int32
+      description: Body system 7
     - name: BODYSYSTEM70
       type: int32
       description: Body system 70
     - name: BODYSYSTEM71
       type: int32
       description: Body system 71
+    - name: BODYSYSTEM8
+      type: int32
+      description: Body system 8
+    - name: BODYSYSTEM9
+      type: int32
+      description: Body system 9
     - name: CHRON1
       type: int32
       description: Chronic condition indicator 1
-    - name: CHRON2
-      type: int32
-      description: Chronic condition indicator 2
-    - name: CHRON3
-      type: int32
-      description: Chronic condition indicator 3
-    - name: CHRON4
-      type: int32
-      description: Chronic condition indicator 4
-    - name: CHRON5
-      type: int32
-      description: Chronic condition indicator 5
-    - name: CHRON6
-      type: int32
-      description: Chronic condition indicator 6
-    - name: CHRON7
-      type: int32
-      description: Chronic condition indicator 7
-    - name: CHRON8
-      type: int32
-      description: Chronic condition indicator 8
-    - name: CHRON9
-      type: int32
-      description: Chronic condition indicator 9
     - name: CHRON10
       type: int32
       description: Chronic condition indicator 10
@@ -283,6 +259,9 @@ sources:
     - name: CHRON19
       type: int32
       description: Chronic condition indicator 19
+    - name: CHRON2
+      type: int32
+      description: Chronic condition indicator 2
     - name: CHRON20
       type: int32
       description: Chronic condition indicator 20
@@ -313,6 +292,9 @@ sources:
     - name: CHRON29
       type: int32
       description: Chronic condition indicator 29
+    - name: CHRON3
+      type: int32
+      description: Chronic condition indicator 3
     - name: CHRON30
       type: int32
       description: Chronic condition indicator 30
@@ -343,6 +325,9 @@ sources:
     - name: CHRON39
       type: int32
       description: Chronic condition indicator 39
+    - name: CHRON4
+      type: int32
+      description: Chronic condition indicator 4
     - name: CHRON40
       type: int32
       description: Chronic condition indicator 40
@@ -373,6 +358,9 @@ sources:
     - name: CHRON49
       type: int32
       description: Chronic condition indicator 49
+    - name: CHRON5
+      type: int32
+      description: Chronic condition indicator 5
     - name: CHRON50
       type: int32
       description: Chronic condition indicator 50
@@ -403,6 +391,9 @@ sources:
     - name: CHRON59
       type: int32
       description: Chronic condition indicator 59
+    - name: CHRON6
+      type: int32
+      description: Chronic condition indicator 6
     - name: CHRON60
       type: int32
       description: Chronic condition indicator 60
@@ -433,39 +424,24 @@ sources:
     - name: CHRON69
       type: int32
       description: Chronic condition indicator 69
+    - name: CHRON7
+      type: int32
+      description: Chronic condition indicator 7
     - name: CHRON70
       type: int32
       description: Chronic condition indicator 70
     - name: CHRON71
       type: int32
       description: Chronic condition indicator 71
+    - name: CHRON8
+      type: int32
+      description: Chronic condition indicator 8
+    - name: CHRON9
+      type: int32
+      description: Chronic condition indicator 9
     - name: DXMCCS1
       type: string
       description: 'Multi-Level CCS:  Diagnosis 1'
-    - name: DXMCCS2
-      type: string
-      description: 'Multi-Level CCS:  Diagnosis 2'
-    - name: DXMCCS3
-      type: string
-      description: 'Multi-Level CCS:  Diagnosis 3'
-    - name: DXMCCS4
-      type: string
-      description: 'Multi-Level CCS:  Diagnosis 4'
-    - name: DXMCCS5
-      type: string
-      description: 'Multi-Level CCS:  Diagnosis 5'
-    - name: DXMCCS6
-      type: string
-      description: 'Multi-Level CCS:  Diagnosis 6'
-    - name: DXMCCS7
-      type: string
-      description: 'Multi-Level CCS:  Diagnosis 7'
-    - name: DXMCCS8
-      type: string
-      description: 'Multi-Level CCS:  Diagnosis 8'
-    - name: DXMCCS9
-      type: string
-      description: 'Multi-Level CCS:  Diagnosis 9'
     - name: DXMCCS10
       type: string
       description: 'Multi-Level CCS:  Diagnosis 10'
@@ -496,6 +472,9 @@ sources:
     - name: DXMCCS19
       type: string
       description: 'Multi-Level CCS:  Diagnosis 19'
+    - name: DXMCCS2
+      type: string
+      description: 'Multi-Level CCS:  Diagnosis 2'
     - name: DXMCCS20
       type: string
       description: 'Multi-Level CCS:  Diagnosis 20'
@@ -526,6 +505,9 @@ sources:
     - name: DXMCCS29
       type: string
       description: 'Multi-Level CCS:  Diagnosis 29'
+    - name: DXMCCS3
+      type: string
+      description: 'Multi-Level CCS:  Diagnosis 3'
     - name: DXMCCS30
       type: string
       description: 'Multi-Level CCS:  Diagnosis 30'
@@ -556,6 +538,9 @@ sources:
     - name: DXMCCS39
       type: string
       description: 'Multi-Level CCS:  Diagnosis 39'
+    - name: DXMCCS4
+      type: string
+      description: 'Multi-Level CCS:  Diagnosis 4'
     - name: DXMCCS40
       type: string
       description: 'Multi-Level CCS:  Diagnosis 40'
@@ -586,6 +571,9 @@ sources:
     - name: DXMCCS49
       type: string
       description: 'Multi-Level CCS:  Diagnosis 49'
+    - name: DXMCCS5
+      type: string
+      description: 'Multi-Level CCS:  Diagnosis 5'
     - name: DXMCCS50
       type: string
       description: 'Multi-Level CCS:  Diagnosis 50'
@@ -616,6 +604,9 @@ sources:
     - name: DXMCCS59
       type: string
       description: 'Multi-Level CCS:  Diagnosis 59'
+    - name: DXMCCS6
+      type: string
+      description: 'Multi-Level CCS:  Diagnosis 6'
     - name: DXMCCS60
       type: string
       description: 'Multi-Level CCS:  Diagnosis 60'
@@ -646,15 +637,30 @@ sources:
     - name: DXMCCS69
       type: string
       description: 'Multi-Level CCS:  Diagnosis 69'
+    - name: DXMCCS7
+      type: string
+      description: 'Multi-Level CCS:  Diagnosis 7'
     - name: DXMCCS70
       type: string
       description: 'Multi-Level CCS:  Diagnosis 70'
     - name: DXMCCS71
       type: string
       description: 'Multi-Level CCS:  Diagnosis 71'
+    - name: DXMCCS8
+      type: string
+      description: 'Multi-Level CCS:  Diagnosis 8'
+    - name: DXMCCS9
+      type: string
+      description: 'Multi-Level CCS:  Diagnosis 9'
     - name: E_MCCS1
       type: string
       description: 'Multi-Level CCS:  E Code 1'
+    - name: E_MCCS10
+      type: string
+      description: 'Multi-Level CCS:  E Code 10'
+    - name: E_MCCS11
+      type: string
+      description: 'Multi-Level CCS:  E Code 11'
     - name: E_MCCS2
       type: string
       description: 'Multi-Level CCS:  E Code 2'
@@ -679,12 +685,6 @@ sources:
     - name: E_MCCS9
       type: string
       description: 'Multi-Level CCS:  E Code 9'
-    - name: E_MCCS10
-      type: string
-      description: 'Multi-Level CCS:  E Code 10'
-    - name: E_MCCS11
-      type: string
-      description: 'Multi-Level CCS:  E Code 11'
     - name: INJURY
       type: int32
       description: 'Injury diagnosis reported on record (1:DX1 is an injury; 2:DX2+
@@ -741,30 +741,6 @@ sources:
     - name: PCLASS1
       type: int32
       description: Procedure class 1
-    - name: PCLASS2
-      type: int32
-      description: Procedure class 2
-    - name: PCLASS3
-      type: int32
-      description: Procedure class 3
-    - name: PCLASS4
-      type: int32
-      description: Procedure class 4
-    - name: PCLASS5
-      type: int32
-      description: Procedure class 5
-    - name: PCLASS6
-      type: int32
-      description: Procedure class 6
-    - name: PCLASS7
-      type: int32
-      description: Procedure class 7
-    - name: PCLASS8
-      type: int32
-      description: Procedure class 8
-    - name: PCLASS9
-      type: int32
-      description: Procedure class 9
     - name: PCLASS10
       type: int32
       description: Procedure class 10
@@ -795,6 +771,9 @@ sources:
     - name: PCLASS19
       type: int32
       description: Procedure class 19
+    - name: PCLASS2
+      type: int32
+      description: Procedure class 2
     - name: PCLASS20
       type: int32
       description: Procedure class 20
@@ -825,6 +804,9 @@ sources:
     - name: PCLASS29
       type: int32
       description: Procedure class 29
+    - name: PCLASS3
+      type: int32
+      description: Procedure class 3
     - name: PCLASS30
       type: int32
       description: Procedure class 30
@@ -855,6 +837,9 @@ sources:
     - name: PCLASS39
       type: int32
       description: Procedure class 39
+    - name: PCLASS4
+      type: int32
+      description: Procedure class 4
     - name: PCLASS40
       type: int32
       description: Procedure class 40
@@ -885,6 +870,9 @@ sources:
     - name: PCLASS49
       type: int32
       description: Procedure class 49
+    - name: PCLASS5
+      type: int32
+      description: Procedure class 5
     - name: PCLASS50
       type: int32
       description: Procedure class 50
@@ -915,6 +903,9 @@ sources:
     - name: PCLASS59
       type: int32
       description: Procedure class 59
+    - name: PCLASS6
+      type: int32
+      description: Procedure class 6
     - name: PCLASS60
       type: int32
       description: Procedure class 60
@@ -936,33 +927,18 @@ sources:
     - name: PCLASS66
       type: int32
       description: Procedure class 66
+    - name: PCLASS7
+      type: int32
+      description: Procedure class 7
+    - name: PCLASS8
+      type: int32
+      description: Procedure class 8
+    - name: PCLASS9
+      type: int32
+      description: Procedure class 9
     - name: PRMCCS1
       type: string
       description: 'Multi-Level CCS:  Procedure 1'
-    - name: PRMCCS2
-      type: string
-      description: 'Multi-Level CCS:  Procedure 2'
-    - name: PRMCCS3
-      type: string
-      description: 'Multi-Level CCS:  Procedure 3'
-    - name: PRMCCS4
-      type: string
-      description: 'Multi-Level CCS:  Procedure 4'
-    - name: PRMCCS5
-      type: string
-      description: 'Multi-Level CCS:  Procedure 5'
-    - name: PRMCCS6
-      type: string
-      description: 'Multi-Level CCS:  Procedure 6'
-    - name: PRMCCS7
-      type: string
-      description: 'Multi-Level CCS:  Procedure 7'
-    - name: PRMCCS8
-      type: string
-      description: 'Multi-Level CCS:  Procedure 8'
-    - name: PRMCCS9
-      type: string
-      description: 'Multi-Level CCS:  Procedure 9'
     - name: PRMCCS10
       type: string
       description: 'Multi-Level CCS:  Procedure 10'
@@ -993,6 +969,9 @@ sources:
     - name: PRMCCS19
       type: string
       description: 'Multi-Level CCS:  Procedure 19'
+    - name: PRMCCS2
+      type: string
+      description: 'Multi-Level CCS:  Procedure 2'
     - name: PRMCCS20
       type: string
       description: 'Multi-Level CCS:  Procedure 20'
@@ -1023,6 +1002,9 @@ sources:
     - name: PRMCCS29
       type: string
       description: 'Multi-Level CCS:  Procedure 29'
+    - name: PRMCCS3
+      type: string
+      description: 'Multi-Level CCS:  Procedure 3'
     - name: PRMCCS30
       type: string
       description: 'Multi-Level CCS:  Procedure 30'
@@ -1053,6 +1035,9 @@ sources:
     - name: PRMCCS39
       type: string
       description: 'Multi-Level CCS:  Procedure 39'
+    - name: PRMCCS4
+      type: string
+      description: 'Multi-Level CCS:  Procedure 4'
     - name: PRMCCS40
       type: string
       description: 'Multi-Level CCS:  Procedure 40'
@@ -1083,6 +1068,9 @@ sources:
     - name: PRMCCS49
       type: string
       description: 'Multi-Level CCS:  Procedure 49'
+    - name: PRMCCS5
+      type: string
+      description: 'Multi-Level CCS:  Procedure 5'
     - name: PRMCCS50
       type: string
       description: 'Multi-Level CCS:  Procedure 50'
@@ -1113,6 +1101,9 @@ sources:
     - name: PRMCCS59
       type: string
       description: 'Multi-Level CCS:  Procedure 59'
+    - name: PRMCCS6
+      type: string
+      description: 'Multi-Level CCS:  Procedure 6'
     - name: PRMCCS60
       type: string
       description: 'Multi-Level CCS:  Procedure 60'
@@ -1134,6 +1125,15 @@ sources:
     - name: PRMCCS66
       type: string
       description: 'Multi-Level CCS:  Procedure 66'
+    - name: PRMCCS7
+      type: string
+      description: 'Multi-Level CCS:  Procedure 7'
+    - name: PRMCCS8
+      type: string
+      description: 'Multi-Level CCS:  Procedure 8'
+    - name: PRMCCS9
+      type: string
+      description: 'Multi-Level CCS:  Procedure 9'
     - name: U_BLOOD
       type: int32
       description: 'Utilization Flag: Blood'

@@ -34,6 +34,9 @@ sources:
     - name: AWEEKEND
       type: int32
       description: Admission day is a weekend
+    - name: AYEAR
+      type: int32
+      description: Admission year
     - name: BWT
       type: int32
       description: Birth weight in grams
@@ -76,30 +79,6 @@ sources:
     - name: DXPOA1
       type: string
       description: Diagnosis 1, present on admission indicator
-    - name: DXPOA2
-      type: string
-      description: Diagnosis 2, present on admission indicator
-    - name: DXPOA3
-      type: string
-      description: Diagnosis 3, present on admission indicator
-    - name: DXPOA4
-      type: string
-      description: Diagnosis 4, present on admission indicator
-    - name: DXPOA5
-      type: string
-      description: Diagnosis 5, present on admission indicator
-    - name: DXPOA6
-      type: string
-      description: Diagnosis 6, present on admission indicator
-    - name: DXPOA7
-      type: string
-      description: Diagnosis 7, present on admission indicator
-    - name: DXPOA8
-      type: string
-      description: Diagnosis 8, present on admission indicator
-    - name: DXPOA9
-      type: string
-      description: Diagnosis 9, present on admission indicator
     - name: DXPOA10
       type: string
       description: Diagnosis 10, present on admission indicator
@@ -130,6 +109,9 @@ sources:
     - name: DXPOA19
       type: string
       description: Diagnosis 19, present on admission indicator
+    - name: DXPOA2
+      type: string
+      description: Diagnosis 2, present on admission indicator
     - name: DXPOA20
       type: string
       description: Diagnosis 20, present on admission indicator
@@ -160,12 +142,33 @@ sources:
     - name: DXPOA29
       type: string
       description: Diagnosis 29, present on admission indicator
+    - name: DXPOA3
+      type: string
+      description: Diagnosis 3, present on admission indicator
     - name: DXPOA30
       type: string
       description: Diagnosis 30, present on admission indicator
     - name: DXPOA31
       type: string
       description: Diagnosis 31, present on admission indicator
+    - name: DXPOA4
+      type: string
+      description: Diagnosis 4, present on admission indicator
+    - name: DXPOA5
+      type: string
+      description: Diagnosis 5, present on admission indicator
+    - name: DXPOA6
+      type: string
+      description: Diagnosis 6, present on admission indicator
+    - name: DXPOA7
+      type: string
+      description: Diagnosis 7, present on admission indicator
+    - name: DXPOA8
+      type: string
+      description: Diagnosis 8, present on admission indicator
+    - name: DXPOA9
+      type: string
+      description: Diagnosis 9, present on admission indicator
     - name: FEMALE
       type: int32
       description: Indicator of sex
@@ -196,30 +199,6 @@ sources:
     - name: I10_DX1
       type: string
       description: ICD-10-CM Diagnosis 1
-    - name: I10_DX2
-      type: string
-      description: ICD-10-CM Diagnosis 2
-    - name: I10_DX3
-      type: string
-      description: ICD-10-CM Diagnosis 3
-    - name: I10_DX4
-      type: string
-      description: ICD-10-CM Diagnosis 4
-    - name: I10_DX5
-      type: string
-      description: ICD-10-CM Diagnosis 5
-    - name: I10_DX6
-      type: string
-      description: ICD-10-CM Diagnosis 6
-    - name: I10_DX7
-      type: string
-      description: ICD-10-CM Diagnosis 7
-    - name: I10_DX8
-      type: string
-      description: ICD-10-CM Diagnosis 8
-    - name: I10_DX9
-      type: string
-      description: ICD-10-CM Diagnosis 9
     - name: I10_DX10
       type: string
       description: ICD-10-CM Diagnosis 10
@@ -250,6 +229,9 @@ sources:
     - name: I10_DX19
       type: string
       description: ICD-10-CM Diagnosis 19
+    - name: I10_DX2
+      type: string
+      description: ICD-10-CM Diagnosis 2
     - name: I10_DX20
       type: string
       description: ICD-10-CM Diagnosis 20
@@ -280,12 +262,33 @@ sources:
     - name: I10_DX29
       type: string
       description: ICD-10-CM Diagnosis 29
+    - name: I10_DX3
+      type: string
+      description: ICD-10-CM Diagnosis 3
     - name: I10_DX30
       type: string
       description: ICD-10-CM Diagnosis 30
     - name: I10_DX31
       type: string
       description: ICD-10-CM Diagnosis 31
+    - name: I10_DX4
+      type: string
+      description: ICD-10-CM Diagnosis 4
+    - name: I10_DX5
+      type: string
+      description: ICD-10-CM Diagnosis 5
+    - name: I10_DX6
+      type: string
+      description: ICD-10-CM Diagnosis 6
+    - name: I10_DX7
+      type: string
+      description: ICD-10-CM Diagnosis 7
+    - name: I10_DX8
+      type: string
+      description: ICD-10-CM Diagnosis 8
+    - name: I10_DX9
+      type: string
+      description: ICD-10-CM Diagnosis 9
     - name: I10_NDX
       type: int32
       description: ICD-10-CM Number of diagnoses on this record
@@ -295,6 +298,15 @@ sources:
     - name: I10_PR1
       type: string
       description: ICD-10-PCS Procedure 1
+    - name: I10_PR10
+      type: string
+      description: ICD-10-PCS Procedure 10
+    - name: I10_PR11
+      type: string
+      description: ICD-10-PCS Procedure 11
+    - name: I10_PR12
+      type: string
+      description: ICD-10-PCS Procedure 12
     - name: I10_PR2
       type: string
       description: ICD-10-PCS Procedure 2
@@ -319,15 +331,6 @@ sources:
     - name: I10_PR9
       type: string
       description: ICD-10-PCS Procedure 9
-    - name: I10_PR10
-      type: string
-      description: ICD-10-PCS Procedure 10
-    - name: I10_PR11
-      type: string
-      description: ICD-10-PCS Procedure 11
-    - name: I10_PR12
-      type: string
-      description: ICD-10-PCS Procedure 12
     - name: I10_PROCTYPE
       type: int32
       description: ICD-10-PCS Procedure type indicator
@@ -423,6 +426,15 @@ sources:
     - name: PRDAY1
       type: int32
       description: Number of days from admission to I10_PR1
+    - name: PRDAY10
+      type: int32
+      description: Number of days from admission to I10_PR10
+    - name: PRDAY11
+      type: int32
+      description: Number of days from admission to I10_PR11
+    - name: PRDAY12
+      type: int32
+      description: Number of days from admission to I10_PR12
     - name: PRDAY2
       type: int32
       description: Number of days from admission to I10_PR2
@@ -447,15 +459,78 @@ sources:
     - name: PRDAY9
       type: int32
       description: Number of days from admission to I10_PR9
-    - name: PRDAY10
+    - name: PRMONTH1
       type: int32
-      description: Number of days from admission to I10_PR10
-    - name: PRDAY11
+      description: Month of procedure 1
+    - name: PRMONTH10
       type: int32
-      description: Number of days from admission to I10_PR11
-    - name: PRDAY12
+      description: Month of procedure 10
+    - name: PRMONTH11
       type: int32
-      description: Number of days from admission to I10_PR12
+      description: Month of procedure 11
+    - name: PRMONTH12
+      type: int32
+      description: Month of procedure 12
+    - name: PRMONTH2
+      type: int32
+      description: Month of procedure 2
+    - name: PRMONTH3
+      type: int32
+      description: Month of procedure 3
+    - name: PRMONTH4
+      type: int32
+      description: Month of procedure 4
+    - name: PRMONTH5
+      type: int32
+      description: Month of procedure 5
+    - name: PRMONTH6
+      type: int32
+      description: Month of procedure 6
+    - name: PRMONTH7
+      type: int32
+      description: Month of procedure 7
+    - name: PRMONTH8
+      type: int32
+      description: Month of procedure 8
+    - name: PRMONTH9
+      type: int32
+      description: Month of procedure 9
+    - name: PRYEAR1
+      type: int32
+      description: Year of procedure 1
+    - name: PRYEAR10
+      type: int32
+      description: Year of procedure 10
+    - name: PRYEAR11
+      type: int32
+      description: Year of procedure 11
+    - name: PRYEAR12
+      type: int32
+      description: Year of procedure 12
+    - name: PRYEAR2
+      type: int32
+      description: Year of procedure 2
+    - name: PRYEAR3
+      type: int32
+      description: Year of procedure 3
+    - name: PRYEAR4
+      type: int32
+      description: Year of procedure 4
+    - name: PRYEAR5
+      type: int32
+      description: Year of procedure 5
+    - name: PRYEAR6
+      type: int32
+      description: Year of procedure 6
+    - name: PRYEAR7
+      type: int32
+      description: Year of procedure 7
+    - name: PRYEAR8
+      type: int32
+      description: Year of procedure 8
+    - name: PRYEAR9
+      type: int32
+      description: Year of procedure 9
     - name: PSTATE
       type: string
       description: Patient State postal code
@@ -498,78 +573,3 @@ sources:
     - name: ZIPINC_QRTL
       type: int32
       description: Median household income national quartile for patient ZIP Code
-    - name: AYEAR
-      type: int32
-      description: Admission year
-    - name: PRMONTH1
-      type: int32
-      description: Month of procedure 1
-    - name: PRMONTH2
-      type: int32
-      description: Month of procedure 2
-    - name: PRMONTH3
-      type: int32
-      description: Month of procedure 3
-    - name: PRMONTH4
-      type: int32
-      description: Month of procedure 4
-    - name: PRMONTH5
-      type: int32
-      description: Month of procedure 5
-    - name: PRMONTH6
-      type: int32
-      description: Month of procedure 6
-    - name: PRMONTH7
-      type: int32
-      description: Month of procedure 7
-    - name: PRMONTH8
-      type: int32
-      description: Month of procedure 8
-    - name: PRMONTH9
-      type: int32
-      description: Month of procedure 9
-    - name: PRMONTH10
-      type: int32
-      description: Month of procedure 10
-    - name: PRMONTH11
-      type: int32
-      description: Month of procedure 11
-    - name: PRMONTH12
-      type: int32
-      description: Month of procedure 12
-    - name: PRYEAR1
-      type: int32
-      description: Year of procedure 1
-    - name: PRYEAR2
-      type: int32
-      description: Year of procedure 2
-    - name: PRYEAR3
-      type: int32
-      description: Year of procedure 3
-    - name: PRYEAR4
-      type: int32
-      description: Year of procedure 4
-    - name: PRYEAR5
-      type: int32
-      description: Year of procedure 5
-    - name: PRYEAR6
-      type: int32
-      description: Year of procedure 6
-    - name: PRYEAR7
-      type: int32
-      description: Year of procedure 7
-    - name: PRYEAR8
-      type: int32
-      description: Year of procedure 8
-    - name: PRYEAR9
-      type: int32
-      description: Year of procedure 9
-    - name: PRYEAR10
-      type: int32
-      description: Year of procedure 10
-    - name: PRYEAR11
-      type: int32
-      description: Year of procedure 11
-    - name: PRYEAR12
-      type: int32
-      description: Year of procedure 12

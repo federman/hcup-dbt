@@ -13,9 +13,6 @@ sources:
   - name: NJ_SID_2013_SEVERITY
     description: '{{ doc("sid_severity_2005_2014_description") + "\n" + "\n" + doc("sid_2005_2014_description")}}'
     columns:
-    - name: KEY
-      type: double
-      description: HCUP record identifier
     - name: CM_AIDS
       type: double
       description: 'AHRQ comorbidity measure: Acquired immune deficiency syndrome'
@@ -105,3 +102,6 @@ sources:
     - name: CM_WGHTLOSS
       type: double
       description: 'AHRQ comorbidity measure: Weight loss'
+    - name: KEY
+      type: double
+      description: HCUP record identifier

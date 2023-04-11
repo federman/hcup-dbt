@@ -13,9 +13,6 @@ sources:
   - name: FL_SID_2015q1q3_SEVERITY
     description: '{{ doc("sid_severity_2015_description") + "\n" + "\n" + doc("sid_2015_description")}}'
     columns:
-    - name: KEY
-      type: double
-      description: HCUP record identifier
     - name: CM_AIDS
       type: int32
       description: 'AHRQ comorbidity measure: Acquired immune deficiency syndrome'
@@ -105,3 +102,6 @@ sources:
     - name: CM_WGHTLOSS
       type: int32
       description: 'AHRQ comorbidity measure: Weight loss'
+    - name: KEY
+      type: double
+      description: HCUP record identifier

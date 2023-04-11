@@ -31,24 +31,33 @@ sources:
     - name: AWEEKEND
       type: double
       description: Admission day is a weekend
+    - name: AYEAR
+      type: double
+      description: Admission year
     - name: BILLTYPE
       type: string
       description: Type of bill, UB-04 coding
+    - name: BMONTH
+      type: double
+      description: Birth month
     - name: BWT
       type: double
       description: Birth weight in grams
+    - name: BYEAR
+      type: double
+      description: Birth year
     - name: DIED
       type: double
       description: Died during hospitalization
+    - name: DISP_X
+      type: string
+      description: Disposition of patient (as received from source)
     - name: DISPUB04
       type: double
       description: Disposition of patient (UB-04 standard coding)
     - name: DISPUNIFORM
       type: double
       description: Disposition of patient (uniform)
-    - name: DISP_X
-      type: string
-      description: Disposition of patient (as received from source)
     - name: DMONTH
       type: double
       description: Discharge month
@@ -61,45 +70,24 @@ sources:
     - name: DRG
       type: double
       description: DRG in effect on discharge date
+    - name: DRG_NoPOA
+      type: double
+      description: DRG in use on discharge date, calculated without POA
     - name: DRG24
       type: double
       description: DRG, version 24
     - name: DRGVER
       type: double
       description: DRG grouper version used on discharge date
-    - name: DRG_NoPOA
-      type: double
-      description: DRG in use on discharge date, calculated without POA
     - name: DSHOSPID
       type: string
       description: Data source hospital identifier
+    - name: DX_Admitting
+      type: string
+      description: Admitting Diagnosis Code
     - name: DX1
       type: string
       description: Diagnosis 1
-    - name: DX2
-      type: string
-      description: Diagnosis 2
-    - name: DX3
-      type: string
-      description: Diagnosis 3
-    - name: DX4
-      type: string
-      description: Diagnosis 4
-    - name: DX5
-      type: string
-      description: Diagnosis 5
-    - name: DX6
-      type: string
-      description: Diagnosis 6
-    - name: DX7
-      type: string
-      description: Diagnosis 7
-    - name: DX8
-      type: string
-      description: Diagnosis 8
-    - name: DX9
-      type: string
-      description: Diagnosis 9
     - name: DX10
       type: string
       description: Diagnosis 10
@@ -130,6 +118,9 @@ sources:
     - name: DX19
       type: string
       description: Diagnosis 19
+    - name: DX2
+      type: string
+      description: Diagnosis 2
     - name: DX20
       type: string
       description: Diagnosis 20
@@ -148,33 +139,30 @@ sources:
     - name: DX25
       type: string
       description: Diagnosis 25
+    - name: DX3
+      type: string
+      description: Diagnosis 3
+    - name: DX4
+      type: string
+      description: Diagnosis 4
+    - name: DX5
+      type: string
+      description: Diagnosis 5
+    - name: DX6
+      type: string
+      description: Diagnosis 6
+    - name: DX7
+      type: string
+      description: Diagnosis 7
+    - name: DX8
+      type: string
+      description: Diagnosis 8
+    - name: DX9
+      type: string
+      description: Diagnosis 9
     - name: DXCCS1
       type: double
       description: 'CCS: diagnosis 1'
-    - name: DXCCS2
-      type: double
-      description: 'CCS: diagnosis 2'
-    - name: DXCCS3
-      type: double
-      description: 'CCS: diagnosis 3'
-    - name: DXCCS4
-      type: double
-      description: 'CCS: diagnosis 4'
-    - name: DXCCS5
-      type: double
-      description: 'CCS: diagnosis 5'
-    - name: DXCCS6
-      type: double
-      description: 'CCS: diagnosis 6'
-    - name: DXCCS7
-      type: double
-      description: 'CCS: diagnosis 7'
-    - name: DXCCS8
-      type: double
-      description: 'CCS: diagnosis 8'
-    - name: DXCCS9
-      type: double
-      description: 'CCS: diagnosis 9'
     - name: DXCCS10
       type: double
       description: 'CCS: diagnosis 10'
@@ -205,6 +193,9 @@ sources:
     - name: DXCCS19
       type: double
       description: 'CCS: diagnosis 19'
+    - name: DXCCS2
+      type: double
+      description: 'CCS: diagnosis 2'
     - name: DXCCS20
       type: double
       description: 'CCS: diagnosis 20'
@@ -223,33 +214,30 @@ sources:
     - name: DXCCS25
       type: double
       description: 'CCS: diagnosis 25'
+    - name: DXCCS3
+      type: double
+      description: 'CCS: diagnosis 3'
+    - name: DXCCS4
+      type: double
+      description: 'CCS: diagnosis 4'
+    - name: DXCCS5
+      type: double
+      description: 'CCS: diagnosis 5'
+    - name: DXCCS6
+      type: double
+      description: 'CCS: diagnosis 6'
+    - name: DXCCS7
+      type: double
+      description: 'CCS: diagnosis 7'
+    - name: DXCCS8
+      type: double
+      description: 'CCS: diagnosis 8'
+    - name: DXCCS9
+      type: double
+      description: 'CCS: diagnosis 9'
     - name: DXPOA1
       type: string
       description: Diagnosis 1, present on admission indicator
-    - name: DXPOA2
-      type: string
-      description: Diagnosis 2, present on admission indicator
-    - name: DXPOA3
-      type: string
-      description: Diagnosis 3, present on admission indicator
-    - name: DXPOA4
-      type: string
-      description: Diagnosis 4, present on admission indicator
-    - name: DXPOA5
-      type: string
-      description: Diagnosis 5, present on admission indicator
-    - name: DXPOA6
-      type: string
-      description: Diagnosis 6, present on admission indicator
-    - name: DXPOA7
-      type: string
-      description: Diagnosis 7, present on admission indicator
-    - name: DXPOA8
-      type: string
-      description: Diagnosis 8, present on admission indicator
-    - name: DXPOA9
-      type: string
-      description: Diagnosis 9, present on admission indicator
     - name: DXPOA10
       type: string
       description: Diagnosis 10, present on admission indicator
@@ -280,6 +268,9 @@ sources:
     - name: DXPOA19
       type: string
       description: Diagnosis 19, present on admission indicator
+    - name: DXPOA2
+      type: string
+      description: Diagnosis 2, present on admission indicator
     - name: DXPOA20
       type: string
       description: Diagnosis 20, present on admission indicator
@@ -298,33 +289,27 @@ sources:
     - name: DXPOA25
       type: string
       description: Diagnosis 25, present on admission indicator
-    - name: DX_Admitting
+    - name: DXPOA3
       type: string
-      description: Admitting Diagnosis Code
-    - name: ECODE1
+      description: Diagnosis 3, present on admission indicator
+    - name: DXPOA4
       type: string
-      description: E code 1
-    - name: ECODE2
+      description: Diagnosis 4, present on admission indicator
+    - name: DXPOA5
       type: string
-      description: E code 2
-    - name: ECODE3
+      description: Diagnosis 5, present on admission indicator
+    - name: DXPOA6
       type: string
-      description: E code 3
-    - name: ECODE4
+      description: Diagnosis 6, present on admission indicator
+    - name: DXPOA7
       type: string
-      description: E code 4
-    - name: ECODE5
+      description: Diagnosis 7, present on admission indicator
+    - name: DXPOA8
       type: string
-      description: E code 5
-    - name: ECODE6
+      description: Diagnosis 8, present on admission indicator
+    - name: DXPOA9
       type: string
-      description: E code 6
-    - name: ECODE7
-      type: string
-      description: E code 7
-    - name: ECODE8
-      type: string
-      description: E code 8
+      description: Diagnosis 9, present on admission indicator
     - name: E_CCS1
       type: double
       description: 'CCS: E Code 1'
@@ -373,6 +358,30 @@ sources:
     - name: E_POA8
       type: string
       description: E Code 8, present on admission indicator
+    - name: ECODE1
+      type: string
+      description: E code 1
+    - name: ECODE2
+      type: string
+      description: E code 2
+    - name: ECODE3
+      type: string
+      description: E code 3
+    - name: ECODE4
+      type: string
+      description: E code 4
+    - name: ECODE5
+      type: string
+      description: E code 5
+    - name: ECODE6
+      type: string
+      description: E code 6
+    - name: ECODE7
+      type: string
+      description: E code 7
+    - name: ECODE8
+      type: string
+      description: E code 8
     - name: FEMALE
       type: double
       description: Indicator of sex
@@ -385,15 +394,15 @@ sources:
     - name: HISPANIC_X
       type: string
       description: Hispanic ethnicity (as received from source)
+    - name: HOSP_NPI
+      type: string
+      description: Hospital NPI
     - name: HOSPBRTH
       type: double
       description: Indicator of birth in this hospital
     - name: HOSPST
       type: string
       description: Hospital state postal code
-    - name: HOSP_NPI
-      type: string
-      description: Hospital NPI
     - name: KEY
       type: double
       description: HCUP record identifier
@@ -406,12 +415,12 @@ sources:
     - name: MDC
       type: double
       description: MDC in effect on discharge date
-    - name: MDC24
-      type: double
-      description: MDC, version 24
     - name: MDC_NoPOA
       type: double
       description: MDC in use on discharge date, calculated without POA
+    - name: MDC24
+      type: double
+      description: MDC, version 24
     - name: MEDINCSTQ
       type: double
       description: Median household income state quartile for patient ZIP Code
@@ -478,33 +487,15 @@ sources:
     - name: PL_UR_CAT4
       type: double
       description: 'Patient Location: Urban-Rural 4 Categories'
+    - name: PointOfOrigin_X
+      type: string
+      description: Point of origin for admission or visit, as received from source
+    - name: PointOfOriginUB04
+      type: string
+      description: Point of origin for admission or visit, UB-04 standard coding
     - name: PR1
       type: string
       description: Procedure 1
-    - name: PR2
-      type: string
-      description: Procedure 2
-    - name: PR3
-      type: string
-      description: Procedure 3
-    - name: PR4
-      type: string
-      description: Procedure 4
-    - name: PR5
-      type: string
-      description: Procedure 5
-    - name: PR6
-      type: string
-      description: Procedure 6
-    - name: PR7
-      type: string
-      description: Procedure 7
-    - name: PR8
-      type: string
-      description: Procedure 8
-    - name: PR9
-      type: string
-      description: Procedure 9
     - name: PR10
       type: string
       description: Procedure 10
@@ -535,6 +526,9 @@ sources:
     - name: PR19
       type: string
       description: Procedure 19
+    - name: PR2
+      type: string
+      description: Procedure 2
     - name: PR20
       type: string
       description: Procedure 20
@@ -553,33 +547,30 @@ sources:
     - name: PR25
       type: string
       description: Procedure 25
+    - name: PR3
+      type: string
+      description: Procedure 3
+    - name: PR4
+      type: string
+      description: Procedure 4
+    - name: PR5
+      type: string
+      description: Procedure 5
+    - name: PR6
+      type: string
+      description: Procedure 6
+    - name: PR7
+      type: string
+      description: Procedure 7
+    - name: PR8
+      type: string
+      description: Procedure 8
+    - name: PR9
+      type: string
+      description: Procedure 9
     - name: PRCCS1
       type: double
       description: 'CCS: procedure 1'
-    - name: PRCCS2
-      type: double
-      description: 'CCS: procedure 2'
-    - name: PRCCS3
-      type: double
-      description: 'CCS: procedure 3'
-    - name: PRCCS4
-      type: double
-      description: 'CCS: procedure 4'
-    - name: PRCCS5
-      type: double
-      description: 'CCS: procedure 5'
-    - name: PRCCS6
-      type: double
-      description: 'CCS: procedure 6'
-    - name: PRCCS7
-      type: double
-      description: 'CCS: procedure 7'
-    - name: PRCCS8
-      type: double
-      description: 'CCS: procedure 8'
-    - name: PRCCS9
-      type: double
-      description: 'CCS: procedure 9'
     - name: PRCCS10
       type: double
       description: 'CCS: procedure 10'
@@ -610,6 +601,9 @@ sources:
     - name: PRCCS19
       type: double
       description: 'CCS: procedure 19'
+    - name: PRCCS2
+      type: double
+      description: 'CCS: procedure 2'
     - name: PRCCS20
       type: double
       description: 'CCS: procedure 20'
@@ -628,33 +622,30 @@ sources:
     - name: PRCCS25
       type: double
       description: 'CCS: procedure 25'
+    - name: PRCCS3
+      type: double
+      description: 'CCS: procedure 3'
+    - name: PRCCS4
+      type: double
+      description: 'CCS: procedure 4'
+    - name: PRCCS5
+      type: double
+      description: 'CCS: procedure 5'
+    - name: PRCCS6
+      type: double
+      description: 'CCS: procedure 6'
+    - name: PRCCS7
+      type: double
+      description: 'CCS: procedure 7'
+    - name: PRCCS8
+      type: double
+      description: 'CCS: procedure 8'
+    - name: PRCCS9
+      type: double
+      description: 'CCS: procedure 9'
     - name: PRDAY1
       type: double
       description: Number of days from admission to PR1
-    - name: PRDAY2
-      type: double
-      description: Number of days from admission to PR2
-    - name: PRDAY3
-      type: double
-      description: Number of days from admission to PR3
-    - name: PRDAY4
-      type: double
-      description: Number of days from admission to PR4
-    - name: PRDAY5
-      type: double
-      description: Number of days from admission to PR5
-    - name: PRDAY6
-      type: double
-      description: Number of days from admission to PR6
-    - name: PRDAY7
-      type: double
-      description: Number of days from admission to PR7
-    - name: PRDAY8
-      type: double
-      description: Number of days from admission to PR8
-    - name: PRDAY9
-      type: double
-      description: Number of days from admission to PR9
     - name: PRDAY10
       type: double
       description: Number of days from admission to PR10
@@ -685,6 +676,9 @@ sources:
     - name: PRDAY19
       type: double
       description: Number of days from admission to PR19
+    - name: PRDAY2
+      type: double
+      description: Number of days from admission to PR2
     - name: PRDAY20
       type: double
       description: Number of days from admission to PR20
@@ -703,87 +697,30 @@ sources:
     - name: PRDAY25
       type: double
       description: Number of days from admission to PR25
-    - name: PROCTYPE
+    - name: PRDAY3
       type: double
-      description: Procedure type indicator
-    - name: PSTATE
-      type: string
-      description: Patient State postal code
-    - name: PSTCO
+      description: Number of days from admission to PR3
+    - name: PRDAY4
       type: double
-      description: Patient state/county FIPS code
-    - name: PSTCO2
+      description: Number of days from admission to PR4
+    - name: PRDAY5
       type: double
-      description: Patient state/county FIPS code, possibly derived from ZIP Code
-    - name: PointOfOriginUB04
-      type: string
-      description: Point of origin for admission or visit, UB-04 standard coding
-    - name: PointOfOrigin_X
-      type: string
-      description: Point of origin for admission or visit, as received from source
-    - name: RACE
+      description: Number of days from admission to PR5
+    - name: PRDAY6
       type: double
-      description: Race (uniform)
-    - name: RACE_X
-      type: string
-      description: Race (as received from source)
-    - name: TOTCHG
+      description: Number of days from admission to PR6
+    - name: PRDAY7
       type: double
-      description: Total charges (cleaned)
-    - name: TOTCHG_X
+      description: Number of days from admission to PR7
+    - name: PRDAY8
       type: double
-      description: Total charges (as received from source)
-    - name: TRAN_IN
+      description: Number of days from admission to PR8
+    - name: PRDAY9
       type: double
-      description: Transfer in indicator
-    - name: TRAN_OUT
-      type: double
-      description: Transfer out indicator
-    - name: YEAR
-      type: double
-      description: Calendar year
-    - name: ZIPINC_QRTL
-      type: double
-      description: Median household income national quartile for patient ZIP Code
-    - name: ZIP
-      type: string
-      description: Patient ZIP Code
-    - name: AYEAR
-      type: double
-      description: Admission year
-    - name: BMONTH
-      type: double
-      description: Birth month
-    - name: BYEAR
-      type: double
-      description: Birth year
+      description: Number of days from admission to PR9
     - name: PRMONTH1
       type: double
       description: Month of procedure 1
-    - name: PRMONTH2
-      type: double
-      description: Month of procedure 2
-    - name: PRMONTH3
-      type: double
-      description: Month of procedure 3
-    - name: PRMONTH4
-      type: double
-      description: Month of procedure 4
-    - name: PRMONTH5
-      type: double
-      description: Month of procedure 5
-    - name: PRMONTH6
-      type: double
-      description: Month of procedure 6
-    - name: PRMONTH7
-      type: double
-      description: Month of procedure 7
-    - name: PRMONTH8
-      type: double
-      description: Month of procedure 8
-    - name: PRMONTH9
-      type: double
-      description: Month of procedure 9
     - name: PRMONTH10
       type: double
       description: Month of procedure 10
@@ -814,6 +751,9 @@ sources:
     - name: PRMONTH19
       type: double
       description: Month of procedure 19
+    - name: PRMONTH2
+      type: double
+      description: Month of procedure 2
     - name: PRMONTH20
       type: double
       description: Month of procedure 20
@@ -832,33 +772,33 @@ sources:
     - name: PRMONTH25
       type: double
       description: Month of procedure 25
+    - name: PRMONTH3
+      type: double
+      description: Month of procedure 3
+    - name: PRMONTH4
+      type: double
+      description: Month of procedure 4
+    - name: PRMONTH5
+      type: double
+      description: Month of procedure 5
+    - name: PRMONTH6
+      type: double
+      description: Month of procedure 6
+    - name: PRMONTH7
+      type: double
+      description: Month of procedure 7
+    - name: PRMONTH8
+      type: double
+      description: Month of procedure 8
+    - name: PRMONTH9
+      type: double
+      description: Month of procedure 9
+    - name: PROCTYPE
+      type: double
+      description: Procedure type indicator
     - name: PRYEAR1
       type: double
       description: Year of procedure 1
-    - name: PRYEAR2
-      type: double
-      description: Year of procedure 2
-    - name: PRYEAR3
-      type: double
-      description: Year of procedure 3
-    - name: PRYEAR4
-      type: double
-      description: Year of procedure 4
-    - name: PRYEAR5
-      type: double
-      description: Year of procedure 5
-    - name: PRYEAR6
-      type: double
-      description: Year of procedure 6
-    - name: PRYEAR7
-      type: double
-      description: Year of procedure 7
-    - name: PRYEAR8
-      type: double
-      description: Year of procedure 8
-    - name: PRYEAR9
-      type: double
-      description: Year of procedure 9
     - name: PRYEAR10
       type: double
       description: Year of procedure 10
@@ -889,6 +829,9 @@ sources:
     - name: PRYEAR19
       type: double
       description: Year of procedure 19
+    - name: PRYEAR2
+      type: double
+      description: Year of procedure 2
     - name: PRYEAR20
       type: double
       description: Year of procedure 20
@@ -907,3 +850,60 @@ sources:
     - name: PRYEAR25
       type: double
       description: Year of procedure 25
+    - name: PRYEAR3
+      type: double
+      description: Year of procedure 3
+    - name: PRYEAR4
+      type: double
+      description: Year of procedure 4
+    - name: PRYEAR5
+      type: double
+      description: Year of procedure 5
+    - name: PRYEAR6
+      type: double
+      description: Year of procedure 6
+    - name: PRYEAR7
+      type: double
+      description: Year of procedure 7
+    - name: PRYEAR8
+      type: double
+      description: Year of procedure 8
+    - name: PRYEAR9
+      type: double
+      description: Year of procedure 9
+    - name: PSTATE
+      type: string
+      description: Patient State postal code
+    - name: PSTCO
+      type: double
+      description: Patient state/county FIPS code
+    - name: PSTCO2
+      type: double
+      description: Patient state/county FIPS code, possibly derived from ZIP Code
+    - name: RACE
+      type: double
+      description: Race (uniform)
+    - name: RACE_X
+      type: string
+      description: Race (as received from source)
+    - name: TOTCHG
+      type: double
+      description: Total charges (cleaned)
+    - name: TOTCHG_X
+      type: double
+      description: Total charges (as received from source)
+    - name: TRAN_IN
+      type: double
+      description: Transfer in indicator
+    - name: TRAN_OUT
+      type: double
+      description: Transfer out indicator
+    - name: YEAR
+      type: double
+      description: Calendar year
+    - name: ZIP
+      type: string
+      description: Patient ZIP Code
+    - name: ZIPINC_QRTL
+      type: double
+      description: Median household income national quartile for patient ZIP Code

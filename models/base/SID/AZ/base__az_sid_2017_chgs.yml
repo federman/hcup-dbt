@@ -12,11 +12,12 @@ models:
     - Source
     - base__sid
   columns:
+  - name: CHARGE
+    type: double
+    description: Line item charges (as received from source)
   - name: KEY
     type: double
     description: HCUP record identifier
-  - name: CHARGE
-    description: '{{ doc("base__sid_CHARGE_description") }}'
   - name: db_file
     description: '{{ doc("base__sid_db_file_description") }}'
   - name: admit_date
