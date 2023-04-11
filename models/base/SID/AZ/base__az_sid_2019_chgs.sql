@@ -2,6 +2,8 @@
 SELECT
   CHARGE,
   KEY,
+  NULL AS REVCODE,
+  NULL AS UNITS,
   'SID' AS db,
   'CHGS' AS file,
 FROM {{ source('SID', 'AZ_SID_2019_CHGS') }}
