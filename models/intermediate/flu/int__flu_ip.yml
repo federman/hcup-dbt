@@ -1,7 +1,7 @@
 version: 2
 models:
 - name: int__flu_ip
-  description:  This intermediate table compiles all in patient discharge records across years and states into a single table and operationalize flu, flu-like and flu-indicator flag fields. 
+  description:  Adds flu-specific indicators to intermediate in patient table `int__side_core`.
   config:
     tags:
     - State
@@ -112,18 +112,18 @@ models:
     description: '{{ doc("base__sid_db_description") }}'
   - name: file
     description: '{{ doc("base__sid_file_description") }}'
-  - name: flu
-    type: boolean
-    description: '{{ doc("int__flu_description") }}'
-  - name: flu_like
-    type: boolean
-    description: '{{ doc("int__flu_like_description") }}'  
-  - name: ili_diagnosis_var  
-    type: string
-    description: '{{ doc("int__ili_diagnosis_var_description") }}'
   - name: race_ethnicity  
     type: string
     description: '{{ doc("var__race_ethnicity") }}'
   - name: insurance  
     type: string
     description: '{{ doc("var__insurance") }}'
+  - name: flu
+    type: boolean
+    description: '{{ doc("var__flu") }}'
+  - name: flu_like
+    type: boolean
+    description: '{{ doc("var__flu_like") }}'  
+  - name: ili_diagnosis_var  
+    type: string
+    description: '{{ doc("var__ili_diagnosis_var") }}'

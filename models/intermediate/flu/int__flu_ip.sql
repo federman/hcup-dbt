@@ -2,39 +2,11 @@
 with 
 
 staged as (
-  select * from {{ref('base__az_sid_2016_core')}}
-  union
-  select * from {{ref('base__az_sid_2017_core')}}
-  union
-  select * from {{ref('base__az_sid_2018_core')}}
-  union
-  select * from {{ref('base__az_sid_2019_core')}}
-  union
-  select * from {{ref('base__ga_sid_2016_core')}}
-  union
-  select * from {{ref('base__ga_sid_2017_core')}}
-  union
-  select * from {{ref('base__ga_sid_2018_core')}}
-  union
-  select * from {{ref('base__ga_sid_2019_core')}}
-  union
-  select * from {{ref('base__nj_sid_2016_core')}}
-  union
-  select * from {{ref('base__nj_sid_2017_core')}}
-  union
-  select * from {{ref('base__ny_sid_2017_core')}}
-  union
-  select * from {{ref('base__ny_sid_2018_core')}}
-),
-
-int as (
   select 
-  *,
-  {{dx_flag_flu(db="SID")}} AS flu,
-  {{dx_flag_flu_like(db="SID")}} AS flu_like, 
-  {{recode_race_ethnicity()}} AS race_ethnicity, 
-  {{recode_insurance()}} AS insurance, 
-  from staged
+    *,
+    {{dx_flag_flu(db="SID")}} AS flu,
+    {{dx_flag_flu_like(db="SID")}} AS flu_like, 
+  from {{ref('int__sid_core')}}
 ),
 
 final as (
@@ -46,7 +18,7 @@ final as (
     WHEN (NOT(flu) AND flu_like) THEN 'ILI LIKE'
     ELSE 'OTHER'
     END AS ili_diagnosis_var  
-  from int
+  from staged
 )
 
 select * from final
