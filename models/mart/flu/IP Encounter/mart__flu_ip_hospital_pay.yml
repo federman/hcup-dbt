@@ -18,7 +18,7 @@ models:
     description: Admission year
   - name: ili_diagnosis_var  
     type: string
-    description: '{{ doc("int__ili_diagnosis_var_description") }}'
+    description: '{{ doc("var__ili_diagnosis_var") }}'
   - name: insurance  
     type: string
     description: '{{ doc("var__insurance") }}'
