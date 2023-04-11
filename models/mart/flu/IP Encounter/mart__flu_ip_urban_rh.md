@@ -3,7 +3,8 @@
 # Origin 
 
 - **Request:** `Number of Inpatient (IP) Flu and ILI visits by race/ethnicity and urbanicity`
-- **Issue:** https://github.com/Drexel-UHC/hcup-dbt/issues/9#issuecomment-1413837032 
+- **Origin Issue:** https://github.com/Drexel-UHC/hcup-dbt/issues/9#issuecomment-1413837032 
+- **Detail Issue:** https://github.com/Drexel-UHC/hcup-dbt/issues/17
 
 # Access
 
