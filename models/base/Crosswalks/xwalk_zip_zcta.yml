@@ -1,0 +1,17 @@
+version: 2
+models:
+- name: xwalk_zip_zcta
+  description: '{{ doc("docs__xwalk_zip_zcta") }}'
+  docs:
+    node_color: '#829356'
+  config:
+    tags:
+    - Crosswalk
+    - dbt_base
+  columns:
+  - name: ZIP
+    type: string
+    description: '{{ doc("var__ZIP") }}'
+  - name: ZCTA
+    type: string
+    description: '{{ doc("var__ZCTA") }}'

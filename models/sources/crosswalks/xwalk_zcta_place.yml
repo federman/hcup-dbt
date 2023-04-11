@@ -8,11 +8,11 @@ sources:
     external_location: \\files.drexel.edu\encrypted\SOPH\UHC\SchnakeMahl_HCUP\dbt\v0\sources\{name}.parquet
   tables:
   - name: xwalk_zcta_place
-    description: "This is a crosswalk from ZCTA to census Place. This crosswalk was obtainsCensus Bureau here: https://www.census.gov/programs-surveys/geography/technical-documentation/records-layout/2010-zcta-record-layout.html."
+    description:  '{{ doc("docs__xwalk_zcta_place") }}'
     columns:
     - name: ZCTA
       type: string
-      description: 5-digit ZCTA geographic ID code
+      description: '{{ doc("var__ZCTA") }}'
     - name: PLACE
       type: string code
-      description: 7-digit Census place ID code
+      description: '{{ doc("var__PLACE") }}'

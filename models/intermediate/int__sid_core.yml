@@ -1,7 +1,7 @@
 version: 2
 models:
 - name: int__sid_core
-  description:  'This intermediate table compiles all in patient discharge records from SID CORE files across years and states into a single table.'  
+  description:   '{{ doc("int__side_core_description") }}'
   config:
     tags:
     - State
@@ -118,3 +118,12 @@ models:
   - name: insurance  
     type: string
     description: '{{ doc("var__insurance") }}'
+  - name: RUCA
+    type: double
+    description: '{{ doc("var__RUCA") }}'
+  - name: urban  
+    type: boolean
+    description: '{{ doc("var__urban") }}'
+  - name: ZCTA  
+    type: string
+    description: '{{ doc("var__ZCTA") }}'

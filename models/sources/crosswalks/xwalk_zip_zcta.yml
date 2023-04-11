@@ -8,12 +8,12 @@ sources:
     external_location: \\files.drexel.edu\encrypted\SOPH\UHC\SchnakeMahl_HCUP\dbt\v0\sources\{name}.parquet
   tables:
   - name: xwalk_zip_zcta
-    description: "This is a crosswalk from zip codes to ZCTA. This crosswalk was obtains from Heather Rollins."
+    description: '{{ doc("docs__xwalk_zip_zcta") }}'
     columns:
     - name: ZIP
       type: string code
-      description: 5-digit Z
+      description: '{{ doc("var__ZIP") }}'
     - name: ZCTA
       type: string
-      description: 5-digit ZCTA geographic ID code
+      description: '{{ doc("var__ZCTA") }}'
     

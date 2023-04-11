@@ -8,15 +8,15 @@ sources:
     external_location: \\files.drexel.edu\encrypted\SOPH\UHC\SchnakeMahl_HCUP\dbt\v0\sources\{name}.parquet
   tables:
   - name: xwalk_zip_urban
-    description: 'The rural-urban commuting area (RUCA) codes classify U.S. census tracts using measures of population density, urbanization, and daily commuting. A second dataset applies 2010 RUCA classifications to ZIP code areas by transferring RUCA values from the census tracts that comprise them. The most recent RUCA codes are based on data from the 2010 decennial census and the 2006–10 American Community Survey. The classification contains two levels. Whole numbers (1–10) delineate metropolitan, micropolitan, small town, and rural commuting areas based on the size and direction of the primary (largest) commuting flows. These 10 codes are further subdivided based on secondary commuting flows, providing flexibility in combining levels to meet varying definitional needs and preferences. Descriptions of the codes are found within the data files, and also in the Documentation.'
+    description: '{{ doc("docs__xwalk_zip_urban") }}'
     columns:
     - name: ZIP
       type: string
-      description: 5-digit ZIP code
+      description: '{{ doc("var__ZIP") }}'
     - name: RUCA
       type: double
-      description: Rural Urban Commuting Area
+      description: '{{ doc("var__RUCA") }}'
     - name: urban
       type: boolean
-      description: Boolean variable that describes the urbanicity of the ZIP code. If RUCA is < 4, then urban is TRUE. If RUCA is >= 4, then urban is FALSE.
+      description: '{{ doc("var__urban") }}'
    

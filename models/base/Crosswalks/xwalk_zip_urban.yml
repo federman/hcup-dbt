@@ -1,0 +1,20 @@
+version: 2
+models:
+- name: xwalk_zip_urban
+  description: '{{ doc("docs__xwalk_zip_urban") }}'
+  docs:
+    node_color: '#829356'
+  config:
+    tags:
+    - Crosswalk
+    - dbt_base
+  columns:
+  - name: ZIP
+    type: string
+    description: '{{ doc("var__ZIP") }}'
+  - name: RUCA
+    type: string
+    description: '{{ doc("var__RUCA") }}'
+  - name: urban
+    type: string
+    description: '{{ doc("var__urban") }}'

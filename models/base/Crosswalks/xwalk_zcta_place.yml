@@ -1,0 +1,17 @@
+version: 2
+models:
+- name: xwalk_zcta_place
+  description: '{{ doc("docs__xwalk_zcta_place") }}'
+  docs:
+    node_color: '#829356'
+  config:
+    tags:
+    - Crosswalk
+    - dbt_base
+  columns:
+  - name: ZCTA
+    type: string
+    description: '{{ doc("var__ZCTA") }}'
+  - name: PLACE
+    type: string
+    description: '{{ doc("var__PLACE") }}'
