@@ -23,6 +23,7 @@ SELECT
   I10_DX_Visit_Reason2,
   I10_DX1,
   I10_DX2,
+  KEY,
   LOS,
   PAY1,
   PSTCO,

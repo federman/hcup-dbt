@@ -72,6 +72,9 @@ models:
   - name: I10_DX2
     type: string
     description: ICD-10-CM Diagnosis 2
+  - name: KEY
+    type: double
+    description: HCUP record identifier
   - name: LOS
     type: int32
     description: Length of stay (cleaned)

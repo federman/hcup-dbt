@@ -24,6 +24,7 @@ SELECT
   I10_DX_Admitting,
   I10_DX1,
   I10_DX2,
+  KEY,
   LOS,
   PAY1,
   PSTCO,
