@@ -10,6 +10,7 @@ models:
     - Inpatient
     - SID
     - Source
+    - dbt_base
     - base__sid
   columns:
   - name: CHARGE
