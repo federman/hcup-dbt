@@ -32,6 +32,7 @@ int as (
   *,
   {{dx_flag_flu(db="SID")}} AS flu,
   {{dx_flag_flu_like(db="SID")}} AS flu_like, 
+  {{recode_race_ethnicity()}} AS race_ethnicity, 
   from staged
 ),
 
