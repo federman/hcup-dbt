@@ -13,10 +13,10 @@ Subset of original SID source file to include fields of interest which contain i
 {% enddocs %}
 
 
-{% docs stg_sid_db_file_description %}
+{% docs base__sid_db_file_description %}
 Concatenation of database and file.
 {% enddocs %}
 
-{% docs stg_sid_admit_date_description %}
+{% docs base__sid_admit_date_description %}
 concatenation of AYEAR + AMONTH + 01
 {% enddocs %}
