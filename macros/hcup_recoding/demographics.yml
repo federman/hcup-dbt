@@ -3,3 +3,5 @@ version: 2
 macros:
   - name: recode_race_ethnicity
     description: '{{ doc("macro__recode_race_ethnicity") }}'
+  - name: recode_insurance
+    description: '{{ doc("macro__recode_insurance") }}'
