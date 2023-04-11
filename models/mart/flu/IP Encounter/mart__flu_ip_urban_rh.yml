@@ -17,11 +17,12 @@ models:
     description: '{{ doc("int__ili_diagnosis_var_description") }}'
   - name: race_ethnicity  
     type: string
-    description: 'Human readable value for race and ethnicity. Please see recode_race_ethnicity() macro for details.'  - name: urban  
+    description: 'Human readable value for race and ethnicity. Please see recode_race_ethnicity() macro for details.'  
+  - name: urban  
     type: string
     description: 'Boolean variable that describes the urbanicity of the ZIP code. If RUCA is < 4, then urban is TRUE. If RUCA is >= 4, then urban is FALSE.'
   - name: n_ip_discharges  
-    type: string
+    type: integer
     description: 'Tabulated count of number of in-patient discharges grouped by ili_diagnosis_var, race_ethnicity, and urbanicity.'
 
 

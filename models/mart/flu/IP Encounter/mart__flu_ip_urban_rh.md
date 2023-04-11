@@ -21,7 +21,7 @@ db %>% collect()
 
 ### Stata
 
-```
+```stata
 * Set the path to the Stata dataset
 local path_to_dta "\\\\files.drexel.edu\\encrypted\\SOPH\\UHC\\SchnakeMahl_HCUP\\dbt\\v0\\models\\mart__flu_ip_urban_rh.dta"
 
@@ -34,6 +34,7 @@ browse
 
 ### SAS
 
+```sas
 /* Set the path to the SAS dataset */
 %let path_to_sas = '\\\\files.drexel.edu\\encrypted\\SOPH\\UHC\\SchnakeMahl_HCUP\\dbt\\v0\\models\\mart__flu_ip_urban_rh.sas7bdat';
 
