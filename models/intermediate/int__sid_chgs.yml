@@ -1,0 +1,16 @@
+version: 2
+models:
+- name: int__sid_chgs
+  description:  'This intermediate table compiles all  SID CHGS files across years and states into a single table. It can link Cost related information to each encounter.'  
+  config:
+    tags:
+    - SID
+    - CHGS
+    - dbt_int
+  columns:
+  - name: KEY
+    type: double
+    description: HCUP record identifier
+  - name: CHARGE
+    type: double
+    description: Line item charges (as received from source)
