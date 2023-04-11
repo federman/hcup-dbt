@@ -1,0 +1,117 @@
+version: 2
+models:
+- name: base__ny_sedd_2018_core
+  description: '{{ doc("base__sedd_description") }}'
+  docs:
+    node_color: '#829356'
+  config:
+    tags:
+    - State
+    - ER
+    - SEDD
+    - Source
+    - base__sedd
+  columns:
+  - name: AGE
+    type: int32
+    description: Age in years at admission
+  - name: CPT1
+    type: string
+    description: CPT/HCPCS procedure code 1
+  - name: CPT2
+    type: string
+    description: CPT/HCPCS procedure code 2
+  - name: CPT3
+    type: string
+    description: CPT/HCPCS procedure code 3
+  - name: CPTCCS1
+    type: int32
+    description: 'CCS: CPT 1'
+  - name: CPTCCS2
+    type: int32
+    description: 'CCS: CPT 2'
+  - name: DHOUR
+    type: int32
+    description: Discharge Hour
+  - name: DIED
+    type: int32
+    description: Died during hospitalization
+  - name: DISP_X
+    type: string
+    description: Disposition of patient (as received from source)
+  - name: DISPUB04
+    type: int32
+    description: Disposition of patient (UB-04 standard coding)
+  - name: DMONTH
+    type: int32
+    description: Discharge month
+  - name: DQTR
+    type: int32
+    description: Discharge quarter
+  - name: DSHOSPID
+    type: string
+    description: Data source hospital identifier
+  - name: FEMALE
+    type: int32
+    description: Indicator of sex
+  - name: HCUP_ED
+    type: int32
+    description: HCUP Emergency Department service indicator
+  - name: HCUP_OS
+    type: int32
+    description: HCUP Observation Stay service indicator
+  - name: HISPANIC
+    type: int32
+    description: Hispanic ethnicity (uniform)
+  - name: HOSP_NPI
+    type: string
+    description: Hospital NPI
+  - name: HOSPST
+    type: string
+    description: Hospital state postal code
+  - name: I10_DX_Visit_Reason1
+    type: string
+    description: ICD-10-CM Reason for visit diagnosis 1
+  - name: I10_DX_Visit_Reason2
+    type: string
+    description: ICD-10-CM Reason for visit diagnosis 2
+  - name: I10_DX1
+    type: string
+    description: ICD-10-CM Diagnosis 1
+  - name: I10_DX2
+    type: string
+    description: ICD-10-CM Diagnosis 2
+  - name: LOS
+    type: int32
+    description: Length of stay (cleaned)
+  - name: PAY1
+    type: int32
+    description: Primary expected payer (uniform)
+  - name: PSTCO
+    type: int32
+    description: Patient state/county FIPS code
+  - name: PSTCO2
+    type: int32
+    description: Patient state/county FIPS code, possibly derived from ZIP Code
+  - name: RACE
+    type: int32
+    description: Race (uniform)
+  - name: VisitLink
+    type: int32
+    description: Visit linkage variable
+  - name: YEAR
+    type: int32
+    description: Calendar year
+  - name: ZIP
+    type: string
+    description: Patient ZIP Code
+  - name: ZIP3
+    type: string
+    description: Patient ZIP Code, first 3 digits
+  - name: ZIPINC_QRTL
+    type: int32
+    description: Median household income national quartile for patient ZIP Code
+  - name: db
+    description: '{{ doc("base__sedd_db_description") }}'
+  - name: file
+    description: '{{ doc("base__sedd_file_description") }}'
