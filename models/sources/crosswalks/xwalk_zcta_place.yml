@@ -1,0 +1,18 @@
+version: 2
+sources:
+- name: Crosswalks
+  tags:
+  - Geographic-relationships
+  description: 'Crosswalks to link between various geographic levels or metadata.'
+  meta:
+    external_location: \\files.drexel.edu\encrypted\SOPH\UHC\SchnakeMahl_HCUP\dbt\v0\sources\{name}.parquet
+  tables:
+  - name: xwalk_zcta_place
+    description: "This is a crosswalk from ZCTA to census Place. This crosswalk was obtainsCensus Bureau here: https://www.census.gov/programs-surveys/geography/technical-documentation/records-layout/2010-zcta-record-layout.html."
+    columns:
+    - name: ZCTA
+      type: string
+      description: 5-digit ZCTA geographic ID code
+    - name: PLACE
+      type: string code
+      description: 7-digit Census place ID code
