@@ -1,0 +1,31 @@
+version: 2
+models:
+- name: mart__flu_er_city
+  description:  '{{ doc("docs__mart__flu_er_city") }}'
+  docs:
+    node_color: '#9A2617'
+  config:
+    tags:
+    - SID
+    - CHGS
+    - Mart
+    - flu
+    - dbt_mart
+  columns:
+  - name: AMONTH
+    type: int32
+    description: Admission month
+  - name: AYEAR
+    type: int32
+    description: Admission year
+  - name: ili_diagnosis_var  
+    type: string
+    description: '{{ doc("var__ili_diagnosis_var") }}'
+  - name: PLACE  
+    type: string
+    description: '{{ doc("var__PLACE") }}'
+  - name: mean_chrg_per_encounter  
+    type: integer
+    description: 'Tabulated count of number of in-patient discharges grouped by ili_diagnosis_var, hospital, and payment type.'
+
+
