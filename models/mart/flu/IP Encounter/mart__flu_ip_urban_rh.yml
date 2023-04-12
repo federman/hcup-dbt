@@ -7,6 +7,10 @@ models:
   config:
     tags:
     - SID
+    - IP
+    - Insurance
+    - Urbanicity
+    - Race Ethnicity
     - flu
     - dbt_mart
   columns:

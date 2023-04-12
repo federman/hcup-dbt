@@ -6,9 +6,11 @@ models:
     node_color: '#9A2617'
   config:
     tags:
-    - SEDD
+    - SEDD    
+    - ER
     - CHGS
     - Mart
+    - Patient-level
     - flu
     - ZCTA
     - dbt_mart

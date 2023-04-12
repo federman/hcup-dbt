@@ -7,7 +7,9 @@ models:
   config:
     tags:
     - SID
-    - flu
+    - IP
+    - Insurance
+    - Hospital
     - flu
     - dbt_mart
   columns:
