@@ -3,7 +3,7 @@ with
 
 cte_1 as (
   select 
-    CASE WHEN ZIP = '' THEN NULL ELSE ZIP END AS ZIP,
+    CASE WHEN LENGTH(ZIP) = 5 THEN ZIP ELSE NULL END AS ZIP,
     *,
     from 
       (
@@ -24,6 +24,8 @@ cte_2 as (
 cte_3 as (
   select 
     AGE,
+    AMONTH,
+    AYEAR,
     CPT1,
     CPT2,
     CPT3,
@@ -71,6 +73,5 @@ final as (
   from cte_3
 )
 
-
-select * from final
+select * from cte_2
 
