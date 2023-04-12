@@ -5,3 +5,5 @@ profiles.yml
 hcup-dev.duckdb
 hcup-prod.duckdb
 hcup-prod.duckdb.wal
+
+external/
