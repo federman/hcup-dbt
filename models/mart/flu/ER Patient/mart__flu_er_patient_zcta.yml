@@ -1,16 +1,16 @@
 version: 2
 models:
-- name: mart__flu_er_patient_city
-  description:  '{{ doc("docs__mart__flu_er_patient_city") }}'
+- name: mart__flu_er_patient_zcta
+  description:  '{{ doc("docs__mart__flu_er_patient_zcta") }}'
   docs:
     node_color: '#9A2617'
   config:
     tags:
     - SEDD
+    - CHGS
     - Mart
     - flu
-    - City
-    - Place
+    - ZCTA
     - dbt_mart
   columns:
   - name: AMONTH
@@ -22,11 +22,11 @@ models:
   - name: ili_diagnosis_var  
     type: string
     description: '{{ doc("var__ili_diagnosis_var") }}'
-  - name: PLACE  
+  - name: ZCTA  
     type: string
-    description: '{{ doc("var__PLACE") }}'
+    description: '{{ doc("var__ZCTA") }}'
   - name: n_unique_er_patients
     type: integer
-    description: 'Tabulated count of unique patients that visted the ER grouped by ili_diagnosis_var, census Place.'
+    description: 'Tabulated count of unique patients that visted the ER grouped by ili_diagnosis_var, ZCTA.'
 
 
