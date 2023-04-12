@@ -2,17 +2,21 @@
 with 
 
 cte_1 as (
-      select * from {{ref('base__ny_sedd_2017_core')}}
-      union
-      select * from {{ref('base__ny_sedd_2018_core')}}
+  select 
+    CASE WHEN ZIP = '' THEN NULL ELSE ZIP END AS ZIP,
+    *,
+    from 
+      (
+         select * from {{ref('base__ny_sedd_2017_core')}}
+         union
+         select * from {{ref('base__ny_sedd_2018_core')}}
+         )
 ),
 
 cte_2 as (
   select 
   *,
   from cte_1
-  left join {{ref('xwalk_zip_urban')}} as xwalk_zip_urban
-  on cte_1.ZIP = xwalk_zip_urban.ZIP
   left join {{ref('xwalk_zip_zcta')}} as xwalk_zip_zcta
   on cte_1.ZIP = xwalk_zip_zcta.ZIP
 ),
@@ -55,8 +59,6 @@ cte_3 as (
     ZIPINC_QRTL,
     db,
     file,
-    RUCA,
-    urban,
     ZCTA
   from cte_2
 ),
@@ -68,6 +70,7 @@ final as (
   {{recode_insurance()}} AS insurance, 
   from cte_3
 )
+
 
 select * from final
 

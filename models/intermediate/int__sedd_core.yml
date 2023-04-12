@@ -12,12 +12,6 @@ models:
   - name: AGE
     type: int32
     description: Age in years at admission
-  - name: AMONTH
-    type: int32
-    description: Admission month
-  - name: AYEAR
-    type: int32
-    description: Admission year
   - name: CPT1
     type: string
     description: CPT/HCPCS procedure code 1
@@ -51,9 +45,6 @@ models:
   - name: DQTR
     type: int32
     description: Discharge quarter
-  - name: DRG
-    type: int32
-    description: DRG in effect on discharge date
   - name: DSHOSPID
     type: string
     description: Data source hospital identifier
@@ -69,12 +60,18 @@ models:
   - name: HISPANIC
     type: int32
     description: Hispanic ethnicity (uniform)
+  - name: HOSP_NPI
+    type: string
+    description: Hospital NPI
   - name: HOSPST
     type: string
     description: Hospital state postal code
-  - name: I10_DX_Admitting
+  - name: I10_DX_Visit_Reason1
     type: string
-    description: ICD-10-CM Admitting Diagnosis Code
+    description: ICD-10-CM Reason for visit diagnosis 1
+  - name: I10_DX_Visit_Reason2
+    type: string
+    description: ICD-10-CM Reason for visit diagnosis 2
   - name: I10_DX1
     type: string
     description: ICD-10-CM Diagnosis 1
@@ -99,6 +96,12 @@ models:
   - name: RACE
     type: int32
     description: Race (uniform)
+  - name: VisitLink
+    type: int32
+    description: Visit linkage variable
+  - name: YEAR
+    type: int32
+    description: Calendar year
   - name: ZIP
     type: string
     description: Patient ZIP Code
@@ -109,6 +112,10 @@ models:
     type: int32
     description: Median household income national quartile for patient ZIP Code
   - name: db
+    description: '{{ doc("base__sedd_db_description") }}'
+  - name: file
+    description: '{{ doc("base__sedd_file_description") }}'
+  - name: db
     description: '{{ doc("base__sid_db_description") }}'
   - name: file
     description: '{{ doc("base__sid_file_description") }}'
@@ -118,12 +125,6 @@ models:
   - name: insurance  
     type: string
     description: '{{ doc("var__insurance") }}'
-  - name: RUCA
-    type: double
-    description: '{{ doc("var__RUCA") }}'
-  - name: urban  
-    type: boolean
-    description: '{{ doc("var__urban") }}'
   - name: ZCTA  
     type: string
     description: '{{ doc("var__ZCTA") }}'
