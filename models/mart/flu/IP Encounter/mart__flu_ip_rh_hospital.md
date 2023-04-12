@@ -2,8 +2,8 @@
 
 # Overview 
 
-- **Request:** `Number of IP flu and ILI visits by hospital and race/ethnicity`
-- **Issue:** https://github.com/Drexel-UHC/hcup-dbt/issues/19
+- Request: **Number of IP flu and ILI visits by hospital and race/ethnicity**
+- Issue: https://github.com/Drexel-UHC/hcup-dbt/issues/19
 - Please comment in the issue above for any questions, issues or requests.
 
 # Access

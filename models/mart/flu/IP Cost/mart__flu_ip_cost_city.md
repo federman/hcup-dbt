@@ -2,8 +2,8 @@
 
 # Overview 
 
-- **Request:** `Cost of IP Flu and Ili visits by city`
-- **Issue:** https://github.com/Drexel-UHC/hcup-dbt/issues/20
+- Request: **Cost of IP Flu and Ili visits by city**
+- Issue: https://github.com/Drexel-UHC/hcup-dbt/issues/20
 - Please comment in the issue above for any questions, issues or requests.
 
 # Access

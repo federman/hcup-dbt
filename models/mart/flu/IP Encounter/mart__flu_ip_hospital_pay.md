@@ -2,8 +2,8 @@
 
 # Overview 
 
-- **Request:** `Number of IP flu and ILI visits by by hospital and line of business (e.g. medicaid, medicare, commercial, uninsured)`
-- **Issue:** https://github.com/Drexel-UHC/hcup-dbt/issues/19
+- Request: **Number of IP flu and ILI visits by by hospital and line of business (e.g. medicaid, medicare, commercial, uninsured)**
+- Issue: https://github.com/Drexel-UHC/hcup-dbt/issues/19
 - Please comment in the issue above for any questions, issues or requests.
 
 # Access
