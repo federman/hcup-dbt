@@ -10,6 +10,9 @@ models:
     - dbt_int
   columns:
   - name: KEY
+    tests:
+      - unique
+      - not_null
     type: double
     description: HCUP record identifier
   - name: CHARGE

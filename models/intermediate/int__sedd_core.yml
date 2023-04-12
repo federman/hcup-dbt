@@ -85,6 +85,9 @@ models:
     type: string
     description: ICD-10-CM Diagnosis 2
   - name: KEY
+    tests:
+      - unique
+      - not_null
     type: double
     description: HCUP record identifier
   - name: LOS
