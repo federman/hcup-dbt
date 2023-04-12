@@ -10,7 +10,7 @@ def model(dbt, session):
 
     ## Transformations
     df_final = (df_int__flu_ip
-      .select(['KEY','AYEAR','AMONTH',  'ili_diagnosis_var', 'HOSP_NPI','insurance'])    
+      .select(['KEY','AYEAR','AMONTH', 'ili_diagnosis_var', 'HOSP_NPI','insurance'])    
       .groupby(['AYEAR','AMONTH', 'ili_diagnosis_var','HOSP_NPI','insurance'])
       .count()
       .rename({"count": "n_ip_discharges"})

@@ -7,16 +7,10 @@ def model(dbt, session):
 
     ## Read in upstream tables
     df_int__flu_ip = pl.from_arrow(dbt.ref("int__flu_ip").arrow()) 
-    xwalk_zip_urban = pl.from_arrow(dbt.ref("xwalk_zip_urban").arrow())
-    
-    ## Convert ZIP column to string data type
-    df_int__flu_ip = df_int__flu_ip.with_column(pl.col("ZIP").cast(pl.Utf8))
-    xwalk_zip_urban = xwalk_zip_urban.with_column(pl.col("ZIP").cast(pl.Utf8))
   
     ## Transformations
     df_final = (df_int__flu_ip
-      .select(['KEY', 'AYEAR','AMONTH', 'ZIP','race_ethnicity', 'ili_diagnosis_var']) 
-      .join(xwalk_zip_urban, on = 'ZIP', how = 'left')     
+      .select(['KEY', 'AYEAR','AMONTH', 'ili_diagnosis_var', 'ZIP','race_ethnicity', 'urban']) 
       .groupby(['AYEAR','AMONTH','ili_diagnosis_var','race_ethnicity','urban'])
       .count()
       .rename({"count": "n_ip_discharges"})
