@@ -30,17 +30,14 @@ cte_1 as (
 cte_2 as (
   select 
   *,
-  {{recode_race_ethnicity()}} AS race_ethnicity, 
-  {{recode_insurance()}} AS insurance, 
   from cte_1
   left join {{ref('xwalk_zip_urban')}} as xwalk_zip_urban
   on cte_1.ZIP = xwalk_zip_urban.ZIP
   left join {{ref('xwalk_zip_zcta')}} as xwalk_zip_zcta
   on cte_1.ZIP = xwalk_zip_zcta.ZIP
-
 ),
 
-final as (
+cte_3 as (
   select 
     AGE,
     AMONTH,
@@ -81,8 +78,16 @@ final as (
     file,
     RUCA,
     urban,
-    ZCTA,
+    ZCTA
   from cte_2
+),
+
+final as (
+  select 
+  *,
+  {{recode_race_ethnicity()}} AS race_ethnicity, 
+  {{recode_insurance()}} AS insurance, 
+  from cte_3
 )
 
 select * from final
