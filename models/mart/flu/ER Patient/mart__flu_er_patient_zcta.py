@@ -3,7 +3,7 @@ import polars as pl
 
 def model(dbt, session):
     ## Define the model config
-    dbt.config(materialized = "external", format = 'csv' )
+    dbt.config(materialized = "external", format = 'parquet' )
 
     ## Read in upstream tables
     er_encounters = pl.from_arrow(dbt.ref("int__flu_er").arrow()) 
