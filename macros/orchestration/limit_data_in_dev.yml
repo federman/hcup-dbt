@@ -7,3 +7,9 @@ macros:
       - name: x
         type: int
         description: The number of rows to subset. The default value is 25.
+  - name: limit_chgs_in_dev
+    description: A macro to make sure that in dev, the CHGS rows have KEYS that are all in CORE. This ensures linagkes work in dev.
+    arguments:
+      - name: core_model
+        type: string
+        description: The associated core model name.
