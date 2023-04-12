@@ -6,24 +6,11 @@ def model(dbt, session):
     dbt.config(materialized = "external", format = 'csv' )
 
     ## Read in upstream tables
-    ip_discharges = pl.from_arrow(dbt.ref("int__flu_ip").arrow()) 
-    ip_costs = pl.from_arrow(dbt.ref("int__sid_chgs").arrow()) 
-    xwalk_zcta_place = pl.from_arrow(dbt.ref("xwalk_zcta_place").arrow()) 
-
-    ## Operationalize discharge metadata for ip_costs table
-    discharge_metadata =  (ip_discharges
-      .select(['KEY','AYEAR','AMONTH', 'ZIP','ZCTA', 'ili_diagnosis_var'])  
-      .unique())
+    df_place_merged = pl.from_arrow(dbt.ref("int__flu_ip_cost_zcta_merged").arrow()) 
 
     ## Transformations
-    mart = (ip_costs
-                 .select(['KEY','CHARGE']) 
-                 .join(discharge_metadata, on = 'KEY', how = 'left')
-                 .join(xwalk_zcta_place, on = 'ZCTA', how = 'left') 
-                 .filter(pl.col('PLACE').is_not_null())
-                 .groupby(['AYEAR', 'AMONTH', 'ili_diagnosis_var', 'PLACE'])
-                 .agg(pl.mean('CHARGE').alias('mean_chrg_per_encounter'))
-                 .sort(by=['AYEAR', 'AMONTH', 'ili_diagnosis_var', 'mean_chrg_per_encounter'])
+    mart = (df_place_merged
+                  .with_columns("mean_chrg_per_encounter", lambda df: df['total_ip_charge_place'] / df['n_ip_encounters_place'])
                  .to_pandas())
 
     return mart
@@ -35,7 +22,7 @@ def model(dbt, session):
 # this part is dbt logic for get ref work, do not modify
 
 def ref(*args,dbt_load_df_function):
-    refs = {"int__flu_ip": "main.parquet.int__flu_ip", "int__sid_chgs": "main.parquet.int__sid_chgs", "xwalk_zcta_place": "main.parquet.xwalk_zcta_place"}
+    refs = {"int__flu_ip_cost_zcta_merged": "main.parquet.int__flu_ip_cost_zcta_merged"}
     key = ".".join(args)
     return dbt_load_df_function(refs[key])
 

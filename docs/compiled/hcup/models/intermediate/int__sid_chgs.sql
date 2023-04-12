@@ -2,29 +2,29 @@
 with 
 
 staged as (
-      select * from "main"."parquet"."base__az_sid_2016_chgs"
+      select KEY, CHARGE from "main"."parquet"."base__az_sid_2016_chgs"
       union
-      select * from "main"."parquet"."base__az_sid_2017_chgs"
+      select KEY, CHARGE from "main"."parquet"."base__az_sid_2017_chgs"
       union
-      select * from "main"."parquet"."base__az_sid_2018_chgs"
+      select KEY, CHARGE from "main"."parquet"."base__az_sid_2018_chgs"
       union
-      select * from "main"."parquet"."base__az_sid_2019_chgs"
+      select KEY, CHARGE from "main"."parquet"."base__az_sid_2019_chgs"
       union
-      select * from "main"."parquet"."base__ga_sid_2016_chgs"
+      select KEY, CHARGE from "main"."parquet"."base__ga_sid_2016_chgs"
       union
-      select * from "main"."parquet"."base__ga_sid_2017_chgs"
+      select KEY, CHARGE from "main"."parquet"."base__ga_sid_2017_chgs"
       union
-      select * from "main"."parquet"."base__ga_sid_2018_chgs"
+      select KEY, CHARGE from "main"."parquet"."base__ga_sid_2018_chgs"
       union
-      select * from "main"."parquet"."base__ga_sid_2019_chgs"
+      select KEY, CHARGE from "main"."parquet"."base__ga_sid_2019_chgs"
       union
-      select * from "main"."parquet"."base__nj_sid_2016_chgs"
+      select KEY, CHARGE from "main"."parquet"."base__nj_sid_2016_chgs"
       union
-      select * from "main"."parquet"."base__nj_sid_2017_chgs"
+      select KEY, CHARGE from "main"."parquet"."base__nj_sid_2017_chgs"
       union
-      select * from "main"."parquet"."base__ny_sid_2017_chgs"
+      select KEY, CHARGE from "main"."parquet"."base__ny_sid_2017_chgs"
       union
-      select * from "main"."parquet"."base__ny_sid_2018_chgs"
+      select KEY, CHARGE from "main"."parquet"."base__ny_sid_2018_chgs"
 ),
 
 final as (
