@@ -11,9 +11,9 @@ def model(dbt, session):
 
     ## Transformations
     mart = (er_encounters
-                 .select(['KEY','AYEAR', 'AMONTH','ZCTA','ili_diagnosis_var']) 
+                 .select(['KEY','AYEAR', 'AMONTH', 'ZCTA', 'ili_diagnosis_var', 'race_ethnicity']) 
                  .join(xwalk_zcta_place, on = 'ZCTA', how = 'left') 
-                 .groupby(['AYEAR', 'AMONTH', 'ili_diagnosis_var', 'PLACE'])
+                 .groupby(['AYEAR', 'AMONTH', 'ili_diagnosis_var', 'race_ethnicity', 'PLACE'])
                  .agg(pl.count().alias('n_er_encounters'))
                  .sort(by=['AYEAR', 'AMONTH', 'ili_diagnosis_var'])
                  .to_pandas())
