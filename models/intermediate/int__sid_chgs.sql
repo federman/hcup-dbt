@@ -32,7 +32,8 @@ final as (
   KEY,
   CHARGE
   from staged
-)
+  where CHARGE IS NOT NULL
+  )
 
 select * from final
 
