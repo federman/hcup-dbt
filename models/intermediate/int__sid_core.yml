@@ -1,7 +1,7 @@
 version: 2
 models:
 - name: int__sid_core
-  description:   '{{ doc("int__side_core_description") }}'
+  description:   '{{ doc("int__sid_core_description") }}'
   config:
     tags:
     - State

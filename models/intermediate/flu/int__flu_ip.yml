@@ -1,7 +1,7 @@
 version: 2
 models:
 - name: int__flu_ip
-  description:  Adds flu-specific indicators to intermediate in patient table `int__side_core`.
+  description:  '{{ doc("docs__int__flu_ip") }}'  
   config:
     tags:
     - State

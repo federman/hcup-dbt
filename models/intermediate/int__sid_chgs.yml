@@ -1,7 +1,7 @@
 version: 2
 models:
 - name: int__sid_chgs
-  description:  'This intermediate table compiles all  SID CHGS files across years and states into a single table. It can link Cost related information to each encounter.'  
+  description:  '{{ doc("int__sid_chgs_description") }}' 
   config:
     tags:
     - SID
