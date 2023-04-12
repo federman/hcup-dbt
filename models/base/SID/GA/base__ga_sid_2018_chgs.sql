@@ -8,4 +8,4 @@ SELECT
   'CHGS' AS file,
 FROM {{ source('SID', 'GA_SID_2018_CHGS') }}
 
-{{ limit_data_in_dev() }}
+{{ limit_chgs_in_dev(core_model = 'base__ga_sid_2018_core') }}
