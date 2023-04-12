@@ -8,6 +8,7 @@ models:
     tags:
     - SID
     - flu
+    - flu
     - dbt_mart
   columns:
   - name: AMONTH

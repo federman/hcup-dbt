@@ -7,6 +7,7 @@ models:
     - State
     - IP
     - SID
+    - flu
     - dbt_int
   columns:
   - name: AGE
