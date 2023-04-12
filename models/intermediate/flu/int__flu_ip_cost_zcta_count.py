@@ -10,7 +10,7 @@ def model(dbt, session):
     ip_costs = pl.from_arrow(dbt.ref("int__sid_chgs").arrow()) 
 
     ## Operationalize discharge metadata for ip_costs table
-    discharge_metadata =  (ip_discharges
+    discharge_metadata = (ip_discharges
       .select(['KEY','AYEAR','AMONTH','ZCTA', 'ili_diagnosis_var'])  
       .unique())
 
