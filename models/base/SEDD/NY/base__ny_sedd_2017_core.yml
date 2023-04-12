@@ -16,6 +16,12 @@ models:
   - name: AGE
     type: int32
     description: Age in years at admission
+  - name: AMONTH
+    type: int32
+    description: Admission month
+  - name: AYEAR
+    type: int32
+    description: Admission year
   - name: CPT1
     type: string
     description: CPT/HCPCS procedure code 1
