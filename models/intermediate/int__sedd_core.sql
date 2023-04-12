@@ -73,5 +73,5 @@ final as (
   from cte_3
 )
 
-select * from cte_2
+select * from final
 
