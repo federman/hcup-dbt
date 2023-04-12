@@ -4,9 +4,9 @@ models:
   description:   '{{ doc("int__sedd_core_description") }}'
   config:
     tags:
-    - State
     - ER
     - SEDD
+    - CORE
     - dbt_int
   columns:
   - name: AGE

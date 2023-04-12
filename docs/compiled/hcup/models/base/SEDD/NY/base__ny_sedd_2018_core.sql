@@ -1,6 +1,8 @@
 
 SELECT
   AGE,
+  AMONTH,
+  AYEAR,
   CPT1,
   CPT2,
   CPT3,

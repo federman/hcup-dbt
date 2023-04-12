@@ -4,6 +4,7 @@ models:
   description:  '{{ doc("int__sid_chgs_description") }}' 
   config:
     tags:
+    - IP
     - SID
     - CHGS
     - dbt_int

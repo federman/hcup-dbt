@@ -4,7 +4,6 @@ models:
   description:  '{{ doc("docs__int__flu_er") }}'  
   config:
     tags:
-    - State
     - ER
     - SEDD
     - flu

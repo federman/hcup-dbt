@@ -4,7 +4,6 @@ models:
   description:  '{{ doc("docs__int__flu_ip") }}'  
   config:
     tags:
-    - State
     - IP
     - SID
     - flu

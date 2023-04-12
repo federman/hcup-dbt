@@ -2,8 +2,8 @@
 
 # Overview 
 
-- **Request:** `number of ER visits with a flu ICD code by city`
-- **Issue:** https://github.com/Drexel-UHC/hcup-dbt/issues/17
+- Request: **number of ER visits with a flu ICD code by city**
+- Issue: https://github.com/Drexel-UHC/hcup-dbt/issues/17
 - Please comment in the issue above for any questions, issues or requests.
 
 # Access

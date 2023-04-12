@@ -2,6 +2,11 @@
 with 
 
 cte_1 as (
+  select 
+    CASE WHEN LENGTH(ZIP) = 5 THEN ZIP ELSE NULL END AS ZIP,
+    *,
+    from 
+      (
       select * from "main"."parquet"."base__az_sid_2016_core"
       union
       select * from "main"."parquet"."base__az_sid_2017_core"
@@ -25,6 +30,7 @@ cte_1 as (
       select * from "main"."parquet"."base__ny_sid_2017_core"
       union
       select * from "main"."parquet"."base__ny_sid_2018_core"
+    )
 ),
 
 cte_2 as (

@@ -6,11 +6,13 @@ models:
     node_color: '#9A2617'
   config:
     tags:
+    - IP
     - SID
     - CHGS
-    - Mart
     - flu
     - ZCTA
+    - Race Ethnicity
+    - Mart    
     - dbt_mart
   columns:
   - name: AMONTH

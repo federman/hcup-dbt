@@ -7,7 +7,10 @@ models:
   config:
     tags:
     - SID
+    - IP
     - CHGS
+    - Place
+    - City
     - Mart
     - flu
     - dbt_mart
