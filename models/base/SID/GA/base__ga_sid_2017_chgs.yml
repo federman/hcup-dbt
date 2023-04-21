@@ -13,22 +13,16 @@ models:
     - dbt_base
     - base__sid
   columns:
-  - name: CHARGE
-    type: double
-    description: Line item charges (as received from source)
-  - name: CHARGE
-    type: double
-    description: Line item charges (as received from source)
   - name: KEY
     type: double
     description: HCUP record identifier
-  - name: REVCODE
-    type: string
-    description: Line item revenue code (as received from source)
-  - name: UNITS
-    type: double
-    description: Line item units (as received from source)
+  - name: total_charge
+    description: '{{ doc("base__sid_total_charge_description") }}'
   - name: db
     description: '{{ doc("base__sid_db_description") }}'
   - name: file
     description: '{{ doc("base__sid_file_description") }}'
+  - name: state
+    description: '{{ doc("base__sid_state_description") }}'
+  - name: year
+    description: '{{ doc("base__sid_year_description") }}'

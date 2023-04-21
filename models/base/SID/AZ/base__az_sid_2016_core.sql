@@ -37,6 +37,11 @@ SELECT
   ZIPINC_QRTL,
   'SID' AS db,
   'CORE' AS file,
+  'AZ' AS state,
+  '2016' AS year,
 FROM {{ source('SID', 'AZ_SID_2016_CORE') }}
 
 {{ limit_data_in_dev() }}
+
+
+
