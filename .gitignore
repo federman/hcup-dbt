@@ -7,3 +7,4 @@ hcup-prod.duckdb
 hcup-prod.duckdb.wal
 
 external/
+hcup-dev.duckdb.wal
