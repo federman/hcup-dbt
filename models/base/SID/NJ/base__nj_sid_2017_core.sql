@@ -35,10 +35,7 @@ SELECT
   ZIP,
   ZIP3,
   ZIPINC_QRTL,
-  'SID' AS db,
-  'CORE' AS file,
   'NJ' AS state,
-  '2017' AS year,
 FROM {{ source('SID', 'NJ_SID_2017_CORE') }}
 
 {{ limit_data_in_dev() }}

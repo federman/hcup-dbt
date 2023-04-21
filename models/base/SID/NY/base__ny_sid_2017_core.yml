@@ -109,5 +109,3 @@ models:
     description: '{{ doc("base__sid_file_description") }}'
   - name: state
     description: '{{ doc("base__sid_state_description") }}'
-  - name: year
-    description: '{{ doc("base__sid_year_description") }}'
