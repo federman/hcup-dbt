@@ -8,3 +8,5 @@ hcup-prod.duckdb.wal
 
 external/
 hcup-dev.duckdb.wal
+
+*.parquet
